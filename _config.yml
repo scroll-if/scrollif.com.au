@@ -1,0 +1,14 @@
+title: Scroll If
+url: https://scrollif.com.au
+twitter: @scrollif
+markdown: kramdown
+plugins_dir: _plugins
+data_dir: _data
+layouts_dir: _layouts
+includes_dir: _includes
+sass:
+  sass_dir: assets/css/_partials
+  style: expanded
+collections:
+  navigation:
+    output: true 
