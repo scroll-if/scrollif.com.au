@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+	<!-- META TAGS -->
+
+		<!-- Meta Tag are referenced from scrollif-assets and populated using Site Variables from _congif.yml and page's YAML Front Matter -->
+
+			{% capture meta-tags-html %}
+				{% remote_include https://scrollif-assets.netlify.app/websites/html/meta-tags.html %}
+			{% endcapture %}
+
+			{{ meta-tags-html | liquify }}
+
+	<!-- ASSETS --> 
+
+		<!-- Local CSS files stored in _partials folder along with external CSS files from scrollif-assets are compiled into a single CSS file (concatenated.scss) before being processed, minimising HTTP requests -->
+
+			<link rel="stylesheet" type="text/css" href="{{ site.url }}/assets/css/concatenated.css"/>
+		
+		<!-- Base JS Library from Google APIs -->
+
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js" type="text/javascript"></script>
+		
+		<!-- External JS scripts from scrollif-assets are compiled into a single JS script (concatenated.js) before being processed, minimising HTTP requests -->
+
+			<script src="{{ site.url }}/assets/js/concatenated.js" type="text/javascript"></script>
+		
+
+	<!-- STYLES -->
+
+		<!-- Declare site URL variable for CSS to reference (sass does not support site level liquid tags) -->
+
+			<style>
+				:root {
+					--site-url: {{ site.url }};
+				}
+			</style>
+
+</head>
+
+<body class="no-js"> <!-- "no-js" class is removed using JS on document ready state, CSS classes Prepended with "body.no-js" are added as fallbacks where JS is used for browsers or use cases where JS is not allowed to run by default. -->
+
+	{{ content }}
+
+
+	<!-- POWERED-BY SCROLL IF -->
+
+		<!-- Capture the current year, insert it into the included remote asset from scrollif-assets using the include parameter -->
+
+			{% capture current-year %}
+				{{ site.time | date: '%Y' }}
+			{% endcapture %}
+			
+			{% assign powered-by-scroll-if-html = 'https://scrollif-assets.netlify.app/websites/components/powered-by-scroll-if/html/powered-by-scroll-if.html' %}
+
+			{% include_remote {{ powered-by-scroll-if-html }} published-year=current-year %}
+
+</body>
+</html> 
