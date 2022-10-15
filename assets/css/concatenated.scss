@@ -4,12 +4,8 @@
 	{% remote_include https://scrollif-assets.netlify.app/websites/css/reset-css.scss %}
 
 /* FONTS */
-	{% capture fonts-import %}
-		@import "fonts";
-	{% endcapture %}
-
-	{{ fonts-import | liquify }}
-
+	@import "fonts";
+	
 /* CSS VARIABLES */
 	{% remote_include https://scrollif-assets.netlify.app/websites/css/default-variables.scss %}
 	@import "variables";
