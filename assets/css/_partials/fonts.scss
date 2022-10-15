@@ -1,7 +1,7 @@
 @font-face {
   font-family: "Dosis-ExtraBold";
   src: url("var(--site-url)/assets/fonts/Dosis-ExtraBold/Dosis-ExtraBold.eot"); /* IE9 Compat Modes */
-  src: url("{{ site.url }}/assets/fonts/Dosis-ExtraBold/Dosis-ExtraBold.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  src: url("var(--site-url)/assets/fonts/Dosis-ExtraBold/Dosis-ExtraBold.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
     url("var(--site-url)/assets/fonts/Dosis-ExtraBold/Dosis-ExtraBold.otf") format("opentype"), /* Open Type Font */
     url("var(--site-url)/assets/fonts/Dosis-ExtraBold/Dosis-ExtraBold.svg") format("svg"), /* Legacy iOS */
     url("var(--site-url)/assets/fonts/Dosis-ExtraBold/Dosis-ExtraBold.ttf") format("truetype"), /* Safari, Android, iOS */
