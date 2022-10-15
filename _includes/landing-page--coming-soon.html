@@ -8,7 +8,7 @@
 		">
 	<div class="max-width-container">
 		<div class="flex flex-row justify-between items-end">
-			<a href="https://scrollif.com.au/">
+			<a href="{{ site.url }}">
 				<img style="
 					width: auto;
 					height: 40px;
@@ -27,7 +27,7 @@
 		height: calc(100vh - 103px); 
 		width: 100%; 
 		background-image: url('{{ site.url }}/assets/images/hero_image_{{ site.title | replace: ' ', '_' | downcase }}.jpg');
-		background-color: #FFFFFF;
+		background-color: var(--color-white);
 		background-repeat: no-repeat;
 		background-size: cover;
   		background-position: center;
