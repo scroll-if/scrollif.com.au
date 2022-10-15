@@ -26,10 +26,11 @@
 <div style="
 		height: calc(100vh - 103px); 
 		width: 100%; 
-		background-image: url('{{ site.url }}/assets/images/skyline-and-cityscape-new-york.jpg');
+		background-image: url('{{ site.url }}/assets/images/hero_image_{{ site.title | replace: ' ', '_' | downcase }}.jpg');
 		background-color: #FFFFFF;
 		background-repeat: no-repeat;
 		background-size: cover;
+  		background-position: center;
 	">
 	<div style="
         text-align:center;
@@ -37,7 +38,6 @@
 		position: absolute;
         width: 100%;
         padding-top: 70px;
-        padding-bottom: 103px;
         bottom: 50%;
         left: 50%;
         -webkit-transform: translate(-50%, 50%);
@@ -54,8 +54,6 @@
 		font-size: 5vmin;
 		letter-spacing: 0.5vw;
 		padding-left: 0.5vw;
-        margin-top: 1vh;
-        margin-bottom: 1vh;
      ">WEBSITE COMING SOON...</p>
 	</div>
 </div>
