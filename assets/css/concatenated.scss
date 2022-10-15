@@ -4,7 +4,11 @@
 	{% remote_include https://scrollif-assets.netlify.app/websites/css/reset-css.scss %}
 
 /* FONTS */
-	@import "fonts";
+	{% capture fonts-import %}
+		@import "fonts";
+	{% endcapture %}
+
+	{{ fonts-import | liquify }}
 
 /* CSS VARIABLES */
 	{% remote_include https://scrollif-assets.netlify.app/websites/css/default-variables.scss %}
