@@ -9,7 +9,7 @@
 /* CSS VARIABLES */
 	:root {
 		{% remote_include https://scrollif-assets.netlify.app/websites/css/default-variables.scss %}
-		@import "variables";
+		
 	}
 
 /* UTILITY CSS */
