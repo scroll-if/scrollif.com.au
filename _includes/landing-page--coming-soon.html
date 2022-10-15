@@ -1,3 +1,33 @@
+<header>
+	<div class="max-width-container">
+		<div class="flex flex-row justify-between items-end">
+			<a href="https://scrollif.com.au/">
+				<img style="
+					width: auto;
+					height: 40px;
+					margin-right: 5px;
+					vertical-align: bottom;
+					line-height: 1;
+				" 
+				src="{{ site.url }}/assets/images/logo_{{ site.title | replace: ' ', '_' | downcase }}.png" 
+				alt="{{ site.title }} Logo"/>
+				<p style="
+					color: var(--color-black);
+					font-family: var(--font-primary);
+					font-size: var(--font-l);
+					word-spacing: normal;
+					letter-spacing: 2.5px;
+					padding-left: 2.5px;
+					display: inline;
+					vertical-align: bottom;
+					line-height: 1;
+				">{{ site.title }}</p>
+			</a>
+
+		</div>
+	</div>
+</header>
+
 <div style="
 		height: calc(100vh - 103px); 
 		width: 100%; 
