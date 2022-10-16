@@ -30,13 +30,10 @@
 
 	<!-- STYLES -->
 
-		<!-- Declare site URL variable for Sass to reference (Sass does not support site level liquid tags) -->
+		<!-- Declare site URL as a base and use additional fragments in CSS URL declarations (CSS / Sass does not support site level liquid tags or CSS Variables in URL declarations) -->
 
-			<style>
-				
-					$site-url: {{ site.url }};
-				
-			</style>
+			<base href="{{ site.url }}" />
+			<base target="_blank" />
 
 </head>
 
