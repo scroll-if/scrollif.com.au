@@ -43,8 +43,11 @@
 
     	{% remote_include https://scrollif-assets.netlify.app/websites/components/loading-screen/html/loading-screen.html %}
 
+	{% include header.html %}    
+
 	{{ content }}
 
+	{% include footer.html %}  
 
 	<!-- POWERED-BY SCROLL IF -->
 
