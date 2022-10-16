@@ -1,9 +1,9 @@
-<header class="navbar-buttons-simple">
+<header>
 	<div class="max-width-container">
 		<div class="flex flex-row justify-between items-end">
-			<a href="#LINK">
+			<a href="{{ site.url }}">
 				<img class="logo" src="{{ site.url }}/assets/images/logo_{{ site.title | replace: ' ', '_' | downcase }}.png" alt="{{ site.title }} Logo"/>
-				<!--<p class="logo-name">{{ site.title }}</p>-->
+				<p class="logo-name">{{ site.title }}</p>
 			</a>
 			<nav class="navbar-static">
 				<ul class="flex flex-row items-end">
@@ -32,7 +32,7 @@
 				{% endfor %}
 				</ul>
 			</nav>			
-			<div class="menu-icon hamburger-icon">
+			<div class="menu-icon">
 				<span></span>
 				<span></span>
 				<span></span>

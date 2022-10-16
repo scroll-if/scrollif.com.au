@@ -1,11 +1,11 @@
-/* HEADERS */
+/* HEADER */
 	header  {
-		position: var(--header-position);
+		position: fixed;
 		width: 100%;
 		z-index: 9997;
-		background-color: var(--header-bgcolor);
+		background-color: var(--color-white);
 		padding: 15px;
-		box-shadow: var(--header-box-shadow);
+		box-shadow: var(--box-shadow);
 	}
 	header .logo {
 		width: auto;
@@ -15,34 +15,37 @@
 		line-height: 1;
 	}
 	header .logo-name {
-		color: var(--logo-name-color);
-		font-family: var(--logo-name-font-family);
-		font-size: var(--logo-name-font-size);
-		word-spacing: var(--logo-name-word-spacing);
-		letter-spacing: var(--logo-name-letter-spacing);
-		padding-left: var(--logo-name-letter-spacing);
+		color: var(--color-black);
+		font-family: var(--font-primary);
+		font-size: var(--font-l);
+		word-spacing: normal;
+		letter-spacing: 2.5px;
+		padding-left: 2.5px;
 		display: inline;
 		vertical-align: bottom;
 		line-height: 1;
 	}
+
+
+
 /* NAVBARS */
 	/* ALL NAVBARS */
 		nav {
-			font-family: var(--navbar-font-family);
-			font-size: var(--navbar-font-size);
-			color: var(--navbar-color);
-			word-spacing: var(--navbar-word-spacing);
-			letter-spacing: var(--navbar-letter-spacing);
+			font-family: var(--font-primary);
+			font-size: var(--font-l);
+			color: var(--color-black);
+			word-spacing: normal;
+			letter-spacing: normal;
 		}
 		nav a {
-			padding-left: var(--navbar-letter-spacing);
+			padding-left: normal;
 		}
 		nav .current-page {
-			color: var(--navbar-current-page-color);
+			color: var(--color-primary);
 		}
 		html:not(.can-touch) nav a:hover, 
 		html:not(.can-touch) nav a:focus {
-			color: var(--navbar-hover-color);
+			color: var(--color-primary);
 		}
 		nav ul:focus-within a {
 			outline: none;
@@ -50,66 +53,28 @@
 		nav .submenu {
 			display: flex;
 			flex-direction: column;
-			font-family: var(--navbar-submenu-font-family);
-			font-size: var(--navbar-submenu-font-size);
-			color: var(--navbar-submenu-color);
+			font-family: var(--font-primary);
+			font-size: var(--font-m);
+			color: var(--color-dar-grey);
 		}
-		/* BUTTONS SIMPLE */
-			header.navbar-buttons-simple nav .submenu {
-				background-color: var(--navbar-submenu-bgcolor);
-			}
-		/* BUTTONS UNDERLINE */
-			header.navbar-buttons-underline nav .submenu {
-				background-color: var(--navbar-submenu-bgcolor);
-			}
-			header.navbar-buttons-underline nav a {
-				display: inline-block;
-				border-bottom: solid var(--navbar-buttons-underline-thickness) var(--header-bgcolor);
-			}	
-			header.navbar-buttons-underline nav .current-page {
-				border-color: var(--navbar-current-page-underline-color);
-			}
-			html:not(.can-touch) header.navbar-buttons-underline nav a:hover, 
-			html:not(.can-touch) header.navbar-buttons-underline nav a:focus {
-				border-bottom: solid var(--navbar-buttons-underline-thickness) var(--navbar-buttons-underline-color);
-			}		
-		/* BUTTONS BLOCK */
-			header.navbar-buttons-block nav .current-page {
-				border-color: var(--navbar-current-page-border-color);
-			}
-			header.navbar-buttons-block nav a {
-				background-color: var(--navbar-buttons-bgcolor);
-				box-shadow: var(--navbar-buttons-box-shadow);
-				border: solid var(--navbar-buttons-border-thickness) var(--navbar-buttons-border-color);
-				-webkit-border-radius: var(--navbar-buttons-border-radius);
-				-moz-border-radius: var(--navbar-buttons-border-radius);
-				-o-border-radius: var(--navbar-buttons-border-radius);
-				-ms-border-radius: var(--navbar-buttons-border-radius);
-				border-radius: var(--navbar-buttons-border-radius);
-			}
-			header.navbar-buttons-block nav .submenu a {
-				background-color: var(--navbar-submenu-buttons-bgcolor);
-				border: solid var(--navbar-buttons-border-thickness) var(--navbar-submenu-buttons-border-color);
-			}
-			html:not(.can-touch) header.navbar-buttons-block nav a:hover, 
-			html:not(.can-touch) header.navbar-buttons-block nav a:focus {
-				border-color: var(--navbar-buttons-border-hover-color);
-			}
+		
 	/* NAVBAR STATIC */
 		nav.navbar-static {
 			display: none;
-		}
-		nav.navbar-static img {
-			vertical-align: bottom;
-		}
-		nav.navbar-static {
 			vertical-align: bottom;
 			line-height: 1;
+		}
+		nav.navbar-static a {
+			padding: 0 1.5rem;
 		}
 		nav.navbar-static .submenu {
 			visibility: hidden;
 			opacity: 0;
 			position: absolute;
+			padding: 1rem 0.5rem 0.5rem;
+		}
+		nav.navbar-static .submenu a {
+			padding: 1rem;
 		}
 		html:not(.can-touch) nav.navbar-static .submenu-trigger:hover + .submenu,
 		html:not(.can-touch) nav.navbar-static .submenu-trigger:focus + .submenu  {
@@ -126,20 +91,18 @@
 			visibility: visible;
 		}
 		/* SUBSUBMENU */
-			header.navbar-buttons-simple nav .subsubmenu {
-				background-color: var(--navbar-submenu-bgcolor);
-			}
 			nav .subsubmenu {
 				display: flex;
 				flex-direction: column;
-				font-family: var(--navbar-submenu-font-family);
-				font-size: var(--navbar-submenu-font-size);
-				color: var(--navbar-submenu-color);
+				font-family: var(--font-primary);
+				font-size: var(--font-m);
+				color: var(--color-dar-grey);
 			}
 			nav.navbar-static .subsubmenu {
 				visibility: hidden;
 				opacity: 0;
 				position: absolute;
+				box-shadow: var(--box-shadow-bottom);
 			}
 			html:not(.can-touch) nav.navbar-static .subsubmenu-trigger:hover + .subsubmenu,
 			html:not(.can-touch) nav.navbar-static .subsubmenu-trigger:focus + .subsubmenu  {
@@ -155,50 +118,6 @@
 				opacity: 1;
 				visibility: visible;
 			}
-
-
-
-		/* BUTTONS SIMPLE */
-			header.navbar-buttons-simple nav.navbar-static .submenu {
-				box-shadow: var(--navbar-submenu-box-shadow);
-			}
-			header.navbar-buttons-simple nav.navbar-static a {
-				padding: 0 1.5rem;
-			}
-			header.navbar-buttons-simple nav.navbar-static .submenu {
-				padding: 1rem 0.5rem 0.5rem;
-			}
-			header.navbar-buttons-simple nav.navbar-static .submenu a {
-				padding: 1rem;
-			}
-		/* BUTTONS UNDERLINE */
-			header.navbar-buttons-underline nav.navbar-static li {
-				padding: 0 0.5rem;
-			}
-			header.navbar-buttons-underline nav.navbar-static a {
-				padding: 0.75rem 1rem;
-			}
-			header.navbar-buttons-underline nav.navbar-static .submenu {
-				box-shadow: var(--navbar-submenu-box-shadow);
-				padding: 1rem 0.5rem 0.5rem;
-			}
-			header.navbar-buttons-underline nav.navbar-static .submenu li {
-				padding: 0.5rem 0.5rem;
-				
-			}
-		/* BUTTONS BLOCK */
-			header.navbar-buttons-block nav.navbar-static li {
-				padding: 0 0.5rem;
-			}
-			header.navbar-buttons-block nav.navbar-static a {
-				padding: 0.75rem 1.25rem;
-			}
-			header.navbar-buttons-block nav.navbar-static .submenu {
-				padding: 0.5rem 0;
-			}
-			header.navbar-buttons-block nav.navbar-static .submenu li {
-				padding: 0.5rem 0;
-			}
 	/* NAVBAR MEDIA QUERIES [STATIC > SLIDER] */
 		@media only screen and (min-width: 1024px) {
 			div.menu-icon {
@@ -208,6 +127,7 @@
 				display: inline-flex;
 			}
 		}
+
 	/* NAVBAR ICONS */
 		/* ALL ICONS */
 			div.menu-icon {
@@ -221,7 +141,7 @@
 			}
 			div.menu-icon span {
 				position: absolute;
-				background-color: var(--navbar-menu-icon-bgcolor);
+				background-color: var(--color-black);
 				-webkit-border-radius: 5px;
 				-moz-border-radius: 5px;
 				-o-border-radius: 5px;
@@ -234,35 +154,35 @@
 				transition: 0.5s ease;
 			}
 		/* HAMBURGER ICON */
-			div.hamburger-icon span {
+			div.menu-icon span {
 				right: 0;
 				height: 4px;
 				width: 100%;
 			}
-			div.hamburger-icon span:nth-child(1) {
+			div.menu-icon span:nth-child(1) {
 				bottom: 0;
 			}
-			div.hamburger-icon span:nth-child(2),
-			div.hamburger-icon span:nth-child(3) {
+			div.menu-icon span:nth-child(2),
+			div.menu-icon span:nth-child(3) {
 				bottom: 8px;
 			}
-			div.hamburger-icon span:nth-child(4) {
+			div.menu-icon span:nth-child(4) {
 				bottom: 16px;
 			}
-			div.hamburger-icon.open span:nth-child(1),
-			div.hamburger-icon.open span:nth-child(4) {
+			div.menu-icon.open span:nth-child(1),
+			div.menu-icon.open span:nth-child(4) {
 				bottom: 8px;
 				width: 0%;
 				right: 50%;
 			}
-			div.hamburger-icon.open span:nth-child(2) {
+			div.menu-icon.open span:nth-child(2) {
 				-webkit-transform: rotate(135deg);
 				-moz-transform: rotate(135deg);
 				-o-transform: rotate(135deg);
 				-ms-transform: rotate(135deg);
 				transform: rotate(135deg);
 			}
-			div.hamburger-icon.open span:nth-child(3) {
+			div.menu-icon.open span:nth-child(3) {
 				-webkit-transform: rotate(-135deg);
 				-moz-transform: rotate(-135deg);
 				-o-transform: rotate(-135deg);
@@ -276,7 +196,7 @@
 			top: 55px;
 			height: calc(100vh - 70px);
 			width: 100vw;
-			background-color: var(--navbar-slider-bgcolor);
+			background-color: var(--color-white);
 			visibility: hidden;
 			-webkit-transform: translateX(100%);
 			-moz-transform: translateX(100%);
@@ -309,47 +229,17 @@
 				flex-grow: 1;
 			}
 		}
-		/* BUTTONS SIMPLE */
-			header.navbar-buttons-simple nav.navbar-slider a {
+		
+			nav.navbar-slider a {
 				padding: 1.5rem;
 			}	
-			header.navbar-buttons-simple nav.navbar-slider .submenu a {
+			nav.navbar-slider .submenu a {
 				padding: 1rem;
 			}
-		/* BUTTONS UNDERLINE */
-			header.navbar-buttons-underline nav.navbar-static .submenu a {
-				padding: 0.5rem 0;
-			}
-			header.navbar-buttons-underline nav.navbar-slider a {
-				padding: 0.75rem;
-			}
-			header.navbar-buttons-underline nav.navbar-slider .submenu li {
-				padding: 0.5rem 0.5rem;
-			}
-			header.navbar-buttons-underline nav.navbar-slider .submenu a {
-				padding: 0.5rem 0.75rem;
-			}
-		/* BUTTONS BLOCK */
-			header.navbar-buttons-block nav.navbar-slider li {
-				padding: 0.5rem 0;
-			}
-			header.navbar-buttons-block nav.navbar-slider a {
-				padding: 0.75rem 1.25rem;
-			}
-			header.navbar-buttons-block nav.navbar-slider .submenu {
-				padding: 0.5rem 0 0;
-			}
-			header.navbar-buttons-block nav.navbar-slider .submenu li {
-				padding: 0.25rem 1rem;
-			}
-			@media screen and (orientation: landscape) {
-				header.navbar-buttons-block nav.navbar-slider li {
-					padding: 0.5rem;
-				}
-				header.navbar-buttons-block nav.navbar-slider .submenu li {
-					padding: 0.25rem 0;
-				}
-			}
+		
+
+
+
 /* FOOTER */
 	footer {
 		padding:15px;

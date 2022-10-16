@@ -24,15 +24,7 @@
 
 
 :root {
-	/* HEADER */
-		--header-bgcolor: var(--color-white);
-		--header-box-shadow: var(--box-shadow); /* 'none' or '[var(--)]' */
-		--header-position: fixed; /* 'sitcky' or 'fixed' */
-		--logo-name-color: var(--color-black);
-		--logo-name-font-family: var(--font-primary);
-		--logo-name-font-size: 20px;
-		--logo-name-word-spacing: normal; /* 'normal' or '[value]' */
-		--logo-name-letter-spacing: 2.5px; /* 'normal' or '[value]' */
+
 	/* NAVBARS */
 		/* ALL NAVBARS */
 			--navbar-font-family: var(--font-primary);
