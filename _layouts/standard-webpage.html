@@ -55,12 +55,12 @@
 		<!-- Capture the current year, insert it into the included remote asset from scrollif-assets using the include parameter -->
 
 			{% capture current-year %}
-				{{ site.time | date: '%Y' }}
+				2022
 			{% endcapture %}
 			
 			{% assign powered-by-scroll-if-html = 'https://scrollif-assets.netlify.app/websites/components/powered-by-scroll-if/html/powered-by-scroll-if.html' %}
 
-			{% include_remote {{ powered-by-scroll-if-html }} published-year={{ current-year }} %}
+			{% include_remote {{ powered-by-scroll-if-html }} published-year=current-year %}
 
 </body>
 </html> 
