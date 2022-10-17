@@ -69,12 +69,15 @@
 			vertical-align: bottom;
 			line-height: 1;
 		}
-		nav.navbar-static a {
+		nav.navbar-static .submenu a {
 			padding-bottom: 15px;
 			padding-right: 15px;
 			padding-left: 15px;
 		}
-		nav ul li:nth-child(1) a {
+		nav.navbar-static .submenu li:nth-child(1) a {
+			padding-top: 15px;
+		}
+		nav.navbar-static .subsubmenu li:nth-child(1) a {
 			padding-top: 15px;
 		}
 		nav.navbar-static .submenu {
