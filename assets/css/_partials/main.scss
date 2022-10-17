@@ -72,11 +72,14 @@
 		nav.navbar-static a {
 			padding: 0 15px;
 		}
+		nav ul li:nth-child(1) a {
+			padding-top: 15px;
+		}
 		nav.navbar-static .submenu {
 			visibility: hidden;
 			opacity: 0;
 			position: absolute;
-			padding: 15px 0 5px 0;
+			padding: 0;
 			box-shadow: var(--box-shadow-bottom);
 		}
 		nav.navbar-static .submenu a {
