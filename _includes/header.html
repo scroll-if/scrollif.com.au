@@ -9,7 +9,7 @@
 				<ul class="flex flex-row items-end">
 				{% for item in site.menus.navbar %}
 				  <li>
-				    <a {% if item.children %}class="submenu-trigger"{% endif %} {% if page.url == item.url %}class="submenu-trigger"{% endif %} href="{{ item.url }}">{{ item.title }}</a>
+				    <a {% if item.children %}class="submenu-trigger"{% endif %} {% if site.url page.url == item.url %}class="submenu-trigger"{% endif %} href="{{ item.url }}">{{ item.title }}</a>
 				    {% if item.children %}
 				    	<ul class="submenu">
 			    		{% for item in item.children %}
