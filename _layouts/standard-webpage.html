@@ -58,10 +58,7 @@
 				{{ site.time | date: '%Y' }}
 			{% endcapture %}
 			
-			{% capture powered-by-scroll-if-html %}
-				'https://scrollif-assets.netlify.app/websites/components/powered-by-scroll-if/html/powered-by-scroll-if.html'
-			{% endcapture %}
-
+			{% assign powered-by-scroll-if-html = 'https://scrollif-assets.netlify.app/websites/components/powered-by-scroll-if/html/powered-by-scroll-if.html' %}
 
 			{% include_remote {{ powered-by-scroll-if-html }} published-year=current-year %}
 
