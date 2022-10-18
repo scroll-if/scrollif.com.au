@@ -73,16 +73,27 @@
 			padding-right: 15px;
 			padding-left: 15px;
 		}
-		nav.navbar-static .submenu a {
+		
+
+		nav.navbar-static .submenu li {
 			padding-top: 15px;
-			padding-right: 15px;
-			padding-left: 15px;
 		}
-		nav.navbar-static .submenu li:nth-last-child(1) a {
+		nav.navbar-static .submenu li:nth-child(1) {
+			padding-top: 15px;
+		}
+		nav.navbar-static .subsubmenu li:nth-child(1) {
+			padding-top: 15px;
+		}
+		nav.navbar-static .submenu li:nth-last-child(1) {
 			padding-bottom: 15px;
 		}
-		nav.navbar-static .subsubmenu li:nth-last-child(1) a {
+		nav.navbar-static .subsubmenu li:nth-last-child(1) {
 			padding-bottom: 15px;
+		}
+
+
+		nav.navbar-static .submenu a {
+			padding: 15px;
 		}
 		nav.navbar-static .submenu {
 			visibility: hidden;
