@@ -36,6 +36,7 @@
 			color: var(--color-black);
 			word-spacing: normal;
 			letter-spacing: normal;
+			text-transform: uppercase;
 		}
 		nav a {
 			padding-left: normal;
@@ -75,9 +76,6 @@
 		}
 		
 
-		nav.navbar-static .submenu li {
-			padding-top: 15px;
-		}
 		nav.navbar-static .submenu li:nth-child(1) {
 			padding-top: 15px;
 		}
