@@ -129,9 +129,9 @@
   color: #ecf0f1;
 }
 
-		html:not(.can-touch) nav.navbar-static ul > li:hover > a,
-		html:not(.can-touch) nav.navbar-static ul > li:focus > a, 
-		html:not(.can-touch) nav.navbar-static ul > li:focus-within > a  {
+		html:not(.can-touch) nav.navbar-static ul li ul > li:hover > a,
+		html:not(.can-touch) nav.navbar-static ul li ul > li:focus > a, 
+		html:not(.can-touch) nav.navbar-static ul li ul > li:focus-within > a  {
 			opacity: 1;
 			visibility: visible;
 			-webkit-transition: opacity var(--transition-speed), visibility var(--transition-speed), background var(--transition-speed);
