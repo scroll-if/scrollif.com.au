@@ -180,7 +180,6 @@
 			-o-transition: opacity var(--transition-speed), visibility var(--transition-speed), background var(--transition-speed);
 			-ms-transition: opacity var(--transition-speed), visibility var(--transition-speed), background var(--transition-speed);
 			transition: opacity var(--transition-speed), visibility var(--transition-speed), background var(--transition-speed);
-			color: var(--color-dark-grey);
 		}
 		html:not(.can-touch) nav.navbar-static .submenu:focus-within {
 			opacity: 1;
@@ -226,7 +225,6 @@
 			-o-transition: opacity var(--transition-speed), visibility var(--transition-speed), background var(--transition-speed);
 			-ms-transition: opacity var(--transition-speed), visibility var(--transition-speed), background var(--transition-speed);
 			transition: opacity var(--transition-speed), visibility var(--transition-speed), background var(--transition-speed);
-			color: var(--color-dark-grey);
 			}
 			html:not(.can-touch) nav.navbar-static .subsubmenu:focus-within {
 				opacity: 1;
