@@ -129,9 +129,9 @@
   color: #ecf0f1;
 }
 
-		html:not(.can-touch) .submenu ul > li:hover > a,
-		html:not(.can-touch) .submenu ul > li:focus > a, 
-		html:not(.can-touch) .submenu ul > li:focus-within > a  {
+		html:not(.can-touch) .submenu > li:hover > a,
+		html:not(.can-touch) .submenu > li:focus > a, 
+		html:not(.can-touch) .submenu > li:focus-within > a  {
 			background-size: 100% 2px; /*width:100% height:2px*/
 		}
 
