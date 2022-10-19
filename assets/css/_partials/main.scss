@@ -125,7 +125,7 @@
 
 
 
-		ul.submenu > li:hover > a  {
+		ul.submenu > li:hover > a p  {
 			background: linear-gradient(var(--color-dark-grey),var(--color-dark-grey)) center bottom; /*OR bottom right OR bottom left*/
   			background-size: 100% 2px; /*width:0% height:2px*/
   			background-repeat:no-repeat; /* Don't repeat !!*/
