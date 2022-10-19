@@ -8,18 +8,18 @@
 			<nav class="navbar-static">
 				<ul class="flex flex-row items-end">
 				{% for item in site.menus.navbar %}
-				  <li {% if item.children %}class="submenu-trigger"{% endif %}>
-				    <a {% if item.url == page.url %}class="current-page"{% endif %} href="{{ item.url }}"><p>{{ item.title }}</p></a>
+				  <li {% if item.url == page.url %}class="current-page"{% endif %}>
+				    <a {% if item.children %}class="submenu-trigger"{% endif %} href="{{ item.url }}"><p>{{ item.title }}</p></a>
 				    {% if item.children %}
 				    	<ul class="submenu">
 			    		{% for item in item.children %}
-			    			<li {% if item.children %}class="subsubmenu-trigger"{% endif %}>
-			    				<a {% if item.url == page.url %}class="current-page"{% endif %} href="{{ item.url }}"><p>{{ item.title }}</p></a>
+			    			<li {% if item.url == page.url %}class="current-page"{% endif %}>
+			    				<a {% if item.children %}class="subsubmenu-trigger"{% endif %} href="{{ item.url }}"><p>{{ item.title }}</p></a>
 	    					    {% if item.children %}
 	    					    	<ul class="subsubmenu">
 	    				    		{% for item in item.children %}
-	    				    			<li>
-	    				    				<a {% if item.url == page.url %}class="current-page"{% endif %} href="{{ item.url }}"><p>{{ item.title }}</p></a>
+	    				    			<li {% if item.url == page.url %}class="current-page"{% endif %}>
+	    				    				<a href="{{ item.url }}"><p>{{ item.title }}</p></a>
 	    				    			</li>
 	    				    		{% endfor %}
 	    				    		</ul>
