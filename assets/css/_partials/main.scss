@@ -42,15 +42,19 @@
 			margin: 0;
 			padding: 0;
 			display: inline;
-			background: linear-gradient(#333,#333) center bottom; /*OR bottom right OR bottom left*/
+			background: linear-gradient(var(--color-black),var(--color-black)) center bottom; /*OR bottom right OR bottom left*/
   			background-size: 0% 2px; /*width:0% height:2px*/
   			background-repeat:no-repeat; /* Don't repeat !!*/
+		}
+		nav .submenu a p {
+			background: linear-gradient(var(--color-dark-grey),var(--color-dark-grey)) center bottom; /*OR bottom right OR bottom left*/
 		}
 		nav a {
 			padding-left: normal;
 		}
 		nav .current-page {
 			color: var(--color-primary);
+			background: linear-gradient(var(--color-primary),var(--color-primary)) center bottom; /*OR bottom right OR bottom left*/
 		}
 		html:not(.can-touch) nav a:hover p, 
 		html:not(.can-touch) nav a:focus p {
