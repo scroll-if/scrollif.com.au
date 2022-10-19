@@ -46,11 +46,8 @@
 		}
 		html:not(.can-touch) nav a:hover, 
 		html:not(.can-touch) nav a:focus {
-			color: var(--color-dark-grey);
-		}
-		html:not(.can-touch) nav .submenu a:hover, 
-		html:not(.can-touch) nav .submenu a:focus {
-			color: var(--color-black);
+			/* color: var(--color-dark-grey); */
+			text-decoration: underline;
 		}
 		nav ul:focus-within a {
 			outline: none;
