@@ -49,7 +49,11 @@
 		}
 
 
-
+nav a {
+  display: block;
+  position: relative;
+  padding: 0.2em 0;
+}
 
 nav a::after {
   content: '';
