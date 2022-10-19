@@ -38,6 +38,10 @@
 			letter-spacing: normal;
 			text-transform: uppercase;
 		}
+		nav a p {
+			margin: 0;
+			padding: 0;
+		}
 		nav a {
 			padding-left: normal;
 			background: linear-gradient(#333,#333) center bottom; /*OR bottom right OR bottom left*/
