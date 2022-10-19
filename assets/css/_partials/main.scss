@@ -125,7 +125,10 @@
 
 
 
-		ul.submenu > li:hover > a p  {
+/*		ul.submenu > li:hover > a p  */
+
+		html:not(.can-touch) nav.navbar-static > ul.submenu li:hover > ul,
+		html:not(.can-touch) nav.navbar-static > ul.submenu li:focus-within > ul {
 			color: var(--color-black);
 		}
 
