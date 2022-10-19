@@ -132,8 +132,7 @@
 
 
 		html:not(.can-touch) nav.navbar-static .submenu-trigger:hover + .submenu,
-		html:not(.can-touch) nav.navbar-static .submenu-trigger:focus + .submenu,
-		html:not(.can-touch) nav.navbar-static .submenu-trigger:active + .submenu   {
+		html:not(.can-touch) nav.navbar-static .submenu-trigger:focus + .submenu  {
 			opacity: 1;
 			visibility: visible;
 			-webkit-transition: opacity var(--transition-speed), visibility var(--transition-speed), background var(--transition-speed);
@@ -142,6 +141,18 @@
 			-ms-transition: opacity var(--transition-speed), visibility var(--transition-speed), background var(--transition-speed);
 			transition: opacity var(--transition-speed), visibility var(--transition-speed), background var(--transition-speed);
 		}
+
+		
+		html:not(.can-touch) nav.navbar-static .submenu-trigger > li:not(:hover) li a:focus  {
+			opacity: 1;
+			visibility: visible;
+			-webkit-transition: opacity var(--transition-speed), visibility var(--transition-speed), background var(--transition-speed);
+			-moz-transition: opacity var(--transition-speed), visibility var(--transition-speed), background var(--transition-speed);
+			-o-transition: opacity var(--transition-speed), visibility var(--transition-speed), background var(--transition-speed);
+			-ms-transition: opacity var(--transition-speed), visibility var(--transition-speed), background var(--transition-speed);
+			transition: opacity var(--transition-speed), visibility var(--transition-speed), background var(--transition-speed);
+		}
+
 		html:not(.can-touch) nav.navbar-static .submenu:hover,
 		html:not(.can-touch) nav.navbar-static .submenu:focus {
 			visibility: visible;
@@ -177,8 +188,7 @@
 				box-shadow: var(--box-shadow-bottom);
 			}
 			html:not(.can-touch) nav.navbar-static .subsubmenu-trigger:hover + .subsubmenu,
-			html:not(.can-touch) nav.navbar-static .subsubmenu-trigger:focus + .subsubmenu,
-			html:not(.can-touch) nav.navbar-static .subsubmenu-trigger:active + .subsubmenu   {
+			html:not(.can-touch) nav.navbar-static .subsubmenu-trigger:focus + .subsubmenu  {
 				opacity: 1;
 				visibility: visible;
 			-webkit-transition: opacity var(--transition-speed), visibility var(--transition-speed), background var(--transition-speed);
@@ -187,6 +197,18 @@
 			-ms-transition: opacity var(--transition-speed), visibility var(--transition-speed), background var(--transition-speed);
 			transition: opacity var(--transition-speed), visibility var(--transition-speed), background var(--transition-speed);
 			}
+
+			
+			html:not(.can-touch) nav.navbar-static .subsubmenu-trigger > li:not(:hover) li a:focus {
+				opacity: 1;
+				visibility: visible;
+			-webkit-transition: opacity var(--transition-speed), visibility var(--transition-speed), background var(--transition-speed);
+			-moz-transition: opacity var(--transition-speed), visibility var(--transition-speed), background var(--transition-speed);
+			-o-transition: opacity var(--transition-speed), visibility var(--transition-speed), background var(--transition-speed);
+			-ms-transition: opacity var(--transition-speed), visibility var(--transition-speed), background var(--transition-speed);
+			transition: opacity var(--transition-speed), visibility var(--transition-speed), background var(--transition-speed);
+			}
+
 			html:not(.can-touch) nav.navbar-static .subsubmenu:hover,
 			html:not(.can-touch) nav.navbar-static .subsubmenu:focus {
 				visibility: visible;
