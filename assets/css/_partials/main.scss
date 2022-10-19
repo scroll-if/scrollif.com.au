@@ -48,9 +48,9 @@
 		html:not(.can-touch) nav a:focus {
 			color: var(--color-dark-grey);
 		}
-		html:not(.can-touch) nav ul a:hover, 
-		html:not(.can-touch) nav ul a:focus {
-			color: var(--color-light-grey);
+		html:not(.can-touch) nav .submenu a:hover, 
+		html:not(.can-touch) nav .submenu a:focus {
+			color: var(--color-black);
 		}
 		nav ul:focus-within a {
 			outline: none;
