@@ -143,7 +143,7 @@
 		}
 
 		
-		html:not(.can-touch) nav.navbar-static .submenu-trigger > li:not(:hover) li a:focus  {
+		html:not(.can-touch) nav.navbar-static ul > li:not(:hover) li a:focus  {
 			opacity: 1;
 			visibility: visible;
 			-webkit-transition: opacity var(--transition-speed), visibility var(--transition-speed), background var(--transition-speed);
