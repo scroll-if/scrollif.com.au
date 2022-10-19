@@ -132,13 +132,7 @@
 		html:not(.can-touch) .submenu ul > li:hover > a,
 		html:not(.can-touch) .submenu ul > li:focus > a, 
 		html:not(.can-touch) .submenu ul > li:focus-within > a  {
-			opacity: 1;
-			visibility: visible;
-			-webkit-transition: opacity var(--transition-speed), visibility var(--transition-speed), background var(--transition-speed);
-			-moz-transition: opacity var(--transition-speed), visibility var(--transition-speed), background var(--transition-speed);
-			-o-transition: opacity var(--transition-speed), visibility var(--transition-speed), background var(--transition-speed);
-			-ms-transition: opacity var(--transition-speed), visibility var(--transition-speed), background var(--transition-speed);
-			transition: opacity var(--transition-speed), visibility var(--transition-speed), background var(--transition-speed);
+			background-size: 100% 2px; /*width:100% height:2px*/
 		}
 
 
