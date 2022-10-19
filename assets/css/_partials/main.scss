@@ -67,8 +67,8 @@ nav a::after {
   transform: scale(0);
   transform-origin: center;
 }
-html:not(.can-touch) nav a:hover, 
-html:not(.can-touch) nav a:focus {
+html:not(.can-touch) nav a:hover::after, 
+html:not(.can-touch) nav a:focus::after {
 	transform: scale(1);
 }
 
