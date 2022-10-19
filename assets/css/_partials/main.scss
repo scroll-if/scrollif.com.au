@@ -124,15 +124,10 @@
 		}
 
 
-#nav-items > li:hover > a {
-  background-color: #d35400;
-  color: #ecf0f1;
-}
 
-		html:not(.can-touch) .submenu > li:hover > a,
-		html:not(.can-touch) .submenu > li:focus > a, 
-		html:not(.can-touch) .submenu > li:focus-within > a  {
+		ul.submenu > li:hover > a  {
 			background-size: 100% 2px; /*width:100% height:2px*/
+			background-color: #d35400;
 		}
 
 
