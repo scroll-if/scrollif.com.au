@@ -231,7 +231,8 @@
 
 /*		ul.submenu > li:hover > a p  */
 
-		ul.submenu > li:hover > a p {
+		ul.submenu li:hover > a p,
+		ul.submenu li:focus-within > a p {
 			color: var(--color-black);
 		}
 
