@@ -122,8 +122,8 @@
 		nav.navbar-static .submenu a {
 			background-color: var(--color-white);
 		}
-		html:not(.can-touch) nav.navbar-static .submenu-trigger:hover + .submenu,
-		html:not(.can-touch) nav.navbar-static .submenu-trigger:focus + .submenu  {
+		html:not(.can-touch) nav.navbar-static .submenu-trigger:hover .submenu,
+		html:not(.can-touch) nav.navbar-static .submenu-trigger:focus .submenu  {
 			opacity: 1;
 			visibility: visible;
 			-webkit-transition: opacity var(--transition-speed), visibility var(--transition-speed), background var(--transition-speed);
@@ -166,8 +166,8 @@
 				position: absolute;
 				box-shadow: var(--box-shadow-bottom);
 			}
-			html:not(.can-touch) nav.navbar-static .subsubmenu-trigger:hover + .subsubmenu,
-			html:not(.can-touch) nav.navbar-static .subsubmenu-trigger:focus + .subsubmenu  {
+			html:not(.can-touch) nav.navbar-static .subsubmenu-trigger:hover .subsubmenu,
+			html:not(.can-touch) nav.navbar-static .subsubmenu-trigger:focus .subsubmenu  {
 				opacity: 1;
 				visibility: visible;
 			-webkit-transition: opacity var(--transition-speed), visibility var(--transition-speed), background var(--transition-speed);
