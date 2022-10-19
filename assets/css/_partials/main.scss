@@ -48,13 +48,17 @@
 		}
 		nav .submenu a p {
 			background: linear-gradient(var(--color-dark-grey),var(--color-dark-grey)) center bottom; /*OR bottom right OR bottom left*/
+  			background-size: 0% 2px; /*width:0% height:2px*/
+  			background-repeat:no-repeat; /* Don't repeat !!*/
 		}
 		nav a {
 			padding-left: normal;
 		}
-		nav .current-page {
+		nav .current-page p {
 			color: var(--color-primary);
 			background: linear-gradient(var(--color-primary),var(--color-primary)) center bottom; /*OR bottom right OR bottom left*/
+  			background-size: 0% 2px; /*width:0% height:2px*/
+  			background-repeat:no-repeat; /* Don't repeat !!*/
 		}
 		html:not(.can-touch) nav a:hover p, 
 		html:not(.can-touch) nav a:focus p {
