@@ -126,15 +126,13 @@
 
 
 		ul.submenu > li:hover > a p  {
-			background: linear-gradient(var(--color-dark-grey),var(--color-dark-grey)) center bottom; /*OR bottom right OR bottom left*/
-  			background-size: 100% 2px; /*width:0% height:2px*/
-  			background-repeat:no-repeat; /* Don't repeat !!*/
+			color: var(--color-black);
 		}
 
 
 
-		html:not(.can-touch) nav.navbar-static .submenu-trigger:hover .submenu,
-		html:not(.can-touch) nav.navbar-static .submenu-trigger:focus .submenu  {
+		html:not(.can-touch) nav.navbar-static .submenu-trigger:hover + a .submenu,
+		html:not(.can-touch) nav.navbar-static .submenu-trigger:focus + a .submenu  {
 			opacity: 1;
 			visibility: visible;
 			-webkit-transition: opacity var(--transition-speed), visibility var(--transition-speed), background var(--transition-speed);
@@ -177,8 +175,8 @@
 				position: absolute;
 				box-shadow: var(--box-shadow-bottom);
 			}
-			html:not(.can-touch) nav.navbar-static .subsubmenu-trigger:hover .subsubmenu,
-			html:not(.can-touch) nav.navbar-static .subsubmenu-trigger:focus .subsubmenu  {
+			html:not(.can-touch) nav.navbar-static .subsubmenu-trigger:hover + a .subsubmenu,
+			html:not(.can-touch) nav.navbar-static .subsubmenu-trigger:focus + a .subsubmenu  {
 				opacity: 1;
 				visibility: visible;
 			-webkit-transition: opacity var(--transition-speed), visibility var(--transition-speed), background var(--transition-speed);
