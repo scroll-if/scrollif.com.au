@@ -872,13 +872,13 @@
 	footer {
 		width: 100%;
 		background-color: var(--color-white);
-		padding:15px;
+		padding: 15px;
 		text-align: center;
 	}
 	footer .logo {
 		width: auto;
 		height: 40px;
-		padding:15px;
+		padding: 15px;
 		margin-right: 5px;
 		vertical-align: bottom;
 		line-height: 1;
@@ -899,7 +899,7 @@
 
 /* NAVBARS */
 	/* ALL NAVBARS */
-		footer nav {
+		nav.sitemap {
 			font-family: var(--font-primary);
 			font-size: var(--font-l);
 			color: var(--color-black);
@@ -907,7 +907,7 @@
 			letter-spacing: normal;
 			text-transform: uppercase;
 		}
-		footer nav a p {
+		nav.sitemap a p {
 			margin: 0;
 			padding: 0;
 			display: inline;
@@ -925,8 +925,8 @@
 
 /*		ul.submenu > li:hover > a p  */
 
-		footer ul.submenu li:hover > a p,
-		footer ul.submenu li:focus-within > a p {
+		nav.sitemap ul.submenu li:hover > a p,
+		nav.sitemap ul.submenu li:focus-within > a p {
 			color: var(--color-black);
 		}
 
@@ -934,28 +934,28 @@
 
 
 
-		footer nav a {
+		nav.sitemap a {
 			padding-left: normal;
 		}
-		footer nav .current-page p {
+		nav.sitemap .current-page p {
 			color: var(--color-primary);
 			background: linear-gradient(var(--color-primary),var(--color-primary)) center bottom; /*OR bottom right OR bottom left*/
   			background-size: 0% 2px; /*width:0% height:2px*/
   			background-repeat:no-repeat; /* Don't repeat !!*/
 		}
-		html:not(.can-touch) footer nav a:hover p, 
-		html:not(.can-touch) footer nav a:focus p {
+		html:not(.can-touch) nav.sitemap a:hover p, 
+		html:not(.can-touch) nav.sitemap a:focus p {
 			background-size: 100% 2px; /*width:100% height:2px*/
 		}
-		footer nav ul:focus-within a {
+		nav.sitemap ul:focus-within a {
 			outline: none;
 		}
-		footer nav li a {
+		nav.sitemap li a {
 			display: inline-block;
 			width: 100%;
 			white-space: nowrap;
 		}
-		footer nav .submenu {
+		nav.sitemap .submenu {
 			display: flex;
 			flex-direction: column;
 			font-family: var(--font-primary);
@@ -964,37 +964,35 @@
 		}
 		
 	/* NAVBAR STATIC */
-		footer nav.navbar-static {
+		nav.sitemap {
 			display: none;
 			vertical-align: bottom;
 			line-height: 1;
 		}
-		footer nav.navbar-static a {
+		nav.sitemap a {
 			padding-right: 15px;
 			padding-left: 15px;
 		}
 		
-		footer nav.navbar-static .submenu a {
+		nav.sitemap .submenu a {
 			padding-top: 15px;
 			padding-bottom: 15px;
 		}
-		footer nav.navbar-static .submenu li:nth-child(1) {
+		nav.sitemap .submenu li:nth-child(1) {
 			padding-top: 15px;
 		}
-		footer nav.navbar-static .subsubmenu li:nth-child(1) {
+		nav.sitemap .subsubmenu li:nth-child(1) {
 			padding-top: 0;
 		}
-		footer nav.navbar-static .subsubmenu li:nth-child(1) a {
+		nav.sitemap .subsubmenu li:nth-child(1) a {
 			padding-top: 15px;
 		}
 
-		footer nav.navbar-static .submenu {
-			visibility: visible;
-			opacity: 1;
+		nav.sitemap .submenu {
 			padding: 0;
 			box-shadow: var(--box-shadow-bottom);
-		} 
-		footer nav.navbar-static .submenu a {
+		}
+		nav.sitemap .submenu a {
 			background-color: var(--color-white);
 		}
 
@@ -1004,8 +1002,8 @@
 
 
 
-		html:not(.can-touch) footer nav.navbar-static .submenu-trigger:hover + .submenu,
-		html:not(.can-touch) footer nav.navbar-static .submenu-trigger:focus + .submenu  {
+		html:not(.can-touch) nav.sitemap .submenu-trigger:hover + .submenu,
+		html:not(.can-touch) nav.sitemap .submenu-trigger:focus + .submenu  {
 			opacity: 1;
 			visibility: visible;
 			-webkit-transition: opacity var(--transition-speed), visibility var(--transition-speed);
@@ -1019,8 +1017,8 @@
 
 
 /* THIS DID IT */
-		html:not(.can-touch) footer nav.navbar-static > ul li:hover > ul,
-		html:not(.can-touch) footer nav.navbar-static > ul li:focus-within > ul {
+		html:not(.can-touch) nav.sitemap > ul li:hover > ul,
+		html:not(.can-touch) nav.sitemap > ul li:focus-within > ul {
 			opacity: 1;
 			visibility: visible;
 			-webkit-transition: opacity var(--transition-speed), visibility var(--transition-speed);
@@ -1033,8 +1031,8 @@
 
 
 
-		html:not(.can-touch) footer nav.navbar-static .submenu:hover,
-		html:not(.can-touch) footer nav.navbar-static .submenu:focus {
+		html:not(.can-touch) nav.sitemap .submenu:hover,
+		html:not(.can-touch) nav.sitemap .submenu:focus {
 			visibility: visible;
 			opacity: 1;
 			-webkit-transition: opacity var(--transition-speed), visibility var(--transition-speed);
@@ -1043,7 +1041,7 @@
 			-ms-transition: opacity var(--transition-speed), visibility var(--transition-speed);
 			transition: opacity var(--transition-speed), visibility var(--transition-speed);
 		}
-		html:not(.can-touch) footer nav.navbar-static .submenu:focus-within {
+		html:not(.can-touch) nav.sitemap .submenu:focus-within {
 			opacity: 1;
 			visibility: visible;
 			-webkit-transition: opacity var(--transition-speed), visibility var(--transition-speed);
@@ -1053,7 +1051,7 @@
 			transition: opacity var(--transition-speed), visibility var(--transition-speed);
 		}
 		/* SUBSUBMENU */
-			footer nav .subsubmenu {
+			nav.sitemap .subsubmenu {
 				display: inline-flex;
 				flex-direction: column;
 				font-family: var(--font-primary);
@@ -1061,13 +1059,11 @@
 				color: var(--color-dark-grey);
 				background-color: var(--color-white);
 			}
-			footer nav.navbar-static .subsubmenu {
-				visibility: visible;
-				opacity: 1;
+			nav.sitemap .subsubmenu {
 				box-shadow: var(--box-shadow-bottom);
 			}
-			html:not(.can-touch) footer nav.navbar-static .subsubmenu-trigger:hover + .subsubmenu,
-			html:not(.can-touch) footer nav.navbar-static .subsubmenu-trigger:focus + .subsubmenu  {
+			html:not(.can-touch) nav.sitemap .subsubmenu-trigger:hover + .subsubmenu,
+			html:not(.can-touch) nav.sitemap .subsubmenu-trigger:focus + .subsubmenu  {
 				opacity: 1;
 				visibility: visible;
 			-webkit-transition: opacity var(--transition-speed), visibility var(--transition-speed);
@@ -1077,8 +1073,8 @@
 			transition: opacity var(--transition-speed), visibility var(--transition-speed);
 			}
 
-			html:not(.can-touch) footer nav.navbar-static .subsubmenu:hover,
-			html:not(.can-touch) footer nav.navbar-static .subsubmenu:focus {
+			html:not(.can-touch) nav.sitemap .subsubmenu:hover,
+			html:not(.can-touch) nav.sitemap .subsubmenu:focus {
 				visibility: visible;
 				opacity: 1;
 			-webkit-transition: opacity var(--transition-speed), visibility var(--transition-speed);
@@ -1087,7 +1083,7 @@
 			-ms-transition: opacity var(--transition-speed), visibility var(--transition-speed);
 			transition: opacity var(--transition-speed), visibility var(--transition-speed);
 			}
-			html:not(.can-touch) footer nav.navbar-static .subsubmenu:focus-within {
+			html:not(.can-touch) nav.sitemap .subsubmenu:focus-within {
 				opacity: 1;
 				visibility: visible;
 			-webkit-transition: opacity var(--transition-speed), visibility var(--transition-speed);
@@ -1101,7 +1097,7 @@
 			div.menu-icon {
 				display: none;
 			}
-			footer nav.navbar-static {
+			nav.sitemap {
 				display: inline-flex;
 			}
 		}
