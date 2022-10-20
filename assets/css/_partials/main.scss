@@ -867,7 +867,6 @@
 
 
 
-
 /* FOOTER */
 	footer {
 		width: 100%;
@@ -921,19 +920,6 @@
 			transition: color var(--transition-speed), background var(--transition-speed);
 		}
 
-
-
-/*		ul.submenu > li:hover > a p  */
-
-		nav.sitemap ul.submenu li:hover > a p,
-		nav.sitemap ul.submenu li:focus-within > a p {
-			color: var(--color-black);
-		}
-
-
-
-
-
 		nav.sitemap a {
 			padding-left: normal;
 		}
@@ -966,7 +952,7 @@
 	/* NAVBAR STATIC */
 		nav.sitemap {
 			display: none;
-			vertical-align: bottom;
+			vertical-align: top;
 			line-height: 1;
 		}
 		nav.sitemap a {
@@ -979,18 +965,18 @@
 			padding-bottom: 15px;
 		}
 		nav.sitemap .submenu li:nth-child(1) {
-			padding-top: 15px;
+			/* padding-top: 15px; */
 		}
 		nav.sitemap .subsubmenu li:nth-child(1) {
 			padding-top: 0;
 		}
 		nav.sitemap .subsubmenu li:nth-child(1) a {
-			padding-top: 15px;
+			/* padding-top: 15px; */
 		}
 
 		nav.sitemap .submenu {
 			padding: 0;
-			box-shadow: var(--box-shadow-bottom);
+			/* box-shadow: var(--box-shadow-bottom); */
 		}
 		nav.sitemap .submenu a {
 			background-color: var(--color-white);
@@ -1060,7 +1046,7 @@
 				background-color: var(--color-white);
 			}
 			nav.sitemap .subsubmenu {
-				box-shadow: var(--box-shadow-bottom);
+				/* box-shadow: var(--box-shadow-bottom); */
 			}
 			html:not(.can-touch) nav.sitemap .subsubmenu-trigger:hover + .subsubmenu,
 			html:not(.can-touch) nav.sitemap .subsubmenu-trigger:focus + .subsubmenu  {
