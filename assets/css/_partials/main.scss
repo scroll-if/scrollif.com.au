@@ -872,12 +872,13 @@
 	footer {
 		width: 100%;
 		background-color: var(--color-white);
-		padding:30px;
+		padding:15px;
 		text-align: center;
 	}
 	footer .logo {
 		width: auto;
 		height: 40px;
+		padding:15px;
 		margin-right: 5px;
 		vertical-align: bottom;
 		line-height: 1;
@@ -987,13 +988,13 @@
 			padding-top: 15px;
 		}
 
-		/* footer nav.navbar-static .submenu {
-			visibility: hidden;
-			opacity: 0;
+		footer nav.navbar-static .submenu {
+			visibility: visible;
+			opacity: 1;
 			position: absolute;
 			padding: 0;
 			box-shadow: var(--box-shadow-bottom);
-		} */
+		} 
 		footer nav.navbar-static .submenu a {
 			background-color: var(--color-white);
 		}
@@ -1061,12 +1062,12 @@
 				color: var(--color-dark-grey);
 				background-color: var(--color-white);
 			}
-			/* footer nav.navbar-static .subsubmenu {
-				visibility: hidden;
-				opacity: 0;
+			footer nav.navbar-static .subsubmenu {
+				visibility: visible;
+				opacity: 1;
 				position: absolute;
 				box-shadow: var(--box-shadow-bottom);
-			} */
+			}
 			html:not(.can-touch) footer nav.navbar-static .subsubmenu-trigger:hover + .subsubmenu,
 			html:not(.can-touch) footer nav.navbar-static .subsubmenu-trigger:focus + .subsubmenu  {
 				opacity: 1;
