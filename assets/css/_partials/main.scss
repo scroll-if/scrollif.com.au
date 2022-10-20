@@ -50,11 +50,11 @@
 			background: linear-gradient(var(--color-black),var(--color-black)) center bottom; /*OR bottom right OR bottom left*/
   			background-size: 0% 2px; /*width:0% height:2px*/
   			background-repeat:no-repeat; /* Don't repeat !!*/
-			-webkit-transition: color var(--transition-speed), background-color var(--transition-speed);
-			-moz-transition: color var(--transition-speed), background-color var(--transition-speed);
-			-o-transition: color var(--transition-speed), background-color var(--transition-speed);
-			-ms-transition: color var(--transition-speed), background-color var(--transition-speed);
-			transition: color var(--transition-speed), background-color var(--transition-speed);
+			-webkit-transition: color var(--transition-speed), background var(--transition-speed);
+			-moz-transition: color var(--transition-speed), background var(--transition-speed);
+			-o-transition: color var(--transition-speed), background var(--transition-speed);
+			-ms-transition: color var(--transition-speed), background var(--transition-speed);
+			transition: color var(--transition-speed), background var(--transition-speed);
 		}
 
 
