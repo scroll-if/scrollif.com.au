@@ -47,7 +47,7 @@
   			background-repeat:no-repeat; /* Don't repeat !!*/
 		}
 		nav .submenu a p {
-			background: linear-gradient(var(--color-dark-grey),var(--color-dark-grey)) center bottom; /*OR bottom right OR bottom left*/
+			background: linear-gradient(var(--color-black),var(--color-black)) center bottom; /*OR bottom right OR bottom left*/
   			background-size: 0% 2px; /*width:0% height:2px*/
   			background-repeat:no-repeat; /* Don't repeat !!*/
 		}
@@ -98,6 +98,11 @@
 			font-family: var(--font-primary);
 			font-size: var(--font-m);
 			color: var(--color-dark-grey);
+			-webkit-transition: background var(--transition-speed);
+			-moz-transition: background var(--transition-speed);
+			-o-transition: background var(--transition-speed);
+			-ms-transition: background var(--transition-speed);
+			transition: background var(--transition-speed);
 		}
 		
 	/* NAVBAR STATIC */
