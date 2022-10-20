@@ -360,73 +360,6 @@
 
 
 
-/* FOOTER */
-	footer {
-		padding:15px;
-		text-align: center;
-	}
-	footer .logo {
-		height: auto;
-		width: var(--footer-logo-width);
-		margin-right: 5px;
-		vertical-align: bottom;
-		line-height: 1;
-	}
-	footer .logo-name {
-		color: var(--footer-logo-name-color);
-		font-family: var(--footer-logo-name-font-family);
-		font-size: var(--footer-logo-name-font-size);
-		word-spacing: var(--footer-logo-name-word-spacing);
-		letter-spacing: var(--footer-logo-name-letter-spacing);
-		padding-left: var(--footer-logo-name-letter-spacing);
-		display: inline;
-		vertical-align: bottom;
-		line-height: 1;
-	}
-/* POWERED BY BLAKE DAVIES */
-	#powered-by-blake-davies {
-		width:100%;
-		text-align:center;
-		background-color:rgb(255,255,255);
-	}
-	#powered-by-blake-davies a div.max-width-container {
-		width:100%;
-		max-width: var(--max-width-container);
-		margin-left:auto;
-		margin-right:auto;
-		position:relative;
-		padding:15px;
-	}
-	#powered-by-blake-davies a div.max-width-container .caption {
-		display:block;
-		font-family:'Quicksand';
-		color:rgb(25,27,29);
-		font-size:15px;
-		font-weight:400;
-		margin-top:0;
-		margin-bottom:5px;
-	}
-	#powered-by-blake-davies a div.max-width-container .logo {
-		width:auto;
-		height:30px;
-		padding-right:3.75px;
-	}
-	#powered-by-blake-davies a div.max-width-container .logo-name {
-		display:inline;
-		font-family:'Bebas';
-		color:rgb(25,27,29);
-		font-size:15px;
-		letter-spacing:3.75px;
-	}
-	#powered-by-blake-davies a div.max-width-container .copyright {
-		display:block;
-		font-family:'Quicksand';
-		color:rgb(25,27,29);
-		font-size:12.5px;
-		margin-top:15px;
-		margin-bottom:0;
-	}
-
 		
 		
 
@@ -911,4 +844,52 @@
 			flex-direction: row;
 			justify-content: space-around;
 		}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FOOTER */
+	footer {
+		width: 100%;
+		background-color: var(--color-white);
+		padding:15px;
+		text-align: center;
+	}
+	footer .logo {
+		width: auto;
+		height: 40px;
+		margin-right: 5px;
+		vertical-align: bottom;
+		line-height: 1;
+	}
+	footer .logo-name {
+		color: var(--color-black);
+		font-family: var(--font-primary);
+		font-size: var(--font-l);
+		word-spacing: normal;
+		letter-spacing: 2.5px;
+		padding-left: 2.5px;
+		display: inline;
+		vertical-align: bottom;
+		line-height: 1;
 	}
