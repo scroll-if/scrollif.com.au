@@ -6,5 +6,5 @@ group :jekyll_plugins do
   gem 'remote_include', :git => "https://github.com/scroll-if/scrollif-assets", :branch => "jekyll_plugin--remote_include"
   gem 'include_remote', :git => "https://github.com/scroll-if/scrollif-assets", :branch => "jekyll_plugin--include_remote"
   gem 'liquify', :git => "https://github.com/scroll-if/scrollif-assets", :branch => "jekyll_plugin--liquify"
-  gem 'jekyll-menus', :git => "https://github.com/scroll-if/scrollif-assets", :branch => "jekyll_plugin--page_menus"
+  gem 'page_menus', :git => "https://github.com/scroll-if/scrollif-assets", :branch => "jekyll_plugin--page_menus"
 end
