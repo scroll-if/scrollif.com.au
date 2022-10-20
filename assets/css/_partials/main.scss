@@ -991,7 +991,6 @@
 		footer nav.navbar-static .submenu {
 			visibility: visible;
 			opacity: 1;
-			position: absolute;
 			padding: 0;
 			box-shadow: var(--box-shadow-bottom);
 		} 
@@ -1065,7 +1064,6 @@
 			footer nav.navbar-static .subsubmenu {
 				visibility: visible;
 				opacity: 1;
-				position: absolute;
 				box-shadow: var(--box-shadow-bottom);
 			}
 			html:not(.can-touch) footer nav.navbar-static .subsubmenu-trigger:hover + .subsubmenu,
