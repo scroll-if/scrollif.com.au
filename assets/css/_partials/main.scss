@@ -197,18 +197,18 @@
 				width: 100%;
 			}
 			div.menu-icon span:nth-child(1) {
-				bottom: 0;
+				bottom: 5;
 			}
 			div.menu-icon span:nth-child(2),
 			div.menu-icon span:nth-child(3) {
-				bottom: 12px;
+				bottom: 17px;
 			}
 			div.menu-icon span:nth-child(4) {
-				bottom: 24px;
+				bottom: 29px;
 			}
 			div.menu-icon.open span:nth-child(1),
 			div.menu-icon.open span:nth-child(4) {
-				bottom: 12px;
+				bottom: 17px;
 				width: 0%;
 				right: 50%;
 			}
