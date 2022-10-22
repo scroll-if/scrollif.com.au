@@ -49,7 +49,7 @@
 			width: 100%;
 			white-space: nowrap;
 		}
-		nav a p {
+		nav li a p {
 			margin: 0;
 			padding: 0;
 			display: inline;
@@ -72,7 +72,7 @@
 		html:not(.can-touch) nav a:focus p {
 			background-size: 100% 2px;
 		}
-		nav .submenu {
+		nav ul.submenu {
 			display: flex;
 			flex-direction: column;
 			font-family: var(--font-primary);
@@ -80,8 +80,8 @@
 			color: var(--color-dark-grey);
 			min-width: 100%;
 		}
-		ul.submenu li:hover > a p,
-		ul.submenu li:focus-within > a p {
+		nav .submenu li:hover > a p,
+		nav .submenu li:focus-within > a p {
 			color: var(--color-black);
 		}
 		nav .subsubmenu {
@@ -115,7 +115,7 @@
 			padding-top: 15px;
 			padding-bottom: 15px;
 		}
-		nav.navbar-static .submenu li:nth-child(1) {
+		nav.navbar-static .submenu + li:nth-child(1) {
 			padding-top: 15px;
 		}
 		nav.navbar-static .subsubmenu {
@@ -125,12 +125,9 @@
 			box-shadow: var(--box-shadow-bottom);
 			z-index: 9997;
 		}
-		/* nav.navbar-static .subsubmenu li:nth-child(1) {
+		nav.navbar-static .subsubmenu li:nth-child(1) {
 			padding-top: 0;
-		} */
-		/* nav.navbar-static .subsubmenu li:nth-child(1) a {
-			padding-top: 15px;
-		} */
+		}
 		html:not(.can-touch) nav.navbar-static .submenu-trigger:hover + .submenu,
 		html:not(.can-touch) nav.navbar-static .submenu-trigger:focus + .submenu,
 		html:not(.can-touch) nav.navbar-static .submenu:hover,
@@ -171,15 +168,14 @@
 
 
 	/* NAVBAR ICONS */
-		/* ALL ICONS */
+			body.nojs div.menu-icon {
+				display: none;
+			}
 			div.menu-icon {
 				position: relative;
 				height: 20px;
 				width: 24px;
 				cursor: pointer;
-			}
-			body.nojs div.menu-icon {
-				display: none;
 			}
 			div.menu-icon span {
 				position: absolute;
@@ -195,7 +191,6 @@
 				-ms-transition: 0.5s ease;
 				transition: 0.5s ease;
 			}
-		/* HAMBURGER ICON */
 			div.menu-icon span {
 				right: 0;
 				height: 4px;
@@ -231,6 +226,16 @@
 				-ms-transform: rotate(-135deg);
 				transform: rotate(-135deg);
 			}
+	
+
+
+
+
+
+
+
+
+
 	/* NAVBAR SLIDERS*/
 		nav.navbar-slider {
 			position: absolute;
