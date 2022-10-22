@@ -81,6 +81,9 @@
 		nav ul:focus-within a {
 			outline: none;
 		}
+		nav li {
+			position: relative;
+		}
 		nav li a {
 			display: inline-block;
 			width: 100%;
@@ -92,6 +95,7 @@
 			font-family: var(--font-primary);
 			font-size: var(--font-m);
 			color: var(--color-dark-grey);
+			min-width: 100%;
 		}
 		
 	/* NAVBAR STATIC */
@@ -186,6 +190,7 @@
 		}
 		/* SUBSUBMENU */
 			nav .subsubmenu {
+				display: inline-flex;
 				flex-direction: column;
 				font-family: var(--font-primary);
 				font-size: var(--font-m);
