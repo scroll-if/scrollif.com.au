@@ -1000,9 +1000,7 @@
 
 		/* SUBSUBMENU */
 			nav.sitemap .subsubmenu {
-				opacity: 0;
-				visibility: hidden;
-				display: flex;
+				display: none; /*instead of flex */
 				flex-direction: column;
 				font-family: var(--font-primary);
 				font-size: var(--font-s);
