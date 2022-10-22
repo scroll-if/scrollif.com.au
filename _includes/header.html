@@ -39,30 +39,30 @@
 				<span></span>
 			</div>
 			<nav class="navbar-slider text-center flex flex-col p-15">
-				<ul class="centered-box flex flex-col justify-around flex-grow-1">
-					{% for entry in site.data.navigation.website-pages %}
-						<li>
-							<a href="{{ entry.url }}">{{ entry.page }}</a>
-							{% if entry.subpages[0] %}
-								<ul class="submenu">
-									{% for entry in entry.subpages %}
-										<li>
-											<a href="{{ entry.url }}">{{ entry.page }}</a>
-											{% if entry.subsubpages[0] %}
-												<ul class="subsubmenu">
-													{% for entry in entry.subsubpages %}
-														<li>
-															<a href="{{ entry.url }}">{{ entry.page }}</a>
-														</li>
-													{% endfor %}
-												</ul>
-											{% endif %}
-										</li>
-									{% endfor %}
-								</ul>
-							{% endif %}
-						</li>
-					{% endfor %}
+				<ul class="flex flex-row items-end">
+				{% for item in site.menus.navbar %}
+				  <li {% if item.url == page.url %}class="current-page"{% endif %}>
+				    <a {% if item.children %}class="submenu-trigger"{% endif %} href="{{ item.url }}"><p>{{ item.title }}</p></a>
+				    {% if item.children %}
+				    	<ul class="submenu">
+			    		{% for item in item.children %}
+			    			<li {% if item.url == page.url %}class="current-page"{% endif %}>
+			    				<a {% if item.children %}class="subsubmenu-trigger"{% endif %} href="{{ item.url }}"><p>{{ item.title }}</p></a>
+	    					    {% if item.children %}
+	    					    	<ul class="subsubmenu">
+	    				    		{% for item in item.children %}
+	    				    			<li {% if item.url == page.url %}class="current-page"{% endif %}>
+	    				    				<a href="{{ item.url }}"><p>{{ item.title }}</p></a>
+	    				    			</li>
+	    				    		{% endfor %}
+	    				    		</ul>
+	    				    	{% endif %}
+			    			</li>
+			    		{% endfor %}
+			    		</ul>
+			    	{% endif %}
+				  </li>
+				{% endfor %}
 				</ul>
 			</nav>
 		</div>
