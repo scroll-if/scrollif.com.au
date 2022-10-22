@@ -986,7 +986,7 @@
 			padding-top: 0;
 		}
 		nav.sitemap .subsubmenu a {
-			padding-left: 5px; 
+			padding-left: 20px; 
 		}
 
 		nav.sitemap .submenu {
@@ -998,100 +998,16 @@
 		}
 
 
-
-
-
-
-
-		html:not(.can-touch) nav.sitemap .submenu-trigger:hover + .submenu,
-		html:not(.can-touch) nav.sitemap .submenu-trigger:focus + .submenu  {
-			opacity: 1;
-			visibility: visible;
-			-webkit-transition: opacity var(--transition-speed), visibility var(--transition-speed);
-			-moz-transition: opacity var(--transition-speed), visibility var(--transition-speed);
-			-o-transition: opacity var(--transition-speed), visibility var(--transition-speed);
-			-ms-transition: opacity var(--transition-speed), visibility var(--transition-speed);
-			transition: opacity var(--transition-speed), visibility var(--transition-speed);
-		}
-
-
-
-
-/* THIS DID IT */
-		html:not(.can-touch) nav.sitemap > ul li:hover > ul,
-		html:not(.can-touch) nav.sitemap > ul li:focus-within > ul {
-			opacity: 1;
-			visibility: visible;
-			-webkit-transition: opacity var(--transition-speed), visibility var(--transition-speed);
-			-moz-transition: opacity var(--transition-speed), visibility var(--transition-speed);
-			-o-transition: opacity var(--transition-speed), visibility var(--transition-speed);
-			-ms-transition: opacity var(--transition-speed), visibility var(--transition-speed);
-			transition: opacity var(--transition-speed), visibility var(--transition-speed);
-		}
-
-
-
-
-		html:not(.can-touch) nav.sitemap .submenu:hover,
-		html:not(.can-touch) nav.sitemap .submenu:focus {
-			visibility: visible;
-			opacity: 1;
-			-webkit-transition: opacity var(--transition-speed), visibility var(--transition-speed);
-			-moz-transition: opacity var(--transition-speed), visibility var(--transition-speed);
-			-o-transition: opacity var(--transition-speed), visibility var(--transition-speed);
-			-ms-transition: opacity var(--transition-speed), visibility var(--transition-speed);
-			transition: opacity var(--transition-speed), visibility var(--transition-speed);
-		}
-		html:not(.can-touch) nav.sitemap .submenu:focus-within {
-			opacity: 1;
-			visibility: visible;
-			-webkit-transition: opacity var(--transition-speed), visibility var(--transition-speed);
-			-moz-transition: opacity var(--transition-speed), visibility var(--transition-speed);
-			-o-transition: opacity var(--transition-speed), visibility var(--transition-speed);
-			-ms-transition: opacity var(--transition-speed), visibility var(--transition-speed);
-			transition: opacity var(--transition-speed), visibility var(--transition-speed);
-		}
 		/* SUBSUBMENU */
 			nav.sitemap .subsubmenu {
+				opacity: 0;
+				visibility: hidden;
 				display: flex;
 				flex-direction: column;
 				font-family: var(--font-primary);
 				font-size: var(--font-s);
 				color: var(--color-dark-grey);
 				background-color: var(--color-white);
-			}
-			nav.sitemap .subsubmenu {
-				/* box-shadow: var(--box-shadow-bottom); */
-			}
-			html:not(.can-touch) nav.sitemap .subsubmenu-trigger:hover + .subsubmenu,
-			html:not(.can-touch) nav.sitemap .subsubmenu-trigger:focus + .subsubmenu  {
-				opacity: 1;
-				visibility: visible;
-			-webkit-transition: opacity var(--transition-speed), visibility var(--transition-speed);
-			-moz-transition: opacity var(--transition-speed), visibility var(--transition-speed);
-			-o-transition: opacity var(--transition-speed), visibility var(--transition-speed);
-			-ms-transition: opacity var(--transition-speed), visibility var(--transition-speed);
-			transition: opacity var(--transition-speed), visibility var(--transition-speed);
-			}
-
-			html:not(.can-touch) nav.sitemap .subsubmenu:hover,
-			html:not(.can-touch) nav.sitemap .subsubmenu:focus {
-				visibility: visible;
-				opacity: 1;
-			-webkit-transition: opacity var(--transition-speed), visibility var(--transition-speed);
-			-moz-transition: opacity var(--transition-speed), visibility var(--transition-speed);
-			-o-transition: opacity var(--transition-speed), visibility var(--transition-speed);
-			-ms-transition: opacity var(--transition-speed), visibility var(--transition-speed);
-			transition: opacity var(--transition-speed), visibility var(--transition-speed);
-			}
-			html:not(.can-touch) nav.sitemap .subsubmenu:focus-within {
-				opacity: 1;
-				visibility: visible;
-			-webkit-transition: opacity var(--transition-speed), visibility var(--transition-speed);
-			-moz-transition: opacity var(--transition-speed), visibility var(--transition-speed);
-			-o-transition: opacity var(--transition-speed), visibility var(--transition-speed);
-			-ms-transition: opacity var(--transition-speed), visibility var(--transition-speed);
-			transition: opacity var(--transition-speed), visibility var(--transition-speed);
 			}
 	/* NAVBAR MEDIA QUERIES [STATIC > SLIDER] */
 		@media only screen and (min-width: 1025px) {
