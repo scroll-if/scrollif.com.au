@@ -115,7 +115,7 @@
 			padding-top: 15px;
 			padding-bottom: 15px;
 		}
-		nav.navbar-static .submenu + li:nth-child(1) {
+		nav.navbar-static .submenu > li:nth-child(1) {
 			padding-top: 15px;
 		}
 		nav.navbar-static .subsubmenu {
@@ -173,8 +173,8 @@
 			}
 			div.menu-icon {
 				position: relative;
-				height: 20px;
-				width: 24px;
+				height: 40px;
+				width: 40px;
 				cursor: pointer;
 			}
 			div.menu-icon span {
@@ -193,7 +193,7 @@
 			}
 			div.menu-icon span {
 				right: 0;
-				height: 4px;
+				height: 8px;
 				width: 100%;
 			}
 			div.menu-icon span:nth-child(1) {
@@ -201,14 +201,14 @@
 			}
 			div.menu-icon span:nth-child(2),
 			div.menu-icon span:nth-child(3) {
-				bottom: 8px;
+				bottom: 16px;
 			}
 			div.menu-icon span:nth-child(4) {
-				bottom: 16px;
+				bottom: 32px;
 			}
 			div.menu-icon.open span:nth-child(1),
 			div.menu-icon.open span:nth-child(4) {
-				bottom: 8px;
+				bottom: 16px;
 				width: 0%;
 				right: 50%;
 			}
@@ -244,6 +244,7 @@
 			height: calc(100vh - 70px);
 			width: 100vw;
 			background-color: var(--color-white);
+			opacity: 0.7;
 			visibility: hidden;
 			-webkit-transform: translateX(100%);
 			-moz-transform: translateX(100%);
