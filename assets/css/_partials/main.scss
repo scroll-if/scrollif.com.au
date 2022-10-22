@@ -1051,6 +1051,7 @@
 		}
 		/* SUBSUBMENU */
 			nav.sitemap .subsubmenu {
+				display: flex;
 				flex-direction: column;
 				font-family: var(--font-primary);
 				font-size: var(--font-s);
