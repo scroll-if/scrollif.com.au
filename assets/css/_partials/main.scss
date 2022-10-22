@@ -902,7 +902,7 @@
 	/* ALL NAVBARS */
 		nav.sitemap {
 			font-family: var(--font-primary);
-			font-size: var(--font-m);
+			font-size: var(--font-l);
 			color: var(--color-black);
 			word-spacing: normal;
 			letter-spacing: normal;
@@ -966,8 +966,8 @@
 		}
 		
 		nav.sitemap .submenu a {
-			padding-top: 15px;
-			padding-bottom: 15px;
+			padding-top: 5px;
+			padding-bottom: 5px;
 		}
 		nav.sitemap .submenu li:nth-child(1) {
 			padding-top: 3px;
