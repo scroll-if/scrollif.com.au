@@ -902,7 +902,7 @@
 	/* ALL NAVBARS */
 		nav.sitemap {
 			font-family: var(--font-primary);
-			font-size: var(--font-l);
+			font-size: var(--font-m);
 			color: var(--color-black);
 			word-spacing: normal;
 			letter-spacing: normal;
@@ -938,6 +938,9 @@
 		nav.sitemap ul:focus-within a {
 			outline: none;
 		}
+		nav.sitemap li {
+			text-align: left;
+		}
 		nav.sitemap li a {
 			display: inline-block;
 			width: 100%;
@@ -947,7 +950,7 @@
 			display: flex;
 			flex-direction: column;
 			font-family: var(--font-primary);
-			font-size: var(--font-m);
+			font-size: var(--font-s);
 			color: var(--color-dark-grey);
 		}
 		
