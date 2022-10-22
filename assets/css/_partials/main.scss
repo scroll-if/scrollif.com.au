@@ -941,7 +941,6 @@
 		nav.sitemap li a {
 			display: inline-block;
 			width: 100%;
-			height: 100%;
 			white-space: nowrap;
 		}
 		nav.sitemap .submenu {
@@ -968,7 +967,7 @@
 			padding-bottom: 15px;
 		}
 		nav.sitemap .submenu li:nth-child(1) {
-			/* padding-top: 15px; */
+			padding-top: 3px;
 		}
 		nav.sitemap .subsubmenu li:nth-child(1) {
 			padding-top: 0;
@@ -1044,7 +1043,7 @@
 				display: inline-flex;
 				flex-direction: column;
 				font-family: var(--font-primary);
-				font-size: var(--font-m);
+				font-size: var(--font-s);
 				color: var(--color-dark-grey);
 				background-color: var(--color-white);
 			}
