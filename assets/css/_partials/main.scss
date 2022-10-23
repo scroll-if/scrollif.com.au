@@ -279,13 +279,16 @@
 			padding-right: 15px;
 			padding-left: 15px;
 		}
+		nav.navbar-slider .submenu {
+			font-size: var(--font-s);
+		}
 		nav.navbar-slider .submenu a {
 			background-color: var(--color-white);
 			padding-top: 15px;
 			padding-bottom: 15px;
 		}
 		nav.navbar-slider .submenu > li:nth-child(1) {
-			padding-top: 15px;
+			padding-top: 10px;
 		}
 		nav.navbar-slider .subsubmenu li:nth-child(1) {
 			padding-top: 0;
