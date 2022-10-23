@@ -6,7 +6,7 @@
 				<!--<p class="logo-name">{{ site.title }}</p>-->
 			</a>
 			<nav class="navbar-static">
-				<ul class="flex flex-row items-end">
+				<ul class="menu">
 				{% for item in site.menus.navbar %}
 				  <li {% if item.url == page.url %}class="current-page"{% endif %}>
 				    <a {% if item.children %}class="submenu-trigger"{% endif %} href="{{ item.url }}"><p>{{ item.title }}</p></a>
@@ -38,8 +38,8 @@
 				<span></span>
 				<span></span>
 			</div>
-			<nav class="navbar-slider text-center flex flex-col p-15">
-				<ul class="flex flex-col items-center justify-around">
+			<nav class="navbar-slider">
+				<ul class="menu">
 				{% for item in site.menus.navbar %}
 				  <li {% if item.url == page.url %}class="current-page"{% endif %}>
 				    <a {% if item.children %}class="submenu-trigger"{% endif %} href="{{ item.url }}"><p>{{ item.title }}</p></a>

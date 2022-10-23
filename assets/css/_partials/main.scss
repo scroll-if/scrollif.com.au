@@ -80,11 +80,11 @@
 			color: var(--color-dark-grey);
 			min-width: 100%;
 		}
-		nav .submenu li:hover > a p,
-		nav .submenu li:focus-within > a p {
+		nav ul.submenu li:hover > a p,
+		nav ul.submenu li:focus-within > a p {
 			color: var(--color-black);
 		}
-		nav .subsubmenu {
+		nav ul.subsubmenu {
 			display: inline-flex;
 			flex-direction: column;
 			font-family: var(--font-primary);
@@ -97,6 +97,11 @@
 			display: none;
 			vertical-align: bottom;
 			line-height: 1;
+		}
+		nav.navbar-static ul.menu {
+			display: flex;
+			flex-direction: row;
+			align-items: flex-end;
 		}
 		nav.navbar-static a {
 			padding-right: 15px;
@@ -167,65 +172,65 @@
 
 
 
-	/* NAVBAR ICONS */
-			body.nojs div.menu-icon {
-				display: none;
-			}
-			div.menu-icon {
-				position: relative;
-				height: 30px;
-				width: 36px;
-				cursor: pointer;
-			}
-			div.menu-icon span {
-				position: absolute;
-				background-color: var(--color-black);
-				-webkit-border-radius: 5px;
-				-moz-border-radius: 5px;
-				-o-border-radius: 5px;
-				-ms-border-radius: 5px;
-				border-radius: 5px;
-				-webkit-transition: 0.5s ease;
-				-moz-transition: 0.5s ease;
-				-o-transition: 0.5s ease;
-				-ms-transition: 0.5s ease;
-				transition: 0.5s ease;
-			}
-			div.menu-icon span {
-				right: 0;
-				height: 6px;
-				width: 100%;
-			}
-			div.menu-icon span:nth-child(1) {
-				bottom: 5px;
-			}
-			div.menu-icon span:nth-child(2),
-			div.menu-icon span:nth-child(3) {
-				bottom: 17px;
-			}
-			div.menu-icon span:nth-child(4) {
-				bottom: 29px;
-			}
-			div.menu-icon.open span:nth-child(1),
-			div.menu-icon.open span:nth-child(4) {
-				bottom: 17px;
-				width: 0%;
-				right: 50%;
-			}
-			div.menu-icon.open span:nth-child(2) {
-				-webkit-transform: rotate(135deg);
-				-moz-transform: rotate(135deg);
-				-o-transform: rotate(135deg);
-				-ms-transform: rotate(135deg);
-				transform: rotate(135deg);
-			}
-			div.menu-icon.open span:nth-child(3) {
-				-webkit-transform: rotate(-135deg);
-				-moz-transform: rotate(-135deg);
-				-o-transform: rotate(-135deg);
-				-ms-transform: rotate(-135deg);
-				transform: rotate(-135deg);
-			}
+	/* HAMBURGER ICON */
+		body.nojs div.menu-icon {
+			display: none;
+		}
+		div.menu-icon {
+			position: relative;
+			height: 30px;
+			width: 36px;
+			cursor: pointer;
+		}
+		div.menu-icon span {
+			position: absolute;
+			background-color: var(--color-black);
+			-webkit-border-radius: 5px;
+			-moz-border-radius: 5px;
+			-o-border-radius: 5px;
+			-ms-border-radius: 5px;
+			border-radius: 5px;
+			-webkit-transition: 0.5s ease;
+			-moz-transition: 0.5s ease;
+			-o-transition: 0.5s ease;
+			-ms-transition: 0.5s ease;
+			transition: 0.5s ease;
+		}
+		div.menu-icon span {
+			right: 0;
+			height: 6px;
+			width: 100%;
+		}
+		div.menu-icon span:nth-child(1) {
+			bottom: 5px;
+		}
+		div.menu-icon span:nth-child(2),
+		div.menu-icon span:nth-child(3) {
+			bottom: 17px;
+		}
+		div.menu-icon span:nth-child(4) {
+			bottom: 29px;
+		}
+		div.menu-icon.open span:nth-child(1),
+		div.menu-icon.open span:nth-child(4) {
+			bottom: 17px;
+			width: 0%;
+			right: 50%;
+		}
+		div.menu-icon.open span:nth-child(2) {
+			-webkit-transform: rotate(135deg);
+			-moz-transform: rotate(135deg);
+			-o-transform: rotate(135deg);
+			-ms-transform: rotate(135deg);
+			transform: rotate(135deg);
+		}
+		div.menu-icon.open span:nth-child(3) {
+			-webkit-transform: rotate(-135deg);
+			-moz-transform: rotate(-135deg);
+			-o-transform: rotate(-135deg);
+			-ms-transform: rotate(-135deg);
+			transform: rotate(-135deg);
+		}
 	
 
 
@@ -238,9 +243,14 @@
 
 	/* NAVBAR SLIDERS*/
 		nav.navbar-slider {
+			display: flex;
+			flex-direction: column;
+			text-align: center;
+			padding: 15px;
 			position: absolute;
 			right: -15px;
 			top: 55px;
+			line-height: 1;
 			height: calc(100vh - 70px);
 			width: 40vw;
 			min-width: 220px;
@@ -269,18 +279,17 @@
 
 
 
-
-
-
-
-		nav.navbar-slider {
-			line-height: 1;
-		}
 		nav.navbar-slider a {
 			padding: 2vh 2vh 0.5vh 2vh;
 		}
 		nav.navbar-slider ul {
 			height: 100%;
+		}
+		nav.navbar-slider ul.menu {
+			display: flex;
+			flex-direction: column;
+			text-align: center;
+			justify-content: space-around;
 		}
 		nav.navbar-slider .submenu {
 			font-size: var(--font-s);
@@ -954,7 +963,7 @@
 				background-color: var(--color-white);
 			}
 	/* NAVBAR MEDIA QUERIES [STATIC > SLIDER] */
-		@media only screen and (min-width: 1025px) {
+		@media only screen and (min-width: 	px) {
 			div.menu-icon {
 				display: none;
 			}
