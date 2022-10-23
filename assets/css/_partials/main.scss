@@ -25,6 +25,12 @@
 		vertical-align: bottom;
 		line-height: 1;
 	}
+	header div.max-width-container {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: flex-end;
+	}
 
 
 
