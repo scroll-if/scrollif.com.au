@@ -7,7 +7,7 @@
 	</div>
 	<div class="max-width-container">
 		<nav class="sitemap">
-			<ul class="flex flex-row items-start justify-evenly">
+			<ul class="menu">
 			{% for item in site.menus.navbar %}
 			  <li {% if item.url == page.url %}class="current-page"{% endif %}>
 			    <a {% if item.children %}class="submenu-trigger"{% endif %} href="{{ item.url }}"><p>{{ item.title }}</p></a>
