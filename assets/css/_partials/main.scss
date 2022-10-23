@@ -286,18 +286,28 @@
 			font-size: var(--font-s);
 		}
 		nav.navbar-slider .submenu a {
-			background-color: var(--color-white);
-			padding-top: 15px;
-			padding-bottom: 15px;
+			padding-top: 5px;
+			padding-bottom: 5px;
 		}
+
+
+		
+		
+
+
 		nav.navbar-slider .submenu > li:nth-child(1) {
 			padding-top: 0px;
 		}
 		nav.navbar-slider .subsubmenu li:nth-child(1) {
 			padding-top: 0;
 		}
-		nav.sitemap .subsubmenu {
+
+
+		nav.navbar-slider .subsubmenu {
 			display: none; /*instead of flex */
+		}
+		nav.navbar-slider .subsubmenu a {
+			padding-left: 20px; 
 		}
 
 
@@ -308,8 +318,8 @@
 
 
 		@media screen and (orientation: landscape) {
-			nav.navbar-slider > ul {
-				flex-direction: row;
+			nav.navbar-slider .submenu {
+				display: none; /*instead of flex-direction: row */
 			}
 
 
