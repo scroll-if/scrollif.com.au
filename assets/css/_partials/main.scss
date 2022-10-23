@@ -316,7 +316,7 @@
 
 
 
-		@media only screen and (min-height: 600px) {
+		@media only screen and (max-height: 600px) {
 			nav.navbar-slider .submenu {
 				display: none; /*instead of flex-direction: row */
 			}
