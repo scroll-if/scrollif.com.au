@@ -288,19 +288,10 @@
 		nav.navbar-slider .subsubmenu {
 			font-size: var(--font-s);
 		}
-		/* nav.navbar-slider .submenu a {
-			padding-top: 5px;
-			padding-bottom: 5px;
-		} */
 
 
 		
 		
-
-
-		nav.navbar-slider .submenu > li:nth-child(1) a {
-			padding-top: 0px;
-		}
 
 
 		nav.navbar-slider .subsubmenu {
@@ -322,24 +313,9 @@
 			}
 		}
 		@media screen and (orientation: landscape) {
-			/* nav.navbar-slider {
-			width: 100vw;
-			} */
 			nav.navbar-slider .submenu {
 				display: none; /*instead of flex-direction: row */
 			}
-
-
-			/* nav.navbar-slider {
-				justify-content: center;
-			}
-			nav.navbar-slider ul.centered-box {
-				flex-direction: row;
-				flex-grow: 0;
-			}
-			nav.navbar-slider ul.centered-box li {
-				flex-grow: 1;
-			} */
 		}		
 
 
@@ -885,6 +861,7 @@
 /* NAVBARS */
 	/* ALL NAVBARS */
 		nav.sitemap {
+			display: inline-flex;
 			font-family: var(--font-primary);
 			font-size: var(--font-l);
 			color: var(--color-black);
@@ -905,10 +882,6 @@
 			-ms-transition: color var(--transition-speed), background var(--transition-speed);
 			transition: color var(--transition-speed), background var(--transition-speed);
 		}
-
-		nav.sitemap a {
-			padding-left: normal;
-		}
 		nav.sitemap .current-page p {
 			color: var(--color-primary);
 			background: linear-gradient(var(--color-primary),var(--color-primary)) center bottom; /*OR bottom right OR bottom left*/
@@ -921,6 +894,7 @@
 		}
 		nav.sitemap ul {
 			width: 100%;
+			flex-wrap: wrap;
 		}
 		nav.sitemap ul:focus-within a {
 			outline: none;
@@ -943,7 +917,6 @@
 		
 	/* NAVBAR STATIC */
 		nav.sitemap {
-			display: none;
 			vertical-align: top;
 			line-height: 1;
 			width: 100%;
@@ -990,7 +963,18 @@
 			div.menu-icon {
 				display: none;
 			}
-			nav.sitemap {
-				display: inline-flex;
+		}
+
+
+
+
+		@media only screen and (max-width: 820px) {
+			nav.sitemap li {
+				min-width: 26%;
+			}
+		}
+		@media only screen and (max-width: 820px) {
+			nav.sitemap li {
+				min-width: 34%;
 			}
 		}
