@@ -481,12 +481,7 @@
 				color: var(--color-dark-grey);
 				background-color: var(--color-white);
 			}
-	/* NAVBAR MEDIA QUERIES [STATIC > SLIDER] */
-		@media only screen and (min-width: 	px) {
-			div.menu-icon {
-				display: none;
-			}
-		}
+	
 
 
 
@@ -508,7 +503,7 @@
 			}
 		}
 		@media only screen and (max-width: 460px) {
-			nav.sitemap ul {
+			nav.sitemap ul.menu {
 				justify-content: center;
 				flex-direction: column;
 				align-items: center;
