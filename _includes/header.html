@@ -39,7 +39,7 @@
 				<span></span>
 			</div>
 			<nav class="navbar-slider text-center flex flex-col p-15">
-				<ul class="flex flex-col items-center">
+				<ul class="flex flex-col items-center justify-around">
 				{% for item in site.menus.navbar %}
 				  <li {% if item.url == page.url %}class="current-page"{% endif %}>
 				    <a {% if item.children %}class="submenu-trigger"{% endif %} href="{{ item.url }}"><p>{{ item.title }}</p></a>
