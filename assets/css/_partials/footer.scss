@@ -7,6 +7,7 @@
 	}
 	footer div.max-width-container {
 		display: flex;
+		flex-wrap: wrap;
 		flex-direction: row;
 		justify-content: space-between;
 		align-items: flex-start;
@@ -35,6 +36,25 @@
 		vertical-align: bottom;
 		line-height: 1;
 	}
+/* CONTACT ICONS */
+	footer img.icon {
+		width: auto;
+		height: 20px;
+		margin-right: 5px;
+		vertical-align: bottom;
+		line-height: 1;
+	}
+	footer p.icon-name {
+		color: var(--color-black);
+		font-family: var(--font-primary);
+		font-size: var(--font-l);
+		word-spacing: normal;
+		letter-spacing: 2.5px;
+		padding-left: 2.5px;
+		display: inline;
+		vertical-align: bottom;
+		line-height: 1;
+	}
 /* SITE MAP */
 	/* NAVBAR */
 		/* GLOBAL */
@@ -43,7 +63,6 @@
 				justify-content: center;
 				vertical-align: top;
 				line-height: 1;
-				width: 100%;
 				font-family: var(--font-primary);
 				font-size: var(--font-l);
 				color: var(--color-black);
