@@ -107,6 +107,16 @@
 				padding-right: 15px;
 				padding-left: 15px;
 			}
+			html:not(.can-touch) header nav.navbar-static > ul li:hover > ul,
+			html:not(.can-touch) header nav.navbar-static > ul li:focus-within > ul {
+				opacity: 1;
+				visibility: visible;
+				-webkit-transition: opacity var(--transition-speed), visibility var(--transition-speed);
+				-moz-transition: opacity var(--transition-speed), visibility var(--transition-speed);
+				-o-transition: opacity var(--transition-speed), visibility var(--transition-speed);
+				-ms-transition: opacity var(--transition-speed), visibility var(--transition-speed);
+				transition: opacity var(--transition-speed), visibility var(--transition-speed);
+			}
 		/* MENU */
 			header nav.navbar-static ul.menu {
 				display: flex;
@@ -128,6 +138,19 @@
 			header nav.navbar-static ul.submenu > li:nth-child(1) {
 				padding-top: 15px;
 			}
+			html:not(.can-touch) header nav.navbar-static li.submenu-trigger > a:hover + ul.submenu,
+			html:not(.can-touch) header nav.navbar-static li.submenu-trigger > a:focus + ul.submenu,
+			html:not(.can-touch) header nav.navbar-static ul.submenu:hover,
+			html:not(.can-touch) header nav.navbar-static ul.submenu:focus,
+			html:not(.can-touch) header nav.navbar-static ul.submenu:focus-within {
+				opacity: 1;
+				visibility: visible;
+				-webkit-transition: opacity var(--transition-speed), visibility var(--transition-speed);
+				-moz-transition: opacity var(--transition-speed), visibility var(--transition-speed);
+				-o-transition: opacity var(--transition-speed), visibility var(--transition-speed);
+				-ms-transition: opacity var(--transition-speed), visibility var(--transition-speed);
+				transition: opacity var(--transition-speed), visibility var(--transition-speed);
+			}
 		/* SUBSUBMENU */
 			header nav.navbar-static ul.subsubmenu {
 				visibility: hidden;
@@ -139,18 +162,11 @@
 			header nav.navbar-static ul.subsubmenu li:nth-child(1) {
 				padding-top: 0;
 			}
-			html:not(.can-touch) header nav.navbar-static .submenu-trigger:hover + .submenu,
-			html:not(.can-touch) header nav.navbar-static .submenu-trigger:focus + .submenu,
-			html:not(.can-touch) header nav.navbar-static .submenu:hover,
-			html:not(.can-touch) header nav.navbar-static .submenu:focus,
-			html:not(.can-touch) header nav.navbar-static .submenu:focus-within,
-			html:not(.can-touch) header nav.navbar-static > ul li:hover > ul,
-			html:not(.can-touch) header nav.navbar-static > ul li:focus-within > ul,
-			html:not(.can-touch) header nav.navbar-static .subsubmenu-trigger:hover + .subsubmenu,
-			html:not(.can-touch) header nav.navbar-static .subsubmenu-trigger:focus + .subsubmenu,
-			html:not(.can-touch) header nav.navbar-static .subsubmenu:hover,
-			html:not(.can-touch) header nav.navbar-static .subsubmenu:focus,
-			html:not(.can-touch) header nav.navbar-static .subsubmenu:focus-within {
+			html:not(.can-touch) header nav.navbar-static a.subsubmenu-trigger:hover + ul.subsubmenu,
+			html:not(.can-touch) header nav.navbar-static a.subsubmenu-trigger:focus + ul.subsubmenu,
+			html:not(.can-touch) header nav.navbar-static ul.subsubmenu:hover,
+			html:not(.can-touch) header nav.navbar-static ul.subsubmenu:focus,
+			html:not(.can-touch) header nav.navbar-static ul.subsubmenu:focus-within {
 				opacity: 1;
 				visibility: visible;
 				-webkit-transition: opacity var(--transition-speed), visibility var(--transition-speed);
