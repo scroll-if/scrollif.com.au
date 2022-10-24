@@ -43,9 +43,6 @@
 				text-transform: uppercase;
 				line-height: 1;
 			}
-			header nav ul {
-				background-color: var(--color-white);
-			}
 			header nav p {
 				margin: 0;
 				padding: 0;
@@ -74,6 +71,7 @@
 			}
 			header nav li {
 				position: relative;
+				background-color: var(--color-white);
 			}
 			header nav a {
 				display: inline-block;
