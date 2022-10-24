@@ -72,14 +72,14 @@
 			}
 			footer nav.sitemap li {
 			  display: none;
+			  text-align: center;
+			  padding: 10px 0;
 			}
 			footer nav.sitemap li.submenu-trigger,
 			footer nav.sitemap li.submenu-trigger li,
 			footer nav.sitemap li.subsubmenu-trigger,
 			footer nav.sitemap li.subsubmenu-trigger li  {
 			  display: list-item;
-			  text-align: center;
-			  padding: 10px 0;
 			}
 			footer nav.sitemap a {
 				display: inline-block;
