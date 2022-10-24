@@ -64,15 +64,12 @@
 			html:not(.can-touch) footer nav.sitemap a:focus p {
 				background-size: 100% 2px; /*width:100% height:2px*/
 			}
-			footer nav.sitemap ul {
-				width: 100%;
-			}
 			footer nav.sitemap ul:focus-within a {
 				outline: none;
 			}
 			footer nav.sitemap li {
 			  display: none;
-			  text-align: center;
+			  text-align: left;
 			  padding: 10px 0;
 			}
 			footer nav.sitemap li.submenu-trigger,
@@ -92,7 +89,7 @@
 			footer nav.sitemap ul.menu {
 				display: flex;
 				flex-direction: column;
-				align-items: center;
+				align-items: flex-start;
 				justify-content: center;
 				flex-wrap: wrap;
 			}
@@ -132,7 +129,7 @@
 				color: var(--color-dark-grey);
 			}
 /* MEDIA QUERIES */
-	@media only screen and (min-width: 460px) {
+	/* @media only screen and (min-width: 460px) {
 		footer nav.sitemap ul.menu {
 			flex-direction: row;
 			align-items: flex-start;
@@ -154,4 +151,4 @@
 		footer nav.sitemap li {
 			min-width: 0%;
 		}
-	}
+	} */
