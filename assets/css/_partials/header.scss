@@ -230,10 +230,11 @@
 	/* NAVBAR SLIDER */	
 		/* GLOBAL */
 			header nav.navbar-slider {
-				display: flex;
-				flex-direction: column;
-				text-align: center;
-				padding: 15px;
+			    display: inline-flex;
+			    flex-direction: row;
+			    justify-content: left;
+			    text-align: left;
+				padding: 0 15px 15px 30px;
 				position: absolute;
 				right: -15px;
 				top: 55px;
@@ -272,7 +273,6 @@
 			header nav.navbar-slider ul.menu {
 				display: flex;
 				flex-direction: column;
-				text-align: center;
 				justify-content: space-evenly;
 			}
 		/* SUBMENU */

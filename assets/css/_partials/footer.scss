@@ -70,7 +70,7 @@
 			}
 			footer nav.sitemap li {
 			  display: none;
-			  text-align: center;
+			  text-align: left;
 			  padding: 10px 0;
 			}
 			footer nav.sitemap li.submenu-trigger,
@@ -89,7 +89,7 @@
 		/* MENU */
 			footer nav.sitemap ul.menu {
 				display: flex;
-				flex-direction: column;
+				flex-direction: row;
 				flex-wrap: wrap;
 			}
 		/* SUBMENU */
@@ -129,11 +129,11 @@
 			}
 /* MEDIA QUERIES */
 	@media only screen and (min-width: 460px) {
-		footer nav.sitemap ul.menu {
+		/* footer nav.sitemap ul.menu {
 			flex-direction: row;
 			align-items: flex-start;
 		}
-		/*	footer nav.sitemap li {
+		footer nav.sitemap li {
 			min-width: 41%;
 			text-align: left;
 		} 
