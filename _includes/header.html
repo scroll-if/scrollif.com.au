@@ -7,7 +7,7 @@
 		<nav class="navbar-static">
 			<ul class="menu">
 			{% for item in site.menus.navbar %}
-			  <li {% if item.url == page.url %}class="current-page"{% endif %}>
+			  <li class="{% if item.url == page.url %}current-page{% endif %}">
 			    <a {% if item.children %}class="submenu-trigger"{% endif %} href="{{ item.url }}"><p>{{ item.title }}</p></a>
 			    {% if item.children %}
 			    	<ul class="submenu">
