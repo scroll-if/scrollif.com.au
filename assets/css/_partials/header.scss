@@ -103,9 +103,6 @@
 				vertical-align: bottom;
 			}
 			header nav.navbar-static ul {
-				visibility: hidden;
-				opacity: 0;
-				position: absolute;
 				box-shadow: var(--box-shadow-bottom);
 			}
 			header nav.navbar-static a {
@@ -120,6 +117,9 @@
 			}
 		/* SUBMENU */
 			header nav.navbar-static ul.submenu {
+				visibility: hidden;
+				opacity: 0;
+				position: absolute;
 				z-index: 9996;
 			}
 			header nav.navbar-static ul.submenu a {
@@ -131,6 +131,9 @@
 			}
 		/* SUBSUBMENU */
 			header nav.navbar-static ul.subsubmenu {
+				visibility: hidden;
+				opacity: 0;
+				position: absolute;
 				z-index: 9997;
 			}
 			header nav.navbar-static ul.subsubmenu li:nth-child(1) {
@@ -284,11 +287,6 @@
 		}
 	}
 	@media only screen and (max-height: 600px) {
-		header nav.navbar-slider ul.submenu {
-			display: none; /*instead of flex-direction: row */
-		}
-	}
-	@media screen and (orientation: landscape) {
 		header nav.navbar-slider ul.submenu {
 			display: none; /*instead of flex-direction: row */
 		}
