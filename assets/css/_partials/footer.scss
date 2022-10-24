@@ -37,6 +37,10 @@
 		line-height: 1;
 	}
 /* CONTACT ICONS */
+	div.icon-container {
+		display: flex;
+    	flex-direction: row;
+	}
 	footer img.icon {
 		width: auto;
 		height: 20px;
@@ -45,12 +49,10 @@
 		line-height: 1;
 	}
 	footer p.icon-name {
-		color: var(--color-black);
-		font-family: var(--font-primary);
-		font-size: var(--font-l);
-		word-spacing: normal;
-		letter-spacing: 2.5px;
-		padding-left: 2.5px;
+		color: var(--color-primary);
+		font-family: var(--font-secondary);
+		font-weight: 800;
+		font-size: var(--font-m);
 		display: inline;
 		vertical-align: bottom;
 		line-height: 1;

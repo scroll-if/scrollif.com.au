@@ -5,19 +5,21 @@
 				<img class="logo" src="{{ site.url }}/assets/images/logo_{{ site.title | replace: ' ', '_' | downcase }}.png" alt="{{ site.title }} Logo"/>
 				<!--<p class="logo-name">{{ site.title }}</p>-->
 			</a>
-			<a href="{{ site.url }}">
-				<img class="icon" src="{{ site.url }}/assets/images/icon_website.svg" alt="{{ site.title }} Website"/>
-				<!--<p class="icon-name">{{ site.url }}</p>-->
-				<p class="icon-name">www.scrollif.com.au</p>
-			</a>
-			<a href="{{ site.url }}">
-				<img class="icon" src="{{ site.url }}/assets/images/icon_phone.svg" alt="{{ site.title }} Phone"/>
-				<p class="icon-name">+61 0475 065 444</p>
-			</a>
-			<a href="{{ site.url }}">
-				<img class="icon" src="{{ site.url }}/assets/images/icon_email.svg" alt="{{ site.title }} Email"/>
-				<p class="icon-name">contact@scrollif.com.au</p>
-			</a>
+			<div class="icon-container">
+				<a href="{{ site.url }}">
+					<img class="icon" src="{{ site.url }}/assets/images/icon_website.svg" alt="{{ site.title }} Website"/>
+					<!--<p class="icon-name">{{ site.url }}</p>-->
+					<p class="icon-name">www.scrollif.com.au</p>
+				</a>
+				<a href="{{ site.url }}">
+					<img class="icon" src="{{ site.url }}/assets/images/icon_phone.svg" alt="{{ site.title }} Phone"/>
+					<p class="icon-name">+61 0475 065 444</p>
+				</a>
+				<a href="{{ site.url }}">
+					<img class="icon" src="{{ site.url }}/assets/images/icon_email.svg" alt="{{ site.title }} Email"/>
+					<p class="icon-name">contact@scrollif.com.au</p>
+				</a>
+			</div>
 		</div>
 		<nav class="sitemap">
 			<ul class="menu">
