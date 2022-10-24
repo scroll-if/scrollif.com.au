@@ -21,7 +21,7 @@
 	footer img.logo {
 		width: auto;
 		height: 40px;
-		margin-right: 5px;
+		margin: 0 15px 25px 0;
 		vertical-align: bottom;
 		line-height: 1;
 	}
@@ -39,7 +39,11 @@
 /* CONTACT ICONS */
 	div.icon-container {
 		display: flex;
-    	flex-direction: row;
+    	flex-direction: column;
+    	align-items: start;
+	}
+	div.icon-container a {
+		margin: 0 0 10px;
 	}
 	footer img.icon {
 		width: auto;
@@ -54,7 +58,7 @@
 		font-weight: 800;
 		font-size: var(--font-m);
 		display: inline;
-		vertical-align: bottom;
+		vertical-align: top;
 		line-height: 1;
 	}
 /* SITE MAP */
