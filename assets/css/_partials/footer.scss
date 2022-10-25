@@ -213,19 +213,18 @@ footer div.container {
 	footer div.socials-container {
 		display: flex;
 		flex-direction: row;
-		justify-content: space-evenly;
+		justify-content: space-between;
 		align-items: start;
 		flex-wrap: wrap;
 		width: 100%;
 		max-width: 450px;
+   		padding: 0 12px;
 		margin-top: 15px;
-	}
-	footer div.socials-container a {
-		margin: 12px;
 	}
 	footer div.socials-container img.icon {
 		width: auto;
-		height: 40px;
+		height: 12vw;
+    	max-height: 40px;
 		padding: 3px;
 		-webkit-transition: padding var(--transition-speed);
 		-moz-transition: padding var(--transition-speed);
