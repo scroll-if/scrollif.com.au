@@ -227,6 +227,24 @@ header div.max-width-container {
 			-ms-transform: rotate(-135deg);
 			transform: rotate(-135deg);
 		}
+	/* SCREEN BLACK OUT */
+		div.black-out {
+			position: absolute;
+			right: -15px;
+			top: 55px;
+			height: calc(100vh - 70px);
+			width: 100vw;
+			background-color: var(--color-black);
+			opacity: 0;
+			-webkit-transition: opacity 0.5s linear;
+			-moz-transition: opacity 0.5s linear;
+			-o-transition: opacity 0.5s linear;
+			-ms-transition: opacity 0.5s linear;
+			transition: opacity 0.5s linear;
+		}
+		div.black-out.open {
+			opacity: 0.8;
+		}
 	/* NAVBAR SLIDER */	
 		/* GLOBAL */
 			header nav.navbar-slider {
