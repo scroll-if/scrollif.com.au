@@ -1,23 +1,26 @@
 <footer>
 	<div class="max-width-container">
 		<div class="container">
-			<a href="{{ site.url }}">
-				<img class="logo" src="{{ site.url }}/assets/images/logo_{{ site.title | replace: ' ', '_' | downcase }}.png" alt="{{ site.title }} Logo"/>
+			<div class="logo-container">
+				<a href="{{ site.url }}">
+					<img class="logo" src="{{ site.url }}/assets/images/logo_{{ site.title | replace: ' ', '_' | downcase }}.png" alt="{{ site.title }} Logo"/>
 				<!--<p class="logo-name">{{ site.title }}</p>-->
-			</a>
+				</a>
+				<p class="tagline">Digital <span>Possiblities</span></p>
+			</div>
 			<div class="icon-container">
-				<a href="{{ site.url }}">
-					<img class="icon" src="{{ site.url }}/assets/images/icon_website.svg" alt="{{ site.title }} Website"/>
+				<a href="{{ site.url }}" target="_blank">
+					<img class="icon" src="{{ site.url }}/assets/images/icon_website.svg" alt="Visit {{ site.website }}"/>
 					<!--<p class="icon-name">{{ site.url }}</p>-->
-					<p class="icon-name">www.scrollif.com.au</p>
+					<p class="icon-name">{{ site.website }}</p>
 				</a>
-				<a href="{{ site.url }}">
-					<img class="icon" src="{{ site.url }}/assets/images/icon_phone.svg" alt="{{ site.title }} Phone"/>
-					<p class="icon-name">+61 0475 065 444</p>
+				<a href="tel:{{ site.phone }}">
+					<img class="icon" src="{{ site.url }}/assets/images/icon_phone.svg" alt="Call {{ site.phone }}"/>
+					<p class="icon-name">{{ site.phone }}</p>
 				</a>
-				<a href="{{ site.url }}">
-					<img class="icon" src="{{ site.url }}/assets/images/icon_email.svg" alt="{{ site.title }} Email"/>
-					<p class="icon-name">contact@scrollif.com.au</p>
+				<a href="mailto:{{ site.email }}">
+					<img class="icon" src="{{ site.url }}/assets/images/icon_email.svg" alt="Email {{ site.email }}"/>
+					<p class="icon-name">{{ site.email }}</p>
 				</a>
 			</div>
 		</div>
