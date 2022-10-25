@@ -22,14 +22,16 @@ footer div.container {
 		display: flex;
 		flex-direction: column;
 	}
-	footer img.logo {
+	footer div.logo-container a {
+	  	margin: 0 25px 0 0;
+	}
+	footer div.logo-container img.logo {
 		width: auto;
 		height: 40px;
-		margin: 0 25px 0 0;
 		vertical-align: bottom;
 		line-height: 1;
 	}
-	footer p.logo-name {
+	footer div.logo-container p.logo-name {
 		color: var(--color-black);
 		font-family: var(--font-primary);
 		font-size: var(--font-l);
@@ -40,11 +42,11 @@ footer div.container {
 		vertical-align: bottom;
 		line-height: 1;
 	}
-	footer span.tagline {
+	footer div.logo-container span.tagline {
 	  	text-align: left;
 	  	margin: 10px 0 20px;
 	}
-	footer span.tagline code {
+	footer div.logo-container span.tagline code {
 	  	background: var(--color-primary);
 	  	opacity: 1;
 	  	color: var(--color-black);
@@ -52,24 +54,24 @@ footer div.container {
 	  	padding: 2px;
 	}
 /* CONTACT ICONS */
-	div.icon-container {
+	footer div.contact-container {
 		display: flex;
     	flex-direction: column;
     	align-items: start;
   		flex-wrap: nowrap;
 	}
-	div.icon-container a {
+	footer div.contact-container a {
 		margin: 0 0 10px;
   		white-space: nowrap;
 	}
-	footer img.icon {
+	footer div.contact-container img.icon {
 		width: auto;
 		height: 20px;
 		margin-right: 5px;
 		vertical-align: bottom;
 		line-height: 1;
 	}
-	footer p.icon-name {
+	footer div.contact-container p.icon-name {
 		color: var(--color-primary);
 		font-family: var(--font-secondary);
 		font-weight: 800;
@@ -77,6 +79,18 @@ footer div.container {
 		display: inline;
 		vertical-align: top;
 		line-height: 1;
+	}
+/* SOCIAL ICONS */
+	footer div.socials-container {
+		display: flex;
+    	flex-direction: row;
+    	justify-content: space-evenly;
+    	align-items: start;
+  		flex-wrap: nowrap;
+	}
+	footer div.socials-container img.icon {
+		width: auto;
+		height: 40px;
 	}
 /* SITE MAP */
 	/* NAVBAR */
