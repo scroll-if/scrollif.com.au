@@ -48,10 +48,18 @@ footer div.container {
 	}
 	footer div.logo-container span.tagline code {
 	  	background: var(--color-primary);
-	  	opacity: 1;
-	  	color: var(--color-black);
 	  	font-size: var(--font-s);
-	  	padding: 2px;
+  		padding: 2px 4px 2px 2px;
+	}
+	footer div.logo-container span.tagline code span {
+	    animation: text-cursor 1s;
+	    animation-iteration-count: infinite;
+	}
+	@keyframes text-cursor {
+	    0% { opacity: 0; }
+	    49% { opacity: 0; }
+	    51% { opacity: 1; }
+	    100% { opacity: 1; }
 	}
 /* CONTACT ICONS */
 	footer div.contact-container {
@@ -67,9 +75,18 @@ footer div.container {
 	footer div.contact-container img.icon {
 		width: 20px;
   		height: auto;
-		margin-right: 5px;
+   		margin-right: 3px;
+    	padding: 2px;
 		vertical-align: bottom;
 		line-height: 1;
+		-webkit-transition: padding var(--transition-speed);
+		-moz-transition: padding var(--transition-speed);
+		-o-transition: padding var(--transition-speed);
+		-ms-transition: padding var(--transition-speed);
+		transition: padding var(--transition-speed);
+	}
+	footer div.contact-container a:hover > img.icon {
+		padding: 0;
 	}
 	footer div.contact-container p.icon-name {
 		color: var(--color-primary);
@@ -79,18 +96,18 @@ footer div.container {
 		display: inline;
 		vertical-align: top;
 		line-height: 1;
+		background: linear-gradient(var(--color-primary),var(--color-primary)) center bottom;
+		background-size: 0% 1px;
+		background-repeat:no-repeat;
+		-webkit-transition: background var(--transition-speed);
+		-moz-transition: background var(--transition-speed);
+		-o-transition: background var(--transition-speed);
+		-ms-transition: background var(--transition-speed);
+		transition: background var(--transition-speed);
 	}
-/* SOCIAL ICONS */
-	footer div.socials-container {
-		display: flex;
-    	flex-direction: row;
-    	justify-content: space-evenly;
-    	align-items: start;
-  		flex-wrap: nowrap;
-	}
-	footer div.socials-container img.icon {
-		width: auto;
-		height: 40px;
+	html:not(.can-touch) footer div.contact-container a:hover p, 
+	html:not(.can-touch) footer div.contact-container a:focus p {
+		background-size: 100% 1px;
 	}
 /* SITE MAP */
 	/* NAVBAR */
@@ -110,9 +127,9 @@ footer div.container {
 				margin: 0;
 				padding: 0;
 				display: inline;
-				background: linear-gradient(var(--color-black),var(--color-black)) center bottom; /*OR bottom right OR bottom left*/
-				background-size: 0% 2px; /*width:0% height:2px*/
-				background-repeat:no-repeat; /* Don't repeat !!*/
+				background: linear-gradient(var(--color-black),var(--color-black)) center bottom;
+				background-size: 0% 2px;
+				background-repeat:no-repeat;
 				-webkit-transition: color var(--transition-speed), background var(--transition-speed);
 				-moz-transition: color var(--transition-speed), background var(--transition-speed);
 				-o-transition: color var(--transition-speed), background var(--transition-speed);
@@ -121,13 +138,13 @@ footer div.container {
 			}
 			footer nav.sitemap li.current-page p {
 				color: var(--color-primary);
-				background: linear-gradient(var(--color-primary),var(--color-primary)) center bottom; /*OR bottom right OR bottom left*/
-				background-size: 0% 2px; /*width:0% height:2px*/
-				background-repeat:no-repeat; /* Don't repeat !!*/
+				background: linear-gradient(var(--color-primary),var(--color-primary)) center bottom;
+				background-size: 0% 2px;
+				background-repeat:no-repeat;
 			}
 			html:not(.can-touch) footer nav.sitemap a:hover p, 
 			html:not(.can-touch) footer nav.sitemap a:focus p {
-				background-size: 100% 2px; /*width:100% height:2px*/
+				background-size: 100% 2px;
 			}
 			footer nav.sitemap ul:focus-within a {
 				outline: none;
@@ -191,27 +208,30 @@ footer div.container {
 				font-size: var(--font-s);
 				color: var(--color-dark-grey);
 			}
-/* MEDIA QUERIES */
-	@media only screen and (min-width: 460px) {
-		/* footer nav.sitemap ul.menu {
-			flex-direction: row;
-			align-items: flex-start;
-		}
-		footer nav.sitemap li {
-			min-width: 41%;
-			text-align: left;
-		} 
+/* SOCIAL ICONS */
+	footer div.socials-container {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		align-items: start;
+		flex-wrap: wrap;
+		width: 100%;
+		max-width: 450px;
+		margin-top: 15px;
 	}
-	@media only screen and (min-width: 660px) {
-		footer nav.sitemap li {
-			min-width: 26%;
-		}
+	footer div.socials-container a {
+		margin: 12px;
 	}
-	@media only screen and (min-width: 820px) {
-		footer nav.sitemap ul.menu {
-			justify-content: space-evenly;
-		}
-		footer nav.sitemap li {
-			min-width: 0%;
-		} */
+	footer div.socials-container img.icon {
+		width: auto;
+		height: 40px;
+		padding: 3px;
+		-webkit-transition: padding var(--transition-speed);
+		-moz-transition: padding var(--transition-speed);
+		-o-transition: padding var(--transition-speed);
+		-ms-transition: padding var(--transition-speed);
+		transition: padding var(--transition-speed);
+	}
+	footer div.socials-container a:hover > img.icon {
+		padding: 0;
 	}
