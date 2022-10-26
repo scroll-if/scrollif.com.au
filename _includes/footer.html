@@ -1,25 +1,44 @@
 <footer>
 	<div class="max-width-container">
-		<a href="{{ site.url }}">
-			<img class="logo" src="{{ site.url }}/assets/images/logo_{{ site.title | replace: ' ', '_' | downcase }}.png" alt="{{ site.title }} Logo"/>
-			<!--<p class="logo-name">{{ site.title }}</p>-->
-		</a>
-	</div>
-	<div class="max-width-container">
+		<div class="container">
+			<div class="logo-container">
+				<a href="{{ site.url }}">
+					<img class="logo" src="{{ site.url }}/assets/images/logo_{{ site.title | replace: ' ', '_' | downcase }}.png" alt="{{ site.title }} Logo"/>
+				<!--<p class="logo-name">{{ site.title }}</p>-->
+				</a>
+				<span class="tagline">
+					<code>... digital possiblities<span>|</span></code>
+				</span>
+			</div>
+			<div class="contact-container">
+				<a href="{{ site.url }}" target="_blank">
+					<img class="icon" src="{{ site.url }}/assets/images/icon_website.svg" alt="Visit {{ site.website }}"/>
+					<p class="icon-name">{{ site.website }}</p>
+				</a>
+				<a href="tel:{{ site.phone }}">
+					<img class="icon" src="{{ site.url }}/assets/images/icon_phone.svg" alt="Call {{ site.phone }}"/>
+					<p class="icon-name">{{ site.phone }}</p>
+				</a>
+				<a href="mailto:{{ site.email }}">
+					<img class="icon" src="{{ site.url }}/assets/images/icon_email.svg" alt="Email {{ site.email }}"/>
+					<p class="icon-name">{{ site.email }}</p>
+				</a>
+			</div>
+		</div>
 		<nav class="sitemap">
 			<ul class="menu">
 			{% for item in site.menus.navbar %}
-			  <li {% if item.url == page.url %}class="current-page"{% endif %}>
-			    <a {% if item.children %}class="submenu-trigger"{% endif %} href="{{ item.url }}"><p>{{ item.title }}</p></a>
+			  <li class="{% if item.url == page.url %}current-page{% endif %} {% if item.children %}submenu-trigger{% endif %}">
+			    <a href="{{ item.url }}"><p>{{ item.title }}</p></a>
 			    {% if item.children %}
 			    	<ul class="submenu">
 		    		{% for item in item.children %}
-		    			<li {% if item.url == page.url %}class="current-page"{% endif %}>
-		    				<a {% if item.children %}class="subsubmenu-trigger"{% endif %} href="{{ item.url }}"><p>{{ item.title }}</p></a>
+		    			<li class="{% if item.url == page.url %}current-page{% endif %} {% if item.children %}subsubmenu-trigger{% endif %}">
+		    				<a href="{{ item.url }}"><p>{{ item.title }}</p></a>
     					    {% if item.children %}
     					    	<ul class="subsubmenu">
     				    		{% for item in item.children %}
-    				    			<li {% if item.url == page.url %}class="current-page"{% endif %}>
+    				    			<li class="{% if item.url == page.url %}current-page{% endif %}">
     				    				<a href="{{ item.url }}"><p>{{ item.title }}</p></a>
     				    			</li>
     				    		{% endfor %}
@@ -33,5 +52,32 @@
 			{% endfor %}
 			</ul>
 		</nav>
+	</div>
+	<div class="max-width-container">
+		<div class="socials-container">
+			<a href="https://www.facebook.com/{{ site.facebook }}" target="_blank">
+				<img class="icon" src="{{ site.url }}/assets/images/icon_facebook.svg" alt="facebook.com/{{ site.facebook }}"/>
+			</a>
+			<a href="https://www.linkedin.com/company/{{ site.linkedin }}" target="_blank">
+				<img class="icon" src="{{ site.url }}/assets/images/icon_linkedin.svg" alt="linkedin.com/company/{{ site.linkedin }}"/>
+			</a>
+			<a href="https://www.instagram.com/{{ site.instagram }}" target="_blank">
+				<img class="icon" src="{{ site.url }}/assets/images/icon_instagram.svg" alt="instagram.com/{{ site.instagram }}"/>
+			</a>
+			<a href="https://twitter.com/{{ site.twitter }}" target="_blank">
+				<img class="icon" src="{{ site.url }}/assets/images/icon_twitter.svg" alt="twitter.com/{{ site.twitter }}"/>
+			</a>
+			<a href="https://www.pinterest.com.au/{{ site.pinterest }}" target="_blank">
+				<img class="icon" src="{{ site.url }}/assets/images/icon_pinterest.svg" alt="pinterest.com.au/{{ site.pinterest }}"/>
+			</a>
+			<a href="https://www.youtube.com/channel/{{ site.youtube }}" target="_blank">
+				<img class="icon" src="{{ site.url }}/assets/images/icon_youtube.svg" alt="youtube.com/channel/{{ site.youtube }}"/>
+			</a>
+		</div>
+		<div class="legal-container">
+			<p>
+				<a href="{{ site.url }}/terms" target="_blank">Terms & Conditions</a>&nbsp; &nbsp;|&nbsp; &nbsp;<a href="{{ site.url }}/privacy" target="_blank">Privacy Policy</a>
+			</p>
+		</div>
 	</div>
 </footer>

@@ -7,17 +7,17 @@
 		<nav class="navbar-static">
 			<ul class="menu">
 			{% for item in site.menus.navbar %}
-			  <li {% if item.url == page.url %}class="current-page"{% endif %}>
-			    <a {% if item.children %}class="submenu-trigger"{% endif %} href="{{ item.url }}"><p>{{ item.title }}</p></a>
+			  <li class="{% if item.url == page.url %}current-page{% endif %} {% if item.children %}submenu-trigger{% endif %}">
+			    <a href="{{ item.url }}"><p>{{ item.title }}</p></a>
 			    {% if item.children %}
 			    	<ul class="submenu">
 		    		{% for item in item.children %}
-		    			<li {% if item.url == page.url %}class="current-page"{% endif %}>
-		    				<a {% if item.children %}class="subsubmenu-trigger"{% endif %} href="{{ item.url }}"><p>{{ item.title }}</p></a>
+		    			<li class="{% if item.url == page.url %}current-page{% endif %} {% if item.children %}subsubmenu-trigger{% endif %}">
+		    				<a href="{{ item.url }}"><p>{{ item.title }}</p></a>
     					    {% if item.children %}
     					    	<ul class="subsubmenu">
     				    		{% for item in item.children %}
-    				    			<li {% if item.url == page.url %}class="current-page"{% endif %}>
+    				    			<li class="{% if item.url == page.url %}current-page{% endif %}">
     				    				<a href="{{ item.url }}"><p>{{ item.title }}</p></a>
     				    			</li>
     				    		{% endfor %}
@@ -37,20 +37,22 @@
 			<span></span>
 			<span></span>
 		</div>
+		<div class="black-out">
+		</div>
 		<nav class="navbar-slider">
 			<ul class="menu">
 			{% for item in site.menus.navbar %}
-			  <li {% if item.url == page.url %}class="current-page"{% endif %}>
-			    <a {% if item.children %}class="submenu-trigger"{% endif %} href="{{ item.url }}"><p>{{ item.title }}</p></a>
+			  <li class="{% if item.url == page.url %}current-page{% endif %} {% if item.children %}submenu-trigger{% endif %}">
+			    <a href="{{ item.url }}"><p>{{ item.title }}</p></a>
 			    {% if item.children %}
 			    	<ul class="submenu">
 		    		{% for item in item.children %}
-		    			<li {% if item.url == page.url %}class="current-page"{% endif %}>
-		    				<a {% if item.children %}class="subsubmenu-trigger"{% endif %} href="{{ item.url }}"><p>{{ item.title }}</p></a>
+		    			<li class="{% if item.url == page.url %}current-page{% endif %} {% if item.children %}subsubmenu-trigger{% endif %}">
+		    				<a href="{{ item.url }}"><p>{{ item.title }}</p></a>
     					    {% if item.children %}
     					    	<ul class="subsubmenu">
     				    		{% for item in item.children %}
-    				    			<li {% if item.url == page.url %}class="current-page"{% endif %}>
+    				    			<li class="{% if item.url == page.url %}current-page{% endif %}">
     				    				<a href="{{ item.url }}"><p>{{ item.title }}</p></a>
     				    			</li>
     				    		{% endfor %}
