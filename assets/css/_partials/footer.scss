@@ -71,8 +71,12 @@ footer div.container {
   		flex-wrap: nowrap;
 	}
 	footer div.contact-container a {
-		margin: 0 0 10px;
-  		white-space: nowrap;
+	    margin: 10px 0 0px;
+	    white-space: nowrap;
+	}
+
+	footer div.contact-container a:nth-child(1) {
+	    margin: 0;
 	}
 	footer div.contact-container img.icon {
 		width: 20px;
@@ -244,20 +248,22 @@ footer div.container {
 		align-items: start;
 		flex-wrap: wrap;
 		width: 100%;
-		max-width: 450px;
+		max-width: 250px;
    		padding: 0 15px;
 		margin-top: 15px;
 	}
 	footer div.legal-container p {
-		color: var(--color-primary);
+		color: var(--color-black);
 		font-family: var(--font-secondary);
 		font-weight: 800;
 		font-size: var(--font-s);
 		display: inline;
 		vertical-align: top;
 		line-height: 1;
+		margin: 0;
 	}
 	footer div.legal-container a {
+		color: var(--color-primary);
 		background: linear-gradient(var(--color-primary),var(--color-primary)) center bottom;
 		background-size: 0% 1px;
 		background-repeat:no-repeat;
