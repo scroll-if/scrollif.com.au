@@ -236,3 +236,32 @@ footer div.container {
 	footer div.socials-container a:hover > img.icon {
 		padding: 0;
 	}
+/* LEGAL LINKS */
+	footer div.legal-container {
+		width: 100%;
+		text-align: center;
+		margin: 15px 0;
+	}
+	footer div.legal-container p {
+		color: var(--color-primary);
+		font-family: var(--font-secondary);
+		font-weight: 800;
+		font-size: var(--font-m);
+		display: inline;
+		vertical-align: top;
+		line-height: 1;
+	}
+	footer div.legal-container a {
+		background: linear-gradient(var(--color-primary),var(--color-primary)) center bottom;
+		background-size: 0% 1px;
+		background-repeat:no-repeat;
+		-webkit-transition: background var(--transition-speed);
+		-moz-transition: background var(--transition-speed);
+		-o-transition: background var(--transition-speed);
+		-ms-transition: background var(--transition-speed);
+		transition: background var(--transition-speed);
+	}
+	html:not(.can-touch) footer div.contact-container a:hover , 
+	html:not(.can-touch) footer div.contact-container a:focus {
+		background-size: 100% 1px;
+	}
