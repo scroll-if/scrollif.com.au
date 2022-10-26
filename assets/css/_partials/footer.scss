@@ -242,13 +242,8 @@ footer div.container {
 	}
 /* LEGAL LINKS */
 	footer div.legal-container {
-		display: flex;
-		flex-direction: row;
-		justify-content: left;
-		align-items: start;
-		flex-wrap: wrap;
 		width: 100%;
-   		padding: 0 15px;
+		text-align: center;
 		margin-top: 15px;
 	}
 	footer div.legal-container p {
