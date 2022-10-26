@@ -215,15 +215,16 @@ footer div.container {
 				color: var(--color-dark-grey);
 			}
 /* SOCIAL ICONS */
+	footer div.max-width-container:nth-child(2) {
+  		justify-content:center;
+	}
 	footer div.socials-container {
 		display: flex;
 		flex-direction: row;
-		justify-content: space-between;
-		align-items: start;
-		flex-wrap: wrap;
+  		justify-content: start;
 		width: 100%;
 		max-width: 450px;
-   		padding: 0 12px;
+   		padding: 0 10px;
 		margin: 15px 0;
 	}
 	footer div.socials-container img.icon {
@@ -231,6 +232,7 @@ footer div.container {
 		height: 12vw;
     	max-height: 40px;
 		padding: 3px;
+  		margin: 0 2px;
 		-webkit-transition: padding var(--transition-speed);
 		-moz-transition: padding var(--transition-speed);
 		-o-transition: padding var(--transition-speed);
@@ -245,7 +247,6 @@ footer div.container {
 		width: 100%;
 		text-align: left;
    		padding: 0 15px;
-		margin-bottom: 15px;
 	}
 	footer div.legal-container p {
 		color: var(--color-black);
@@ -274,7 +275,10 @@ footer div.container {
 	}
 /* MEDIA QUERIES */
 	@media only screen and (min-width: 450px) {
-		footer div.legal-container {
-			text-align: center;
-		}
+		footer div.socials-container {
+	    	width: initial;
+	  	}
+	  	footer div.legal-container {
+	    	width: initial;
+	  	}
 	}
