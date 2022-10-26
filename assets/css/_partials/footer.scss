@@ -193,8 +193,8 @@ footer div.container {
 				padding-top: 5px;
 				padding-bottom: 5px;
 			}
-			header nav ul.submenu li:hover > a p,
-			header nav ul.submenu li:focus-within > a p {
+			footer nav.sitemap ul.submenu li:hover > a p,
+			footer nav.sitemap ul.submenu li:focus-within > a p {
 				color: var(--color-black);
 			}
 		/* SUBSUBMENU */
@@ -238,15 +238,21 @@ footer div.container {
 	}
 /* LEGAL LINKS */
 	footer div.legal-container {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: start;
+		flex-wrap: wrap;
 		width: 100%;
-		text-align: center;
-		margin: 15px 0;
+		max-width: 450px;
+   		padding: 0 15px;
+		margin-top: 15px;
 	}
 	footer div.legal-container p {
 		color: var(--color-primary);
 		font-family: var(--font-secondary);
 		font-weight: 800;
-		font-size: var(--font-m);
+		font-size: var(--font-s);
 		display: inline;
 		vertical-align: top;
 		line-height: 1;
@@ -261,7 +267,7 @@ footer div.container {
 		-ms-transition: background var(--transition-speed);
 		transition: background var(--transition-speed);
 	}
-	html:not(.can-touch) footer div.contact-container a:hover , 
-	html:not(.can-touch) footer div.contact-container a:focus {
+	html:not(.can-touch) footer div.legal-container a:hover , 
+	html:not(.can-touch) footer div.legal-container a:focus {
 		background-size: 100% 1px;
 	}
