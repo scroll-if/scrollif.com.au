@@ -244,11 +244,10 @@ footer div.container {
 	footer div.legal-container {
 		display: flex;
 		flex-direction: row;
-		justify-content: space-between;
+		justify-content: left;
 		align-items: start;
 		flex-wrap: wrap;
 		width: 100%;
-		max-width: 250px;
    		padding: 0 15px;
 		margin-top: 15px;
 	}
@@ -276,4 +275,10 @@ footer div.container {
 	html:not(.can-touch) footer div.legal-container a:hover , 
 	html:not(.can-touch) footer div.legal-container a:focus {
 		background-size: 100% 1px;
+	}
+/* MEDIA QUERIES */
+	@media only screen and (min-width: 450px) {
+		footer div.legal-container {
+		justify-content: center;
+		}
 	}
