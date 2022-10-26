@@ -218,7 +218,7 @@ footer div.container {
 	footer div.max-width-container:nth-child(2) {
   		justify-content:center;
   		align-items: center;
-  		margin-bottom: 15px;
+  		margin-bottom: 7.5px;
 	}
 	footer div.socials-container {
 		display: flex;
@@ -227,7 +227,7 @@ footer div.container {
 		width: 100%;
 		max-width: 450px;
    		padding: 0 10px;
-		margin: 15px 0;
+		margin: 7.5px 0;
 	}
 	footer div.socials-container img.icon {
 		width: auto;
@@ -249,6 +249,7 @@ footer div.container {
 		width: 100%;
 		text-align: left;
    		padding: 0 15px;
+		margin: 7.5px 0;
 	}
 	footer div.legal-container p {
 		color: var(--color-black);
