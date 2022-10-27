@@ -4,7 +4,7 @@ gem 'nokogiri'
 gem 'uglifier'
 gem 'htmlcompressor'
 gem 'cssminify2'
-gem 'json/minify'
+gem 'json-minify'
 
 group :jekyll_plugins do
   gem 'remote_include', :git => "https://github.com/scroll-if/scrollif-assets", :branch => "jekyll_plugin--remote_include"
