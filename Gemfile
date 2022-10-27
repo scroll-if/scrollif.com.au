@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 gem 'jekyll'
-gem 'net/http'
+gem 'net-http'
 gem 'uri'
 gem 'nokogiri'
 gem 'open-uri'
