@@ -14,7 +14,7 @@ div.main h1 {
 }
 div.main h2 {
 	font-family: var(--font-secondary);
-	font-weight: 800;
+	font-weight: 400;
 	color: var(--color-black);
 	font-size: var(--font-m);
 	text-transform: uppercase;
@@ -22,14 +22,14 @@ div.main h2 {
 }
 div.main h3 {
 	font-family: var(--font-secondary);
-	font-weight: 800;
+	font-weight: 400;
 	color: var(--color-black);
 	font-size: var(--font-s);
 	text-transform: uppercase;
 	margin: calc(var(--font-s)*1.5) 0 calc(var(--font-s)/1.5);
 }
 div.main p {
-	font-family: var(--font-secondary);
+	font-family: var(--font-tertiary);
 	font-weight: 400;
 	color: var(--color-black);
 	font-size: var(--font-xs);
