@@ -1,8 +1,6 @@
-div.max-width-container-half {
-	padding: 30px 15px;
-}
-div.main div.header-offset {
-	height: 70px;
+div.main.legal {
+	background-color: var(--color-black);
+	padding: 15px 15px 60px;
 }
 div.main h1 {
 	font-family: var(--font-primary);
@@ -15,7 +13,7 @@ div.main h1 {
 div.main h2 {
 	font-family: var(--font-secondary);
 	font-weight: var(--font-secondary-weight);
-	color: var(--color-black);
+	color: var(--color-white);
 	font-size: var(--font-m);
 	text-transform: uppercase;
 	margin: calc(var(--font-m)*1.5) 0 calc(var(--font-m)/1.5);
@@ -23,7 +21,7 @@ div.main h2 {
 div.main h3 {
 	font-family: var(--font-secondary);
 	font-weight: var(--font-secondary-weight);
-	color: var(--color-black);
+	color: var(--color-white);
 	font-size: var(--font-s);
 	text-transform: uppercase;
 	margin: calc(var(--font-s)*1.5) 0 calc(var(--font-s)/1.5);
@@ -31,9 +29,10 @@ div.main h3 {
 div.main p {
 	font-family: var(--font-tertiary);
 	font-weight: var(--font-tertiary-weight);
-	color: var(--color-black);
+	color: var(--color-white);
 	font-size: var(--font-xs);
 	margin: calc(var(--font-xs)/2.5) 0 calc(var(--font-xs)/2.5);
+	text-align: justify;
 }
 div.main a {
 	font-family: var(--font-tertiary);
