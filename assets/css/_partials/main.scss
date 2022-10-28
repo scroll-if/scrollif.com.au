@@ -45,7 +45,7 @@ div.main a {
 }
 div.main ul {
 	list-style-position: inside;
-    text-indent: calc(0-var(--font-xs)*1.5);
+    text-indent: calc(var(--font-xs)*-1.5);
     margin-left: calc(var(--font-xs)*1.5);
 }
 div.main li:before {
