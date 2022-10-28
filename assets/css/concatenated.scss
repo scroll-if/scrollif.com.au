@@ -19,6 +19,6 @@
 	{% remote_include https://scrollif-assets.netlify.app/websites/components/powered-by-scroll-if/css/powered-by-scroll-if.scss %}
 
 /* MAIN CSS */
+	@import "main";
 	@import "header";
 	@import "footer";
-	@import "main";
