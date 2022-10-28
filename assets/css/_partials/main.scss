@@ -10,7 +10,7 @@ div.main h1 {
 	color: var(--color-primary);
 	font-size: var(--font-xl);
 	text-transform: uppercase;
-	margin: calc(var(--font-xl)*1.5) 0 calc(var(--font-xl)/1.5);
+	margin: calc(var(--font-xl)*1) 0 calc(var(--font-xl)/2);
 }
 div.main h2 {
 	font-family: var(--font-secondary);
@@ -33,13 +33,29 @@ div.main p {
 	font-weight: var(--font-tertiary-weight);
 	color: var(--color-black);
 	font-size: var(--font-xs);
-	margin: calc(var(--font-xs)/3) 0 calc(var(--font-xs)/3);
+	margin: calc(var(--font-xs)/2.5) 0 calc(var(--font-xs)/2.5);
 }
 div.main a {
 	font-family: var(--font-tertiary);
 	font-weight: 800;
 	color: var(--color-primary);
 	font-size: var(--font-xs);
-	margin: calc(var(--font-xs)/3) 0 calc(var(--font-xs)/3);
+	margin: calc(var(--font-xs)/2.5) 0 calc(var(--font-xs)/2.5);
 	text-decoration: underline;
+}
+div.main ul {
+	list-style-position: inside;
+    text-indent: calc(0-var(--font-xs)*1.5);
+    margin-left: calc(var(--font-xs)*1.5);
+}
+div.main li:before {
+	content:  "\25B6";
+    color: var(--color-primary);
+    margin-right: calc(var(--font-xs)/1.5);
+}
+div.main li  {
+	margin: calc(var(--font-xs)/1.5) calc(var(--font-xs)*1.5);
+}
+div.main li p {
+	display: inline;
 }
