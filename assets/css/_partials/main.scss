@@ -7,9 +7,10 @@ div.main div.spacer {
 div.main h1 {
 	font-family: var(--font-primary);
 	font-weight: 800;
-	color: var(--color_primary);
+	color: var(--color-primary);
 	font-size: var(--font-xl);
 	text-transform: uppercase;
+	margin: var(--font-xl) 0;
 }
 div.main h2 {
 	font-family: var(--font-secondary);
@@ -17,6 +18,7 @@ div.main h2 {
 	color: var(--color-black);
 	font-size: var(--font-m);
 	text-transform: uppercase;
+	margin: var(--font-m) 0;
 }
 div.main h3 {
 	font-family: var(--font-secondary);
@@ -24,10 +26,12 @@ div.main h3 {
 	color: var(--color-black);
 	font-size: var(--font-s);
 	text-transform: uppercase;
+	margin: var(--font-s) 0;
 }
 div.main p {
 	font-family: var(--font-secondary);
 	font-weight: 400;
 	color: var(--color-black);
 	font-size: var(--font-xs);
+	margin: var(--font-xs) 0;
 }
