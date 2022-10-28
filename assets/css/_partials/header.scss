@@ -23,7 +23,7 @@ header div.max-width-container {
 	header p.logo-name {
 		color: var(--color-black);
 		font-family: var(--font-primary);
-		font-size: var(--font-l);
+		font-size: var(--font-m);
 		word-spacing: normal;
 		letter-spacing: 2.5px;
 		padding-left: 2.5px;
@@ -36,7 +36,7 @@ header div.max-width-container {
 		/* GLOBAL */
 			header nav {
 				font-family: var(--font-primary);
-				font-size: var(--font-l);
+				font-size: var(--font-m);
 				color: var(--color-black);
 				word-spacing: normal;
 				letter-spacing: normal;
@@ -83,7 +83,7 @@ header div.max-width-container {
 				display: flex;
 				flex-direction: column;
 				min-width: 100%;
-				font-size: var(--font-m);
+				font-size: var(--font-s);
 				color: var(--color-dark-grey);
 			}
 			header nav ul.submenu li:hover > a p,
@@ -297,7 +297,7 @@ header div.max-width-container {
 		/* SUBMENU */
 			header nav.navbar-slider ul.submenu {
 				display: none;
-				font-size: var(--font-s);
+				font-size: var(--font-xs);
 			}
 		/* SUBSUBMENU */
 			header nav.navbar-slider ul.subsubmenu {
