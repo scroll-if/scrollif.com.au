@@ -6,7 +6,7 @@ div.main div.header-offset {
 }
 div.main h1 {
 	font-family: var(--font-primary);
-	font-weight: 800;
+	font-weight: var(--font-primary-weight);
 	color: var(--color-primary);
 	font-size: var(--font-xl);
 	text-transform: uppercase;
@@ -14,7 +14,7 @@ div.main h1 {
 }
 div.main h2 {
 	font-family: var(--font-secondary);
-	font-weight: 400;
+	font-weight: var(--font-secondary-weight);
 	color: var(--color-black);
 	font-size: var(--font-m);
 	text-transform: uppercase;
@@ -22,7 +22,7 @@ div.main h2 {
 }
 div.main h3 {
 	font-family: var(--font-secondary);
-	font-weight: 400;
+	font-weight: var(--font-secondary-weight);
 	color: var(--color-black);
 	font-size: var(--font-s);
 	text-transform: uppercase;
@@ -30,8 +30,16 @@ div.main h3 {
 }
 div.main p {
 	font-family: var(--font-tertiary);
-	font-weight: 400;
+	font-weight: var(--font-tertiary-weight);
 	color: var(--color-black);
 	font-size: var(--font-xs);
 	margin: calc(var(--font-xs)/3) 0 calc(var(--font-xs)/3);
+}
+div.main a {
+	font-family: var(--font-tertiary);
+	font-weight: 800;
+	color: var(--color-primary);
+	font-size: var(--font-xs);
+	margin: calc(var(--font-xs)/3) 0 calc(var(--font-xs)/3);
+	text-decoration: underline;
 }

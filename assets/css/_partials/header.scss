@@ -23,6 +23,7 @@ header div.max-width-container {
 	header p.logo-name {
 		color: var(--color-black);
 		font-family: var(--font-primary);
+		font-weight: var(--font-primary-weight);
 		font-size: var(--font-s);
 		word-spacing: normal;
 		letter-spacing: 2.5px;
@@ -36,6 +37,7 @@ header div.max-width-container {
 		/* GLOBAL */
 			header nav {
 				font-family: var(--font-primary);
+				font-weight: var(--font-primary-weight);
 				font-size: var(--font-s);
 				color: var(--color-black);
 				word-spacing: normal;
