@@ -73,12 +73,19 @@
 	div.main.legal div.legal-container div.contents {
 		padding: 15px;
 	}
+	div.main.legal div.legal-container div.toc p.title {
+		font-size: var(--font-l);
+		color: var(--color-primary);
+		text-transform: uppercase;
+		padding: 15px;
+	}
 	div.main.legal ul.toc {
 		display:inline-block;
 		background-color: var(--color-white);
 		border-radius: 5px;
 		padding: 15px;
 	    font-size: var(--font-xxs);
+		text-transform: uppercase;
 	    text-indent: calc(var(--font-xxs)*-1.5);
 	    margin: 15px;
 	}
