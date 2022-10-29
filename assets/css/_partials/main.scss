@@ -1,97 +1,101 @@
-div.main.legal {
-	background-color: var(--color-black);
-	padding: 15px 15px 60px;
-}
-div.main h1 {
-	font-family: var(--font-primary);
-	font-weight: var(--font-primary-weight);
-	color: var(--color-primary);
-	font-size: var(--font-xl);
-	text-transform: uppercase;
-	margin: calc(var(--font-xl)*1) 0 calc(var(--font-xl)/2);
-}
-div.main h2 {
-	font-family: var(--font-secondary);
-	font-weight: var(--font-secondary-weight);
-	color: var(--color-white);
-	font-size: var(--font-m);
-	text-transform: uppercase;
-	margin: calc(var(--font-m)*1.5) 0 calc(var(--font-m)/1.5);
-}
-div.main h3 {
-	font-family: var(--font-secondary);
-	font-weight: var(--font-secondary-weight);
-	color: var(--color-white);
-	font-size: var(--font-s);
-	text-transform: uppercase;
-	margin: calc(var(--font-s)*1.5) 0 calc(var(--font-s)/1.5);
-}
-div.main p {
-	font-family: var(--font-tertiary);
-	font-weight: var(--font-tertiary-weight);
-	color: var(--color-white);
-	font-size: var(--font-xs);
-	margin: calc(var(--font-xs)/2.5) 0 calc(var(--font-xs)/2.5);
-	text-align: justify;
-}
-div.main a {
-	font-family: var(--font-tertiary);
-	font-weight: 800;
-	color: var(--color-primary);
-	font-size: var(--font-xs);
-	margin: calc(var(--font-xs)/2.5) 0 calc(var(--font-xs)/2.5);
-	text-decoration: underline;
-}
-div.main ul.toc {
-	list-style-position: inside;
-    text-indent: calc(var(--font-xxs)*-1.5);
-    margin-left: calc(var(--font-xxs)*1.5);
-    margin-bottom: var(--font-xxs);
-	font-size: var(--font-xxs);
-}
-div.main ul.toc li:before {
-	content:  "\25B6";
-    color: var(--color-primary);
-    margin-right: calc(var(--font-xxs)/1.5);
-}
-div.main ul.toc li  {
-	margin: calc(var(--font-xxs)/1.5) calc(var(--font-xxs)*1.5);
-}
-div.main ul.toc li a {
-	margin: calc(var(--font-xxs)/2.5) 0 calc(var(--font-xxs)/2.5);
-	text-decoration: none;
-}
-
-
-
-div.main ul.toc li ul {
-    text-indent: calc(var(--font-xxs)*-1.5);
-    margin-left: calc(var(--font-xxs)*1.5);
-    margin-bottom: var(--font-xxs);
-	font-size: var(--font-xxs);
-}
-div.main ul.toc li ul li:before {
-	content:  "\25B6";
-    color: var(--color-primary);
-    margin-right: calc(var(--font-xxs)/1.5);
-}
-div.main ul.toc li ul li  {
-	margin: calc(var(--font-xxs)/1.5) calc(var(--font-xxs)*1.5);
-}
-div.main ul.toc li ul li a {
-	margin: calc(var(--font-xxs)/2.5) 0 calc(var(--font-xxs)/2.5);
-	text-decoration: none;
-}
-
-
-
-		.ddtoc {
-			display: inline;
-            padding: 15px;
-            font-family: var(--font-primary);
-    		font-weight: var(--font-primary-weight);
-            color: var(--color-black);
-    		font-size: var(--font-s);
-            background-color: var(--color-white);
-            border-radius: 5px;
-        }
+/* STANDARD STYLING */
+	div.main h1 {
+		font-family: var(--font-primary);
+		font-weight: var(--font-primary-weight);
+		color: var(--color-primary);
+		font-size: var(--font-xl);
+		text-transform: uppercase;
+		margin: calc(var(--font-xl)*1) 0 calc(var(--font-xl)/2);
+	}
+	div.main h2 {
+		font-family: var(--font-secondary);
+		font-weight: var(--font-secondary-weight);
+		color: var(--color-white);
+		font-size: var(--font-m);
+		text-transform: uppercase;
+		margin: calc(var(--font-m)*1.5) 0 calc(var(--font-m)/1.5);
+	}
+	div.main h3 {
+		font-family: var(--font-secondary);
+		font-weight: var(--font-secondary-weight);
+		color: var(--color-white);
+		font-size: var(--font-s);
+		text-transform: uppercase;
+		margin: calc(var(--font-s)*1.5) 0 calc(var(--font-s)/1.5);
+	}
+	div.main p {
+		font-family: var(--font-tertiary);
+		font-weight: var(--font-tertiary-weight);
+		color: var(--color-white);
+		font-size: var(--font-xs);
+		margin: calc(var(--font-xs)/2.5) 0 calc(var(--font-xs)/2.5);
+		text-align: justify;
+	}
+	div.main a {
+		font-family: var(--font-tertiary);
+		font-weight: 800;
+		color: var(--color-primary);
+		text-decoration: underline;
+	}
+	div.main ul {
+		list-style-position: inside;
+		font-family: var(--font-tertiary);
+		font-weight: var(--font-tertiary-weight);
+	    font-size: var(--font-xs);
+	    text-indent: calc(var(--font-xs)*-1.5);
+	    margin-left: calc(var(--font-xs)*1.5);
+	    margin-bottom: var(--font-xs);
+		color: var(--color-white);
+	}
+	div.main li:before {
+		content:  "\25B6";
+	    color: var(--color-primary);
+	    font-size: var(--font-xs);
+	    margin-right: calc(var(--font-xs)/1.5);
+	}
+	div.main li  {
+		margin: calc(var(--font-xs)/1.5) calc(var(--font-xs)*1.5);
+	}
+	div.main li p {
+		display: inline;
+	}
+/* LEGAL PAGES */
+	div.main.legal {
+		background-color: var(--color-black);
+		padding: 15px 15px 60px;
+	}
+	div.main.legal ul.toc {
+	    font-family: var(--font-primary);
+	    font-weight: var(--font-primary-weight);
+	    font-size: var(--font-xxs);
+	    text-indent: calc(var(--font-xxs)*-1.5);
+	    margin-left: calc(var(--font-xxs)*1.5);
+	    margin-bottom: var(--font-xxs);
+	}
+	div.main.legal ul.toc li:before {
+		content:  "\25B6";
+	    color: var(--color-primary);
+		font-size: var(--font-xxs);
+	    margin-right: calc(var(--font-xxs)/1.5);
+	}
+	div.main.legal ul.toc li  {
+		margin: calc(var(--font-xxs)/1.5) calc(var(--font-xxs)*1.5);
+	}
+	div.main.legal ul.toc li a {
+		text-decoration: none;
+		display: inline;
+	}
+	
+	div.main.legal ul.toc li ul {
+	    font-size: var(--font-xxs);
+	    text-indent: calc(var(--font-xxs)*-1.5);
+	    margin-left: calc(var(--font-xxs)*1.5);
+	    margin-bottom: var(--font-xxs);
+	}
+	div.main.legal ul.toc li ul li:before {
+		content:  "\25CF";
+	    margin-right: calc(var(--font-xxs)/1.5);
+	}
+	div.main.legal ul.toc li ul li  {
+		margin: calc(var(--font-xxs)/1.5) calc(var(--font-xxs)*1.5);
+	}
