@@ -68,16 +68,18 @@
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
-		align-items: flex-start;
+		align-items: baseline;
 	}
 	div.main.legal div.legal-container div.contents {
 		padding: 15px;
 	}
 	div.main.legal div.legal-container div.toc p.title {
-		font-size: var(--font-l);
-		color: var(--color-primary);
+		font-family: var(--font-primary);
+  		font-weight: var(--font-primary-weight);
+  		font-size: var(--font-l);
+  		color: var(--color-black);
 		text-transform: uppercase;
-		padding: 15px;
+		padding: 0 15px;
 	}
 	div.main.legal ul.toc {
 		display:inline-block;
@@ -120,4 +122,7 @@
 	}
 	div.main.legal ul.toc li ul li  {
 		margin: calc((var(--font-xxs)/1.2)/5) calc((var(--font-xxs)/1.2)*1.5);
+	}
+	div.main.legal ul.toc li ul li a {
+	    color: var(--color-dark-grey);
 	}

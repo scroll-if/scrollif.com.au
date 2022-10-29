@@ -1,8 +1,8 @@
 .anchor::before {
   display: block; 
   content: " "; 
-  margin-top: -100px; 
-  height: 100px; 
+  margin-top: calc((var(--header-height)+30px)*-1; 
+  height: calc(var(--header-height)+30px); 
   visibility: hidden; 
   pointer-events: none;
 }
