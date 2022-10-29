@@ -64,13 +64,13 @@
 		background-color: var(--color-black);
 		padding: 15px 15px 60px;
 	}
-	div.main.legal .max-width-container {
+	div.main.legal div.legal-container {
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
 		align-items: flex-start;
 	}
-	div.main.legal .legal-container {
+	div.main.legal div.legal-container div.contents {
 		padding: 15px;
 	}
 	div.main.legal ul.toc {
