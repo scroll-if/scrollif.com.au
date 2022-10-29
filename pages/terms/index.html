@@ -271,10 +271,12 @@ author-twitter:
                         <p>If you have any queries or concerns regarding any of our terms, please contact Scroll If by emailing <a href="mailto:{{ site.legal-email }}">{{ site.legal-email }}</a>.</p>
             </div>
             <div class="toc">
-                <p class="title">Table of Contents</p>
+                <p class="title">Contents</p>
 
-                {% include toc.html html=page.content base_url=page.url class='toc' h_min=2 %}
-            </div>
+                {% assign toc-html = 'https://scrollif-assets.netlify.com/websites/liquid-includes/toc.html' %}
+
+                {% include_remote {{ toc-html }} html=page.content base_url=page.url class='toc' h_min=2 %}
+                
         </div>
     </div>
 </div>
