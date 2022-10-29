@@ -42,27 +42,27 @@ div.main a {
 	margin: calc(var(--font-xs)/2.5) 0 calc(var(--font-xs)/2.5);
 	text-decoration: underline;
 }
-div.main ul {
+div.main ul.toc {
 	list-style-position: inside;
     text-indent: calc(var(--font-xs)*-1.5);
     margin-left: calc(var(--font-xs)*1.5);
     margin-bottom: var(--font-xs);
 }
-div.main li:before {
+div.main ul.toc li:before {
 	content:  "\25B6";
     color: var(--color-primary);
     margin-right: calc(var(--font-xs)/1.5);
 }
-div.main li  {
+div.main ul.toc li  {
 	margin: calc(var(--font-xs)/1.5) calc(var(--font-xs)*1.5);
 }
-div.main li p {
+div.main ul.toc li a {
 	display: inline;
 }
 
 
 
-		.toc {
+		.ddtoc {
 			display: inline;
             padding: 15px;
             font-family: var(--font-primary);
