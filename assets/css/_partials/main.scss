@@ -64,13 +64,19 @@
 		background-color: var(--color-black);
 		padding: 15px 15px 60px;
 	}
+	div.main.legal .max-width-container-two-thirds {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
 	div.main.legal ul.toc {
-	    font-family: var(--font-primary);
-	    font-weight: var(--font-primary-weight);
+		display:inline-block;
+		background-color: var(--color-white);
+		border-radius: 5px;
+		padding: 15px;
 	    font-size: var(--font-xxs);
 	    text-indent: calc(var(--font-xxs)*-1.5);
-	    margin-left: calc(var(--font-xxs)*1.5);
-	    margin-bottom: var(--font-xxs);
+	    margin: 0;
 	}
 	div.main.legal ul.toc li:before {
 		content:  "\25B6";
@@ -79,23 +85,28 @@
 	    margin-right: calc(var(--font-xxs)/1.5);
 	}
 	div.main.legal ul.toc li  {
+		white-space:nowrap;
 		margin: calc(var(--font-xxs)/1.5) calc(var(--font-xxs)*1.5);
 	}
 	div.main.legal ul.toc li a {
+	    font-family: var(--font-primary);
+	    font-weight: var(--font-primary-weight);
+		color: var(--color-black);
 		text-decoration: none;
 		display: inline;
 	}
-	
+
+
 	div.main.legal ul.toc li ul {
-	    font-size: var(--font-xxs);
-	    text-indent: calc(var(--font-xxs)*-1.5);
-	    margin-left: calc(var(--font-xxs)*1.5);
+	    font-size: calc(var(--font-xxs)/1.2);
+	    text-indent: calc((var(--font-xxs)/1.2)*-1.5);
+	    margin-left: calc((var(--font-xxs)/1.2)*1.5);
 	    margin-bottom: var(--font-xxs);
 	}
 	div.main.legal ul.toc li ul li:before {
 		content:  "\25CF";
-	    margin-right: calc(var(--font-xxs)/1.5);
+	    margin-right: calc((var(--font-xxs)/1.2)/1.5);
 	}
 	div.main.legal ul.toc li ul li  {
-		margin: calc(var(--font-xxs)/1.5) calc(var(--font-xxs)*1.5);
+		margin: calc((var(--font-xxs)/1.2)/5) calc((var(--font-xxs)/1.2)*1.5);
 	}
