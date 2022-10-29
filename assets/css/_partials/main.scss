@@ -95,7 +95,7 @@
 	    font-size: var(--font-xxs);
 		text-transform: uppercase;
 	    text-indent: calc(var(--font-xxs)*-1.5);
-	    margin: 15px;
+	    margin: 0;
 	}
 	div.main.legal ul.toc li:before {
 		content:  "\25B6";
