@@ -73,6 +73,12 @@
 	div.main.legal div.legal-container div.contents {
 		padding: 15px;
 	}
+	div.main.legal div.toc {
+		padding: 15px;
+    	background-color: var(--color-white);
+    	margin: 15px;
+    	border-radius: 5px;
+	}
 	div.main.legal div.legal-container div.toc p.title {
 		font-family: var(--font-primary);
   		font-weight: var(--font-primary-weight);
