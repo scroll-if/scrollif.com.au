@@ -46,6 +46,7 @@ div.main ul {
 	list-style-position: inside;
     text-indent: calc(var(--font-xs)*-1.5);
     margin-left: calc(var(--font-xs)*1.5);
+    margin-bottom: var(--font-xs);
 }
 div.main li:before {
 	content:  "\25B6";
@@ -58,3 +59,16 @@ div.main li  {
 div.main li p {
 	display: inline;
 }
+
+
+
+		div#table-of-content {
+            margin: 2em 0 !important;
+            padding: 1em;
+            color: #494e52;
+            font-size: .75em !important;
+            text-indent: initial;
+            background-color: #ecf6ec;
+            border-radius: 4px;
+            box-shadow: 0 1px 1px rgba(63,166,63,0.25);
+        }
