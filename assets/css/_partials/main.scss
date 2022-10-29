@@ -62,13 +62,13 @@ div.main li p {
 
 
 
-		div#table-of-content {
-            margin: 2em 0 !important;
-            padding: 1em;
-            color: #494e52;
-            font-size: .75em !important;
-            text-indent: initial;
-            background-color: #ecf6ec;
-            border-radius: 4px;
-            box-shadow: 0 1px 1px rgba(63,166,63,0.25);
+		.toc {
+			display: inline;
+            padding: 15px;
+            font-family: var(--font-primary);
+    		font-weight: var(--font-primary-weight);
+            color: var(--color-black);
+    		font-size: var(--font-s);
+            background-color: var(--color-white);
+            border-radius: 5px;
         }
