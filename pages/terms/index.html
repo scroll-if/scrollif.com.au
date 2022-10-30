@@ -273,9 +273,9 @@ author-twitter:
             <div class="toc">
                 <p class="title">Contents</p>
 
-                {% remote_include https://scrollif-assets.netlify.app/websites/liquid-includes/toc.html html=page.content base_url=page.url class='toc' h_min=2 %}
+                {% assign test = 'https://scrollif-assets.netlify.app/websites/components/powered-by-scroll-if/html/powered-by-scroll-if.html' %}
 
-                
+                {% include_remote {{ test }}  %}
 
             </div>  
         </div>
