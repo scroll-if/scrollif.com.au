@@ -273,11 +273,10 @@ author-twitter:
             <div class="toc">
                 <p class="title">Contents</p>
 
-                
+                {% assign toc = 'https://scrollif-assets.netlify.app/websites/liquid-includes/toc.html' %}
 
-                {% remote_include https://scrollif-assets.netlify.app/websites/liquid-includes/toc.html %}
+                {% include_remote {{ toc }}  %}
 
-            </div>
         </div>
     </div>
 </div>
