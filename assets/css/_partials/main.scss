@@ -69,11 +69,14 @@
 		flex-direction: row;
 		justify-content: space-between;
 		align-items: baseline;
+
 	}
 	div.main.legal div.legal-container div.contents {
+		min-width: 50%;
 		padding: 15px;
 	}
 	div.main.legal div.toc {
+		display: none;
 		padding: 15px;
     	background-color: var(--color-white);
     	margin: 15px;
@@ -130,3 +133,9 @@
 	div.main.legal ul.toc li ul li a {
 	    color: var(--color-dark-grey);
 	}
+	/* MEDIA QUERIES */
+		@media only screen and (min-width: 1024px) {
+			div.main.legal div.toc {
+				display: block;
+			}
+		}
