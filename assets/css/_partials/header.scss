@@ -86,6 +86,7 @@ header div.max-width-container {
 				flex-direction: column;
 				min-width: 100%;
 				font-size: var(--font-xs);
+				color: var(--color-dark-grey);
 			}
 			header nav ul.submenu li:hover > a p,
 			header nav ul.submenu li:focus-within > a p {
