@@ -1,7 +1,7 @@
 ---
 ---
 // GOOGLEAPIS JQUERY LIBS //
-	{% remote_include https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js %}
+
 
 // GLOBAL JS //
 	{% remote_include https://scrollif-assets.netlify.app/websites/js/no-js.js %}
