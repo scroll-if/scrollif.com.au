@@ -67,7 +67,6 @@ header div.max-width-container {
 			html:not(.can-touch) header nav a:hover p, 
 			html:not(.can-touch) header nav a:focus p {
 				background-size: 100% 2px;
-				color: var(--color-black);
 			}
 			header nav ul:focus-within a {
 				outline: none;
@@ -87,11 +86,10 @@ header div.max-width-container {
 				flex-direction: column;
 				min-width: 100%;
 				font-size: var(--font-xs);
-				color: var(--color-dark-grey);
 			}
 			header nav ul.submenu li:hover > a p,
 			header nav ul.submenu li:focus-within > a p {
-				
+				color: var(--color-black);
 			}
 		/* SUBSUBMENU */
 			header nav ul.subsubmenu {
