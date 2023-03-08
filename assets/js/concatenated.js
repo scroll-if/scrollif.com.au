@@ -14,7 +14,6 @@
 	{% remote_include https://scrollif-assets.netlify.app/websites/js/can-touch.js %}
 	{% remote_include https://scrollif-assets.netlify.app/websites/js/remove-focus.js %}
 	
-	{% remote_include https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js %}
 	{% remote_include https://scrollif-assets.netlify.app/websites/components/loading-screen/js/loading-screen.js %}
 
 
