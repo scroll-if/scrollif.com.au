@@ -150,6 +150,10 @@
 	    color: var(--color-dark-grey);
 	    padding-bottom: 1px;
 	}
+	div.main.legal div.back-to-top {
+	    position: sticky;
+	    bottom: 30px;
+	}
 	/* MEDIA QUERIES */
 		@media only screen and (min-width: 1025px) {
 			div.main.legal div.toc {
