@@ -111,9 +111,14 @@ footer div.container {
 		-ms-transition: background var(--transition-speed);
 		transition: background var(--transition-speed);
 	}
-	html:not(.can-touch) footer div.contact-container a:hover p, 
+	html:not(.can-touch) footer div.contact-container a:hover p,
 	html:not(.can-touch) footer div.contact-container a:focus p {
-		background-size: 100% 1px;
+	  background-size: 100% 1px;
+	}
+	html:not(.can-touch) footer div.contact-container a:hover,
+	html:not(.can-touch) footer div.contact-container a:focus {
+	  outline: none;
+	}									
 	}
 /* SITE MAP */
 	/* NAVBAR */
@@ -241,8 +246,12 @@ footer div.container {
 		-ms-transition: padding var(--transition-speed);
 		transition: padding var(--transition-speed);
 	}
-	footer div.socials-container a:hover > img.icon {
-		padding: 0;
+	footer div.socials-container a:hover > img.icon, 
+	footer div.socials-container a:focus > img.icon {
+	  padding: 0;
+	}
+	footer div.socials-container a:focus {
+	  outline: none;
 	}
 /* LEGAL LINKS */
 	footer div.legal-container {
@@ -275,6 +284,7 @@ footer div.container {
 	html:not(.can-touch) footer div.legal-container a:hover , 
 	html:not(.can-touch) footer div.legal-container a:focus {
 		background-size: 100% 1px;
+		outline: none;
 	}
 /* MEDIA QUERIES */
 	@media only screen and (min-width: 464px) {
