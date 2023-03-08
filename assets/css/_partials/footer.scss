@@ -91,7 +91,8 @@ footer div.container {
 		-ms-transition: padding var(--transition-speed);
 		transition: padding var(--transition-speed);
 	}
-	footer div.contact-container a:hover > img.icon {
+	footer div.contact-container a:hover > img.icon,
+	footer div.contact-container a:focus > img.icon {
 		padding: 0;
 	}
 	footer div.contact-container p.icon-name {
