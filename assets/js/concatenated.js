@@ -2,8 +2,6 @@
 ---
 // GOOGLEAPIS JQUERY LIBS //
 
-	{% remote_include https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js %}
-	{% remote_include https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js %}
 	{% remote_include https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js %}
 	{% remote_include https://scrollif-assets.netlify.app/websites/js/smooth-scroll.js %}
 
