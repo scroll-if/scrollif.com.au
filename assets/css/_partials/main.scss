@@ -150,9 +150,11 @@
 	    color: var(--color-dark-grey);
 	    padding-bottom: 1px;
 	}
-	div.back-to-top {
+	div.main.legal div.back-to-top {
 	    position: sticky;
+	    right: 15px;
 	    bottom: 30px;
+	    text-align: right;
 	}
 	/* MEDIA QUERIES */
 		@media only screen and (min-width: 1025px) {
