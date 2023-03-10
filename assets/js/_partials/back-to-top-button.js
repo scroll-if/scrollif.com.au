@@ -5,7 +5,7 @@ $(window).scroll(function() {
         var elemTop = $(elem).offset().top;
         return ((elemTop <= docViewBottom) && (elemTop >= docViewTop));
     }
-    if (elementScrolled('div.back-to-top-button')) {
+    if (elementScrolled('#2-0')) {
         $('div.back-to-top-button').addClass("visible");
     }
     else {
