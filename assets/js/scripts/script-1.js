@@ -8,3 +8,4 @@ $(window).scroll(function() {
     if (elementScrolled('div.back-to-top-button')) {
         $('div.back-to-top-button').addClass("visible");
     }
+}
