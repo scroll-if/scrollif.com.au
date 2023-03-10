@@ -185,6 +185,12 @@
 	    border-right: 9px solid var(--color-black);
 	    border-bottom: 15px solid var(--color-white);
 	}
+	html:not(.can-touch) div.main.legal a.back-to-top-trigger:hover div.back-to-top-button, 
+	html:not(.can-touch) div.main.legal a.back-to-top-trigger:focus div.back-to-top-button {
+		width: 50px;
+		height: 50px;
+		border-color: var(--color-primary);
+	}
 	/* MEDIA QUERIES */
 		@media only screen and (min-width: 1025px) {
 			div.main.legal div.toc {

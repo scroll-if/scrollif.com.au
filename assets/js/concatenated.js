@@ -20,4 +20,4 @@ scripts:
 	{% remote_include https://scrollif-assets.netlify.app/websites/components/mobile-navbar/js/mobile-navbar.js %}
 
 // INTERNAL JS //
-    {% include_relative _partials/back-to-top-button.js %}
+   {% include_relative _partials/back-to-top-button.js %}
