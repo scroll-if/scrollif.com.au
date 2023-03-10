@@ -1,7 +1,7 @@
 ---
 js_dir: _partials/
-included_js:
-  - js-back-to-top-button.js
+scripts:
+  - script-1.js
 ---
 // GOOGLEAPIS JQUERY LIBS //
 	{% remote_include https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js %}
@@ -20,9 +20,9 @@ included_js:
 	{% remote_include https://scrollif-assets.netlify.app/websites/components/mobile-navbar/js/mobile-navbar.js %}
 
 // INTERNAL JS //
-	{% for js in included_js %}
-	    {% assign js_path = js_dir | append: js %}
+	{% for script in scripts %}
+	    {% assign script_path = js_dir | append: script %}
 	    (function () {
-	        {% include_relative js_path %}
+	        {% include_relative script_path %}
 	    })();
 	{% endfor %}
