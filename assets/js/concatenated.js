@@ -20,17 +20,4 @@ scripts:
 	{% remote_include https://scrollif-assets.netlify.app/websites/components/mobile-navbar/js/mobile-navbar.js %}
 
 // INTERNAL JS //
-
-    {% include_relative scripts/script-1.js %}
-
-$(window).scroll(function() {
-    function elementScrolled(elem) {
-        var docViewTop = $(window).scrollTop();
-        var docViewBottom = docViewTop + $(window).height() / 1.3;
-        var elemTop = $(elem).offset().top;
-        return ((elemTop <= docViewBottom) && (elemTop >= docViewTop));
-    }
-    if (elementScrolled('div.back-to-top-button')) {
-        $('div.back-to-top-button').addClass("visible");
-    }
-});
+    {% include_relative _partials/back-to-top-button.js %}
