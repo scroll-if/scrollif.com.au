@@ -1,5 +1,5 @@
 ---
-js_dir: scripts/
+dir_path: scripts/
 scripts:
   - script-1.js
 ---
@@ -20,9 +20,7 @@ scripts:
 	{% remote_include https://scrollif-assets.netlify.app/websites/components/mobile-navbar/js/mobile-navbar.js %}
 
 // INTERNAL JS //
-	{% for script in scripts %}
-	    {% assign script_path = js_dir | append: script %}
-	    (function () {
-	        {% include_relative script_path %}
-	    })();
-	{% endfor %}
+{% for script in scripts %}
+    {% assign script_path = dir_path | append: script %}
+    {% include_relative script_path %}
+{% endfor %}
