@@ -161,24 +161,23 @@
 		border-radius: 50%;
 		background-color: var(--color-black);
 		opacity: 0.8;
-  		position: absolute;
-  		top: 100vh;
+  		position: sticky;
+		bottom: -60px;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
 	    padding-bottom: 5px;
-		-webkit-transition: top var(--transition-speed), bottom var(--transition-speed);
-		-moz-transition: top var(--transition-speed), bottom var(--transition-speed);
-		-o-transition: top var(--transition-speed), bottom var(--transition-speed);
-		-ms-transition: top var(--transition-speed), bottom var(--transition-speed);
-		transition: top var(--transition-speed), bottom var(--transition-speed);
+		-webkit-transition: bottom var(--transition-speed);
+		-moz-transition: bottom var(--transition-speed);
+		-o-transition: bottom var(--transition-speed);
+		-ms-transition: bottom var(--transition-speed);
+		transition: bottom var(--transition-speed);
 
 	}
 	div.main.legal div.back-to-top-button.visible {
 		position: sticky;
 		bottom: 15px;
-		top: 0;
 	}
 	div.main.legal div.back-to-top-arrow {
 	    width: 0;
