@@ -1,5 +1,5 @@
 ---
-js_dir: _partials/
+js_dir: scripts/
 scripts:
   - script-1.js
 ---
