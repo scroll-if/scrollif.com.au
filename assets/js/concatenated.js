@@ -1,7 +1,7 @@
 ---
 js_dir: _partials/
 included_js:
-  - back-to-top-button.js
+  - js-back-to-top-button.js
 ---
 // GOOGLEAPIS JQUERY LIBS //
 	{% remote_include https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js %}
