@@ -20,10 +20,9 @@ scripts:
 	{% remote_include https://scrollif-assets.netlify.app/websites/components/mobile-navbar/js/mobile-navbar.js %}
 
 // INTERNAL JS //
-{% for script in page.scripts %}
-    {% assign script_path = dir_path | append: script %}
-    {% include_relative script_path %}
-{% endfor %}
+
+    {% include_relative scripts/script-1.js %}
+
 $(window).scroll(function() {
     function elementScrolled(elem) {
         var docViewTop = $(window).scrollTop();
