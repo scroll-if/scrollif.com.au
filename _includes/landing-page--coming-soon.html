@@ -29,7 +29,7 @@
 </header>
 
 <div style="
-		height: calc(100vh - 103px); 
+		height: calc(100vh - var(--header-height) - 103px); 
 		width: 100%; 
 		background-image: url('{{ site.url }}/assets/images/hero_image_{{ site.title | replace: ' ', '_' | downcase }}.jpg');
 		background-color: var(--color-white);
