@@ -2,9 +2,9 @@ $(window).scroll(function(){
     var ScrollTop = parseInt($(window).scrollTop());
     
     if (ScrollTop > window.innerHeight) {
-        $('div.back-to-top-button').addClass("visible");
+        $('a.back-to-top-trigger').addClass("visible");
     }
     else {
-        $('div.back-to-top-button').removeClass("visible");
+        $('a.back-to-top-trigger').removeClass("visible");
     }
 });

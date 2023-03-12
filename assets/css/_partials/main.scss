@@ -150,8 +150,16 @@
 	    color: var(--color-dark-grey);
 	    padding-bottom: 1px;
 	}
-	div.main.legal div.back-to-top-button a.back-to-top-trigger {
-		
+	div.main.legal a.back-to-top-trigger {
+		display: block;
+		width: 0%;
+		margin: 15px auto;
+		position: sticky;
+		bottom: -60px;
+	}
+
+	div.main.legal a.back-to-top-trigger.visible {
+		bottom: 15px;
 	}
 	body.no-js div.main.legal div.back-to-top-button {
 		opacity: 0;
@@ -159,26 +167,19 @@
 	div.main.legal div.back-to-top-button {
 		width: 45px;
 		height: 45px;
-		margin: 15px auto;
 		border-radius: 50%;
 		background-color: var(--color-white);
 		opacity: 0.8;
-  		position: sticky;
-		bottom: -60px;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
-	    padding-bottom: 5px;
+		padding-bottom: 5px;
 		-webkit-transition: bottom var(--transition-speed), background-color var(--transition-speed);
 		-moz-transition: bottom var(--transition-speed), background-color var(--transition-speed);
 		-o-transition: bottom var(--transition-speed), background-color var(--transition-speed);
 		-ms-transition: bottom var(--transition-speed), background-color var(--transition-speed);
 		transition: bottom var(--transition-speed), background-color var(--transition-speed);
-
-	}
-	div.main.legal div.back-to-top-button.visible {
-		bottom: 15px;
 	}
 	div.main.legal div.back-to-top-arrow {
 	    width: 0;
