@@ -1,7 +1,6 @@
 div.hero-image {
 	height: calc(100vh - var(--header-height)); 
     width: 100%; 
-    background-image: url('{{ site.url }}/assets/images/hero_image_{{ site.title | replace: ' ', '_' | downcase }}.jpg');
     background-color: var(--color-white);
     background-repeat: no-repeat;
     background-size: cover;
