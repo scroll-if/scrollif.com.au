@@ -156,6 +156,11 @@
 		margin: 15px auto;
 		position: sticky;
 		bottom: -60px;
+		-webkit-transition: bottom var(--transition-speed);
+		-moz-transition: bottom var(--transition-speed);
+		-o-transition: bottom var(--transition-speed);
+		-ms-transition: bottom var(--transition-speed);
+		transition: bottom var(--transition-speed);
 	}
 
 	div.main.legal a.back-to-top-trigger.visible {
@@ -175,11 +180,11 @@
 		align-items: center;
 		justify-content: center;
 		padding-bottom: 5px;
-		-webkit-transition: bottom var(--transition-speed), background-color var(--transition-speed);
-		-moz-transition: bottom var(--transition-speed), background-color var(--transition-speed);
-		-o-transition: bottom var(--transition-speed), background-color var(--transition-speed);
-		-ms-transition: bottom var(--transition-speed), background-color var(--transition-speed);
-		transition: bottom var(--transition-speed), background-color var(--transition-speed);
+		-webkit-transition: background-color var(--transition-speed);
+		-moz-transition: background-color var(--transition-speed);
+		-o-transition: background-color var(--transition-speed);
+		-ms-transition: background-color var(--transition-speed);
+		transition: background-color var(--transition-speed);
 	}
 	div.main.legal div.back-to-top-arrow {
 	    width: 0;
@@ -209,6 +214,6 @@
 				display: block;
 			}
 			div.main.legal div.back-to-top-button {
-				margin-right: 15px;
+				margin-right: 60px;
 			}
 		}
