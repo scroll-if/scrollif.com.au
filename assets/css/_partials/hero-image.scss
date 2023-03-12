@@ -6,3 +6,23 @@ div.hero-image {
     background-size: cover;
     background-position: center;
 }
+div.hero-image p.tagline {
+    color: var(--color-primary);
+    font-family: var(--font-primary);
+    display: block;
+    text-align:center;
+    font-size: 5vmin;
+    letter-spacing: 0.5vw;
+    padding-left: 0.5vw;
+}
+div.hero-image p.tagline span {
+    font-style: italic;
+    animation: tagline-descriptor 1s;
+    animation-iteration-count: infinite;
+}
+@keyframes tagline-descriptor {
+    0% { opacity: 0; }
+    49% { opacity: 0; }
+    51% { opacity: 1; }
+    100% { opacity: 1; }
+}
