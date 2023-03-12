@@ -208,12 +208,16 @@
 	    border-right-color: var(--color-primary);
 	    border-bottom-color: var(--color-white);
 	}
+	html:not(.can-touch) div.main.legal a.back-to-top-trigger:hover,
+	html:not(.can-touch) div.main.legal a.back-to-top-trigger:focus {
+		outline: none;
+	}
 	/* MEDIA QUERIES */
 		@media only screen and (min-width: 1025px) {
 			div.main.legal div.toc {
 				display: block;
 			}
-			div.main.legal div.back-to-top-button {
+			div.main.legal a.back-to-top-trigger {
 				margin-right: 60px;
 			}
 		}
