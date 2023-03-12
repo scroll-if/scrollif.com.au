@@ -1,0 +1,164 @@
+div.main.legal {
+	background-color: var(--color-black);
+	padding: 15px;
+}
+div.main.legal div.legal-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: baseline;
+
+}
+/* CONTENTS */
+	div.main.legal div.legal-container div.contents {
+		min-width: 50%;
+		padding: 15px;
+	}
+/* TABLE OF CONTENTS */
+	div.main.legal div.toc {
+		display: none;
+		padding: 15px 0 15px 15px;
+		background-color: var(--color-white);
+		margin: 15px;
+		border-radius: 5px;
+	}
+	div.main.legal div.legal-container div.toc p.title {
+		font-family: var(--font-primary);
+			font-weight: var(--font-primary-weight);
+			font-size: var(--font-l);
+			color: var(--color-black);
+		text-transform: uppercase;
+		padding: 0 15px;
+	}
+	div.main.legal ul.toc {
+		display:inline-block;
+		background-color: var(--color-white);
+		border-radius: 5px;
+		padding: 15px;
+	    font-size: var(--font-xxs);
+		text-transform: uppercase;
+	    text-indent: calc(var(--font-xxs)*-1.5);
+	    margin: 0;
+	}
+	div.main.legal ul.toc li:before {
+		content:  "\25B6";
+	    color: var(--color-primary);
+		font-size: var(--font-xxs);
+	    margin-right: calc(var(--font-xxs)/1.5);
+	}
+	div.main.legal ul.toc li  {
+		white-space:nowrap;
+		margin: calc(var(--font-xxs)/1.5) calc(var(--font-xxs)*1.5);
+	}
+	div.main.legal ul.toc li a {
+	    font-family: var(--font-primary);
+	    font-weight: var(--font-primary-weight);
+		color: var(--color-black);
+		text-decoration: none;
+		display: inline;
+		background: linear-gradient(var(--color-primary),var(--color-primary)) center bottom;
+			background-size: 0% 2px;
+			background-repeat:no-repeat;
+		-webkit-transition: color var(--transition-speed), background var(--transition-speed);
+		-moz-transition: color var(--transition-speed), background var(--transition-speed);
+		-o-transition: color var(--transition-speed), background var(--transition-speed);
+		-ms-transition: color var(--transition-speed), background var(--transition-speed);
+		transition: color var(--transition-speed), background var(--transition-speed);
+	}
+	div.main.legal ul.toc:focus-within li a {
+		outline: none;
+	}
+	html:not(.can-touch) div.main.legal ul.toc li a:hover, 
+	html:not(.can-touch) div.main.legal ul.toc li a:focus {
+		background-size: 100% 2px;
+		color: var(--color-black);
+	}
+	div.main.legal ul.toc li ul {
+	    font-size: calc(var(--font-xxs)/1.2);
+	    text-indent: calc((var(--font-xxs)/1.2)*-1.5);
+	    margin-left: calc((var(--font-xxs)/1.2)*1.5);
+	    margin-bottom: var(--font-xxs);
+	}
+	div.main.legal ul.toc li ul li:before {
+		content:  "\25CF";
+	    margin-right: calc((var(--font-xxs)/1.2)/1.5);
+	}
+	div.main.legal ul.toc li ul li  {
+		margin: calc((var(--font-xxs)/1.2)/5) calc((var(--font-xxs)/1.2)*1.5);
+	}
+	div.main.legal ul.toc li ul li a {
+	    color: var(--color-dark-grey);
+	    padding-bottom: 1px;
+	}
+/* BACK TO TOP BUTTON */
+	div.main.legal a.back-to-top-trigger {
+		display: block;
+		width: 45px;
+		margin: 15px auto;
+		position: sticky;
+		bottom: -60px;
+		-webkit-transition: bottom var(--transition-speed);
+		-moz-transition: bottom var(--transition-speed);
+		-o-transition: bottom var(--transition-speed);
+		-ms-transition: bottom var(--transition-speed);
+		transition: bottom var(--transition-speed);
+	}
+
+	div.main.legal a.back-to-top-trigger.visible {
+		bottom: 15px;
+	}
+	body.no-js div.main.legal div.back-to-top-button {
+		opacity: 0;
+	}
+	div.main.legal div.back-to-top-button {
+		width: 45px;
+		height: 45px;
+		border-radius: 50%;
+		background-color: var(--color-white);
+		opacity: 0.8;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		padding-bottom: 5px;
+		-webkit-transition: background-color var(--transition-speed);
+		-moz-transition: background-color var(--transition-speed);
+		-o-transition: background-color var(--transition-speed);
+		-ms-transition: background-color var(--transition-speed);
+		transition: background-color var(--transition-speed);
+	}
+	div.main.legal div.back-to-top-arrow {
+	    width: 0;
+	    height: 0;
+	    border-left: 12px solid var(--color-white);
+	    border-right: 12px solid var(--color-white);
+	    border-bottom: 20px solid var(--color-black);
+	    -webkit-transition: border-color var(--transition-speed);
+		-moz-transition: border-color var(--transition-speed);
+		-o-transition: border-color var(--transition-speed);
+		-ms-transition: border-color var(--transition-speed);
+		transition: border-color var(--transition-speed);
+	}
+	html:not(.can-touch) div.main.legal a.back-to-top-trigger:hover div.back-to-top-button, 
+	html:not(.can-touch) div.main.legal a.back-to-top-trigger:focus div.back-to-top-button {
+		background-color: var(--color-primary);
+	}
+	html:not(.can-touch) div.main.legal a.back-to-top-trigger:hover div.back-to-top-arrow, 
+	html:not(.can-touch) div.main.legal a.back-to-top-trigger:focus div.back-to-top-arrow {
+		border-left-color: var(--color-primary);
+	    border-right-color: var(--color-primary);
+	    border-bottom-color: var(--color-white);
+	}
+	html:not(.can-touch) div.main.legal a.back-to-top-trigger:hover,
+	html:not(.can-touch) div.main.legal a.back-to-top-trigger:focus {
+		outline: none;
+	}
+/* MEDIA QUERIES */
+	@media only screen and (min-width: 1025px) {
+		div.main.legal div.toc {
+			display: block;
+		}
+		div.main.legal a.back-to-top-trigger {
+			margin-right: 60px;
+		}
+	}

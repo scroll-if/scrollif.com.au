@@ -49,7 +49,7 @@ header div.max-width-container {
 				margin: 0;
 				padding: 0;
 				display: inline;
-				background: linear-gradient(var(--color-black),var(--color-black)) center bottom;
+				background: linear-gradient(var(--color-primary),var(--color-primary)) center bottom;
 					background-size: 0% 2px;
 					background-repeat:no-repeat;
 				-webkit-transition: color var(--transition-speed), background var(--transition-speed);
@@ -58,11 +58,8 @@ header div.max-width-container {
 				-ms-transition: color var(--transition-speed), background var(--transition-speed);
 				transition: color var(--transition-speed), background var(--transition-speed);
 			}
-			header nav li.current-page p {
+			header nav li.current-page > a p {
 				color: var(--color-primary);
-				background: linear-gradient(var(--color-primary),var(--color-primary)) center bottom; /*OR bottom right OR bottom left*/
-					background-size: 0% 2px;
-					background-repeat:no-repeat;
 			}		
 			html:not(.can-touch) header nav a:hover p, 
 			html:not(.can-touch) header nav a:focus p {

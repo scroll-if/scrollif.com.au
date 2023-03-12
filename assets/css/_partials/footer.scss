@@ -138,7 +138,7 @@ footer div.container {
 				margin: 0;
 				padding: 0;
 				display: inline;
-				background: linear-gradient(var(--color-black),var(--color-black)) center bottom;
+				background: linear-gradient(var(--color-primary),var(--color-primary)) center bottom;
 				background-size: 0% 2px;
 				background-repeat:no-repeat;
 				-webkit-transition: color var(--transition-speed), background var(--transition-speed);
@@ -147,11 +147,8 @@ footer div.container {
 				-ms-transition: color var(--transition-speed), background var(--transition-speed);
 				transition: color var(--transition-speed), background var(--transition-speed);
 			}
-			footer nav.sitemap li.current-page p {
+			footer nav.sitemap li.current-page > a p {
 				color: var(--color-primary);
-				background: linear-gradient(var(--color-primary),var(--color-primary)) center bottom;
-				background-size: 0% 2px;
-				background-repeat:no-repeat;
 			}
 			html:not(.can-touch) footer nav.sitemap a:hover p, 
 			html:not(.can-touch) footer nav.sitemap a:focus p {
