@@ -157,9 +157,8 @@
 		width: 45px;
 		height: 45px;
 		margin: 15px auto;
-		border: solid 5px white;
 		border-radius: 50%;
-		background-color: var(--color-black);
+		background-color: var(--color-white);
 		opacity: 0.8;
   		position: sticky;
 		bottom: -60px;
@@ -168,28 +167,40 @@
 		align-items: center;
 		justify-content: center;
 	    padding-bottom: 5px;
-		-webkit-transition: bottom var(--transition-speed);
-		-moz-transition: bottom var(--transition-speed);
-		-o-transition: bottom var(--transition-speed);
-		-ms-transition: bottom var(--transition-speed);
-		transition: bottom var(--transition-speed);
+		-webkit-transition: bottom var(--transition-speed), background-color var(--transition-speed);
+		-moz-transition: bottom var(--transition-speed), background-color var(--transition-speed);
+		-o-transition: bottom var(--transition-speed), background-color var(--transition-speed);
+		-ms-transition: bottom var(--transition-speed), background-color var(--transition-speed);
+		transition: bottom var(--transition-speed), background-color var(--transition-speed);
 
 	}
 	div.main.legal div.back-to-top-button.visible {
 		bottom: 15px;
 	}
+	div.main.legal div.back-to-top-button a.back-to-top-trigger {
+		margin: 15px;
+	}
 	div.main.legal div.back-to-top-arrow {
 	    width: 0;
 	    height: 0;
-	    border-left: 9px solid var(--color-black);
-	    border-right: 9px solid var(--color-black);
-	    border-bottom: 15px solid var(--color-white);
+	    border-left: 12px solid var(--color-white);
+	    border-right: 12px solid var(--color-white);
+	    border-bottom: 20px solid var(--color-black);
+	    -webkit-transition: border-color var(--transition-speed);
+		-moz-transition: border-color var(--transition-speed);
+		-o-transition: border-color var(--transition-speed);
+		-ms-transition: border-color var(--transition-speed);
+		transition: border-color var(--transition-speed);
 	}
 	html:not(.can-touch) div.main.legal a.back-to-top-trigger:hover div.back-to-top-button, 
 	html:not(.can-touch) div.main.legal a.back-to-top-trigger:focus div.back-to-top-button {
-		width: 50px;
-		height: 50px;
-		border-color: var(--color-primary);
+		background-color: var(--color-primary);
+	}
+	html:not(.can-touch) div.main.legal a.back-to-top-trigger:hover div.back-to-top-button, 
+	html:not(.can-touch) div.main.legal a.back-to-top-trigger:focus div.back-to-top-button {
+		border-left-color: var(--color-primary);
+	    border-right-color: var(--color-primary);
+	    border-bottom-color: var(--color-white);
 	}
 	/* MEDIA QUERIES */
 		@media only screen and (min-width: 1025px) {
