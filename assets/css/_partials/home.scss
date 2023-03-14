@@ -1,0 +1,40 @@
+div.hero-image {
+	height: calc(100vh - var(--header-height)); 
+    width: 100%; 
+    background-color: var(--color-white);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+div.hero-image div.container {
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-primary);
+    color: var(--color-black);
+}
+div.hero-image div.container:nth-child(1) p:nth-child(1) {
+    font-size: 5vmin;
+    letter-spacing: 0.5vw;
+    padding-left: 0.5vw;
+}
+div.hero-image div.container:nth-child(2) p:nth-child(1) {
+    color: var(--color-primary);
+    font-size: 5vmin;
+    letter-spacing: 0.5vw;
+    padding-left: 0.5vw;
+}
+div.hero-image div.container p:nth-child(2) {
+    font-size: 2vmin;
+    font-style: italic;
+}
+div.hero-image div.container p:nth-child(2) span {
+    font-size: 2vmin;
+    font-weight: 800;
+}
