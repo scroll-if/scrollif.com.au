@@ -11,6 +11,19 @@
         align-items: center;
         justify-content: center;
     }
+    div.hero-image div.title-container {
+        margin-bottom: 12vmin;
+    }
+    div.hero-image div.title-container h2 {
+        font-family: var(--font-primary);
+        color: var(--color-black);
+        font-size: 7vmin;
+        text-transform: uppercase;
+        margin: 0;
+        background: linear-gradient(var(--color-white),var(--color-white)) center bottom;
+            background-size: 60% 1vmin;
+            background-repeat:no-repeat;
+    }
     div.hero-image div.dictionary-container {
         text-align: left;
         display: flex;
@@ -61,7 +74,7 @@
         border-top: var(--color-dark-grey) solid 1px;
     }
     div.hero-image div.tagline-container {
-        margin-top: 45px;
+        margin-top: 12vmin;
     }
     div.hero-image div.tagline-container span.tagline code {
         background: var(--color-primary);
