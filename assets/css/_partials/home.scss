@@ -60,10 +60,12 @@
         margin: 3px 0;
         border-top: var(--color-dark-grey) solid 1px;
     }
-
+    div.hero-image div.tagline-container {
+        margin-top: 45px;
+    }
     div.hero-image div.tagline-container span.tagline code {
         background: var(--color-primary);
-        font-size: var(--font-xxs);
+        font-size: 3vmin;
         padding: 2px 4px 2px 2px;
         margin-left: 15px;
     }
