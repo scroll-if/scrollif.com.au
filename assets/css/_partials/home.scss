@@ -19,22 +19,27 @@ div.hero-image div.container {
     font-family: var(--font-primary);
     color: var(--color-black);
 }
-div.hero-image div.container:nth-child(1) p:nth-child(1) {
+div.hero-image div.container div:nth-child(2) {
+    margin-left: 30px;
+}
+div.hero-image div.container div p:nth-child(1) {
     font-size: 5vmin;
     letter-spacing: 0.5vw;
     padding-left: 0.5vw;
+    margin: 0;
 }
-div.hero-image div.container:nth-child(2) p:nth-child(1) {
+div.hero-image div.container div:nth-child(2) p:nth-child(1) {
     color: var(--color-primary);
-    font-size: 5vmin;
-    letter-spacing: 0.5vw;
-    padding-left: 0.5vw;
 }
-div.hero-image div.container p:nth-child(2) {
+div.hero-image div.container div p:nth-child(2) {
+    font-family: Arial;
     font-size: 2vmin;
     font-style: italic;
+    margin: 0;
 }
-div.hero-image div.container p:nth-child(2) span {
+div.hero-image div.container div p:nth-child(2) span {
+    font-family: var(--font-secondary);
     font-size: 2vmin;
+    font-style: normal;
     font-weight: 800;
 }
