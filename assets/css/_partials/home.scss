@@ -20,8 +20,9 @@
         font-size: 7vmin;
         text-transform: uppercase;
         margin: 0;
-        background: linear-gradient(var(--color-white),var(--color-white)) center bottom;
-            background-size: 60% 1vmin;
+        padding-bottom: 1%;
+        background: linear-gradient(var(--color-black),var(--color-black)) center bottom;
+            background-size: 100% 1vmin;
             background-repeat:no-repeat;
     }
     div.hero-image div.dictionary-container {
