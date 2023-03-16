@@ -104,12 +104,25 @@
             51% { opacity: 1; }
             100% { opacity: 1; }
         }
-    /* BACK TO TOP BUTTON */
+    /* SCROLL DOWN BUTTON */
         div.hero-image a.scroll-down-trigger {
             display: block;
             margin: 15px auto;
             position: absolute;
             bottom: 0;
+            -webkit-transition: bottom var(--transition-speed);
+            -moz-transition: bottom var(--transition-speed);
+            -o-transition: bottom var(--transition-speed);
+            -ms-transition: bottom var(--transition-speed);
+            transition: bottom var(--transition-speed);
+            animation: bump 2s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes bump {
+            0% { bottom: 0; }
+            49% { bottom: 15px; }
+            51% { bottom: 15px; }
+            100% { bottom: 0; }
         }
         div.hero-image div.scroll-down-button {
             display: flex;
@@ -120,22 +133,14 @@
         div.hero-image div.scroll-down-arrow {
             width: 0;
             height: 0;
-            border-left: 18px solid var(--color-white);
-            border-right: 18px solid var(--color-white);
-            border-top: 30px solid var(--color-black);
-            -webkit-transition: border var(--transition-speed);
-            -moz-transition: border var(--transition-speed);
-            -o-transition: border var(--transition-speed);
-            -ms-transition: border var(--transition-speed);
-            transition: border var(--transition-speed);
-            animation: pulse-expand 2s;
-            animation-iteration-count: infinite;
-        }
-        @keyframes text-cursor {
-            0% { border-top-width: 30px; }
-            49% { border-top-width: 45px; }
-            51% { border-top-width: 45px; }
-            100% { border-top-width: 30px; }
+            border-left: 18px solid transparent;
+            border-right: 18px solid transparent;
+            border-top: 30px solid var(--color-white);
+            -webkit-transition: border-color var(--transition-speed);
+            -moz-transition: border-color var(--transition-speed);
+            -o-transition: border-color var(--transition-speed);
+            -ms-transition: border-color var(--transition-speed);
+            transition: border-color var(--transition-speed);
         }
         html:not(.can-touch) div.hero-image a.scroll-down-trigger:hover div.back-to-top-arrow, 
         html:not(.can-touch) div.hero-image a.scroll-down-trigger:focus div.back-to-top-arrow {
