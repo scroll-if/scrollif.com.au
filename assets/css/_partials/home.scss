@@ -11,27 +11,28 @@
         align-items: center;
         justify-content: center;
     }
-    div.hero-image div.title-container {
-        text-align: center;
-    }
-    div.hero-image div.title-container h2 {
-        font-family: var(--font-primary);
-        color: var(--color-black);
-        font-size: 8vmin;
-        text-transform: uppercase;
-        letter-spacing: 1vmin;
-        padding-left: 1vmin;
-        text-shadow: var(--color-white) 0px 0px 1vmin, var(--color-white) 0px 0px 2vmin, var(--color-white) 0px 0px 4vmin;
-    }
-    div.hero-image div.title-container p {
-        font-family: var(--font-primary);
-        color: var(--color-white);
-        font-size: 3vmin;
-        text-transform: uppercase;
-        letter-spacing: 1vmin;
-        padding-left: 1vmin;
-        margin: 0;
-    }
+    /* TITLE */
+        div.hero-image div.title-container {
+            text-align: center;
+        }
+        div.hero-image div.title-container h2 {
+            font-family: var(--font-primary);
+            color: var(--color-black);
+            font-size: 8vmin;
+            text-transform: uppercase;
+            letter-spacing: 1vmin;
+            padding-left: 1vmin;
+            text-shadow: var(--color-white) 0px 0px 1vmin, var(--color-white) 0px 0px 2vmin, var(--color-white) 0px 0px 4vmin;
+        }
+        div.hero-image div.title-container p {
+            font-family: var(--font-primary);
+            color: var(--color-white);
+            font-size: 3vmin;
+            text-transform: uppercase;
+            letter-spacing: 1vmin;
+            padding-left: 1vmin;
+            margin: 0;
+        }
     div.hero-image div.dictionary-container {
         text-align: left;
         display: flex;
@@ -81,25 +82,82 @@
         margin: 3px 0;
         border-top: var(--color-dark-grey) solid 1px;
     }
-    div.hero-image div.tagline-container {
-        margin: 4vmin 0;
-    }
-    div.hero-image div.tagline-container span.tagline code {
-        background: var(--color-primary);
-        font-size: 3vmin;
-        padding: 2px 4px 2px 2px;
-        margin-left: 10vmin;
-    }
-    div.hero-image div.tagline-container span.tagline code span {
-        animation: text-cursor 1s;
-        animation-iteration-count: infinite;
-    }
-    @keyframes text-cursor {
-        0% { opacity: 0; }
-        49% { opacity: 0; }
-        51% { opacity: 1; }
-        100% { opacity: 1; }
-    }
+    /* TAGLINE */
+        div.hero-image div.tagline-container {
+            margin: 4vmin 0;
+        }
+        div.hero-image div.tagline-container span.tagline code {
+            background: var(--color-primary);
+            font-size: 3vmin;
+            padding: 2px 4px 2px 2px;
+            margin-left: 10vmin;
+        }
+        div.hero-image div.tagline-container span.tagline code span {
+            animation: text-cursor 1s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes text-cursor {
+            0% { opacity: 0; }
+            49% { opacity: 0; }
+            51% { opacity: 1; }
+            100% { opacity: 1; }
+        }
+    /* BACK TO TOP BUTTON */
+        div.hero-image a.scroll-down-trigger {
+            display: block;
+            width: 45px;
+            margin: 15px auto;
+            position: absolute;
+            bottom: 45px;
+            -webkit-transition: bottom var(--transition-speed);
+            -moz-transition: bottom var(--transition-speed);
+            -o-transition: bottom var(--transition-speed);
+            -ms-transition: bottom var(--transition-speed);
+            transition: bottom var(--transition-speed);
+        }
+        div.hero-image div.scroll-down-button {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background-color: var(--color-white);
+            opacity: 0.8;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding-bottom: 5px;
+            -webkit-transition: background-color var(--transition-speed);
+            -moz-transition: background-color var(--transition-speed);
+            -o-transition: background-color var(--transition-speed);
+            -ms-transition: background-color var(--transition-speed);
+            transition: background-color var(--transition-speed);
+        }
+        div.hero-image div.scroll-down-arrow {
+            width: 0;
+            height: 0;
+            border-left: 12px solid var(--color-white);
+            border-right: 12px solid var(--color-white);
+            border-bottom: 20px solid var(--color-black);
+            -webkit-transition: border-color var(--transition-speed);
+            -moz-transition: border-color var(--transition-speed);
+            -o-transition: border-color var(--transition-speed);
+            -ms-transition: border-color var(--transition-speed);
+            transition: border-color var(--transition-speed);
+        }
+        html:not(.can-touch) div.hero-image a.scroll-down-trigger:hover div.back-to-top-button, 
+        html:not(.can-touch) div.hero-image a.scroll-down-trigger:focus div.back-to-top-button {
+            background-color: var(--color-primary);
+        }
+        html:not(.can-touch) div.hero-image a.scroll-down-trigger:hover div.back-to-top-arrow, 
+        html:not(.can-touch) div.hero-image a.scroll-down-trigger:focus div.back-to-top-arrow {
+            border-left-color: var(--color-primary);
+            border-right-color: var(--color-primary);
+            border-bottom-color: var(--color-white);
+        }
+        html:not(.can-touch) div.hero-image a.scroll-down-trigger:hover,
+        html:not(.can-touch) div.hero-image a.scroll-down-trigger:focus {
+            outline: none;
+        }
 /* MEDIA QUERIES */
     @media only screen and (min-width: 464px) {
         div.hero-image div.dictionary-container {
