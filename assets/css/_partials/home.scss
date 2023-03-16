@@ -113,18 +113,20 @@
             outline: none;
         }
 /* ABOUT */
-    #about div.max-width-container {
+    #about div.wrapper {
         padding: 15px;
+        font-size: 0;
     }
-    #about div.box {
+    #about div.wrapper div.box {
         width: 100%;
         padding: 15px;
+        vertical-align: middle;
     }
-    #about img {
+    #about div.wrapper div.box img {
         width: 100%;
         height: auto;
     }
-    #about div.dictionary-container {
+    #about div.wrapper div.box div.dictionary-container {
         text-align: left;
         display: flex;
         flex-direction: column;
@@ -134,40 +136,40 @@
         border-radius: 5px;
         padding: 15px;
     }
-    #about div.dictionary-container div:nth-child(1) {
+    #about div.wrapper div.box div.dictionary-container div:nth-child(1) {
         margin-right: 15px;
         margin-bottom: 15px;
         max-width: 175px;
     }
-    #about div.dictionary-container div:nth-child(2) {
+    #about div.wrapper div.box div.dictionary-container div:nth-child(2) {
         margin-top: 15px;
         margin-left: 15px;
         max-width: 175px;
     }
-    #about div.dictionary-container div:nth-child(1) p:nth-child(1) {
+    #about div.wrapper div.box div.dictionary-container div:nth-child(1) p:nth-child(1) {
         font-family: var(--font-primary);
         color: var(--color-black);
         font-size: var(--font-xl);
         margin: 0;
     }
-    #about div.dictionary-container div:nth-child(2) p:nth-child(1) {
+    #about div.wrapper div.box div.dictionary-container div:nth-child(2) p:nth-child(1) {
         font-family: var(--font-primary);
         color: var(--color-primary);
         font-size: var(--font-xl);
         margin: 0;
     }
-    #about div.dictionary-container div p:nth-child(2) {
+    #about div.wrapper div.box div.dictionary-container div p:nth-child(2) {
         font-family: Arial;
         font-size: var(--font-xs);
         font-style: italic;
         margin: 0;
     }
-    #about div.dictionary-container div p:nth-child(2) span {
+    #about div.wrapper div.box div.dictionary-container div p:nth-child(2) span {
         font-family: var(--font-secondary);
         font-size: var(--font-xs);
         font-style: normal;
     }
-    #about div.dictionary-container div p:nth-child(3) {
+    #about div.wrapper div.box div.dictionary-container div p:nth-child(3) {
         font-family: var(--font-tertiary);
         font-size: var(--font-xxs);
         margin: 3px 0;
@@ -175,13 +177,13 @@
     }
 /* MEDIA QUERIES */
     @media only screen and (min-width: 464px) {
-        #about div.dictionary-container {
+        #about div.wrapper div.box div.dictionary-container {
             width: 85%;
             max-width: 600px;
             flex-direction: row;
             justify-content: space-evenly;
         }
-        #about div.box {
+        #about div.wrapper div.box {
             width: 50%;
         }
     }
