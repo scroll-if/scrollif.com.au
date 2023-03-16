@@ -12,31 +12,25 @@
         justify-content: center;
     }
     div.hero-image div.title-container {
-        margin-bottom: 12vmin;
+        text-align: center;
     }
     div.hero-image div.title-container h2 {
         font-family: var(--font-primary);
-        color: var(--color-primary);
-        font-size: 7vmin;
+        color: var(--color-black);
+        font-size: 8vmin;
         text-transform: uppercase;
-        letter-spacing: 2vmin;
-        padding-left: 2vmin;
-        margin: 0;
-        background: linear-gradient(var(--color-primary),var(--color-primary)) center bottom;
-            background-size: 100% 1vmin;
-            background-repeat:no-repeat;
+        letter-spacing: 1vmin;
+        padding-left: 1vmin;
+        text-shadow: var(--color-white) 0px 0px 1vmin, var(--color-white) 0px 0px 2vmin, var(--color-white) 0px 0px 4vmin;
     }
     div.hero-image div.title-container p {
         font-family: var(--font-primary);
-        color: var(--color-black);
-        font-size: 4vmin;
+        color: var(--color-white);
+        font-size: 3vmin;
         text-transform: uppercase;
         letter-spacing: 1vmin;
         padding-left: 1vmin;
         margin: 0;
-        background: linear-gradient(var(--color-primary),var(--color-primary)) center bottom;
-            background-size: 100% 1vmin;
-            background-repeat:no-repeat;
     }
     div.hero-image div.dictionary-container {
         text-align: left;
@@ -88,13 +82,13 @@
         border-top: var(--color-dark-grey) solid 1px;
     }
     div.hero-image div.tagline-container {
-        margin-top: 12vmin;
+        margin: 4vmin 0;
     }
     div.hero-image div.tagline-container span.tagline code {
         background: var(--color-primary);
         font-size: 3vmin;
         padding: 2px 4px 2px 2px;
-        margin-left: 15px;
+        margin-left: 10vmin;
     }
     div.hero-image div.tagline-container span.tagline code span {
         animation: text-cursor 1s;
