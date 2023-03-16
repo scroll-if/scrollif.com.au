@@ -113,40 +113,48 @@
             outline: none;
         }
 /* ABOUT */
+    #about {
+        background-color: var(--color-white);
+    }
     #about div.wrapper {
         padding: 15px;
         font-size: 0;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
         justify-content: center;
+        flex-wrap: wrap;
     }
     #about div.wrapper div.box {
-        width: 100%;
+        flex-basis: min-content;
+        flex-grow: 1;
         padding: 15px;
     }
     #about div.wrapper div.box img {
         width: 100%;
+        min-width: 250px;
+        max-width: 500px;
         height: auto;
     }
     #about div.wrapper div.box div.dictionary-container {
+        min-width: 220px;
+        max-width: 350px;
+        margin: auto;
         text-align: left;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        background-color: rgba(255, 255, 255, 0.8);
-        border-radius: 5px;
         padding: 15px;
     }
     #about div.wrapper div.box div.dictionary-container div:nth-child(1) {
-        margin-right: 15px;
+        margin-right: auto;
         margin-bottom: 15px;
         max-width: 175px;
     }
     #about div.wrapper div.box div.dictionary-container div:nth-child(2) {
         margin-top: 15px;
-        margin-left: 15px;
+        margin-left: auto;
         max-width: 175px;
     }
     #about div.wrapper div.box div.dictionary-container div:nth-child(1) p:nth-child(1) {
@@ -179,7 +187,7 @@
         border-top: var(--color-dark-grey) solid 1px;
     }
 /* MEDIA QUERIES */
-    @media only screen and (min-width: 464px) {
+/*    @media only screen and (min-width: 464px) {
         #about div.wrapper div.box div.dictionary-container {
             flex-direction: row;
             justify-content: space-evenly;
@@ -187,4 +195,7 @@
         #about div.wrapper {
             flex-direction: row;
         }
-    }
+        #about div.wrapper div.box img {
+            padding: 45px;
+        }
+    } */
