@@ -9,6 +9,10 @@ div.main.legal div.legal-container {
 	align-items: baseline;
 
 }
+div.main.legal .anchor::before {
+	margin-top: calc((var(--header-height) + 30px)*-1; 
+	height: calc(var(--header-height) + 30px); 
+}
 /* CONTENTS */
 	div.main.legal div.legal-container div.contents {
 		min-width: 50%;
