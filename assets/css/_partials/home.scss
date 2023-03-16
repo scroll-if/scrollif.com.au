@@ -35,55 +35,6 @@
             padding-left: 1vmin;
             margin: 0;
         }
-    div.hero-image div.dictionary-container {
-        text-align: left;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        background-color: rgba(255, 255, 255, 0.8);
-        border-radius: 5px;
-        padding: 30px;
-    }
-    div.hero-image div.dictionary-container div:nth-child(1) {
-        margin-right: 15px;
-        margin-bottom: 15px;
-        max-width: 175px;
-    }
-    div.hero-image div.dictionary-container div:nth-child(2) {
-        margin-top: 15px;
-        margin-left: 15px;
-        max-width: 175px;
-    }
-    div.hero-image div.dictionary-container div:nth-child(1) p:nth-child(1) {
-        font-family: var(--font-primary);
-        color: var(--color-black);
-        font-size: var(--font-xl);
-        margin: 0;
-    }
-    div.hero-image div.dictionary-container div:nth-child(2) p:nth-child(1) {
-        font-family: var(--font-primary);
-        color: var(--color-primary);
-        font-size: var(--font-xl);
-        margin: 0;
-    }
-    div.hero-image div.dictionary-container div p:nth-child(2) {
-        font-family: Arial;
-        font-size: var(--font-xs);
-        font-style: italic;
-        margin: 0;
-    }
-    div.hero-image div.dictionary-container div p:nth-child(2) span {
-        font-family: var(--font-secondary);
-        font-size: var(--font-xs);
-        font-style: normal;
-    }
-    div.hero-image div.dictionary-container div p:nth-child(3) {
-        font-family: var(--font-tertiary);
-        font-size: var(--font-xxs);
-        margin: 3px 0;
-        border-top: var(--color-dark-grey) solid 1px;
-    }
     /* TAGLINE */
         div.hero-image div.tagline-container {
             margin: 4vmin 0;
@@ -109,7 +60,7 @@
             display: block;
             margin: 15px auto;
             position: absolute;
-            bottom: 0;
+            bottom: 15px;
             -webkit-transition: bottom var(--transition-speed);
             -moz-transition: bottom var(--transition-speed);
             -o-transition: bottom var(--transition-speed);
@@ -119,10 +70,21 @@
             animation-iteration-count: infinite;
         }
         @keyframes bump {
-            0% { bottom: 0; }
-            49% { bottom: 15px; }
-            51% { bottom: 15px; }
-            100% { bottom: 0; }
+            0% {
+            bottom: 15px;
+            }
+            30% {
+            bottom: 15px;
+            }
+            50% {
+            bottom: 5px;
+            }
+            70% {
+            bottom: 15px;
+            }
+            100% {
+            bottom: 15px;
+            }
         }
         div.hero-image div.scroll-down-button {
             display: flex;
@@ -142,17 +104,67 @@
             -ms-transition: border-color var(--transition-speed);
             transition: border-color var(--transition-speed);
         }
-        html:not(.can-touch) div.hero-image a.scroll-down-trigger:hover div.back-to-top-arrow, 
-        html:not(.can-touch) div.hero-image a.scroll-down-trigger:focus div.back-to-top-arrow {
+        html:not(.can-touch) div.hero-image a.scroll-down-trigger:hover div.scroll-down-arrow, 
+        html:not(.can-touch) div.hero-image a.scroll-down-trigger:focus div.scroll-down-arrow {
             border-top-color: var(--color-primary);
         }
         html:not(.can-touch) div.hero-image a.scroll-down-trigger:hover,
         html:not(.can-touch) div.hero-image a.scroll-down-trigger:focus {
             outline: none;
         }
+/* ABOUT */
+    #about div.dictionary-container {
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(255, 255, 255, 0.8);
+        border-radius: 5px;
+        padding: 30px;
+    }
+    #about div.dictionary-container div:nth-child(1) {
+        margin-right: 15px;
+        margin-bottom: 15px;
+        max-width: 175px;
+    }
+    #about div.dictionary-container div:nth-child(2) {
+        margin-top: 15px;
+        margin-left: 15px;
+        max-width: 175px;
+    }
+    #about div.dictionary-container div:nth-child(1) p:nth-child(1) {
+        font-family: var(--font-primary);
+        color: var(--color-black);
+        font-size: var(--font-xl);
+        margin: 0;
+    }
+    #about div.dictionary-container div:nth-child(2) p:nth-child(1) {
+        font-family: var(--font-primary);
+        color: var(--color-primary);
+        font-size: var(--font-xl);
+        margin: 0;
+    }
+    #about div.dictionary-container div p:nth-child(2) {
+        font-family: Arial;
+        font-size: var(--font-xs);
+        font-style: italic;
+        margin: 0;
+    }
+    #about div.dictionary-container div p:nth-child(2) span {
+        font-family: var(--font-secondary);
+        font-size: var(--font-xs);
+        font-style: normal;
+    }
+    #about div.dictionary-container div p:nth-child(3) {
+        font-family: var(--font-tertiary);
+        font-size: var(--font-xxs);
+        margin: 3px 0;
+        border-top: var(--color-dark-grey) solid 1px;
+    }
 /* MEDIA QUERIES */
     @media only screen and (min-width: 464px) {
-        div.hero-image div.dictionary-container {
+        #about div.dictionary-container {
             width: 85%;
             max-width: 600px;
             flex-direction: row;
