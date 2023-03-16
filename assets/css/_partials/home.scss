@@ -22,7 +22,9 @@
             text-transform: uppercase;
             letter-spacing: 1vmin;
             padding-left: 1vmin;
-            text-shadow: var(--color-white) 0px 0px 1vmin, var(--color-white) 0px 0px 2vmin, var(--color-white) 0px 0px 4vmin;
+            text-shadow: var(--color-white) 0px 0px 1vmin, 
+                        var(--color-white) 0px 0px 2vmin, 
+                        var(--color-white) 0px 0px 4vmin;
         }
         div.hero-image div.title-container p {
             font-family: var(--font-primary);
@@ -105,54 +107,39 @@
     /* BACK TO TOP BUTTON */
         div.hero-image a.scroll-down-trigger {
             display: block;
-            width: 45px;
             margin: 15px auto;
             position: absolute;
-            bottom: 45px;
-            -webkit-transition: bottom var(--transition-speed);
-            -moz-transition: bottom var(--transition-speed);
-            -o-transition: bottom var(--transition-speed);
-            -ms-transition: bottom var(--transition-speed);
-            transition: bottom var(--transition-speed);
+            bottom: 0;
         }
         div.hero-image div.scroll-down-button {
-            width: 45px;
-            height: 45px;
-            border-radius: 50%;
-            background-color: var(--color-white);
-            opacity: 0.8;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            padding-bottom: 5px;
-            -webkit-transition: background-color var(--transition-speed);
-            -moz-transition: background-color var(--transition-speed);
-            -o-transition: background-color var(--transition-speed);
-            -ms-transition: background-color var(--transition-speed);
-            transition: background-color var(--transition-speed);
         }
         div.hero-image div.scroll-down-arrow {
             width: 0;
             height: 0;
-            border-left: 12px solid var(--color-white);
-            border-right: 12px solid var(--color-white);
-            border-bottom: 20px solid var(--color-black);
-            -webkit-transition: border-color var(--transition-speed);
-            -moz-transition: border-color var(--transition-speed);
-            -o-transition: border-color var(--transition-speed);
-            -ms-transition: border-color var(--transition-speed);
-            transition: border-color var(--transition-speed);
+            border-left: 18px solid var(--color-white);
+            border-right: 18px solid var(--color-white);
+            border-top: 30px solid var(--color-black);
+            -webkit-transition: border var(--transition-speed);
+            -moz-transition: border var(--transition-speed);
+            -o-transition: border var(--transition-speed);
+            -ms-transition: border var(--transition-speed);
+            transition: border var(--transition-speed);
+            animation: pulse-expand 2s;
+            animation-iteration-count: infinite;
         }
-        html:not(.can-touch) div.hero-image a.scroll-down-trigger:hover div.back-to-top-button, 
-        html:not(.can-touch) div.hero-image a.scroll-down-trigger:focus div.back-to-top-button {
-            background-color: var(--color-primary);
+        @keyframes text-cursor {
+            0% { border-top-width: 30px; }
+            49% { border-top-width: 45px; }
+            51% { border-top-width: 45px; }
+            100% { border-top-width: 30px; }
         }
         html:not(.can-touch) div.hero-image a.scroll-down-trigger:hover div.back-to-top-arrow, 
         html:not(.can-touch) div.hero-image a.scroll-down-trigger:focus div.back-to-top-arrow {
-            border-left-color: var(--color-primary);
-            border-right-color: var(--color-primary);
-            border-bottom-color: var(--color-white);
+            border-top-color: var(--color-primary);
         }
         html:not(.can-touch) div.hero-image a.scroll-down-trigger:hover,
         html:not(.can-touch) div.hero-image a.scroll-down-trigger:focus {
