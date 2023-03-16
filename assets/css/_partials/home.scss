@@ -113,6 +113,10 @@
             outline: none;
         }
 /* ABOUT */
+    #about img {
+        width: 50%;
+        height: auto;
+    }
     #about div.dictionary-container {
         text-align: left;
         display: flex;
