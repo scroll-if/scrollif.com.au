@@ -218,10 +218,11 @@
         padding: 10px;
         font-family: var(--font-tertiary);
         font-size: var(--font-xs);
+        text-decoration: none;
         color: var(--color-white);
         background-color: var(--color-primary);
-        border: 2px solid transparent;
-        margin: 15px;
+        border: 2px solid var(--color-white);
+        margin: 15px 0;
     }
     html:not(.can-touch) #about div.wrapper div.box div.main a.button:hover, 
     html:not(.can-touch) #about div.wrapper div.box div.main a.button:focus {
