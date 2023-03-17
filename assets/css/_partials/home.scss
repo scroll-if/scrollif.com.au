@@ -115,6 +115,7 @@
 /* ABOUT */
     #about div.background {
         background-color: var(--color-white);
+        padding: 30px 0;
     }
     #about div.wrapper {
         padding: 15px;
@@ -132,7 +133,7 @@
         max-width: 500px;
     }
     #about div.wrapper.dictionary-container-wrapper {
-        max-width: 600px;
+        max-width: 650px;
         margin: auto;
     }
     #about div.wrapper div.code:nth-child(1) {
@@ -140,14 +141,20 @@
         margin: 0 auto 0 15px;
         padding-top: 15px;
     }
-    #about div.wrapper div.code:nth-child(2) {
+    #about div.wrapper div.code:nth-child(3) {
         align-self: flex-end;
         margin: 0 15px 0 auto;
         padding-bottom: 15px;
     }
     #about div.wrapper div code {
+        display: block;
+        width: 60px;
+        background-color: var(--color-dark-grey);
         color: var(--color-black);
         font-size: var(--font-xl);
+        letter-spacing: -5px;
+        text-align: center;
+        padding:0 5px 5px 0;
     }
     #about div.wrapper div.box div.dictionary-container {
         min-width: 220px;
