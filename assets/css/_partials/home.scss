@@ -122,13 +122,14 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: center;
+        justify-content: space-around;
         flex-wrap: wrap;
     }
     #about div.wrapper div.box {
-        flex-basis: min-content;
+        flex-basis: 50%;
         flex-grow: 1;
         padding: 15px;
+        max-width: 500px;
     }
     #about div.wrapper div.box img {
         width: 100%;
