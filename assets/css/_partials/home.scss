@@ -233,6 +233,10 @@
             margin: 3px 0;
             border-top: var(--color-dark-grey) solid 1px;
         }
+/* WEBSITES */
+    #about div.background {
+        background-color: var(--color-primary);
+    }
 /* MEDIA QUERIES */
     @media only screen and (min-width: 464px) {
         
