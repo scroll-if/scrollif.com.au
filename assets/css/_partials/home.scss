@@ -150,7 +150,7 @@
         display: block;
         width: 60px;
         background-color: var(--color-dark-grey);
-        color: var(--color-black);
+        color: var(--color-white);
         font-size: var(--font-xl);
         letter-spacing: -5px;
         text-align: center;
@@ -203,6 +203,7 @@
     #about div.wrapper div.box div.dictionary-container div p:nth-child(3) {
         font-family: var(--font-tertiary);
         font-size: var(--font-xxs);
+        font-style: italic;
         margin: 3px 0;
         border-top: var(--color-dark-grey) solid 1px;
     }
