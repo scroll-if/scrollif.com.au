@@ -215,15 +215,16 @@
     }
     #about div.wrapper div.box div.main a.button {
         display: inline-block;
-        padding: 15px;
+        padding: 10px;
         font-family: var(--font-tertiary);
-        font-size: var(--font-s);
+        font-size: var(--font-xs);
         color: var(--color-white);
         background-color: var(--color-primary);
         border: 2px solid transparent;
+        margin: 15px;
     }
-    html:not(.can-touch) #about div.wrapper div.box div.main a.button:hover div.scroll-down-arrow, 
-    html:not(.can-touch) #about div.wrapper div.box div.main a.button:focus div.scroll-down-arrow {
+    html:not(.can-touch) #about div.wrapper div.box div.main a.button:hover, 
+    html:not(.can-touch) #about div.wrapper div.box div.main a.button:focus {
         border-color: var(--color-primary);
     }
     html:not(.can-touch) #about div.wrapper div.box div.main a.button:hover,
