@@ -9,6 +9,7 @@ div.main.legal p {
 }
 div.main.legal ul {
 	color: var(--color-white);
+	text-indent: calc(var(--font-xs)*-1.5);
 }
 div.main.legal {
 	background-color: var(--color-black);
