@@ -131,11 +131,9 @@
         padding: 15px;
         max-width: 500px;
     }
-    #about div.wrapper div.box img {
-        width: 100%;
-        min-width: 250px;
-        max-width: 500px;
-        height: auto;
+    #about div.wrapper div.box code {
+        font-size: var(--font-xl);
+        max-width: 50px;
     }
     #about div.wrapper div.box div.dictionary-container {
         min-width: 220px;
@@ -187,16 +185,13 @@
         margin: 3px 0;
         border-top: var(--color-dark-grey) solid 1px;
     }
+    #about div.wrapper div.box img {
+        width: 100%;
+        min-width: 250px;
+        max-width: 500px;
+        height: auto;
+    }
 /* MEDIA QUERIES */
-/*    @media only screen and (min-width: 464px) {
-        #about div.wrapper div.box div.dictionary-container {
-            flex-direction: row;
-            justify-content: space-evenly;
-        }
-        #about div.wrapper {
-            flex-direction: row;
-        }
-        #about div.wrapper div.box img {
-            padding: 45px;
-        }
-    } */
+    @media only screen and (min-width: 464px) {
+        
+    }
