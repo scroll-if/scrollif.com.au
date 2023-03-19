@@ -148,6 +148,7 @@
         background-color: var(--color-primary);
         border: 2px solid var(--color-white);
         margin: 15px 0;
+        box-shadow: var(box-shadow);
     }
     html:not(.can-touch) #about div.wrapper div.box div.main a.button:hover, 
     html:not(.can-touch) #about div.wrapper div.box div.main a.button:focus {
@@ -266,13 +267,13 @@
         font-size: var(--font-xs);
         text-decoration: none;
         color: var(--color-white);
-        background-color: var(--color-primary);
-        border: 2px solid var(--color-white);
+        background-color: var(--color-black);
+        border: 2px solid var(--color-primary);
         margin: 15px 0;
     }
     html:not(.can-touch) #websites div.wrapper div.box div.main a.button:hover, 
     html:not(.can-touch) #websites div.wrapper div.box div.main a.button:focus {
-        border-color: var(--color-primary);
+        border-color: var(--color-black);
     }
     html:not(.can-touch) #websites div.wrapper div.box div.main a.button:hover,
     html:not(.can-touch) #websites div.wrapper div.box div.main a.button:focus {
