@@ -273,17 +273,44 @@
     #websites div.wrapper:nth-child(2) {
         justify-content: space-evenly;
     }
-    #websites div.wrapper:nth-child(2) div.border {
-        border: solid 5px var(--color-black);
-    }
-    #websites div.wrapper:nth-child(2) div.box div.border {
+    #websites div.wrapper:nth-child(2) div.box {
         flex-basis: 33.33%;
         padding: 30px;
         text-align: center;
+        min-width: 275px;
         max-width: 300px;
     }
+    #websites div.wrapper:nth-child(2) div.box div.border {
+        background-color: var(--color-white);
+        border: solid 5px var(--color-black);
+        border-radius: 15px;
+        padding: 15px;
+        box-shadow: var(--box-shadow-bottom-right);
+    }
+    #websites div.wrapper:nth-child(2) div.box div.border:hover img, 
+    #websites div.wrapper:nth-child(2) div.box div.border:focus img {
+        -webkit-filter: grayscale(0);
+        -moz-filter: grayscale(0);
+        -o-filter: grayscale(0);
+        -ms-filter: grayscale(0);
+        filter: grayscale(0);
+    }
     #websites div.wrapper:nth-child(2) div.box div.border img {
-        width: 140px;
+        min-width: 140px;
+        max-width: 140px;
+        -webkit-filter: grayscale(100%);
+        -moz-filter: grayscale(100%);
+        -o-filter: grayscale(100%);
+        -ms-filter: grayscale(100%);
+        filter: grayscale(100%);
+        -webkit-transition: filter var(--transition-speed);
+        -moz-transition: filter var(--transition-speed);
+        -o-transition: filter var(--transition-speed);
+        -ms-transition: filter var(--transition-speed);
+        transition: filter var(--transition-speed);
+    }
+    #websites div.wrapper:nth-child(2) div.box div.border div.main p {
+        text-align: center;
     }
     #websites div.wrapper div.box div.main a.button {
         display: inline-block;
