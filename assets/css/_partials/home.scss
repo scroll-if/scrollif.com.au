@@ -276,13 +276,13 @@
     #websites div.wrapper:nth-child(2) div.border {
         border: solid 5px var(--color-black);
     }
-    #websites div.wrapper:nth-child(2) div.border div.box {
+    #websites div.wrapper:nth-child(2) div.box div.border {
         flex-basis: 33.33%;
         padding: 30px;
         text-align: center;
         max-width: 300px;
     }
-    #websites div.wrapper:nth-child(2) div.border div.box img {
+    #websites div.wrapper:nth-child(2) div.box div.border img {
         width: 140px;
     }
     #websites div.wrapper div.box div.main a.button {
