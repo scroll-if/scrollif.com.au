@@ -273,15 +273,17 @@
     #websites div.wrapper:nth-child(2) {
         justify-content: space-evenly;
     }
-    #websites div.wrapper:nth-child(2) div.box {
+    #websites div.wrapper:nth-child(2) div.border {
+        border: solid 5px var(--color-black);
+    }
+    #websites div.wrapper:nth-child(2) div.border div.box {
         flex-basis: 33.33%;
-        padding: 0 30px;
+        padding: 30px;
         text-align: center;
         max-width: 300px;
     }
-    #websites div.wrapper:nth-child(2) div.box img {
-        min-width: 100px;
-        max-width: 150px;
+    #websites div.wrapper:nth-child(2) div.border div.box img {
+        width: 140px;
     }
     #websites div.wrapper div.box div.main a.button {
         display: inline-block;
