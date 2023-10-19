@@ -18,7 +18,7 @@
         div.hero-image div.title-container h1 {
             font-family: var(--font-primary);
             color: var(--color-black);
-            font-size: 8vmin;
+            font-size: calc(55px + 2vmin);
             text-transform: uppercase;
             letter-spacing: 1vmin;
             padding-left: 1vmin;
@@ -29,7 +29,7 @@
         div.hero-image div.title-container p {
             font-family: var(--font-primary);
             color: var(--color-white);
-            font-size: 3vmin;
+            font-size: calc(10px + 2vmin);
             text-transform: uppercase;
             letter-spacing: 1vmin;
             padding-left: 1vmin;
@@ -389,7 +389,8 @@
         padding: 15px;
         max-width: 450px;
     }
-    #graphics div.wrapper:nth-child(1) div.box div.main {
+    #graphics div.wrapper:nth-child(1) div.box div.main h3,
+    #graphics div.wrapper:nth-child(1) div.box div.main p  {
         color: var(--color-white);
     }
     #graphics div.wrapper div.box img {
