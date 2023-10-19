@@ -148,11 +148,11 @@
         background-color: var(--color-black);
         margin: 15px 0;
         box-shadow: var(--box-shadow-bottom-right);
-        -webkit-transition: background-color var(--transition-speed);
-        -moz-transition: background-color var(--transition-speed);
-        -o-transition: background-color var(--transition-speed);
-        -ms-transition: background-color var(--transition-speed);
-        transition: background-color var(--transition-speed);
+        -webkit-transition: background-color var(--transition-speed). color var(--transition-speed);
+        -moz-transition: background-color var(--transition-speed). color var(--transition-speed);
+        -o-transition: background-color var(--transition-speed). color var(--transition-speed);
+        -ms-transition: background-color var(--transition-speed). color var(--transition-speed);
+        transition: background-color var(--transition-speed). color var(--transition-speed);
     }
     #about div.wrapper div.box div.main a.button p {
         color: var(--color-white);
@@ -283,21 +283,22 @@
         background-color: var(--color-black);
         margin: 15px 0;
         box-shadow: var(--box-shadow-bottom-right);
+        -webkit-transition: background-color var(--transition-speed). color var(--transition-speed);
+        -moz-transition: background-color var(--transition-speed). color var(--transition-speed);
+        -o-transition: background-color var(--transition-speed). color var(--transition-speed);
+        -ms-transition: background-color var(--transition-speed). color var(--transition-speed);
+        transition: background-color var(--transition-speed). color var(--transition-speed);
     }
     #websites div.wrapper div.box div.main a.button p {
         color: var(--color-white);
-        background: linear-gradient(var(--color-primary),var(--color-primary)) center bottom;
-            background-size: 0% 2px;
-            background-repeat:no-repeat;
-        -webkit-transition: background var(--transition-speed);
-        -moz-transition: background var(--transition-speed);
-        -o-transition: background var(--transition-speed);
-        -ms-transition: background var(--transition-speed);
-        transition: background var(--transition-speed);
+    }
+    html:not(.can-touch) #websites div.wrapper div.box div.main a.button:hover, 
+    html:not(.can-touch) #websites div.wrapper div.box div.main a.button:focus {
+        background-color: var(--color-white);
     }
     html:not(.can-touch) #websites div.wrapper div.box div.main a.button:hover p, 
     html:not(.can-touch) #websites div.wrapper div.box div.main a.button:focus p {
-        background-size: 100% 2px;
+        color: var(--color-black);
     }
     html:not(.can-touch) #websites div.wrapper div.box div.main a.button:hover,
     html:not(.can-touch) #websites div.wrapper div.box div.main a.button:focus {
@@ -315,6 +316,7 @@
             max-width: 300px;
         }
         #websites div.wrapper:nth-child(2) div.box a.border {
+            display: block;
             background-color: var(--color-white);
             border: solid 10px var(--color-black);
             padding: 15px;
