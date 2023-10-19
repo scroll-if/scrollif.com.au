@@ -143,7 +143,6 @@
         display: inline-block;
         padding: 10px;
         font-family: var(--font-tertiary);
-        color: var(--color-white);
         font-size: var(--font-xs);
         text-decoration: none;
         background-color: var(--color-black);
@@ -155,9 +154,15 @@
         -ms-transition: background-color var(--transition-speed);
         transition: background-color var(--transition-speed);
     }
+    #about div.wrapper div.box div.main a.button p {
+        color: var(--color-white);
+    }
     html:not(.can-touch) #about div.wrapper div.box div.main a.button:hover, 
     html:not(.can-touch) #about div.wrapper div.box div.main a.button:focus {
         background-color: var(--color-primary);
+    }
+    html:not(.can-touch) #about div.wrapper div.box div.main a.button:hover p, 
+    html:not(.can-touch) #about div.wrapper div.box div.main a.button:focus p {
         color: var(--color-black);
     }
     html:not(.can-touch) #about div.wrapper div.box div.main a.button:hover,
