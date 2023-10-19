@@ -23,8 +23,8 @@
             letter-spacing: 1vmin;
             padding-left: 1vmin;
             text-shadow: var(--color-white) 0px 0px 1vmin, 
-                        var(--color-white) 0px 0px 2vmin, 
-                        var(--color-white) 0px 0px 4vmin;
+                         var(--color-white) 0px 0px 1vmin, 
+                         var(--color-white) 0px 0px 1vmin;
         }
         div.hero-image div.title-container p {
             font-family: var(--font-primary);
@@ -115,6 +115,7 @@
 /* ABOUT */
     #about div.background {
         background-color: var(--color-white);
+        padding-bottom:  45px;
     }
     #about div.wrapper {
         padding: 15px;
@@ -169,7 +170,7 @@
     }
     /* DICTIONARY */
         #about div.wrapper.dictionary-container-wrapper {
-            max-width: 650px;
+            max-width: 615px;
             margin: auto;
         }
         #about div.wrapper.dictionary-container-wrapper div.code:nth-child(1) {
@@ -246,6 +247,7 @@
 /* WEBSITES */
     #websites div.background {
         background-color: var(--color-primary);
+        padding-bottom:  45px;
     }
     #websites div.wrapper {
         padding: 15px;
