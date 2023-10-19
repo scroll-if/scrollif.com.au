@@ -383,13 +383,16 @@
         justify-content: center;
         flex-wrap: wrap;
     }
+    #graphics div.wrapper:nth-child(1) {
+        flex-direction: row-reverse;
+    }
     #graphics div.wrapper div.box {
         flex-basis: 50%;
         flex-grow: 1;
         padding: 15px;
         max-width: 450px;
     }
-    #graphics div.wrapper:nth-child(1) div.box div.main h3,
+    #graphics div.wrapper:nth-child(1) div.box div.main h2,
     #graphics div.wrapper:nth-child(1) div.box div.main p  {
         color: var(--color-white);
     }
@@ -430,7 +433,7 @@
     }
     html:not(.can-touch) #graphics div.wrapper div.box div.main a.button:hover p, 
     html:not(.can-touch) #graphics div.wrapper div.box div.main a.button:focus p {
-        color: var(--color-black);
+        color: var(--color-white);
     }
     html:not(.can-touch) #graphics div.wrapper div.box div.main a.button:hover,
     html:not(.can-touch) #graphics div.wrapper div.box div.main a.button:focus {
