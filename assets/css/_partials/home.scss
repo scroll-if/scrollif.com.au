@@ -27,6 +27,14 @@
                          var(--color-white) 0px 0px 1vmin, 
                          var(--color-white) 0px 0px 1vmin;
         }
+        div.hero-image div.title-container img {
+            height: auto;
+            width: 50vmin;
+            max-width: 500px;
+            text-shadow: var(--color-white) 0px 0px 1vmin, 
+                         var(--color-white) 0px 0px 1vmin, 
+                         var(--color-white) 0px 0px 1vmin;
+        }
         div.hero-image div.title-container p {
             font-family: var(--font-primary);
             color: var(--color-white);
