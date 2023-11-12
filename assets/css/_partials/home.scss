@@ -29,8 +29,9 @@
         }
         div.hero-image div.title-container img {
             height: auto;
-            width: 50vmin;
-            max-width: 500px;
+            width: 40vmin;
+            min-width: 250px;
+            margin-bottom: 45px;
             text-shadow: var(--color-white) 0px 0px 1vmin, 
                          var(--color-white) 0px 0px 1vmin, 
                          var(--color-white) 0px 0px 1vmin;
