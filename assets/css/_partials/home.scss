@@ -32,9 +32,48 @@
             width: 40vmin;
             min-width: 250px;
             margin-bottom: 45px;
-            text-shadow: var(--color-white) 0px 0px 1vmin, 
-                         var(--color-white) 0px 0px 1vmin, 
-                         var(--color-white) 0px 0px 1vmin;
+            -webkit-transition: transform var(--transition-speed);
+            -moz-transition: transform var(--transition-speed);
+            -o-transition: transform var(--transition-speed);
+            -ms-transition: transform var(--transition-speed);
+            transition: transform var(--transition-speed);
+            animation: rotate 10s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes rotate {
+            0% {
+            transform: rotate(0);
+            }
+            10% {
+            transform: rotate(5);
+            }
+            20% {
+            transform: rotate(10);
+            }
+            30% {
+            transform: rotate(15);
+            }
+            40% {
+            transform: rotate(10);
+            }
+            50% {
+            transform: rotate(5);
+            }
+            60% {
+            transform: rotate(0);
+            }
+            70% {
+            transform: rotate(-5);
+            }
+            80% {
+            transform: rotate(-10);
+            }
+            90% {
+            transform: rotate(-5);
+            }
+            100% {
+            transform: rotate(0);
+            }
         }
         div.hero-image div.title-container p {
             font-family: var(--font-primary);
