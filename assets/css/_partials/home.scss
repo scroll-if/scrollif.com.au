@@ -16,22 +16,14 @@
             text-align: center;
             padding: 0 15px;
         }
-        div.hero-image div.title-container h1 {
-            font-family: var(--font-primary);
-            color: var(--color-black);
-            font-size: calc(55px + 2vmin);
-            text-transform: uppercase;
-            letter-spacing: 1vmin;
-            padding-left: 1vmin;
-            text-shadow: var(--color-white) 0px 0px 1vmin, 
-                         var(--color-white) 0px 0px 1vmin, 
-                         var(--color-white) 0px 0px 1vmin;
+        div.hero-image div.title-container {
+            display: inline-block;
         }
         div.hero-image div.title-container img {
             height: auto;
             width: 18vmin;
             max-width: 150px;
-            margin: 5vmin;
+            margin: 0 calc(25px + 3vmax) calc(15px + 4vmin);
         }
         div.hero-image div.title-container p {
             font-family: var(--font-primary);
