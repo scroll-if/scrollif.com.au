@@ -16,14 +16,14 @@
             text-align: center;
             padding: 0 15px;
         }
-        div.hero-image div.title-container {
+        div.hero-image div.break-box {
             display: inline-block;
         }
         div.hero-image div.title-container img {
             height: auto;
             width: 18vmin;
             max-width: 150px;
-            margin: 0 calc(25px + 3vmax) calc(15px + 4vmin);
+            margin: 0 calc(15px + 3vmax) calc(15px + 4vmin);
         }
         div.hero-image div.title-container p {
             font-family: var(--font-primary);
