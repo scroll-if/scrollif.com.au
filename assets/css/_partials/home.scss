@@ -2,7 +2,7 @@
     div.hero-image {
     	height: calc(100vh - var(--header-height)); 
         width: 100%; 
-        background-color: var(--color-white);
+        background-color: var(--color-black);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -256,8 +256,14 @@
         }
 /* WEBSITES */
     #websites div.background {
-        background-color: var(--color-primary);
         padding-bottom:  45px;
+        background-color: var(--color-black);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    #websites div.tint {
+        background-color: #00000030;
     }
     #websites div.wrapper {
         padding: 15px;
