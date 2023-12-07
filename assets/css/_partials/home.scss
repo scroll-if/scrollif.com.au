@@ -186,38 +186,38 @@
     }
     /* WORDCLOUD */
         #about div.wrapper.wordcloud {
-            position:  absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-
+            padding: 60px 0;
             display: grid;
             justify-content: center;
             align-content: center;
             grid-gap: 5px;
+            font-family: var(--font-primary);
         }
         #about div.wrapper.wordcloud > div {
             color: #022f40;
-            font-size: var(--font-xs);
+            font-size: calc(var(--font-xxs) + 0.5vw);
         }
+
         #about div.wrapper.wordcloud div:nth-child(2n) {
-            font-size: var(--font-s);
+            font-size: calc(var(--font-xxs) + 1vw);
             color: #38aecc;
             font-weight: bold;
         }
+
         #about div.wrapper.wordcloud div:nth-child(3n) {
-            writing-mode: vertical-lr;
+          writing-mode: vertical-lr;
             -webkit-writing-mode: vertical-lr;
             -ms-writing-mode: vertical-lr;
             color: #0090c1;
         }
+
         #about div.wrapper.wordcloud div:nth-child(4n) {
-            font-size: var(--font-m);
+            font-size: calc(var(--font-xs) + 1.5vw);
             color: #183446;
         }
+
         #about div.wrapper.wordcloud div:nth-child(5n) {
-            font-size: var(--font-l);
+            font-size: calc(var(--font-s) + 2vw);
             color: #046e8f;
         }
         #Photographers {
