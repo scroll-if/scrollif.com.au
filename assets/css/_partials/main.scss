@@ -7,6 +7,9 @@
 		text-transform: uppercase;
 		margin: calc(var(--font-xl)*1) 0 calc(var(--font-xl)/2);
 	}
+	div.main.reverse h1 {
+		color: var(--color-primary);
+	}
 	div.main h1.subtitle {
 		font-family: var(--font-primary);
 		font-weight: var(--font-primary-weight);
@@ -14,6 +17,9 @@
 		font-size: var(--font-l);
 		text-transform: uppercase;
 		margin: calc(var(--font-l)*1) 0 calc(var(--font-xl)/2);
+	}
+	div.main.reverse h1.subtitle {
+		color: var(--color-white);
 	}
 	div.main h2 {
 		font-family: var(--font-secondary);
@@ -23,6 +29,9 @@
 		text-transform: uppercase;
 		margin: calc(var(--font-m)*1.5) 0 calc(var(--font-m)/1.5);
 	}
+	div.main.reverse h2 {
+		color: var(--color-white);
+	}
 	div.main h3 {
 		font-family: var(--font-secondary);
 		font-weight: var(--font-secondary-weight);
@@ -30,6 +39,9 @@
 		font-size: var(--font-s);
 		text-transform: uppercase;
 		margin: calc(var(--font-s)*1.5) 0 calc(var(--font-s)/1.5);
+	}
+	div.main.reverse h3 {
+		color: var(--color-white);
 	}
 	div.main p {
 		font-family: var(--font-tertiary);
@@ -39,11 +51,17 @@
 		margin: calc(var(--font-xs)/2.5) 0 calc(var(--font-xs)/2.5);
 		text-align: justify;
 	}
+	div.main.reverse p {
+		color: var(--color-white);
+	}
 	div.main a {
 		font-family: var(--font-tertiary);
 		font-weight: 800;
 		color: var(--color-primary);
 		text-decoration: underline;
+	}
+	div.main.reverse a {
+		color: var(--color-primary);
 	}
 	div.main a p {
 		font-family: var(--font-tertiary);
@@ -55,10 +73,13 @@
 		font-family: var(--font-tertiary);
 		font-weight: var(--font-tertiary-weight);
 	    font-size: var(--font-xs);
-	    text-indent: calc(var(--font-xs)*-1.8);
+	    text-indent: calc(var(--font-xs)*-1.5);
 	    margin-left: calc(var(--font-xs)*1.5);
 	    margin-bottom: var(--font-xs);
 		color: var(--color-black);
+	}
+	div.main.reverse ul {
+		color: var(--color-white);
 	}
 	div.main li:before {
 		content:  "\25B6";
