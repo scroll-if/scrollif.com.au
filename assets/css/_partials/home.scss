@@ -184,6 +184,42 @@
         margin: 30px auto;
         display: block;
     }
+    /* WORDCLOUD */
+        #about div.wrapper.wordcloud {
+            position:  absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+
+            display: grid;
+            justify-content: center;
+            align-content: center;
+            grid-gap: 5px;
+        }
+        #about div.wrapper.wordcloud > div {
+            color: #022f40;
+            font-size: var(--font-xs);
+        }
+        #about div.wrapper.wordcloud:nth-child(2n) {
+            font-size: var(--font-s);
+            color: #38aecc;
+            font-weight: bold;
+        }
+        #about div.wrapper.wordcloud:nth-child(3n) {
+            writing-mode: vertical-lr;
+            -webkit-writing-mode: vertical-lr;
+            -ms-writing-mode: vertical-lr;
+            color: #0090c1;
+        }
+        #about div.wrapper.wordcloud:nth-child(4n) {
+            font-size: var(--font-m);
+            color: #183446;
+        }
+        #about div.wrapper.wordcloud:nth-child(4n) {
+            font-size: var(--font-l);
+            color: #046e8f;
+        }
     /* DICTIONARY */
         #about div.background:nth-child(2) {
             background-color: var(--color-black);
