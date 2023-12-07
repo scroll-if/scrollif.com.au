@@ -201,24 +201,71 @@
             color: #022f40;
             font-size: var(--font-xs);
         }
-        #about div.wrapper.wordcloud:nth-child(2n) {
+        #about div.wrapper.wordcloud div:nth-child(2n) {
             font-size: var(--font-s);
             color: #38aecc;
             font-weight: bold;
         }
-        #about div.wrapper.wordcloud:nth-child(3n) {
+        #about div.wrapper.wordcloud div:nth-child(3n) {
             writing-mode: vertical-lr;
             -webkit-writing-mode: vertical-lr;
             -ms-writing-mode: vertical-lr;
             color: #0090c1;
         }
-        #about div.wrapper.wordcloud:nth-child(4n) {
+        #about div.wrapper.wordcloud div:nth-child(4n) {
             font-size: var(--font-m);
             color: #183446;
         }
-        #about div.wrapper.wordcloud:nth-child(4n) {
+        #about div.wrapper.wordcloud div:nth-child(5n) {
             font-size: var(--font-l);
             color: #046e8f;
+        }
+        #Photographers {
+            grid-area: Photographers;
+        }
+        #PersonalTrainers {
+            grid-area: PersonalTrainers;
+        }
+        #PetBreeders {
+            grid-area: PetBreeders;
+        }
+        #Videographers {
+            grid-area: Videographers;
+        }
+        #SaaS {
+            grid-area: SaaS;
+        }
+        #Consultants {
+            grid-area: Consultants;
+        }
+        #Entrepreneurs {
+            grid-area: Entrepreneurs;
+        }
+        #HairSalons {
+            grid-area: HairSalons;
+        }
+        #Electricians {
+            grid-area: Electricians;
+        }
+        #Handymen {
+            grid-area: Handymen;
+        }
+        #Plumbers {
+            grid-area: Plumbers;
+        }
+        #PestControl {
+            grid-area: PestControl;
+        }
+        #about div.wrapper.wordcloud {
+            ...
+            grid-template:
+            '. . . Consultants Videographers Videographers Videographers Videographers'
+            'HairSalons HairSalons HairSalons Consultants SaaS Electricians PestControl Entrepreneurs'
+            '. Plumbers PetBreeders Consultants SaaS Electricians PestControl Handymen     '
+            '. . PetBreeders Consultants Photographers Electricians PestControl Handymen'
+            '. . PetBreeders Consultants PersonalTrainers Electricians PestControl Handymen'
+            '. . . Consultants . . PestControl .';
+            ...
         }
     /* DICTIONARY */
         #about div.background:nth-child(2) {
