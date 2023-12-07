@@ -2,6 +2,9 @@ div.main.legal {
 	background-color: var(--color-black);
 	padding: 15px;
 }
+div.main.legal ul {
+    text-indent: calc(var(--font-xs)*-1.5);
+}
 div.main.legal div.legal-container {
 	display: flex;
 	flex-direction: row;

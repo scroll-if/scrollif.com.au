@@ -73,7 +73,7 @@
 		font-family: var(--font-tertiary);
 		font-weight: var(--font-tertiary-weight);
 	    font-size: var(--font-xs);
-	    text-indent: calc(var(--font-xs)*-1.5);
+	    text-indent: calc(var(--font-xs)*-1.8);
 	    margin-left: calc(var(--font-xs)*1.5);
 	    margin-bottom: var(--font-xs);
 		color: var(--color-black);
@@ -92,4 +92,10 @@
 	}
 	div.main li p {
 		display: inline;
+	}
+	div.main code {
+		background: var(--color-primary);
+		font-size: var(--font-s);
+    	padding: 2px 5px 2px 5px;
+    	display: inline;
 	}
