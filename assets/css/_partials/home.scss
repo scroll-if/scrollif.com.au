@@ -257,7 +257,6 @@
             grid-area: PestControl;
         }
         #about div.wrapper.wordcloud {
-            ...
             grid-template:
             '. . . Consultants Videographers Videographers Videographers Videographers'
             'HairSalons HairSalons HairSalons Consultants SaaS Electricians PestControl Entrepreneurs'
@@ -265,7 +264,6 @@
             '. . PetBreeders Consultants Photographers Electricians PestControl Handymen'
             '. . PetBreeders Consultants PersonalTrainers Electricians PestControl Handymen'
             '. . . Consultants . . PestControl .';
-            ...
         }
     /* DICTIONARY */
         #about div.background:nth-child(2) {
