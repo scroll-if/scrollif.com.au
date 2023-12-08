@@ -278,7 +278,7 @@
             background-position: center;
         }
         #about div.tint {
-            background-color: #00000099;
+            background-color: rgba(1, 1, 1, 0.7);
             padding: 30px;
             width: 100%;
             height: 100%;
@@ -378,8 +378,8 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
-
-        flex-basis: 300px;
+        flex-basis: calc(33% - 15px);
+        min-width: 300px;
         flex-grow: 1; 
         margin: 5px;
         height: 300px;
@@ -393,7 +393,7 @@
         flex-basis: calc(50% - 10px);
     }
     #services div.wrapper div.box div.tint {
-        background-color: rgba(1, 1, 1, 0.9);
+        background-color: rgba(1, 1, 1, 0.8);
         padding: 15px;
         width: 100%;
         height: 100%;
