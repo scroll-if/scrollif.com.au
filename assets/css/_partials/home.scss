@@ -186,7 +186,7 @@
     }
     /* WORDCLOUD */
         #about div.wrapper.wordcloud {
-            padding: 60px 15px;
+            padding: 0 15px 60px;
             display: grid;
             justify-content: center;
             align-content: center;
@@ -196,6 +196,7 @@
         #about div.wrapper.wordcloud > div {
             color: #1C6E8A;
             font-size: calc(var(--font-xxs) + 0.5vw);
+            text-shadow: var(--text-shadow);
         }
 
         #about div.wrapper.wordcloud div:nth-child(2n) {
