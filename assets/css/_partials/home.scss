@@ -361,10 +361,10 @@
             border-top: var(--color-dark-grey) solid 1px;
         }
 /* SERVICES */
-    #websites div.background {
+    #services div.background {
         background-color: var(--color-white);
     }
-    #websites div.wrapper {
+    #services div.wrapper {
         padding: 15px;
         font-size: 0;
         display: flex;
@@ -373,15 +373,16 @@
         justify-content: center;
         flex-wrap: wrap;
     }
-    #websites div.wrapper div.box {
+    #services div.wrapper div.box {
         background-color: var(--color-black);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
 
-        flex-basis: 50%;
+        flex-basis: calc(50% - 10px);
         flex-grow: 1;
         padding: 15px;
+        margin: 5px;
     }
 /* MEDIA QUERIES */
     @media only screen and (min-width: 464px) {
