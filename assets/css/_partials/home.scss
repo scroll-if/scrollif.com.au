@@ -220,50 +220,50 @@
             font-size: calc(var(--font-s) + 2vw);
             color: #046e8f;
         }
-        #Photographers {
-            grid-area: Photographers;
+        #worldcloud1 {
+            grid-area: worldcloud1;
         }
-        #PersonalTrainers {
-            grid-area: PersonalTrainers;
+        #worldcloud2 {
+            grid-area: worldcloud2;
         }
-        #PetBreeders {
-            grid-area: PetBreeders;
+        #worldcloud3 {
+            grid-area: worldcloud3;
         }
-        #Videographers {
-            grid-area: Videographers;
+        #worldcloud4 {
+            grid-area: worldcloud4;
         }
-        #SaaS {
-            grid-area: SaaS;
+        #worldcloud5 {
+            grid-area: worldcloud5;
         }
-        #Consultants {
-            grid-area: Consultants;
+        #worldcloud6 {
+            grid-area: worldcloud6;
         }
-        #Entrepreneurs {
-            grid-area: Entrepreneurs;
+        #worldcloud7 {
+            grid-area: worldcloud7;
         }
-        #HairSalons {
-            grid-area: HairSalons;
+        #worldcloud8 {
+            grid-area: worldcloud8;
         }
-        #Electricians {
-            grid-area: Electricians;
+        #worldcloud9 {
+            grid-area: worldcloud9;
         }
-        #Handymen {
+        #worldcloud10 {
             grid-area: Handymen;
         }
-        #Plumbers {
-            grid-area: Plumbers;
+        #worldcloud11 {
+            grid-area: worldcloud11;
         }
-        #PestControl {
-            grid-area: PestControl;
+        #worldcloud12 {
+            grid-area: worldcloud12;
         }
         #about div.wrapper.wordcloud {
             grid-template:
-            '. . . Consultants Videographers Videographers Videographers Videographers'
-            'HairSalons HairSalons HairSalons Consultants SaaS Electricians PestControl Entrepreneurs'
-            '. Plumbers PetBreeders Consultants SaaS Electricians PestControl Handymen     '
-            '. . PetBreeders Consultants Photographers Electricians PestControl Handymen'
-            '. . PetBreeders Consultants PersonalTrainers Electricians PestControl Handymen'
-            '. . . Consultants . . PestControl .';
+            '. . . worldcloud6 worldcloud4 worldcloud4 worldcloud4 worldcloud4'
+            'worldcloud8 worldcloud8 worldcloud8 worldcloud6 worldcloud5 worldcloud9 worldcloud12 worldcloud7'
+            '. worldcloud11 worldcloud3 worldcloud6 worldcloud5 worldcloud9 worldcloud12 worldcloud10     '
+            '. . worldcloud3 worldcloud6 worldcloud1 worldcloud9 worldcloud12 worldcloud10'
+            '. . worldcloud3 worldcloud6 worldcloud2 worldcloud9 worldcloud12 worldcloud10'
+            '. . . worldcloud6 . . worldcloud12 .';
         }
     /* DICTIONARY */
         #about div.background:nth-child(2) {
