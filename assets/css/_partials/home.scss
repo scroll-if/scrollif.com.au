@@ -379,10 +379,13 @@
         background-size: cover;
         background-position: center;
 
-        flex-basis: calc(50% - 10px);
+        flex-basis: 300px;
         flex-grow: 1;
         margin: 5px;
-        height: 600px;
+        height: 300px;
+    }
+    #services div.wrapper div.box:nth-child(1, 2) {
+        flex-basis: 575px;
     }
     #services div.wrapper div.box div.tint {
         background-color: #00000099;
@@ -395,7 +398,10 @@
     }
     #services div.wrapper div.box div.tint div.textbox {
         min-width: 200px;
-        width: 50%;
+        width: 75%;
+    }
+    #services div.wrapper div.box div.tint div.textbox p {
+        text-align: left;
     }
 /* MEDIA QUERIES */
     @media only screen and (min-width: 464px) {
