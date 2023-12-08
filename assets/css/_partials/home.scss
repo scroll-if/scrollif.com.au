@@ -186,7 +186,7 @@
     }
     /* WORDCLOUD */
         #about div.wrapper.wordcloud {
-            padding: 60px 0;
+            padding: 60px 15px;
             display: grid;
             justify-content: center;
             align-content: center;
@@ -234,6 +234,8 @@
         }
         #worldcloud5 {
             grid-area: worldcloud5;
+            text-align: center;
+            margin: auto 0;
         }
         #worldcloud6 {
             grid-area: worldcloud6;
@@ -243,6 +245,7 @@
         }
         #worldcloud8 {
             grid-area: worldcloud8;
+            text-align: right;
         }
         #worldcloud9 {
             grid-area: worldcloud9;
@@ -252,6 +255,7 @@
         }
         #worldcloud11 {
             grid-area: worldcloud11;
+            text-align: right;
         }
         #worldcloud12 {
             grid-area: worldcloud12;
