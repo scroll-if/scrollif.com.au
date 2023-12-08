@@ -194,26 +194,26 @@
             font-family: var(--font-primary);
         }
         #about div.wrapper.wordcloud > div {
-            color: #022f40;
+            color: #5C8A99;
             font-size: calc(var(--font-xxs) + 0.5vw);
         }
 
         #about div.wrapper.wordcloud div:nth-child(2n) {
             font-size: calc(var(--font-xxs) + 1vw);
-            color: #38aecc;
+            color: #248FB3;
             font-weight: bold;
         }
 
         #about div.wrapper.wordcloud div:nth-child(3n) {
-          writing-mode: vertical-lr;
+            writing-mode: vertical-lr;
             -webkit-writing-mode: vertical-lr;
             -ms-writing-mode: vertical-lr;
-            color: #0090c1;
+            color: #293033;
         }
 
         #about div.wrapper.wordcloud div:nth-child(4n) {
             font-size: calc(var(--font-xs) + 1.5vw);
-            color: #183446;
+            color: #406BFF;
         }
 
         #about div.wrapper.wordcloud div:nth-child(5n) {
@@ -248,7 +248,7 @@
             grid-area: worldcloud9;
         }
         #worldcloud10 {
-            grid-area: Handymen;
+            grid-area: worldcloud10;
         }
         #worldcloud11 {
             grid-area: worldcloud11;
@@ -260,7 +260,7 @@
             grid-template:
             '. . . worldcloud6 worldcloud4 worldcloud4 worldcloud4 worldcloud4'
             'worldcloud8 worldcloud8 worldcloud8 worldcloud6 worldcloud5 worldcloud9 worldcloud12 worldcloud7'
-            '. worldcloud11 worldcloud3 worldcloud6 worldcloud5 worldcloud9 worldcloud12 worldcloud10     '
+            '. worldcloud11 worldcloud3 worldcloud6 worldcloud5 worldcloud9 worldcloud12 worldcloud10'
             '. . worldcloud3 worldcloud6 worldcloud1 worldcloud9 worldcloud12 worldcloud10'
             '. . worldcloud3 worldcloud6 worldcloud2 worldcloud9 worldcloud12 worldcloud10'
             '. . . worldcloud6 . . worldcloud12 .';
