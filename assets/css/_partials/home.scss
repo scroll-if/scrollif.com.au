@@ -26,6 +26,7 @@
         }
         div.hero-image div.title-container img {
             height: auto;
+            min-width: 100px;
             width: 18vmin;
             max-width: 150px;
             margin: 0 calc(15px + 3vmax) calc(15px + 4vmin);
@@ -379,15 +380,24 @@
         flex-grow: 1;    
         justify-content: center;
         padding: 15px
+        background: linear-gradient(var(--color-primary),var(--color-primary)) center bottom;
+                    background-size: 60px 5px;
+                    background-repeat:no-repeat;
+    }
+    #services div.wrapper:nth-child(1) div.box h2 {
+        text-align: center;
     }
     #services div.wrapper:nth-child(1) div.box p {
-        text-align: left;
+        text-align: center;
     }
     #services div.wrapper:nth-child(1) div.box img {
         min-width: 200px;
         width: 100%;
         height: auto;
         max-width: 250px;
+    }
+    #services div.wrapper:nth-child(1) {
+        padding: 25px
     }
     #services div.wrapper:nth-child(2) div.box {
         background-color: var(--color-black);
