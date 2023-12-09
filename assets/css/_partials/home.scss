@@ -133,7 +133,6 @@
         flex-basis: 50%;
         flex-grow: 1;
         padding: 15px;
-        max-width: 585px;
     }
     #about div.wrapper div.box ul {
         margin-bottom: 30px;
@@ -373,7 +372,24 @@
         justify-content: center;
         flex-wrap: wrap;
     }
-    #services div.wrapper div.box {
+    #services div.wrapper:nth-child(1) div.box  {
+        display: flex;
+        flex-direction: row;
+        flex-basis: 50%; 
+        flex-grow: 1;    
+        justify-content: center;
+        padding: 15px
+    }
+    #services div.wrapper:nth-child(1) div.box p {
+        text-align: left;
+    }
+    #services div.wrapper:nth-child(1) div.box img {
+        min-width: 200px;
+        width: 100%;
+        height: auto;
+        max-width: 250px;
+    }
+    #services div.wrapper:nth-child(2) div.box {
         background-color: var(--color-black);
         background-repeat: no-repeat;
         background-size: cover;
@@ -384,15 +400,15 @@
         margin: 5px;
         height: 300px;
     }
-    #services div.wrapper div.box:nth-child(1),
-    #services div.wrapper div.box:nth-child(2) {
+    #services div.wrapper:nth-child(2) div.box:nth-child(1),
+    #services div.wrapper:nth-child(2) div.box:nth-child(2) {
         flex-basis: calc(50% - 10px);
     }
-    #services div.wrapper div.box:nth-child(4),
-    #services div.wrapper div.box:nth-child(5) {
+    #services div.wrapper:nth-child(2) div.box:nth-child(4),
+    #services div.wrapper:nth-child(2) div.box:nth-child(5) {
         flex-basis: calc(50% - 10px);
     }
-    #services div.wrapper div.box div.tint {
+    #services div.wrapper:nth-child(2) div.box div.tint {
         background-color: rgba(1, 1, 1, 0.8);
         padding: 15px;
         width: 100%;
@@ -401,11 +417,11 @@
         justify-content: flex-start;
         align-items: flex-start;
     }
-    #services div.wrapper div.box div.tint div.textbox {
+    #services div.wrapper:nth-child(2) div.box div.tint div.textbox {
         min-width: 200px;
         width: 75%;
     }
-    #services div.wrapper div.box div.tint div.textbox p {
+    #services div.wrapper:nth-child(2) div.box div.tint div.textbox p {
         text-align: left;
     }
 /* MEDIA QUERIES */
