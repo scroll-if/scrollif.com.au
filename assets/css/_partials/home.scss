@@ -393,34 +393,26 @@
     #services div.wrapper:nth-child(1) div.box p {
         text-align: center;
     }
-    #services div.wrapper:nth-child(2) div.bounding-box {
+    #services div.wrapper:nth-child(2) div.box {
+        background-color: var(--color-black);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
         flex-basis: calc(33% - 15px);
         min-width: 300px;
         flex-grow: 1; 
         margin: 5px;
         height: 300px;
     }
-    #services div.wrapper:nth-child(2) div.bounding-box div.box {
-        background-color: var(--color-black);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        height: 100%;
-        -webkit-transition: background-size var(--transition-speed);
-        -moz-transition: background-size var(--transition-speed);
-        -o-transition: background-size var(--transition-speed);
-        -ms-transition: background-size var(--transition-speed);
-        transition: background-size var(--transition-speed);
-    }
-    #services div.wrapper:nth-child(2) div.bounding-box:nth-child(1),
-    #services div.wrapper:nth-child(2) div.bounding-box:nth-child(2) {
+    #services div.wrapper:nth-child(2) div.box:nth-child(1),
+    #services div.wrapper:nth-child(2) div.box:nth-child(2) {
         flex-basis: calc(50% - 10px);
     }
-    #services div.wrapper:nth-child(2) div.bounding-box:nth-child(4),
-    #services div.wrapper:nth-child(2) div.bounding-box:nth-child(5) {
+    #services div.wrapper:nth-child(2) div.box:nth-child(4),
+    #services div.wrapper:nth-child(2) div.box:nth-child(5) {
         flex-basis: calc(50% - 10px);
     }
-    #services div.wrapper:nth-child(2) div.bounding-box div.box div.tint {
+    #services div.wrapper:nth-child(2) div.box div.tint {
         background-color: rgba(1, 1, 1, 0.8);
         padding: 15px;
         width: 100%;
@@ -434,19 +426,16 @@
         -ms-transition: background-color var(--transition-speed);
         transition: background-color var(--transition-speed);
     }
-    #services div.wrapper:nth-child(2) div.bounding-box div.box:hover,
-    #services div.wrapper:nth-child(2) div.bounding-box div.box:focus { 
-        background-size: 130%;
+    html:not(.can-touch) #services div.wrapper:nth-child(2) div.box:hover div.tint,
+    html:not(.can-touch) #services div.wrapper:nth-child(2) div.box:focus div.tint, {
+        background-color: rgba(1, 1, 1, 0.7);
+        
     }
-    #services div.wrapper:nth-child(2) div.bounding-box div.box:hover div.tint,
-    #services div.wrapper:nth-child(2) div.bounding-box div.box:focus div.tint { 
-        background-color: rgba(1, 1, 1, 0.5);
-    }
-    #services div.wrapper:nth-child(2) div.bounding-box div.box div.tint div.textbox {
+    #services div.wrapper:nth-child(2) div.box div.tint div.textbox {
         min-width: 200px;
         width: 75%;
     }
-    #services div.wrapper:nth-child(2) div.bounding-box div.box div.tint div.textbox p {
+    #services div.wrapper:nth-child(2) div.box div.tint div.textbox p {
         text-align: left;
     }
 /* MEDIA QUERIES */
