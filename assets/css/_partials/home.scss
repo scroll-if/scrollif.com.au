@@ -34,7 +34,7 @@
         div.hero-image div.title-container p {
             font-family: var(--font-primary);
             color: var(--color-white);
-            font-size: calc(10px + 2vmin);
+            font-size: calc(var(--font-xxs) + 2vmin);
             text-transform: uppercase;
             letter-spacing: 1vmin;
             padding-left: 1vmin;
@@ -46,7 +46,7 @@
         }
         div.hero-image div.tagline-container span.tagline code {
             background: var(--color-primary);
-            font-size: 3vmin;
+            font-size: calc(var(--font-xxs) + 2vmin);
             padding: 2px 4px 2px 2px;
             margin-left: 10vmin;
         }
