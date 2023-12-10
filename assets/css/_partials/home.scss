@@ -406,11 +406,11 @@
         background-size: cover;
         background-position: center;
         height: 100%;
-        -webkit-transition: transform var(--transition-speed);
-        -moz-transition: transform var(--transition-speed);
-        -o-transition: transform var(--transition-speed);
-        -ms-transition: transform var(--transition-speed);
-        transition: transform var(--transition-speed);
+        -webkit-transition: background-size var(--transition-speed);
+        -moz-transition: background-size var(--transition-speed);
+        -o-transition: background-size var(--transition-speed);
+        -ms-transition: background-size var(--transition-speed);
+        transition: background-size var(--transition-speed);
     }
     #services div.wrapper:nth-child(2) div.bounding-box:nth-child(1),
     #services div.wrapper:nth-child(2) div.bounding-box:nth-child(2) {
@@ -436,18 +436,17 @@
     }
     #services div.wrapper:nth-child(2) div.bounding-box div.box:hover,
     #services div.wrapper:nth-child(2) div.bounding-box div.box:focus { 
-        transform: scale(1.3, 1.3);
+        background-size: 130%;
     }
     #services div.wrapper:nth-child(2) div.bounding-box div.box:hover div.tint,
     #services div.wrapper:nth-child(2) div.bounding-box div.box:focus div.tint { 
         background-color: rgba(1, 1, 1, 0.5);
     }
-    #services div.wrapper:nth-child(2) div.bounding-box div.textbox {
-        position: absolute;
+    #services div.wrapper:nth-child(2) div.bounding-box div.box div.tint div.textbox {
         min-width: 200px;
         width: 75%;
     }
-    #services div.wrapper:nth-child(2) div.bounding-box div.textbox p {
+    #services div.wrapper:nth-child(2) div.bounding-box div.box div.tint div.textbox p {
         text-align: left;
     }
 /* MEDIA QUERIES */
