@@ -426,8 +426,8 @@
         -ms-transition: background-color var(--transition-speed);
         transition: background-color var(--transition-speed);
     }
-    html:not(.can-touch) #services div.wrapper:nth-child(2) div.box:hover div.tint,
-    html:not(.can-touch) #services div.wrapper:nth-child(2) div.box:focus div.tint, {
+    html:not(.can-touch) #services div.wrapper:nth-child(2) div.box a:hover div.tint,
+    html:not(.can-touch) #services div.wrapper:nth-child(2) div.box a:focus div.tint, {
         background-color: rgba(1, 1, 1, 0.7);
         
     }
