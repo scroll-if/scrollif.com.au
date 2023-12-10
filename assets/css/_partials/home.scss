@@ -405,6 +405,7 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
+        height: 100%;
         -webkit-transition: transform var(--transition-speed);
         -moz-transition: transform var(--transition-speed);
         -o-transition: transform var(--transition-speed);
@@ -441,11 +442,12 @@
     #services div.wrapper:nth-child(2) div.bounding-box div.box:focus div.tint { 
         background-color: rgba(1, 1, 1, 0.5);
     }
-    #services div.wrapper:nth-child(2) div.bounding-box div.box div.tint div.textbox {
+    #services div.wrapper:nth-child(2) div.bounding-box div.textbox {
+        position: absolute;
         min-width: 200px;
         width: 75%;
     }
-    #services div.wrapper:nth-child(2) div.bounding-box div.box div.tint div.textbox p {
+    #services div.wrapper:nth-child(2) div.bounding-box div.textbox p {
         text-align: left;
     }
 /* MEDIA QUERIES */
