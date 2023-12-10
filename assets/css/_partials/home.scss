@@ -434,9 +434,21 @@
     #services div.wrapper:nth-child(2) div.box div.tint div.textbox {
         min-width: 200px;
         width: 75%;
+        text-align: center;
+    }
+    #services div.wrapper:nth-child(2) div.box div.tint div.textbox h3 {
+        margin: calc(var(--font-s)/1.5) 0 calc(var(--font-s)/1.5);
     }
     #services div.wrapper:nth-child(2) div.box div.tint div.textbox p {
-        text-align: left;
+        text-align: center;
+        display: none;
+    }
+    html:not(.can-touch) #services div.wrapper:nth-child(2) div.box div.tint div.textbox p {
+        display: none;
+    }
+    html:not(.can-touch) #services div.wrapper:nth-child(2) div.box a:hover div.tint p,
+    html:not(.can-touch) #services div.wrapper:nth-child(2) div.box a:focus div.tint p {
+        display: inline;
     }
 /* MEDIA QUERIES */
     @media only screen and (min-width: 464px) {
