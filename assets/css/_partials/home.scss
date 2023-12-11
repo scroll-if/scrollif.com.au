@@ -477,6 +477,35 @@
         flex-grow: 1;
         padding: 15px;
     }
+    #contact div.wrapper div.box div.main h2,
+    #contact div.wrapper div.box div.main p {
+        text-align: left;
+    }
+
+    #contact div.wrapper div.box form input {
+        padding: 10px;
+        font-family: var(--font-secondary);
+        background-color: var(--color-white);
+        margin: 5px;
+        border: none;
+        width: 100%;
+    }
+    #contact div.wrapper div.box form textarea {
+        padding: 10px;
+        font-family: var(--font-secondary);
+        background-color: var(--color-white);
+        margin: 5px;
+        border: none;
+        width: 100%;
+    }
+    #contact div.wrapper div.box form input:nth-last-child(1) {
+        padding: 10px;
+        font-family: var(--font-secondary);
+        background-color: var(--color-white);
+        margin: 5px;
+        border: none;
+        width: 50px;
+    }
 
 /* MEDIA QUERIES */
     @media only screen and (min-width: 464px) {
