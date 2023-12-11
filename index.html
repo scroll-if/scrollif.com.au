@@ -238,7 +238,7 @@ author-twitter:
                     <div class="box">
                         <form name="contact" netlify>
                             <input name="name" placeholder="Name" type="text" required="" pattern="[A-Za-z' -]+" oninvalid="setCustomValidity('Please enter a valid name using letters only.')" onchange="try{setCustomValidity('')}catch(e){}"/>
-                            <input name="phone" placeholder="Phone" type="number" required="" pattern="[0-9 -]+" oninvalid="setCustomValidity('Please enter a valid phone number using numbers only.')" onchange="try{setCustomValidity('')}catch(e){}">
+                            <input name="phone" placeholder="Phone" type="tel" required="" pattern="[0-9 -]+" oninvalid="setCustomValidity('Please enter a valid phone number using numbers only.')" onchange="try{setCustomValidity('')}catch(e){}">
                             <input name="email" placeholder="Email" type="email" required="" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+.[A-Za-z]{2,}$" oninvalid="setCustomValidity('Please enter a valid email making sure to include an @ sign and the domain suffix (.com .net etc.).')" onchange="try{setCustomValidity('')}catch(e){}">
                             <textarea name="message" placeholder="Message" type="text" required=""></textarea>
                             <input name="submit" value="Send Message" type="submit" >
