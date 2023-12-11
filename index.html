@@ -232,19 +232,16 @@ author-twitter:
                         <div class="main reverse">
                             <h2>Contact Us</h2>
                             <p>Have any questions?  Give us a call or send us a message.</p> 
+                        </div>
                     </div>
                     <div class="box">
                         <form name="contact" netlify>
                             <div class="main reverese">
-                                <p>
-                                    <label>Name <input type="text" name="name" /></label>
-                                </p>
-                                <p>
-                                    <label>Email <input type="email" name="email" /></label>
-                                </p>
-                                <p>
-                                    <button type="submit">Submit</button>
-                                </p>
+                                <input name="name" placeholder="Name" type="text" required="" pattern="[A-Za-z' -]+" oninvalid="setCustomValidity('Please enter a valid name using letters only.')" onchange="try{setCustomValidity('')}catch(e){}"/>
+                                <input name="phone" placeholder="Phone" type="number" required="" pattern="[0-9 -]+" oninvalid="setCustomValidity('Please enter a valid phone number using numbers only.')" onchange="try{setCustomValidity('')}catch(e){}">
+                                <input name="email" placeholder="Email" type="email" required="" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+.[A-Za-z]{2,}$" oninvalid="setCustomValidity('Please enter a valid email making sure to include an @ sign and the domain suffix (.com .net etc.).')" onchange="try{setCustomValidity('')}catch(e){}">
+                                <textarea name="message" placeholder="Message" type="text" required=""></textarea>
+                                <input name="submit" value="Send Message" type="submit" >
                             </div>
                         </form>
                     </div>
