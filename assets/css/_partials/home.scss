@@ -456,7 +456,7 @@
         background-color: var(--color-black);
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: center;
+        background-position: center 65%;
     }
     #contact div.tint {
         background-color: rgba(1, 1, 1, 0.7);
@@ -477,6 +477,10 @@
         flex-basis: 50%;
         flex-grow: 1;
         padding: 15px;
+        min-width: 300px;
+    }
+    #contact div.wrapper div.box:nth-child(2) {
+        padding: 10px;
     }
     #contact div.wrapper div.box div.main h2,
     #contact div.wrapper div.box div.main p {
@@ -493,21 +497,22 @@
         flex-basis: 50%;
         flex-grow: 1;
         min-width: 200px;
+        padding: 5px;
     }
     #contact div.wrapper div.box form input, 
     #contact div.wrapper div.box form textarea {
         padding: 10px;
         font-family: var(--font-secondary);
         background-color: var(--color-white);
-        margin: 5px;
+        margin: 5px 0;
         border: none;
         width: 100%;
     }
     #contact div.wrapper div.box form textarea {
         resize: none;
-        height: 125px;
+        height: 128px;
     }
-    #contact div.wrapper div.box form input:nth-last-child(1) {
+    #contact div.wrapper div.box form:nth-last-child(1) input {
         width: 125px;
     }
 
