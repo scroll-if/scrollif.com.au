@@ -482,7 +482,18 @@
     #contact div.wrapper div.box div.main p {
         text-align: left;
     }
-
+    #contact div.wrapper div.box form  {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    #contact div.wrapper div.box form div.inner {
+        flex-basis: 50%;
+        flex-grow: 1;
+        min-width: 200px;
+    }
     #contact div.wrapper div.box form input, 
     #contact div.wrapper div.box form textarea {
         padding: 10px;
