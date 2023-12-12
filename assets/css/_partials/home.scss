@@ -460,6 +460,10 @@
         width: 100%;
         height: 100%;
     }
+    html:not(.can-touch) #services div.wrapper:nth-child(2) a:hover,
+    html:not(.can-touch) #services div.wrapper:nth-child(2) a:focus {
+        outline: none;
+    }
     html:not(.can-touch) #services div.wrapper:nth-child(2) a:hover div.box div.tint,
     html:not(.can-touch) #services div.wrapper:nth-child(2) a:focus div.box div.tint {
         background-color: rgba(1, 1, 1, 0.7);
