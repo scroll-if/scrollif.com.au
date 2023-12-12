@@ -112,7 +112,7 @@
             height: 0;
             border-left: 12px solid transparent;
             border-right: 12px solid transparent;
-            border-top: 20px solid var(--color-white);
+            border-top: 20px solid var(--color-black);
             -webkit-transition: border-color var(--transition-speed);
             -moz-transition: border-color var(--transition-speed);
             -o-transition: border-color var(--transition-speed);
@@ -121,11 +121,11 @@
         }
         html:not(.can-touch) div.hero-image a.scroll-down-trigger:hover div.scroll-down-button, 
         html:not(.can-touch) div.hero-image a.scroll-down-trigger:focus div.scroll-down-button {
-            border-top-color: var(--color-primary);
+            border-top-color: var(--color-white);
         }
         html:not(.can-touch) div.hero-image a.scroll-down-trigger:hover div.scroll-down-arrow, 
         html:not(.can-touch) div.hero-image a.scroll-down-trigger:focus div.scroll-down-arrow {
-            border-top-color: var(--color-white);
+            border-top-color: var(--color-primary);
         }
         html:not(.can-touch) div.hero-image a.scroll-down-trigger:hover,
         html:not(.can-touch) div.hero-image a.scroll-down-trigger:focus {
