@@ -572,6 +572,7 @@
     #contact div.wrapper div.box form div.inner:nth-last-child(1) input:focus {
         background-color: var(--color-primary);
         color: var(--color-white);
+        cursor: pointer;
     }
     #contact div.wrapper div.box form input:hover,
     #contact div.wrapper div.box form input:focus, 
