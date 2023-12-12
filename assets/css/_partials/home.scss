@@ -121,7 +121,7 @@
         }
         html:not(.can-touch) div.hero-image a.scroll-down-trigger:hover div.scroll-down-button, 
         html:not(.can-touch) div.hero-image a.scroll-down-trigger:focus div.scroll-down-button {
-            border-top-color: var(--color-primary);
+            background-color: var(--color-primary);
         }
         html:not(.can-touch) div.hero-image a.scroll-down-trigger:hover div.scroll-down-arrow, 
         html:not(.can-touch) div.hero-image a.scroll-down-trigger:focus div.scroll-down-arrow {
