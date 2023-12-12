@@ -185,7 +185,7 @@
     }
     html:not(.can-touch) #about div.wrapper div.box a.button:hover p, 
     html:not(.can-touch) #about div.wrapper div.box a.button:focus p {
-        color: var(--color-black);
+        color: var(--color-white);
     }
     html:not(.can-touch) #about div.wrapper div.box a.button:hover,
     html:not(.can-touch) #about div.wrapper div.box a.button:focus {
@@ -344,12 +344,14 @@
         }
         #about div.wrapper.dictionary-container-wrapper div.box div.dictionary-container div:nth-child(1) p:nth-child(1) {
             font-family: var(--font-primary);
+            font-weight: var(--font-primary-weight);
             color: var(--color-white);
             font-size: var(--font-xl);
             margin: 0;
         }
         #about div.wrapper.dictionary-container-wrapper div.box div.dictionary-container div:nth-child(2) p:nth-child(1) {
             font-family: var(--font-primary);
+            font-weight: var(--font-primary-weight);
             color: var(--color-primary);
             font-size: var(--font-xl);
             margin: 0;
@@ -363,11 +365,13 @@
         }
         #about div.wrapper.dictionary-container-wrapper div.box div.dictionary-container div p:nth-child(2) span {
             font-family: var(--font-secondary);
+            font-weight: var(--font-secondary-weight);
             font-size: var(--font-xs);
             font-style: normal;
         }
         #about div.wrapper.dictionary-container-wrapper div.box div.dictionary-container div p:nth-child(3) {
             font-family: var(--font-tertiary);
+            font-weight: var(--font-tertiary-weight);
             color: var(--color-white);
             font-size: var(--font-xxs);
             font-style: italic;
@@ -542,7 +546,8 @@
     #contact div.wrapper div.box form input, 
     #contact div.wrapper div.box form textarea {
         padding: 10px;
-        font-family: var(--font-secondary);
+        font-family: var(--font-tertiary);
+        font-weight: var(--font-tertiary-weight);
         background-color: var(--color-white);
         color: var(--color-black);
         margin: 5px 0;
@@ -551,10 +556,27 @@
     }
     #contact div.wrapper div.box form textarea {
         resize: none;
-        height: 128px;
+        height: 140px;
     }
     #contact div.wrapper div.box form div.inner:nth-last-child(1) input {
-        width: 125px;
+        width: auto;
+        font-weight: 800;
+        -webkit-transition: background-color var(--transition-speed), color var(--transition-speed);
+        -moz-transition: background-color var(--transition-speed), color var(--transition-speed);
+        -o-transition: background-color var(--transition-speed), color var(--transition-speed);
+        -ms-transition: background-color var(--transition-speed), color var(--transition-speed);
+        transition: background-color var(--transition-speed), color var(--transition-speed);
+    }
+    #contact div.wrapper div.box form div.inner:nth-last-child(1) input:hover,
+    #contact div.wrapper div.box form div.inner:nth-last-child(1) input:focus {
+        background-color: var(--color-primary);
+        color: var(--color-white);
+    }
+    #contact div.wrapper div.box form input:hover,
+    #contact div.wrapper div.box form input:focus, 
+    #contact div.wrapper div.box form textarea:hover,
+    #contact div.wrapper div.box form textarea:focus {
+        outline: none;
     }
 
 /* MEDIA QUERIES */
