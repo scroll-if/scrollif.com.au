@@ -394,60 +394,64 @@
     #services div.wrapper:nth-child(1) div.box p {
         text-align: center;
     }
-    #services div.wrapper:nth-child(2) div.box {
-        background-color: var(--color-black);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
+    #services div.wrapper:nth-child(2) a  {
         flex-basis: calc(33% - 15px);
         min-width: 300px;
         flex-grow: 1; 
         margin: 5px;
         height: 300px;
     }
-    #services div.wrapper:nth-child(2) div.box:nth-child(1),
-    #services div.wrapper:nth-child(2) div.box:nth-child(2) {
+    #services div.wrapper:nth-child(2) div.box {
+        background-color: var(--color-black);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    #services div.wrapper:nth-child(2) a:nth-child(1),
+    #services div.wrapper:nth-child(2) a:nth-child(2) {
         flex-basis: calc(50% - 10px);
     }
-    #services div.wrapper:nth-child(2) div.box:nth-child(4),
-    #services div.wrapper:nth-child(2) div.box:nth-child(5) {
+    #services div.wrapper:nth-child(2) a:nth-child(4),
+    #services div.wrapper:nth-child(2) a:nth-child(5) {
         flex-basis: calc(50% - 10px);
     }
     #services div.wrapper:nth-child(2) div.box div.tint {
         background-color: rgba(1, 1, 1, 0.8);
-        padding: 15px;
         width: 100%;
         height: 100%;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
         -webkit-transition: background-color var(--transition-speed);
         -moz-transition: background-color var(--transition-speed);
         -o-transition: background-color var(--transition-speed);
         -ms-transition: background-color var(--transition-speed);
         transition: background-color var(--transition-speed);
     }
+    #services div.wrapper:nth-child(2) div.box div.tint-mirror {
+        padding: 15px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
     html:not(.can-touch) #services div.wrapper:nth-child(2) div.box a:hover div.tint,
     html:not(.can-touch) #services div.wrapper:nth-child(2) div.box a:focus div.tint, {
         background-color: rgba(1, 1, 1, 0.7);
         
     }
-    #services div.wrapper:nth-child(2) div.box div.tint div.textbox {
+    #services div.wrapper:nth-child(2) div.box div.tint-mirror div.textbox {
         min-width: 200px;
         width: 75%;
         text-align: center;
     }
-    #services div.wrapper:nth-child(2) div.box div.tint div.textbox h3 {
+    #services div.wrapper:nth-child(2) div.box div.tint-mirror div.textbox h3 {
         margin: calc(var(--font-s)/1.5) 0 calc(var(--font-s)/1.5);
     }
-    #services div.wrapper:nth-child(2) div.box div.tint div.textbox p {
+    #services div.wrapper:nth-child(2) div.box div.tint-mirror div.textbox p {
         text-align: center;
     }
-    html:not(.can-touch) #services div.wrapper:nth-child(2) div.box div.tint div.textbox p {
+    html:not(.can-touch) #services div.wrapper:nth-child(2) div.box div.tint-mirror div.textbox p {
         display: none;
     }
-    html:not(.can-touch) #services div.wrapper:nth-child(2) div.box a:hover div.tint p,
-    html:not(.can-touch) #services div.wrapper:nth-child(2) div.box a:focus div.tint p {
+    html:not(.can-touch) #services div.wrapper:nth-child(2) div.box a:hover div.tint-mirror p,
+    html:not(.can-touch) #services div.wrapper:nth-child(2) div.box a:focus div.tint-mirror p {
         display: inline;
     }
 
