@@ -530,6 +530,9 @@
     #contact div.wrapper div.box div.main p {
         text-align: left;
     }
+    #contact div.wrapper div.box div.main p:nth-last-child(1) {
+        margin-top: 30px;
+    }
     #contact div.wrapper div.box form  {
         display: flex;
         flex-direction: row;
