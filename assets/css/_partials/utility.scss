@@ -1,0 +1,219 @@
+/* COLORS & FONTS */
+	.color-primary {
+		color: var(--color-primary);
+	}
+	.color-secondary {
+		color: var(--color-secondary);
+	}
+	.color-tertiary {
+		color: var(--color-tertiary);
+	}
+	.color-black {
+		color: var(--color-black);
+	}
+	.color-dark-grey {
+		color: var(--color-dark-grey);
+	}
+	.color-light-grey {
+		color: var(--color-light-grey);
+	}
+	.color-white {
+		color: var(--color-white);
+	}
+	.background-color-primary {
+		color: var(--color-primary);
+	}
+	.background-color-secondary {
+		color: var(--color-secondary);
+	}
+	.background-color-tertiary {
+		color: var(--color-tertiary);
+	}
+	.background-color-black {
+		color: var(--color-black);
+	}
+	.background-color-dark-grey {
+		color: var(--color-dark-grey);
+	}
+	.background-color-light-grey {
+		color: var(--color-light-grey);
+	}
+	.background-color-white {
+		color: var(--color-white);
+	}
+	.tint-1 {
+		background-color: rgba(1, 1, 1, 0.1);
+	}
+	.tint-2 {
+		background-color: rgba(1, 1, 1, 0.2);
+	}
+	.tint-3 {
+		background-color: rgba(1, 1, 1, 0.3);
+	}
+	.tint-4 {
+		background-color: rgba(1, 1, 1, 0.4);
+	}
+	.tint-5 {
+		background-color: rgba(1, 1, 1, 0.5);
+	}
+	.tint-6 {
+		background-color: rgba(1, 1, 1, 0.6);
+	}
+	.tint-7 {
+		background-color: rgba(1, 1, 1, 0.7);
+	}
+	.tint-8 {
+		background-color: rgba(1, 1, 1, 0.8);
+	}
+	.tint-9 {
+		background-color: rgba(1, 1, 1, 0.9);
+	}
+	.font-primary {
+		font-family: var(--font-primary);
+	}
+	.font-weight-primary {
+		font-weight: var(--font-weight-primary);
+	}
+	.font-secondary {
+		font-family: var(--font-primary);
+	}
+	.font-weight-secondary {
+		font-weight: var(--font-weight-secondary);
+	}
+	.font-tertiary {
+		font-family: var(--font-primary);
+	}
+	.font-weight-tertiary {
+		font-weight: var(--font-weight-tertiary);
+	}
+	.font-xxs {
+		font-size: var(--font-xxs);
+	}
+	.font-xs {
+		font-size: var(--font-xs);
+	}
+	.font-s {
+		font-size: var(--font-s);
+	}
+	.font-m {
+		font-size: var(--font-m);
+	}
+	.font-l {
+		font-size: var(--font-l);
+	}
+	.font-xl {
+		font-size: var(--font-xl);
+	}
+	.text-left {
+		text-align: left;
+	}
+	.text-right {
+		text-align: right;
+	}
+	.text-center {
+		text-align: center;
+	}
+	.text-justify {
+		text-align: justify;
+	}
+	.bold {
+		font-weight: 800;
+	}
+	.italic {
+		font-style: italic;
+	}
+	.underline {
+		text-decoration: underline;
+	}
+/* CONTAINERS ETC. */
+	.relative {
+		position: relative;
+	}
+	.absolute {
+		position: absolute;
+	}
+	.top-0 {
+		top: 0;
+	}
+	.right-0 {
+		right: 0;
+	}
+	.bottom-0 {
+		bottom: 0;
+	}
+	.left-0 {
+		left: 0;
+	}
+	.overflow-hidden {
+		overflow: hidden;
+	}
+	.block {
+		display: block;
+	}
+	.inline {
+		display: inline;
+	}
+	.inline-block {
+		display: inline-block;
+	}
+	.flex {
+		display: flex;
+	}
+	.flex-column {
+		flex-direction: column;
+	}
+	.flex-row {
+		flex-direction: row;
+	}
+	.justify-content-start {
+		justify-content: flex-start;
+	}
+	.justify-content-end {
+		justify-content: flex-end;
+	}
+	.justify-content-center {
+		justify-content: center;
+	}
+	.justify-content-space-between {
+		justify-content: space-between;
+	}
+	.justify-content-space-around {
+		justify-content: space-around;
+	}
+	.justify-content-space-evenly {
+		justify-content: space-evenly;
+	}
+	.align-items-start {
+		align-items: flex-start;
+	}
+	.align-items-end {
+		align-items: flex-end;
+	}
+	.align-items-center {
+		align-items: center;
+	}
+	.flex-wrap {
+		flex-wrap: wrap;
+	}
+	.flex-nowrap {
+		flex-wrap: nowrap;
+	}
+	.flex-grow-1 {
+		flex-grow: 1;
+	}
+	.width-100 {
+		width: 100%;
+	}
+	.height-100 {
+		height: 100%;
+	}
+	.background-no-repeat {
+		background-repeat: no-repeat;
+	}
+	.background-cover {
+		background-size: cover;
+	}
+	
+    .background-center {
+    	background-position: center;
+    }
