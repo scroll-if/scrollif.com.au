@@ -193,10 +193,14 @@
     }
     #about div.wrapper div.box img {
         width: 100%;
-        min-width: 350px;
         height: auto;
         margin: 30px auto;
         display: block;
+    }
+    @media only screen and (min-width: 425px) {
+        #about div.wrapper div.box img {
+            min-width: 350px;
+        }
     }
     /* WORDCLOUD */
         #about div.wrapper.wordcloud {
@@ -209,12 +213,12 @@
         }
         #about div.wrapper.wordcloud > div {
             color: #1C6E8A;
-            font-size: calc(var(--font-xxs) + 0.5vw);
+            font-size: calc(var(--font-xxs)/2 + 1vw);
             text-shadow: var(--text-shadow);
         }
 
         #about div.wrapper.wordcloud div:nth-child(2n) {
-            font-size: calc(var(--font-xxs) + 1vw);
+            font-size: calc(var(--font-xxs)/2 + 1.5vw);
             color: #248FB3;
             font-weight: bold;
         }
@@ -227,12 +231,12 @@
         }
 
         #about div.wrapper.wordcloud div:nth-child(4n) {
-            font-size: calc(var(--font-xs) + 1.5vw);
+            font-size: calc(var(--font-xs)/2 + 2vw);
             color: #2CAFDB;
         }
 
         #about div.wrapper.wordcloud div:nth-child(5n) {
-            font-size: calc(var(--font-s) + 2vw);
+            font-size: calc(var(--font-s)/2 + 2.5vw);
             color: #046e8f;
         }
         #worldcloud1 {
@@ -414,10 +418,10 @@
     }
     #services div.wrapper:nth-child(2) a  {
         flex-basis: calc(33% - 15px);
-        min-width: 300px;
+        min-width: 290px;
         flex-grow: 1; 
         margin: 5px;
-        height: 300px;
+        height: 290px;
         overflow: hidden;
         position: relative;
     }
@@ -504,7 +508,7 @@
     }
     #contact div.tint {
         background-color: rgba(1, 1, 1, 0.6);
-        padding: 30px 30px 120px;
+        padding: 30px 0 120px;
         width: 100%;
         height: 100%;
     }
@@ -521,7 +525,7 @@
         flex-basis: 50%;
         flex-grow: 1;
         padding: 15px;
-        min-width: 300px;
+        min-width: 260px;
     }
     #contact div.wrapper div.box:nth-child(2) {
         padding: 10px;
@@ -582,9 +586,4 @@
     #contact div.wrapper div.box form textarea:hover,
     #contact div.wrapper div.box form textarea:focus {
         outline: none;
-    }
-
-/* MEDIA QUERIES */
-    @media only screen and (min-width: 464px) {
-        
     }
