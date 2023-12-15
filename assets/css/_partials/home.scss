@@ -324,6 +324,7 @@
         flex-basis: 50%;
     }
     #services div.services-container a.overflow-box  {
+        display: block;
         height: 100%;
         width: 100%;
         overflow: hidden;
