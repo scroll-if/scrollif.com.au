@@ -18,24 +18,20 @@ author-facebook:
 author-twitter:
 ---
 
-<div class="hero-image" style="background-image: url('{{ site.url }}/assets/images/hero_image_{{ site.title | replace: ' ', '_' | downcase }}.jpg');">
-    <div class="tint">
-        <div class="title-container">
-            <img src="{{ site.url }}/assets/images/website_design.png" alt="Website Design"/>
-            <div class="break-box">
-                <img src="{{ site.url }}/assets/images/graphic_design.png" alt="Graphic Design"/>
+<div class="hero-image-full background-no-repeat background-cover background-center" style="background-image: url('{{ site.url }}/assets/images/hero_image_{{ site.title | replace: ' ', '_' | downcase }}.jpg');">
+    <div class="tint-2 w-100 h-100 flex flex-col jc-center ai-center">
+        <div class="text-center default-padding">
+            <img src="{{ site.url }}/assets/images/websites.png" alt="Websites"/>
+            <div class="inline-block">
+                <img src="{{ site.url }}/assets/images/graphics.png" alt="Graphics"/>
                 <img src="{{ site.url }}/assets/images/consulting.png" alt="Consulting"/>
             </div>
             <p>Websites.  Graphics.  Consulting.</p>
+            <code>... digital possiblities<span>|</span></code>
         </div>
-        <div class="tagline-container">
-            <span class="tagline">
-                <code>... digital possiblities<span>|</span></code>
-            </span>
-        </div>
-        <a class="scroll-down-trigger" href="#about">
-            <div class="scroll-down-button">
-                <div class="scroll-down-arrow">
+        <a class="scroll-down-button" href="#about">
+            <div class="background">
+                <div class="arrow">
                 </div>
             </div>
         </a>

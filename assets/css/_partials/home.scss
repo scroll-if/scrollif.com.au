@@ -1,56 +1,30 @@
 /* HERO IMAGE */
-    div.hero-image {
-    	height: calc(100vh - var(--header-height)); 
-        width: 100%; 
-        background-color: var(--color-black);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-    }
-    div.tint {
-        background-color: rgba(1, 1, 1, 0.2);
-        height: 100%;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    /* TITLE */
-        div.hero-image div.title-container {
-            text-align: center;
-            padding: 0 15px;
-        }
-        div.hero-image div.break-box {
-            display: inline-block;
-        }
-        div.hero-image div.title-container img {
+    /* IMAGE ICONS */
+        div.hero-image-full img {
             height: auto;
             min-width: 100px;
             width: 18vmin;
             max-width: 150px;
             margin: 0 calc(15px + 3vmax) calc(15px + 4vmin);
         }
-        div.hero-image div.title-container p {
+    /* SUBTITLE */
+        div.hero-image-full p {
             font-family: var(--font-primary);
             color: var(--color-white);
             font-size: calc(var(--font-xxs) + 2vmin);
             text-transform: uppercase;
             letter-spacing: 1vmin;
             padding-left: 1vmin;
-            margin: 0;
+            margin-top: 0;
         }
     /* TAGLINE */
-        div.hero-image div.tagline-container {
-            margin: 4vmin 0;
-        }
-        div.hero-image div.tagline-container span.tagline code {
+        div.hero-image-full code {
             background: var(--color-primary);
             font-size: calc(var(--font-xxs) + 2vmin);
             padding: 2px 4px 2px 2px;
-            margin-left: 10vmin;
+            margin-left: 9vmin;
         }
-        div.hero-image div.tagline-container span.tagline code span {
+        div.hero-image-full code span {
             animation: text-cursor 1s;
             animation-iteration-count: infinite;
         }
@@ -61,11 +35,11 @@
             100% { opacity: 1; }
         }
     /* SCROLL DOWN BUTTON */
-        div.hero-image a.scroll-down-trigger {
+        div.hero-image-full a.scroll-down-button {
             display: block;
-            margin: 15px auto;
             position: absolute;
-            bottom: 15px;
+            bottom: var(--default-padding);
+            margin: var(--default-padding) auto;
             -webkit-transition: bottom var(--transition-speed);
             -moz-transition: bottom var(--transition-speed);
             -o-transition: bottom var(--transition-speed);
@@ -76,22 +50,22 @@
         }
         @keyframes bump {
             0% {
-            bottom: 15px;
+            bottom: var(--default-padding);
             }
             30% {
-            bottom: 15px;
+            bottom: var(--default-padding);
             }
             50% {
-            bottom: 5px;
+            bottom: calc(var(--default-padding) / 3);
             }
             70% {
-            bottom: 15px;
+            bottom: var(--default-padding);
             }
             100% {
-            bottom: 15px;
+            bottom: var(--default-padding);
             }
         }
-        div.hero-image div.scroll-down-button {
+        div.hero-image-full div.backgound {
             width: 45px;
             height: 45px;
             background-color: var(--color-white);
@@ -107,7 +81,7 @@
             -ms-transition: background-color var(--transition-speed);
             transition: background-color var(--transition-speed);
         }
-        div.hero-image div.scroll-down-arrow {
+        div.hero-image-full div.arrow {
             width: 0;
             height: 0;
             border-left: 12px solid transparent;
@@ -119,17 +93,17 @@
             -ms-transition: border-color var(--transition-speed);
             transition: border-color var(--transition-speed);
         }
-        html:not(.can-touch) div.hero-image a.scroll-down-trigger:hover div.scroll-down-button, 
-        html:not(.can-touch) div.hero-image a.scroll-down-trigger:focus div.scroll-down-button {
+        html:not(.can-touch) div.hero-image-full a.scroll-down-button:hover,
+        html:not(.can-touch) div.hero-image-full a.scroll-down-button:focus {
+            outline: none;
+        }
+        html:not(.can-touch) div.hero-image-full a.scroll-down-button:hover div.background, 
+        html:not(.can-touch) div.hero-image-full a.scroll-down-button:focus div.background {
             background-color: var(--color-primary);
         }
-        html:not(.can-touch) div.hero-image a.scroll-down-trigger:hover div.scroll-down-arrow, 
-        html:not(.can-touch) div.hero-image a.scroll-down-trigger:focus div.scroll-down-arrow {
+        html:not(.can-touch) div.hero-image-full a.scroll-down-button:hover div.arrow, 
+        html:not(.can-touch) div.hero-image-full a.scroll-down-button:focus div.arrow {
             border-top-color: var(--color-white);
-        }
-        html:not(.can-touch) div.hero-image a.scroll-down-trigger:hover,
-        html:not(.can-touch) div.hero-image a.scroll-down-trigger:focus {
-            outline: none;
         }
 /* ABOUT */
     #about div.background:nth-child(1) {
