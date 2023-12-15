@@ -21,25 +21,25 @@
 		color: var(--color-white);
 	}
 	.background-color-primary {
-		color: var(--color-primary);
+		background-color: var(--color-primary);
 	}
 	.background-color-secondary {
-		color: var(--color-secondary);
+		background-color: var(--color-secondary);
 	}
 	.background-color-tertiary {
-		color: var(--color-tertiary);
+		background-color: var(--color-tertiary);
 	}
 	.background-color-black {
-		color: var(--color-black);
+		background-color: var(--color-black);
 	}
 	.background-color-dark-grey {
-		color: var(--color-dark-grey);
+		background-color: var(--color-dark-grey);
 	}
 	.background-color-light-grey {
-		color: var(--color-light-grey);
+		background-color: var(--color-light-grey);
 	}
 	.background-color-white {
-		color: var(--color-white);
+		background-color: var(--color-white);
 	}
 	.tint-1 {
 		background-color: rgba(1, 1, 1, 0.1);
@@ -201,6 +201,18 @@
 	}
 	.flex-grow-1 {
 		flex-grow: 1;
+	}
+	.flex-basis-full {
+		flex-basis: 50%;
+	}
+	.flex-basis-half {
+		flex-basis: 50%;
+	}
+	.flex-basis-third {
+		flex-basis: 33%;
+	}
+	.flex-basis-quarter {
+		flex-basis: 25%;
 	}
 	.w-100 {
 		width: 100%;

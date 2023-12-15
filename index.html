@@ -19,7 +19,7 @@ author-twitter:
 ---
 
 <div class="hero-image-full background-no-repeat background-cover background-center" style="background-image: url('{{ site.url }}/assets/images/hero_image_{{ site.title | replace: ' ', '_' | downcase }}.jpg');">
-    <div class="tint-2 w-100 h-100 flex flex-col jc-center ai-center default-padding">
+    <div class="tint-2 w-100 h-100 flex flex-col jc-center ai-center">
         <div class="text-center default-padding">
             <img src="{{ site.url }}/assets/images/websites.png" alt="Websites"/>
             <div class="inline-block">
@@ -41,8 +41,8 @@ author-twitter:
 <section class="anchor" id="about">
     <div class="background-color-white">
         <div class="max-width-container">
-            <div class="wrapper">
-                <div class="box">
+            <div class="flex flex-row jc-space-around ai-start flex-wrap default-padding">
+                <div class="flex-basis-half flex-grow-1 default-padding">
                     <div class="main">
                         <h2>Digital Solutions Agency</h2>
                         <ul>
@@ -61,11 +61,11 @@ author-twitter:
                         <a href="{{ site.url }}/about" class="button"><p>About Us</p></a>
                     </div>
                 </div>
-                <div class="box">
+                <div class="flex-basis-half flex-grow-1 default-padding">
                     <img src="{{ site.url }}/assets/images/digital_solutions_agency.jpg" alt="Digital Solutions Agency"/>
                 </div>
             </div>
-            <div class="wrapper wordcloud">
+            <div class="flex flex-row jc-space-around ai-start flex-wrap default-padding wordcloud">
                     <div id="worldcloud1">Landscapers</div>
                     <div id="worldcloud2">Machinery Hire</div>
                     <div id="worldcloud3">Personal Trainers</div>
