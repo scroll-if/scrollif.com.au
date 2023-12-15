@@ -124,120 +124,30 @@ author-twitter:
                         <h2 class="text-center">Our Mission</h2>
                         <p class="text-center">To digitally empower small businesses in a ever changing and evolving landscape.</p>
                         <p class="text-center">Our services aim to get your business looking its best, doing its best, and feeling its best!</p>    
-                    </div>
-                    <div class="bar-spacer">
+                        <div class="bar-spacer">
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="flex flex-row jc-center ai-center flex-wrap default-padding">
-                <a href="{{ site.url }}/websites/single-page-websites">
-                    <div class="box" style="background-image: url('{{ site.url }}/assets/images/single_page_websites.jpg');">
-                        <div class="tint">
+
+
+                
+                    {% for item in site.data.services %}
+                        <div class="services-container">
+                            <a href="{{ service.url }}" class="overflow-box">
+                                <div class="background-image" style="background: url('{{ service.background-image }}')">
+                                </div>
+                                <div class="tint-8 mirror-box">
+                                    <div class="textbox main reverse">
+                                        <h3 class="text-center">{{ service.name }}</h3>
+                                        <p class="text-center">{{ service.description }}</p>
+                                    </div>
+                                </div>
+                            </a>
                         </div>
-                    </div>
-                    <div class="tint-mirror">
-                        <div class="textbox main reverse">
-                            <h3>Single Page Websites</h3>
-                            <p>Get your business online quickly and easily with one of our single page websites.  Perfect for small businesses and sole traders.</p>
-                        </div>
-                    </div>
-                </a>
-                <a href="{{ site.url }}/websites/multi-page-websites">
-                    <div class="box" style="background-image: url('{{ site.url }}/assets/images/multi_page_websites.jpg');">
-                        <div class="tint">
-                        </div>
-                    </div>
-                    <div class="tint-mirror">
-                        <div class="textbox main reverse">
-                            <h3>Multi Page Websites</h3>
-                            <p>Make a mark on the web with one of our multi page websites.  Suited to larger businesses that need to display a lot of content.</p>
-                        </div>
-                    </div>                  
-                </a>
-                <a href="{{ site.url }}/graphics/business-logos">
-                    <div class="box" style="background-image: url('{{ site.url }}/assets/images/business_logos.jpg');">
-                        <div class="tint">
-                        </div>
-                    </div>
-                    <div class="tint-mirror">
-                        <div class="textbox main reverse">
-                            <h3>Business Logos</h3>
-                            <p>Help your business stand out amongst the crowd with a custom business logo.</p>
-                        </div>                     
-                    </div>
-                </a>
-                <a href="{{ site.url }}/graphics/social-media-banners">
-                    <div class="box" style="background-image: url('{{ site.url }}/assets/images/social_media_banners.jpg');">
-                        <div class="tint">
-                        </div>
-                    </div>
-                    <div class="tint-mirror">
-                        <div class="textbox main reverse">
-                            <h3>Social Media Banners</h3>
-                            <p>Let your business look its best everywhere with matching social media banners.</p>
-                        </div>
-                    </div>
-                </a> 
-                <a href="{{ site.url }}/graphics/business-cards">
-                    <div class="box" style="background-image: url('{{ site.url }}/assets/images/business_cards.jpg');">
-                        <div class="tint">
-                        </div>
-                    </div>
-                    <div class="tint-mirror">
-                        <div class="textbox main reverse">
-                            <h3>Business Cards</h3>
-                            <p>Give your business that professional touch with a memorable business card.</p>
-                        </div>
-                    </div>
-                </a>
-                <a href="{{ site.url }}/graphics/html-emails">
-                    <div class="box" style="background-image: url('{{ site.url }}/assets/images/html_emails.jpg');">
-                        <div class="tint">
-                        </div>
-                    </div>
-                    <div class="tint-mirror">
-                        <div class="textbox main reverse">
-                            <h3>HTML Emails</h3>
-                            <p>Make your business communications pop with emails that match your business's style.</p>
-                        </div>
-                    </div>
-                </a>
-                <a href="{{ site.url }}/consulting/systems">
-                    <div class="box" style="background-image: url('{{ site.url }}/assets/images/consulting_systems.jpg');">
-                        <div class="tint">
-                        </div>
-                    </div>
-                    <div class="tint-mirror">
-                        <div class="textbox main reverse">
-                            <h3>Consulting: Systems</h3>
-                            <p>Need to implement a new system? Let us guide the installation and rollout.</p>
-                        </div>
-                    </div>
-                </a>  
-                <a href="{{ site.url }}/consulting/operations">
-                    <div class="box" style="background-image: url('{{ site.url }}/assets/images/consulting_operations.jpg');">
-                        <div class="tint">
-                        </div>
-                    </div>
-                    <div class="tint-mirror">
-                        <div class="textbox main reverse">
-                            <h3>Consulting: Operations</h3>
-                            <p>Even the best teams and tools need equally great processes to succeed.</p>
-                        </div>
-                    </div>
-                </a>
-                <a href="{{ site.url }}/consulting/branding">
-                    <div class="box" style="background-image: url('{{ site.url }}/assets/images/consulting_branding.jpg');">
-                        <div class="tint">
-                        </div>
-                    </div>
-                    <div class="tint-mirror">
-                        <div class="textbox main reverse">
-                            <h3>Consulting: Branding</h3>
-                            <p>Like a makeup team and costume designer for your business.  Make a memorable first impression to your customers.</p>
-                        </div>
-                    </div>
-                </a>
+                    {% endfor %}
+
             </div>
         </div>
     </div>

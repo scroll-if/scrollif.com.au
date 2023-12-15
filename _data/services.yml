@@ -1,0 +1,38 @@
+- name: Single Page Websites
+  description: Get your business online quickly and easily with one of our single page websites.  Perfect for small businesses and sole traders.
+  background-image: {{ site.url }}/assets/images/single_page_websites.jpg
+  url: {{ site.url }}/websites/single-page-websites
+- name: Multi Page Websites
+  description: Make a mark on the web with one of our multi page websites.  Suited to larger businesses that need to display a lot of content.
+  background-image: {{ site.url }}/assets/images/multi_page_websites.jpg
+  url: {{ site.url }}/websites/multi-page-websites
+- name: Business Logos
+  description: Help your business stand out amongst the crowd with a custom business logo.
+  background-image: {{ site.url }}/assets/images/business_logos.jpg
+  url: {{ site.url }}/graphics/business-logos
+- name: Social Media Banners
+  description: Let your business look its best everywhere with matching social media banners.
+  background-image: {{ site.url }}/assets/images/social_media_banners.jpg
+  url: {{ site.url }}/graphics/social-media-banners
+- name: Business Cards
+  description: Give your business that professional touch with a memorable business card.
+  background-image: {{ site.url }}/assets/images/business_cards.jpg
+  url: {{ site.url }}/graphics/business-cards
+- name: HTML Emails
+  description: Make your business communications pop with emails that match your business's style.
+  background-image: {{ site.url }}/assets/images/html_emails.jpg
+  url: {{ site.url }}/graphics/html-emails
+- name: "Consulting: Systems"
+  description: Need to implement a new system? Let us guide the installation and rollout.
+  background-image: {{ site.url }}/assets/images/consulting_systems.jpg
+  url: {{ site.url }}/consulting/systems
+- name: "Consulting: Operations"
+  description: Even the best teams and tools need equally great processes to succeed.
+  background-image: {{ site.url }}/assets/images/consulting_operations.jpg
+  url: {{ site.url }}/consulting/operations
+- name: "Consulting: Branding"
+  description: Like a makeup team and costume designer for your business.  Make a memorable first impression to your customers.
+  background-image: {{ site.url }}/assets/images/consulting_branding.jpg
+  url: {{ site.url }}/consulting/branding
+
+

@@ -305,22 +305,31 @@
         }
 /* SERVICES */
     #services div.bar-spacer  {
-        flex-basis: 100%;
-        padding: 5px;
-        background: linear-gradient(var(--color-primary),var(--color-primary)) center top;
+        padding-top: var(--default-padding);
+        background: linear-gradient(var(--color-primary),var(--color-primary)) center bottom;
                     background-size: 60px 5px;
                     background-repeat:no-repeat;
     }
-    #services div.wrapper:nth-child(2) a  {
-        flex-basis: calc(33% - 15px);
-        min-width: 290px;
-        flex-grow: 1; 
-        margin: 5px;
-        height: 290px;
+    #services div.services-container {
+        min-width: calc(320px - var(--default-padding));
+        height: calc(320px - var(--default-padding));
+        flex-basis: 33%;
+        flex-grow: 1;
+        padding: 5px;
+    }
+    #services div.services-container:nth-child(1),
+    #services div.services-container:nth-child(2),
+    #services div.services-container:nth-child(4),
+    #services div.services-container:nth-child(5) {
+        flex-basis: 50%;
+    }
+    #services div.services-container a.overflow-box  {
+        height: 100%;
+        width: 100%;
         overflow: hidden;
         position: relative;
     }
-    #services div.wrapper:nth-child(2) div.box {
+    #services div.services-container div.background-image {
         background-color: var(--color-black);
         background-repeat: no-repeat;
         background-size: cover;
@@ -333,25 +342,7 @@
         -ms-transition: transform var(--transition-speed);
         transition: transform var(--transition-speed);
     }
-    #services div.wrapper:nth-child(2) a:nth-child(1),
-    #services div.wrapper:nth-child(2) a:nth-child(2) {
-        flex-basis: calc(50% - 10px);
-    }
-    #services div.wrapper:nth-child(2) a:nth-child(4),
-    #services div.wrapper:nth-child(2) a:nth-child(5) {
-        flex-basis: calc(50% - 10px);
-    }
-    #services div.wrapper:nth-child(2) div.box div.tint {
-        background-color: rgba(1, 1, 1, 0.8);
-        width: 100%;
-        height: 100%;
-        -webkit-transition: background-color var(--transition-speed);
-        -moz-transition: background-color var(--transition-speed);
-        -o-transition: background-color var(--transition-speed);
-        -ms-transition: background-color var(--transition-speed);
-        transition: background-color var(--transition-speed);
-    }
-    #services div.wrapper:nth-child(2) a div.tint-mirror {
+    #services div.services-container div.mirror-box {
         position: absolute;
         top: 0;
         left: 0;
@@ -362,35 +353,36 @@
         align-items: center;
         width: 100%;
         height: 100%;
+        -webkit-transition: background-color var(--transition-speed);
+        -moz-transition: background-color var(--transition-speed);
+        -o-transition: background-color var(--transition-speed);
+        -ms-transition: background-color var(--transition-speed);
+        transition: background-color var(--transition-speed);
     }
-    html:not(.can-touch) #services div.wrapper:nth-child(2) a:hover,
-    html:not(.can-touch) #services div.wrapper:nth-child(2) a:focus {
+    html:not(.can-touch) #services div.services-container a.overflow-box:hover,
+    html:not(.can-touch) #services div.services-container a.overflow-box:focus {
         outline: none;
     }
-    html:not(.can-touch) #services div.wrapper:nth-child(2) a:hover div.box div.tint,
-    html:not(.can-touch) #services div.wrapper:nth-child(2) a:focus div.box div.tint {
-        background-color: rgba(1, 1, 1, 0.7);
-    }
-    html:not(.can-touch) #services div.wrapper:nth-child(2) a:hover div.box,
-    html:not(.can-touch) #services div.wrapper:nth-child(2) a:focus div.box {
+    html:not(.can-touch) #services div.services-container a.overflow-box:hover div.background-image,
+    html:not(.can-touch) #services div.services-container a.overflow-box:focus div.background-image {
         transform: scale(110%);
     }
-    #services div.wrapper:nth-child(2) a div.tint-mirror div.textbox {
+    html:not(.can-touch) #services div.services-container a.overflow-box:hover div.mirror-box,
+    html:not(.can-touch) #services div.services-container a.overflow-box:focus div.mirror-box {
+        background-color: rgba(1, 1, 1, 0.7);
+    }
+    #services div.services-container div.textbox {
         min-width: 200px;
         width: 75%;
-        text-align: center;
     }
-    #services div.wrapper:nth-child(2) a div.tint-mirror div.textbox h3 {
+    #services div.services-container div.textbox h3 {
         margin: calc(var(--font-s)/1.5) 0 calc(var(--font-s)/1.5);
     }
-    #services div.wrapper:nth-child(2) a div.tint-mirror div.textbox p {
-        text-align: center;
-    }
-    html:not(.can-touch) #services div.wrapper:nth-child(2) a div.tint-mirror div.textbox p {
+    html:not(.can-touch) #services div.services-container div.textbox p {
         display: none;
     }
-    html:not(.can-touch) #services div.wrapper:nth-child(2) a:hover div.tint-mirror div.textbox p,
-    html:not(.can-touch) #services div.wrapper:nth-child(2) a:focus div.tint-mirror div.textbox p {
+    html:not(.can-touch) #services div.services-container a.overflow-box:hover div.textbox p,
+    html:not(.can-touch) #services div.services-container a.overflow-box:focus div.textbox p {
         display: inline;
     }
 
