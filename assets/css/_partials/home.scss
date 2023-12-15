@@ -1,6 +1,6 @@
 /* HERO IMAGE */
     /* IMAGE ICONS */
-        div.hero-image-full img {
+        div.hero-image-full img.image-icon {
             height: auto;
             min-width: 100px;
             width: 18vmin;
@@ -8,7 +8,7 @@
             margin: 0 calc(var(--default-padding) + 3vmax) calc(var(--default-padding) + 4vmin);
         }
     /* SUBTITLE */
-        div.hero-image-full p {
+        div.hero-image-full p.subtitle {
             font-family: var(--font-primary);
             color: var(--color-white);
             font-size: calc(var(--font-xxs) + 2vmin);
@@ -18,13 +18,13 @@
             margin-top: 0;
         }
     /* TAGLINE */
-        div.hero-image-full code {
+        div.hero-image-full code.tagline {
             background: var(--color-primary);
             font-size: calc(var(--font-xxs) + 2vmin);
             padding: 2px 4px 2px 2px;
             margin-left: 9vmin;
         }
-        div.hero-image-full code span {
+        div.hero-image-full code.tagline span.cursor {
             animation: text-cursor 1s;
             animation-iteration-count: infinite;
         }
@@ -107,9 +107,15 @@
         }
 /* ABOUT */
     /* IMAGE */
+    #about img.impact-image {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin-top: calc(var(--default-padding) * 2);
+    }
     @media only screen and (min-width: 425px) {
-        #about img {
-            min-width: 340px;
+        #about img.impact-image {
+            min-width: 370px;
         }
     }
     /* WORDCLOUD */
@@ -127,11 +133,11 @@
             font-size: calc(var(--font-xxs)/2 + 1vw);
             text-shadow: var(--text-shadow);
         }
-        #about div.wordcloud div:nth-child(2n) {
+        #about div.wordcloud > div:nth-child(2n) {
             color: #248FB3;
             font-size: calc(var(--font-xxs)/2 + 1.5vw);
         }
-        #about div.wordcloud div:nth-child(3n) {
+        #about div.wordcloud > div:nth-child(3n) {
             color: #293033;
             -webkit-writing-mode: vertical-lr;
             -moz-writing-mode: vertical-lr;
@@ -139,13 +145,27 @@
             -ms-writing-mode: vertical-lr;
             writing-mode: vertical-lr;
         }
-        #about div.wordcloud div:nth-child(4n) {
+        #about div.wordcloud > div:nth-child(4n) {
             color: #2CAFDB;
             font-size: calc(var(--font-xs)/2 + 2vw);
         }
-        #about div.wordcloud div:nth-child(5n) {
+        #about div.wordcloud > div:nth-child(5n) {
             color: #046e8f;
             font-size: calc(var(--font-s)/2 + 2.5vw);
+        }
+        @media only screen and (min-width: 425px) {
+            #about div.wordcloud > div {
+                font-size: calc(var(--font-xxs) + 1vw);
+            }
+            #about div.wordcloud > div:nth-child(2n) {
+                font-size: calc(var(--font-xxs) + 1.5vw);
+            }
+            #about div.wordcloud > div:nth-child(4n) {
+                font-size: calc(var(--font-xs) + 2vw);
+            }
+            #about div.wordcloud > div:nth-child(5n) {
+                font-size: calc(var(--font-s) + 2.5vw);
+            }
         }
         #worldcloud1 {
             grid-area: worldcloud1;
@@ -187,7 +207,7 @@
         #worldcloud12 {
             grid-area: worldcloud12;
         }
-        #about div.wordcloud {
+        #about div.wordcloud {      
             grid-template:
             '. . . worldcloud6 worldcloud4 worldcloud4 worldcloud4 worldcloud4'
             'worldcloud8 worldcloud8 worldcloud8 worldcloud6 worldcloud5 worldcloud9 worldcloud12 worldcloud7'
@@ -197,33 +217,27 @@
             '. . . worldcloud6 . . worldcloud12 .';
         }
     /* DICTIONARY */
-        #about div.background:nth-child(2) {
-            background-color: var(--color-black);
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
-        }
-        #about div.tint {
-            background-color: rgba(1, 1, 1, 0.7);
-            padding: 30px;
-            width: 100%;
-            height: 100%;
-        }
-        #about div.dictionary-container-wrapper {
+        #about div.dictionary-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            padding: calc(var(--default-padding) * 4);
             max-width: 615px;
             margin: auto;
         }
-        #about div.dictionary-container-wrapper div.code:nth-child(1) {
+        #about div.opening-tag {
             align-self: flex-start;
             margin: 0 auto 0 15px;
             padding-top: 15px;
         }
-        #about div.dictionary-container-wrapper div.code:nth-child(3) {
+        #about div.closing-tag {
             align-self: flex-end;
             margin: 0 15px 0 auto;
             padding-bottom: 15px;
         }
-        #about div.dictionary-container-wrapper div code {
+        #about code.element-tag {
             display: block;
             width: 60px;
             background-color: var(--color-dark-grey);
@@ -233,55 +247,54 @@
             text-align: center;
             padding:0 5px 5px 0;
         }
-        #about div.dictionary-container-wrapper div.dictionary-container {
+        #about div.dictionary-wrapper {
             min-width: 220px;
             max-width: 350px;
-            margin: auto;
-            text-align: left;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            text-align: left;
+            margin: auto;
             padding: 15px;
         }
-        #about div.dictionary-container-wrapper div.dictionary-container div:nth-child(1) {
+        #about div.dictionary-wrapper div.word-box {
+            max-width: 175px;
+        }
+        #about div.dictionary-wrapper div.first-word {
             margin-right: auto; 
             margin-bottom: 15px;
-            max-width: 175px;
         }
-        #about div.dictionary-container-wrapper div.dictionary-container div:nth-child(2) {
+        #about div.dictionary-wrapper div.second-word {
             margin-top: 15px;
             margin-left: auto;
-            max-width: 175px;
         }
-        #about div.dictionary-container-wrapper div.dictionary-container div:nth-child(1) p:nth-child(1) {
+        #about div.dictionary-wrapper div.word-box p.word {
             font-family: var(--font-primary);
             font-weight: var(--font-weight-primary);
+            font-size: var(--font-xl);
+            margin: 0;
+        }
+        #about div.dictionary-wrapper div.first-word-box p.word {
             color: var(--color-white);
-            font-size: var(--font-xl);
-            margin: 0;
         }
-        #about div.dictionary-container-wrapper div.dictionary-container div:nth-child(2) p:nth-child(1) {
-            font-family: var(--font-primary);
-            font-weight: var(--font-weight-primary);
+        #about div.dictionary-wrapper div.second-word-box p.word {
             color: var(--color-primary);
-            font-size: var(--font-xl);
-            margin: 0;
         }
-        #about div.dictionary-container-wrapper div.dictionary-container div p:nth-child(2) {
+        #about div.dictionary-wrapper div.word-box p.pronunciation {
             font-family: Arial;
             color: var(--color-white);
             font-size: var(--font-xs);
             font-style: italic;
             margin: 0;
         }
-        #about div.dictionary-container-wrapper div.dictionary-container div p:nth-child(2) span {
+        #about div.dictionary-wrapper div.word-box span.word-class {
             font-family: var(--font-secondary);
             font-weight: var(--font-weight-secondary);
             font-size: var(--font-xs);
             font-style: normal;
         }
-        #about div.dictionary-container-wrapper div.dictionary-container div p:nth-child(3) {
+        #about div.dictionary-wrapper div.word-box p.meaning {
             font-family: var(--font-tertiary);
             font-weight: var(--font-weight-tertiary);
             color: var(--color-white);
