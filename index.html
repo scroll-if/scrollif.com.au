@@ -135,13 +135,13 @@ author-twitter:
                 
                     {% for item in site.data.services %}
                         <div class="services-container">
-                            <a href="{{ site.url }}{{ service.url }}" class="overflow-box">
-                                <div class="background-image" style="background: url('{{ site.url }}{{ service.background-image }}')">
+                            <a href="{{ site.url }}{{ item.url }}" class="overflow-box">
+                                <div class="background-image" style="background: url('{{ site.url }}{{ item.background-image }}')">
                                 </div>
                                 <div class="tint-8 mirror-box">
                                     <div class="textbox main reverse">
-                                        <h3 class="text-center">{{ service.name }}</h3>
-                                        <p class="text-center">{{ service.description }}</p>
+                                        <h3 class="text-center">{{ item.name }}</h3>
+                                        <p class="text-center">{{ item.description }}</p>
                                     </div>
                                 </div>
                             </a>
