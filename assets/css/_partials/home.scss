@@ -106,14 +106,14 @@
             border-top-color: var(--color-white);
         }
 /* ABOUT */
-    #about div.wrapper div.box ul {
+    #about ul {
         margin-bottom: 30px;
     }
-    #about div.wrapper div.box span.code-block {
+    #about span.code-block {
         display: block;
         margin: 15px 0;
     }
-    #about div.wrapper div.box a.button {
+    #about a.button {
         display: inline-block;
         padding: 10px;
         font-family: var(--font-tertiary);
@@ -128,7 +128,7 @@
         -ms-transition: background-color var(--transition-speed);
         transition: background-color var(--transition-speed);
     }
-    #about div.wrapper div.box a.button p {
+    #about a.button p {
         color: var(--color-white);
         -webkit-transition: color var(--transition-speed);
         -moz-transition: color var(--transition-speed);
@@ -136,31 +136,31 @@
         -ms-transition: color var(--transition-speed);
         transition: color var(--transition-speed);
     }
-    html:not(.can-touch) #about div.wrapper div.box a.button:hover, 
-    html:not(.can-touch) #about div.wrapper div.box a.button:focus {
+    html:not(.can-touch) #about a.button:hover, 
+    html:not(.can-touch) #about a.button:focus {
         background-color: var(--color-primary);
     }
-    html:not(.can-touch) #about div.wrapper div.box a.button:hover p, 
-    html:not(.can-touch) #about div.wrapper div.box a.button:focus p {
+    html:not(.can-touch) #about a.button:hover p, 
+    html:not(.can-touch) #about a.button:focus p {
         color: var(--color-white);
     }
-    html:not(.can-touch) #about div.wrapper div.box a.button:hover,
-    html:not(.can-touch) #about div.wrapper div.box a.button:focus {
+    html:not(.can-touch) #about a.button:hover,
+    html:not(.can-touch) #about a.button:focus {
         outline: none;
     }
-    #about div.wrapper div.box img {
+    #about img {
         width: 100%;
         height: auto;
         margin: 30px auto;
         display: block;
     }
     @media only screen and (min-width: 425px) {
-        #about div.wrapper div.box img {
+        #about img {
             min-width: 350px;
         }
     }
     /* WORDCLOUD */
-        #about div.wrapper.wordcloud {
+        #about div.wordcloud {
             padding: 0 15px 60px;
             display: grid;
             justify-content: center;
@@ -168,31 +168,31 @@
             grid-gap: 5px;
             font-family: var(--font-primary);
         }
-        #about div.wrapper.wordcloud > div {
+        #about div.wordcloud > div {
             color: #1C6E8A;
             font-size: calc(var(--font-xxs)/2 + 1vw);
             text-shadow: var(--text-shadow);
         }
 
-        #about div.wrapper.wordcloud div:nth-child(2n) {
+        #about div.wordcloud div:nth-child(2n) {
             font-size: calc(var(--font-xxs)/2 + 1.5vw);
             color: #248FB3;
             font-weight: bold;
         }
 
-        #about div.wrapper.wordcloud div:nth-child(3n) {
+        #about div.wordcloud div:nth-child(3n) {
             writing-mode: vertical-lr;
             -webkit-writing-mode: vertical-lr;
             -ms-writing-mode: vertical-lr;
             color: #293033;
         }
 
-        #about div.wrapper.wordcloud div:nth-child(4n) {
+        #about div.wordcloud div:nth-child(4n) {
             font-size: calc(var(--font-xs)/2 + 2vw);
             color: #2CAFDB;
         }
 
-        #about div.wrapper.wordcloud div:nth-child(5n) {
+        #about div.wordcloud div:nth-child(5n) {
             font-size: calc(var(--font-s)/2 + 2.5vw);
             color: #046e8f;
         }
@@ -236,7 +236,7 @@
         #worldcloud12 {
             grid-area: worldcloud12;
         }
-        #about div.wrapper.wordcloud {
+        #about div.wordcloud {
             grid-template:
             '. . . worldcloud6 worldcloud4 worldcloud4 worldcloud4 worldcloud4'
             'worldcloud8 worldcloud8 worldcloud8 worldcloud6 worldcloud5 worldcloud9 worldcloud12 worldcloud7'
