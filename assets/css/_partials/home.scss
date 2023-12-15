@@ -5,7 +5,7 @@
             min-width: 100px;
             width: 18vmin;
             max-width: 150px;
-            margin: 0 calc(15px + 3vmax) calc(15px + 4vmin);
+            margin: 0 calc(var(--default-padding) + 3vmax) calc(var(--default-padding) + 4vmin);
         }
     /* SUBTITLE */
         div.hero-image-full p {
