@@ -106,54 +106,46 @@
             border-top-color: var(--color-white);
         }
 /* ABOUT */
-    
-    #about img {
-        display: block;
-        width: 100%;
-        height: auto;
-        margin: 30px auto;
-    }
+    /* IMAGE */
     @media only screen and (min-width: 425px) {
         #about img {
-            min-width: 350px;
+            min-width: 340px;
         }
     }
     /* WORDCLOUD */
         #about div.wordcloud {
-            padding: 0 15px 60px;
             display: grid;
             justify-content: center;
-            align-content: center;
             grid-gap: 5px;
             font-family: var(--font-primary);
+            font-weight: var(--font-weight-primary);
+            padding: calc(var(--default-padding) * 2) var(--default-padding);
+            margin-bottom: calc(var(--default-padding) * 2);
         }
         #about div.wordcloud > div {
             color: #1C6E8A;
             font-size: calc(var(--font-xxs)/2 + 1vw);
             text-shadow: var(--text-shadow);
         }
-
         #about div.wordcloud div:nth-child(2n) {
-            font-size: calc(var(--font-xxs)/2 + 1.5vw);
             color: #248FB3;
-            font-weight: bold;
+            font-size: calc(var(--font-xxs)/2 + 1.5vw);
         }
-
         #about div.wordcloud div:nth-child(3n) {
-            writing-mode: vertical-lr;
-            -webkit-writing-mode: vertical-lr;
-            -ms-writing-mode: vertical-lr;
             color: #293033;
+            -webkit-writing-mode: vertical-lr;
+            -moz-writing-mode: vertical-lr;
+            -o-writing-mode: vertical-lr;
+            -ms-writing-mode: vertical-lr;
+            writing-mode: vertical-lr;
         }
-
         #about div.wordcloud div:nth-child(4n) {
-            font-size: calc(var(--font-xs)/2 + 2vw);
             color: #2CAFDB;
+            font-size: calc(var(--font-xs)/2 + 2vw);
         }
-
         #about div.wordcloud div:nth-child(5n) {
-            font-size: calc(var(--font-s)/2 + 2.5vw);
             color: #046e8f;
+            font-size: calc(var(--font-s)/2 + 2.5vw);
         }
         #worldcloud1 {
             grid-area: worldcloud1;
