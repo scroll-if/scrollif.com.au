@@ -259,3 +259,69 @@
     .margin-bottom-0 {
     	margin-bottom: 0;
     }
+    .default-margin {
+    	margin: var(--default-padding);
+    }
+    .default-margin-top {
+    	margin-top: var(--default-padding);
+    }
+    .default-margin-right {
+    	margin-right: var(--default-padding);
+    }
+    .default-margin-bottom {
+    	margin-bottom: var(--default-padding);
+    }
+    .default-margin-left {
+    	margin-left: var(--default-padding);
+    }
+    .default-margin-double {
+    	margin: calc(var(--default-padding) x 2);
+    }
+    .default-margin-top-double {
+    	margin-top: calc(var(--default-padding) x 2);
+    }
+    .default-margin-right-double {
+    	margin-right: calc(var(--default-padding) x 2);
+    }
+    .default-margin-bottom-double {
+    	margin-bottom: calc(var(--default-padding) x 2);
+    }
+    .default-margin-left-double {
+    	margin-left: calc(var(--default-padding) x 2);
+    }
+
+
+
+
+
+
+
+
+
+
+    a.button {
+        display: inline-block;
+        background-color: var(--color-black);
+        color: var(--color-white);
+        font-family: var(--font-tertiary);
+        font-weight:  var(--font-weight-tertiary);
+        font-size: var(--font-xs);
+        text-decoration: none;
+        padding: 10px;
+        margin: 15px 0;
+        box-shadow: var(--box-shadow-bottom-right);
+        -webkit-transition: background-color var(--transition-speed), color var(--transition-speed);
+        -moz-transition: background-color var(--transition-speed), color var(--transition-speed);
+        -o-transition: background-color var(--transition-speed), color var(--transition-speed);
+        -ms-transition: background-color var(--transition-speed), color var(--transition-speed);
+        transition: background-color var(--transition-speed), color var(--transition-speed);
+    }
+    html:not(.can-touch) a.button:hover,
+    html:not(.can-touch) a.button:focus {
+        outline: none;
+    }
+    html:not(.can-touch) a.button:hover, 
+    html:not(.can-touch) a.button:focus {
+        background-color: var(--color-primary);
+        color: var(--color-white);
+    }
