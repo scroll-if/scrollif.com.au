@@ -1,4 +1,7 @@
 /* STANDARD STYLING */
+	div.main {
+		text-align: justify;
+	}
 	div.main h1 {
 		font-family: var(--font-primary);
 		font-weight: var(--font-primary-weight);
@@ -49,7 +52,6 @@
 		color: var(--color-black);
 		font-size: var(--font-xs);
 		margin: calc(var(--font-xs)/2.5) 0 calc(var(--font-xs)/2.5);
-		text-align: justify;
 	}
 	div.main.reverse p {
 		color: var(--color-white);

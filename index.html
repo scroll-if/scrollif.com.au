@@ -18,7 +18,7 @@ author-facebook:
 author-twitter:
 ---
 
-<div class="hero-image-full background-no-repeat background-cover background-center" style="background-image: url('{{ site.url }}/assets/images/hero_image_{{ site.title | replace: ' ', '_' | downcase }}.jpg');">
+<div class="hero-image-full background-color-black background-no-repeat background-cover background-center" style="background-image: url('{{ site.url }}/assets/images/hero_image_{{ site.title | replace: ' ', '_' | downcase }}.jpg');">
     <div class="tint-2 w-100 h-100 flex flex-col jc-center ai-center">
         <div class="text-center default-padding">
             <img class="image-icon" src="{{ site.url }}/assets/images/websites.png" alt="Websites"/>
@@ -116,14 +116,16 @@ author-twitter:
 </section>
 
 <section id="services">
-    <div class="background">
+    <div class="background-color-white">
         <div class="max-width-container">
-            <div class="wrapper">
-                <div class="box">
-                    <div class="main">
+            <div class="flex flex-row jc-center ai-center flex-wrap default-padding">
+                <div class="flex flex-row flex-basis-half flex-grow-1 jc-center default-padding">
+                    <div class="main text-center">
                         <h2>Our Mission</h2>
                         <p>To digitally empower small businesses in a ever changing and evolving landscape.</p>
                         <p>Our services aim to get your business looking its best, doing its best, and feeling its best!</p>    
+                    </div>
+                    <div class="bar-spacer">
                     </div>
                 </div>
             </div>
