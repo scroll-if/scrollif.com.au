@@ -1,8 +1,8 @@
 /* STANDARD STYLING */
-	div.main {
+	.main {
 		text-align: justify;
 	}
-	div.main h1 {
+	.main h1 {
 		font-family: var(--font-primary);
 		font-weight: var(--font-primary-weight);
 		color: var(--color-primary);
@@ -10,10 +10,10 @@
 		text-transform: uppercase;
 		margin: calc(var(--font-xl)*1) 0 calc(var(--font-xl)/2);
 	}
-	div.main.reverse h1 {
+	.main.reverse h1 {
 		color: var(--color-primary);
 	}
-	div.main h1.subtitle {
+	.main h1.subtitle {
 		font-family: var(--font-primary);
 		font-weight: var(--font-primary-weight);
 		color: var(--color-black);
@@ -21,10 +21,10 @@
 		text-transform: uppercase;
 		margin: calc(var(--font-l)*1) 0 calc(var(--font-xl)/2);
 	}
-	div.main.reverse h1.subtitle {
+	.main.reverse h1.subtitle {
 		color: var(--color-white);
 	}
-	div.main h2 {
+	.main h2 {
 		font-family: var(--font-secondary);
 		font-weight: var(--font-secondary-weight);
 		color: var(--color-black);
@@ -32,10 +32,10 @@
 		text-transform: uppercase;
 		margin: calc(var(--font-m)*1.5) 0 calc(var(--font-m)/1.5);
 	}
-	div.main.reverse h2 {
+	.main.reverse h2 {
 		color: var(--color-white);
 	}
-	div.main h3 {
+	.main h3 {
 		font-family: var(--font-secondary);
 		font-weight: var(--font-secondary-weight);
 		color: var(--color-black);
@@ -43,26 +43,26 @@
 		text-transform: uppercase;
 		margin: calc(var(--font-s)*1.5) 0 calc(var(--font-s)/1.5);
 	}
-	div.main.reverse h3 {
+	.main.reverse h3 {
 		color: var(--color-white);
 	}
-	div.main p {
+	.main p {
 		font-family: var(--font-tertiary);
 		font-weight: var(--font-tertiary-weight);
 		color: var(--color-black);
 		font-size: var(--font-xs);
 		margin: calc(var(--font-xs)/2.5) 0 calc(var(--font-xs)/2.5);
 	}
-	div.main.reverse p {
+	.main.reverse p {
 		color: var(--color-white);
 	}
-	div.main p a {
+	.main p a {
 		font-family: var(--font-tertiary);
 		font-weight: 800;
 		color: var(--color-primary);
 		text-decoration: underline;
 	}
-	div.main ul {
+	.main ul {
 		list-style-position: inside;
 		font-family: var(--font-tertiary);
 		font-weight: var(--font-tertiary-weight);
@@ -72,28 +72,28 @@
 	    margin-bottom: var(--font-xs);
 		color: var(--color-black);
 	}
-	div.main.reverse ul {
+	.main.reverse ul {
 		color: var(--color-white);
 	}
-	div.main li:before {
+	.main li:before {
 		content:  "\25B6";
 	    color: var(--color-primary);
 	    font-size: var(--font-xs);
 	    margin-right: calc(var(--font-xs)/1.5);
 	}
-	div.main li  {
+	.main li  {
 		margin: calc(var(--font-xs)/1.5) calc(var(--font-xs)*1.5);
 	}
-	div.main li p {
+	.main li p {
 		display: inline;
 	}
-	div.main code {
+	.main code {
 		background-color: var(--color-primary);
 		font-size: var(--font-s);
     	padding: 2px 5px 2px 5px;
     	display: inline;
 	}
-	div.main a.button {
+	.main a.button {
         display: inline-block;
         background-color: var(--color-black);
         color: var(--color-white);
@@ -110,12 +110,12 @@
         -ms-transition: background-color var(--transition-speed), color var(--transition-speed);
         transition: background-color var(--transition-speed), color var(--transition-speed);
     }
-    html:not(.can-touch) div.main a.button:hover,
-    html:not(.can-touch) div.main a.button:focus {
+    html:not(.can-touch) .main a.button:hover,
+    html:not(.can-touch) .main a.button:focus {
         outline: none;
     }
-    html:not(.can-touch) div.main a.button:hover, 
-    html:not(.can-touch) div.main a.button:focus {
+    html:not(.can-touch) .main a.button:hover, 
+    html:not(.can-touch) .main a.button:focus {
         background-color: var(--color-primary);
         color: var(--color-white);
     }
