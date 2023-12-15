@@ -311,26 +311,35 @@
                     background-repeat:no-repeat;
     }
     #services div.services-container {
+        flex flex-row jc-center ai-center flex-wrap default-padding default-padding-bottom-double default-margin-bottom-double
+        display: flex;
+        flex-direction: flex-row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: var(--default-padding) calc(var(--default-padding) - calc(var(--default-padding) / 3)) calc(var(--default-padding) * 4);
+    }
+    #services div.services-box {
         min-width: calc(320px - var(--default-padding));
         height: calc(320px - var(--default-padding));
         flex-basis: 33%;
         flex-grow: 1;
-        padding: 5px;
+        padding: calc(var(--default-padding) / 3);
     }
-    #services div.services-container:nth-child(1),
-    #services div.services-container:nth-child(2),
-    #services div.services-container:nth-child(4),
-    #services div.services-container:nth-child(5) {
+    #services div.services-box:nth-child(1),
+    #services div.services-box:nth-child(2),
+    #services div.services-box:nth-child(4),
+    #services div.services-box:nth-child(5) {
         flex-basis: 50%;
     }
-    #services div.services-container a.overflow-box  {
+    #services div.services-box a.overflow-box  {
         display: block;
         height: 100%;
         width: 100%;
         overflow: hidden;
         position: relative;
     }
-    #services div.services-container div.background-image {
+    #services div.services-box div.background-image {
         background-color: var(--color-black);
         background-repeat: no-repeat;
         background-size: cover;
@@ -343,7 +352,7 @@
         -ms-transition: transform var(--transition-speed);
         transition: transform var(--transition-speed);
     }
-    #services div.services-container div.mirror-box {
+    #services div.services-box div.mirror-box {
         position: absolute;
         top: 0;
         left: 0;
@@ -360,30 +369,30 @@
         -ms-transition: background-color var(--transition-speed);
         transition: background-color var(--transition-speed);
     }
-    html:not(.can-touch) #services div.services-container a.overflow-box:hover,
-    html:not(.can-touch) #services div.services-container a.overflow-box:focus {
+    html:not(.can-touch) #services div.services-box a.overflow-box:hover,
+    html:not(.can-touch) #services div.services-box a.overflow-box:focus {
         outline: none;
     }
-    html:not(.can-touch) #services div.services-container a.overflow-box:hover div.background-image,
-    html:not(.can-touch) #services div.services-container a.overflow-box:focus div.background-image {
+    html:not(.can-touch) #services div.services-box a.overflow-box:hover div.background-image,
+    html:not(.can-touch) #services div.services-box a.overflow-box:focus div.background-image {
         transform: scale(110%);
     }
-    html:not(.can-touch) #services div.services-container a.overflow-box:hover div.mirror-box,
-    html:not(.can-touch) #services div.services-container a.overflow-box:focus div.mirror-box {
+    html:not(.can-touch) #services div.services-box a.overflow-box:hover div.mirror-box,
+    html:not(.can-touch) #services div.services-box a.overflow-box:focus div.mirror-box {
         background-color: rgba(1, 1, 1, 0.7);
     }
-    #services div.services-container div.textbox {
+    #services div.services-box div.textbox {
         min-width: 200px;
         width: 75%;
     }
-    #services div.services-container div.textbox h3 {
+    #services div.services-box div.textbox h3 {
         margin: calc(var(--font-s)/1.5) 0 calc(var(--font-s)/1.5);
     }
-    html:not(.can-touch) #services div.services-container div.textbox p {
+    html:not(.can-touch) #services div.services-box div.textbox p {
         display: none;
     }
-    html:not(.can-touch) #services div.services-container a.overflow-box:hover div.textbox p,
-    html:not(.can-touch) #services div.services-container a.overflow-box:focus div.textbox p {
+    html:not(.can-touch) #services div.services-box a.overflow-box:hover div.textbox p,
+    html:not(.can-touch) #services div.services-box a.overflow-box:focus div.textbox p {
         display: inline;
     }
 
