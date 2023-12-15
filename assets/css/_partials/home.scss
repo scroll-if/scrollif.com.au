@@ -305,16 +305,11 @@
         }
 /* SERVICES */
     #services div.bar-spacer  {
+        flex-basis: 100%;
         padding: 5px;
         background: linear-gradient(var(--color-primary),var(--color-primary)) center top;
                     background-size: 60px 5px;
                     background-repeat:no-repeat;
-    }
-    #services div.wrapper:nth-child(1) div.box h2 {
-        text-align: center;
-    }
-    #services div.wrapper:nth-child(1) div.box p {
-        text-align: center;
     }
     #services div.wrapper:nth-child(2) a  {
         flex-basis: calc(33% - 15px);
