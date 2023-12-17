@@ -161,6 +161,7 @@
             width: 100%;
             height: auto;
             margin-top: var(--h2-margin-top);
+            margin-bottom: var(--h2-margin-bottom);
         }
     /* WORDCLOUD */
         #about div.wordcloud {
@@ -277,7 +278,7 @@
             justify-content: center;
             align-items: center;
             flex-wrap: wrap;
-            padding: calc(var(--default-padding) * 2) var(--default-padding);
+            padding: calc(var(--default-padding) * 3) var(--default-padding);
         }
         /* ELEMENT TAG */
             #about div.dictionary-background div.opening-tag {
