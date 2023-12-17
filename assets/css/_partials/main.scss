@@ -104,7 +104,8 @@
 	    margin-right: calc(var(--font-xs)/1.5);
 	}
 	.main li  {
-		margin: var(--margin-p);
+		margin-top: var(--p-margin-top);
+		margin-bottom: var(--p-margin-bottom);
 	}
 	.main li p {
 		display: inline;
