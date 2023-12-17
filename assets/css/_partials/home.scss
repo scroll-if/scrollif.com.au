@@ -510,7 +510,10 @@
         }
         #contact form .input-field,
         #contact form .message-area {
+            background-color: var(--color-white);
             width: 100%;
+            padding: calc(calc(var(--default-padding) / 3) * 2);
+            margin: calc(var(--default-padding) / 3) 0;
         }
         #contact form .message-area {
             resize: none;

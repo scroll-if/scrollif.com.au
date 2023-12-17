@@ -110,13 +110,10 @@
 		display: inline;
 	}
 	.main form > * {
-        background-color: var(--color-white);
 		font-family: var(--font-tertiary);
 		font-weight: var(--font-tertiary-weight);
 		color: var(--color-black);
 		font-size: var(--font-xs);
-        padding: calc(calc(var(--default-padding) / 3) * 2);
-        margin: calc(var(--default-padding) / 3) 0;
 	}
 	.main.reverse form > * {
 		color: var(--color-white);
