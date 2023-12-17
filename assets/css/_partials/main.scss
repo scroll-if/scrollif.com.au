@@ -109,13 +109,26 @@
 	.main li p {
 		display: inline;
 	}
+	.main form > * {
+        background-color: var(--color-white);
+		font-family: var(--font-tertiary);
+		font-weight: var(--font-tertiary-weight);
+		color: var(--color-black);
+		font-size: var(--font-xs);
+        padding: calc(calc(var(--default-padding) / 3) * 2);
+        margin: calc(var(--default-padding) / 3) 0;
+	}
+	.main.reverse form > * {
+		color: var(--color-white);
+	}
 	.main code {
 		background-color: var(--color-primary);
 		font-size: var(--font-s);
     	padding: 2px 5px 2px 5px;
     	display: inline;
 	}
-	.main a.button {
+	.main a.button, 
+	.main input.button {
         display: inline-block;
         background-color: var(--color-black);
         color: var(--color-white);
@@ -133,13 +146,16 @@
         transition: background-color var(--transition-speed), color var(--transition-speed);
     }
     html:not(.can-touch) .main a.button:hover, 
-    html:not(.can-touch) .main a.button:focus {
+    html:not(.can-touch) .main a.button:focus,
+    html:not(.can-touch) .main input.button:hover, 
+    html:not(.can-touch) .main input.button:focus {
         outline: none;
         cursor: pointer;
         background-color: var(--color-primary);
         color: var(--color-white);
     }
-    .main.reverse a.button {
+    .main.reverse a.button, 
+	.main input.button {
         display: inline-block;
         background-color: var(--color-white);
         color: var(--color-black);
@@ -157,7 +173,9 @@
         transition: background-color var(--transition-speed), color var(--transition-speed);
     }
     html:not(.can-touch) .main.reverse a.button:hover, 
-    html:not(.can-touch) .main.reverse a.button:focus {
+    html:not(.can-touch) .main.reverse a.button:focus,
+    html:not(.can-touch) .main.reverse input.button:hover, 
+    html:not(.can-touch) .main.reverse input.button:focus {
         outline: none;
         cursor: pointer;
         background-color: var(--color-primary);

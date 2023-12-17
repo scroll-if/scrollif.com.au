@@ -480,17 +480,18 @@
         flex-grow: 1;
         min-width: 260px;
     }
-    #contact div.text-container {
-        padding: var(--default-padding);
-        text-align: left;
-    }
-    #contact div.text-container div.spacer {
-        padding: var(--default-padding);
-    }
-    #contact div.form-container {
-        padding: calc(var(--default-padding) - calc(var(--default-padding) / 3));
-    }
+    /* TEXT */
+        #contact div.text-container {
+            padding: var(--default-padding);
+            text-align: left;
+        }
+        #contact div.text-container div.spacer {
+            padding: var(--default-padding);
+        }
     /* FORM */
+        #contact div.form-container {
+            padding: calc(var(--default-padding) - calc(var(--default-padding) / 3));
+        }
         #contact form div.flex-container  {
             display: flex;
             flex-direction: row;
@@ -507,16 +508,9 @@
         #contact form input {
             border: none;
         }
-        #contact form .input,
+        #contact form .input-field,
         #contact form .message-area {
             width: 100%;
-            background-color: var(--color-white);
-            color: var(--color-black);
-            font-family: var(--font-tertiary);
-            font-weight: var(--font-weight-tertiary);
-            font-size: var(--font-xs);
-            padding: calc(calc(var(--default-padding) / 3) * 2);
-            margin: calc(var(--default-padding) / 3) 0;
         }
         #contact form .message-area {
             resize: none;
