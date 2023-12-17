@@ -20,19 +20,21 @@ author-twitter:
 
 <div class="hero-image" style="background-image: url('{{ site.url }}/assets/images/hero_image_{{ site.title | replace: ' ', '_' | downcase }}.jpg');">
     <div class="tint">
-        <div class="flex-container">
-            <div class="content-container">
-                <img class="image-icon" src="{{ site.url }}/assets/images/websites.png" alt="Websites"/>
-                <div class="inline-block">
-                    <img class="image-icon" src="{{ site.url }}/assets/images/graphics.png" alt="Graphics"/>
-                    <img class="image-icon" src="{{ site.url }}/assets/images/consulting.png" alt="Consulting"/>
+        <div class="max-width-container">
+            <div class="flex-container">
+                <div class="content-container">
+                    <img class="image-icon" src="{{ site.url }}/assets/images/websites.png" alt="Websites"/>
+                    <div class="inline-block">
+                        <img class="image-icon" src="{{ site.url }}/assets/images/graphics.png" alt="Graphics"/>
+                        <img class="image-icon" src="{{ site.url }}/assets/images/consulting.png" alt="Consulting"/>
+                    </div>
+                    <p class="subtitle">Websites.  Graphics.  Consulting.</p>
+                    <code class="tagline">... digital possiblities<span class="cursor">|</span></code>
                 </div>
-                <p class="subtitle">Websites.  Graphics.  Consulting.</p>
-                <code class="tagline">... digital possiblities<span class="cursor">|</span></code>
             </div>
             <a class="scroll-down-button" href="#about">
-                <div class="button-background">
-                    <div class="button-arrow">
+                <div class="background">
+                    <div class="arrow">
                     </div>
                 </div>
             </a>
@@ -41,33 +43,29 @@ author-twitter:
 </div>
 
 <section class="anchor" id="about">
-    <div class="background-color-white">
+    <div class="background">
         <div class="max-width-container">
-            <div class="flex flex-row jc-space-around ai-start flex-wrap default-padding">
-                <div class="flex-basis-half flex-grow-1 default-padding main">
-                    <h2>Digital Solutions Agency</h2>
-                    <ul>
-                        <li>
-                            <p>Complete website solutions spanning web design, coding & development, web hosting, and assisted site updates.</p>
-                        </li>
-                        <li>
-                            <p>Graphic design services including  business logos, social media banners, and business cards.</p>
-                        </li>
-                        <li>
-                            <p>Consulting for small businesses, sole traders, and startups covering branding, operations, and system setups.</p>
-                        </li>
-                    </ul>
-                    <div class="default-margin-top-double">
-                        <div class="w-100 default-margin-top default-margin-bottom">
-                            <code>We simplify the complicated.</code>
+            <div class="flex-container">
+                <div class="content-container text-container">
+                    <div class="main">
+                        <h2>Digital Solutions Agency</h2>
+                        <ul>
+                            <li><p>Complete website solutions spanning web design, coding & development, web hosting, and assisted site updates.</p></li>
+                            <li><p>Graphic design services including  business logos, social media banners, and business cards.</p></li>
+                            <li><p>Consulting for small businesses, sole traders, and startups covering branding, operations, and system setups.</p></li>
+                        </ul>
+                        <div class="quote-container">
+                            <div class="quote-box">
+                                <code>We simplify the complicated.</code>
+                            </div>
+                            <div class="quote-box">
+                                <code>We derisk the unknown.</code>
+                            </div>
                         </div>
-                        <div class="w-100 default-margin-top default-margin-bottom">
-                            <code>We derisk the unknown.</code>
-                        </div>
+                        <a class="button" href="{{ site.url }}/about" >About Us</a>
                     </div>
-                    <a href="{{ site.url }}/about" class="button">About Us</a>
                 </div>
-                <div class="flex-basis-half flex-grow-1 default-padding-top default-padding-bottom">
+                <div class="content-container image-container">
                     <img class="impact-image" src="{{ site.url }}/assets/images/digital_solutions_agency.jpg" alt="Digital Solutions Agency" />
                 </div>
             </div>
@@ -87,25 +85,23 @@ author-twitter:
             </div>
         </div>
     </div>
-    <div class="background-color-black background-no-repeat background-cover background-center" style="background-image: url('{{ site.url }}/assets/images/background_image_websites.jpg');">
-        <div class="tint-7 w-100 h-100">
-            <div class="max-width-container">
-                <div class="dictionary-container">
+    <div class="dictionary-background" style="background-image: url('{{ site.url }}/assets/images/background_image_websites.jpg');">
+        <div class="tint">
+            <div class="half-max-width-container">
+                <div class="flex-container">
                     <div class="opening-tag">
                         <code class="element-tag"><</code>
                     </div>
-                    <div class="flex-basis-half flex-grow-1 default-padding">
-                        <div class="dictionary-wrapper">
-                            <div class="word-box first-word">
-                                <p class="word">Scroll</p>
-                                <p class="pronunciation">[skrəʊl] <span class="word-class">verb</span></p>
-                                <p class="meaning">to progress, move, or reveal digital information as if by the unrolling of a scroll</p>
-                            </div>
-                            <div class="word-box second-word">
-                                <p class="word">if</p>
-                                <p class="pronunciation">[ɪf] <span class="word-class">noun</span></p>
-                                <p class="meaning">a condition or supposition, a possibility. used to say that something can or will happen.</p>
-                            </div>
+                    <div class="inner-flex-container">
+                        <div class="dictionary-box first-word">
+                            <p class="word">Scroll</p>
+                            <p class="pronunciation">[skrəʊl] <span class="word-class">verb</span></p>
+                            <p class="meaning">to progress, move, or reveal digital information as if by the unrolling of a scroll</p>
+                        </div>
+                        <div class="dictionary-box second-word">
+                            <p class="word">if</p>
+                            <p class="pronunciation">[ɪf] <span class="word-class">noun</span></p>
+                            <p class="meaning">a condition or supposition, a possibility. used to say that something can or will happen.</p>
                         </div>
                     </div>
                     <div class="closing-tag">
