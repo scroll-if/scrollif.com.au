@@ -21,6 +21,9 @@ div.main.legal .anchor::before {
 		min-width: 50%;
 		padding: 15px;
 	}
+	div.main.legal div.legal-container div.contents {
+		text-align:  justify;
+	}
 /* TABLE OF CONTENTS */
 	div.main.legal div.toc {
 		display: none;
