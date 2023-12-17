@@ -160,7 +160,7 @@
             min-width: calc(250px + 15vw);
             width: 100%;
             height: auto;
-            margin: var(--margin-h2);
+            margin-top: var(--h2-margin-top);
         }
     /* WORDCLOUD */
         #about div.wordcloud {
@@ -407,7 +407,7 @@
         }
         #services div.services-box div.tint {
             height: 100%;
-            background-color: rgba(1, 1, 1, 0.2);
+            background-color: rgba(1, 1, 1, 0.8);
         }
         /* TEXT CONTENT */
             #services div.services-box div.mirror-box {
