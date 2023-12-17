@@ -464,83 +464,61 @@
         background-position: center 65%;
     }
     #contact div.tint {
-        background-color: rgba(1, 1, 1, 0.6);
-        padding: 30px 0 120px;
-        width: 100%;
         height: 100%;
+        background-color: rgba(1, 1, 1, 0.6);
     }
-    #contact div.wrapper {
-        padding: 15px;
-        font-size: 0;
+    #contact div.flex-container {
         display: flex;
         flex-direction: row;
         align-items: flex-start;
         justify-content: space-around;
         flex-wrap: wrap;
+        padding: calc(var(--default-padding) * 3) 0 calc(var(--default-padding) * 8);
     }
-    #contact div.wrapper div.box {
+    #contact div.content-container {
         flex-basis: 50%;
         flex-grow: 1;
-        padding: 15px;
         min-width: 260px;
     }
-    #contact div.wrapper div.box:nth-child(2) {
-        padding: 10px;
-    }
-    #contact div.wrapper div.box div.main h2,
-    #contact div.wrapper div.box div.main p {
+    #contact div.text-container {
+        padding: var(--default-padding);
         text-align: left;
     }
-    #contact div.wrapper div.box div.main p:nth-last-child(1) {
-        margin-top: 30px;
+    #contact div.text-container div.spacer {
+        padding: var(--default-padding);
     }
-    #contact div.wrapper div.box form  {
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-        justify-content: space-around;
-        flex-wrap: wrap;
+    #contact div.form-container {
+        padding: calc(var(--default-padding) - calc(var(--default-padding) / 3));
     }
-    #contact div.wrapper div.box form div.inner {
-        flex-basis: 50%;
-        flex-grow: 1;
-        min-width: 200px;
-        padding: 5px;
-    }
-    #contact div.wrapper div.box form input, 
-    #contact div.wrapper div.box form textarea {
-        padding: 10px;
-        font-family: var(--font-tertiary);
-        font-weight: var(--font-weight-tertiary);
-        font-size: var(--font-xs);
-        background-color: var(--color-white);
-        color: var(--color-black);
-        margin: 5px 0;
-        border: none;
-        width: 100%;
-    }
-    #contact div.wrapper div.box form textarea {
-        resize: none;
-        height: 140px;
-    }
-    #contact div.wrapper div.box form div.inner:nth-last-child(1) input {
-        width: auto;
-        font-weight: 800;
-        -webkit-transition: background-color var(--transition-speed), color var(--transition-speed);
-        -moz-transition: background-color var(--transition-speed), color var(--transition-speed);
-        -o-transition: background-color var(--transition-speed), color var(--transition-speed);
-        -ms-transition: background-color var(--transition-speed), color var(--transition-speed);
-        transition: background-color var(--transition-speed), color var(--transition-speed);
-    }
-    #contact div.wrapper div.box form div.inner:nth-last-child(1) input:hover,
-    #contact div.wrapper div.box form div.inner:nth-last-child(1) input:focus {
-        background-color: var(--color-primary);
-        color: var(--color-white);
-        cursor: pointer;
-    }
-    #contact div.wrapper div.box form input:hover,
-    #contact div.wrapper div.box form input:focus, 
-    #contact div.wrapper div.box form textarea:hover,
-    #contact div.wrapper div.box form textarea:focus {
-        outline: none;
-    }
+    /* FORM */
+        #contact form div.flex-container  {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        #contact form div.input-grouping-container {
+            flex-basis: 50%;
+            flex-grow: 1;
+            min-width: 200px;
+            padding: calc(var(--default-padding) / 3);
+        }
+        #contact form input {
+            border: none;
+        }
+        #contact form .input,
+        #contact form .message-area {
+            width: 100%;
+            background-color: var(--color-white);
+            color: var(--color-black);
+            font-family: var(--font-tertiary);
+            font-weight: var(--font-weight-tertiary);
+            font-size: var(--font-xs);
+            padding: calc(calc(var(--default-padding) / 3) * 2);
+            margin: calc(var(--default-padding) / 3) 0;
+        }
+        #contact form .message-area {
+            resize: none;
+            height: 140px;
+        }

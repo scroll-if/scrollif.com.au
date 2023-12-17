@@ -132,12 +132,34 @@
         -ms-transition: background-color var(--transition-speed), color var(--transition-speed);
         transition: background-color var(--transition-speed), color var(--transition-speed);
     }
-    html:not(.can-touch) .main a.button:hover,
-    html:not(.can-touch) .main a.button:focus {
-        outline: none;
-    }
     html:not(.can-touch) .main a.button:hover, 
     html:not(.can-touch) .main a.button:focus {
+        outline: none;
+        cursor: pointer;
+        background-color: var(--color-primary);
+        color: var(--color-white);
+    }
+    .main.reverse a.button {
+        display: inline-block;
+        background-color: var(--color-white);
+        color: var(--color-black);
+        font-family: var(--font-tertiary);
+        font-weight:  800;
+        font-size: var(--font-xs);
+        text-decoration: none;
+        padding: var(--default-padding);
+        margin: var(--default-padding) 0;
+        box-shadow: var(--box-shadow-bottom-right);
+        -webkit-transition: background-color var(--transition-speed), color var(--transition-speed);
+        -moz-transition: background-color var(--transition-speed), color var(--transition-speed);
+        -o-transition: background-color var(--transition-speed), color var(--transition-speed);
+        -ms-transition: background-color var(--transition-speed), color var(--transition-speed);
+        transition: background-color var(--transition-speed), color var(--transition-speed);
+    }
+    html:not(.can-touch) .main.reverse a.button:hover, 
+    html:not(.can-touch) .main.reverse a.button:focus {
+        outline: none;
+        cursor: pointer;
         background-color: var(--color-primary);
         color: var(--color-white);
     }
