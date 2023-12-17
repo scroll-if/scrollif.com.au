@@ -49,7 +49,7 @@
 	}
 	:root {
 			--h3-margin-top: var(--font-s-margin-top);
-			--h3-margin-bottop: var(--font-s-margin-bottom);
+			--h3-margin-bottom: var(--font-s-margin-bottom);
 		}
 	.main h3 {
 		font-family: var(--font-secondary);
@@ -58,7 +58,7 @@
 		font-size: var(--font-s);
 		text-transform: uppercase;
 		margin-top: var(--h3-margin-top);
-		margin-bottom: var(--h3-margin-bottop);
+		margin-bottom: var(--h3-margin-bottom);
 	}
 	.main.reverse h3 {
 		color: var(--color-white);

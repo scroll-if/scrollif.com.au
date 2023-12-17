@@ -143,7 +143,7 @@
             padding: var(--default-padding);
         }
         #about div.content-container {
-            flex-basis: 50%;
+            flex-basis: 100%;
             flex-grow: 1;
         }
         #about div.content-container.text-container {
@@ -160,11 +160,19 @@
         }
         #about img.impact-image {
             display: block;
-            min-width: calc(250px + 15vw);
             width: 100%;
             height: auto;
             margin-top: var(--h2-margin-top);
             margin-bottom: var(--h2-margin-bottom);
+        }
+        @media only screen and (min-width: 758px) {
+            #about div.content-container {
+                flex-basis: 50%;
+                flex-grow: 1;
+            }
+            #about div.content-container.image-container {
+                padding: var(--default-padding);
+            }
         }
     /* WORDCLOUD */
         #about div.wordcloud {
@@ -494,6 +502,8 @@
     /* FORM */
         #contact div.form-container {
             padding: calc(var(--default-padding) - calc(var(--default-padding) / 3));
+            margin-top: var(--h2-margin-top);
+            margin-bottom: var(--h2-margin-bottom);
         }
         #contact form div.form-flex-container  {
             display: flex;
