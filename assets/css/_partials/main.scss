@@ -109,13 +109,15 @@
 	.main li p {
 		display: inline;
 	}
-	.main form > * {
+	.main form > input,
+	.main form > textarea {
 		font-family: var(--font-tertiary);
 		font-weight: var(--font-tertiary-weight);
 		color: var(--color-black);
 		font-size: var(--font-xs);
 	}
-	.main.reverse form > * {
+	.main.reverse form > input,
+	.main.reverse form > textarea {
 		color: var(--color-white);
 	}
 	.main code {
