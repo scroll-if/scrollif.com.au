@@ -109,14 +109,10 @@
     /* IMAGE */
     #about img.impact-image {
         display: block;
+        min-width: calc(250px + 15vw);
         width: 100%;
         height: auto;
         margin: var(--margin-h2);
-    }
-    @media only screen and (min-width: 425px) {
-        #about img.impact-image {
-            min-width: 370px;
-        }
     }
     /* WORDCLOUD */
         #about div.wordcloud {
