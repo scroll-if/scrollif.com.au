@@ -109,8 +109,8 @@
 	.main li p {
 		display: inline;
 	}
-	.main form > input,
-	.main form > textarea {
+	.main form input,
+	.main form textarea {
 		font-family: var(--font-tertiary);
 		font-weight: var(--font-tertiary-weight);
 		color: var(--color-black);
