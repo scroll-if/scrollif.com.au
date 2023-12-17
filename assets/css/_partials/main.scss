@@ -1,7 +1,7 @@
 /* STANDARD STYLING */
 	:root {
-			--margin-top-h1: var(--margin-top-xl);
-			--margin-bottom-h1: var(--margin-bottom-xl);
+			--h1-margin-top: var(--font-xl-margin-top);
+			--h1-margin-bottom: var(--font-xl-margin-bottom);
 		}
 	.main h1 {
 		font-family: var(--font-primary);
@@ -9,15 +9,15 @@
 		color: var(--color-primary);
 		font-size: var(--font-xl);
 		text-transform: uppercase;
-		margin-top: var(--margin-top-h1);
-		margin-bottom: var(--margin-bottom-h1);
+		margin-top: var(--h1-margin-top);
+		margin-bottom: var(--h1-margin-bottom);
 	}
 	.main.reverse h1 {
 		color: var(--color-primary);
 	}
 	:root {
-			--margin-top-subtitle: var(--margin-top-l);
-			--margin-bottom-subtitle: var(--margin-bottom-l);
+			--subtitle-margin-top: var(--font-l-margin-top);
+			--subtitle-margin-bottom: var(--font-l-margin-bottom);
 		}
 	.main h1.subtitle {
 		font-family: var(--font-primary);
@@ -25,15 +25,15 @@
 		color: var(--color-black);
 		font-size: var(--font-l);
 		text-transform: uppercase;
-		margin-top: var(--margin-top-subtitle);
-		margin-bottom: var(--margin-bottom-subtitle);
+		margin-top: var(--subtitle-margin-top);
+		margin-bottom: var(--subtitle-margin-bottom);
 	}
 	.main.reverse h1.subtitle {
 		color: var(--color-white);
 	}
 	:root {
-			--margin-top-h2: var(--margin-top-m);
-			--margin-bottom-h2: var(--margin-bottom-m);
+			--h2-margin-top: var(--font-m-margin-top);
+			--h2-margin-bottom: var(--font-m-margin-bottom);
 		}
 	.main h2 {
 		font-family: var(--font-secondary);
@@ -41,15 +41,15 @@
 		color: var(--color-black);
 		font-size: var(--font-m);
 		text-transform: uppercase;
-		margin-top: var(--margin-top-h2);
-		margin-bottom: var(--margin-bottom-h2);
+		margin-top: var(--h2-margin-top);
+		margin-bottom: var(--h2-margin-bottom);
 	}
 	.main.reverse h2 {
 		color: var(--color-white);
 	}
 	:root {
-			--margin-top-h3: var(--margin-top-s);
-			--margin-bottom-h3: var(--margin-bottom-s);
+			--h3-margin-top: var(--font-s-margin-top);
+			--h3-margin-bottop: var(--font-s-margin-bottom);
 		}
 	.main h3 {
 		font-family: var(--font-secondary);
@@ -57,23 +57,23 @@
 		color: var(--color-black);
 		font-size: var(--font-s);
 		text-transform: uppercase;
-		margin-top: var(--margin-top-h3);
-		margin-bottom: var(--margin-bottom-h3);
+		margin-top: var(--h3-margin-top);
+		margin-bottom: var(--h3-margin-bottop);
 	}
 	.main.reverse h3 {
 		color: var(--color-white);
 	}
 	:root {
-			--margin-top-p: var(--margin-top-xs);
-			--margin-bottom-p: var(--margin-bottom-xs);
+			--p-margin-top: var(--font-xs-margin-top);
+			--p-margin-bottom: var(--font-xs-margin-bottom);
 		}
 	.main p {
 		font-family: var(--font-tertiary);
 		font-weight: var(--font-tertiary-weight);
 		color: var(--color-black);
 		font-size: var(--font-xs);
-		margin-top: var(--margin-top-p);
-		margin-bottom: var(--margin-bottom-p);
+		margin-top: var(--p-margin-top);
+		margin-bottom: var(--p-margin-bottom);
 	}
 	.main.reverse p {
 		color: var(--color-white);
