@@ -31,13 +31,13 @@ author-twitter:
                     <p class="subtitle">Websites.  Graphics.  Consulting.</p>
                     <code class="tagline">... digital possiblities<span class="cursor">|</span></code>
                 </div>
-            </div>
-            <a class="scroll-down-button" href="#about">
-                <div class="background">
-                    <div class="arrow">
+                <a class="scroll-down-button" href="#about">
+                    <div class="background">
+                        <div class="arrow">
+                        </div>
                     </div>
-                </div>
-            </a>
+                </a>
+            </div>
         </div>
     </div>
 </div>
@@ -114,16 +114,14 @@ author-twitter:
 </section>
 
 <section id="services">
-    <div class="background-color-white">
+    <div class="background">
         <div class="max-width-container">
-            <div class="flex flex-row jc-center ai-center flex-wrap default-padding">
-                <div class="flex flex-row flex-basis-half flex-grow-1 jc-center default-padding">
-                    <div class="main">
-                        <h2 class="text-center">Our Mission</h2>
-                        <p class="text-center">To digitally empower small businesses in a ever changing and evolving landscape.</p>
-                        <p class="text-center">Our services aim to get your business looking its best, doing its best, and feeling its best!</p>    
-                        <div class="bar-spacer">
-                        </div>
+            <div class="text-container">
+                <div class="main">
+                    <h2>Our Mission</h2>
+                    <p>To digitally empower small businesses in a ever changing and evolving landscape.</p>
+                    <p>Our services aim to get your business looking its best, doing its best, and feeling its best!</p>    
+                    <div class="bar-spacer">
                     </div>
                 </div>
             </div>
@@ -133,10 +131,12 @@ author-twitter:
                         <a href="{{ site.url }}{{ item.url }}" class="overflow-box">
                             <div class="background-image" style="background-image: url('{{ site.url }}{{ item.background-image }}')">
                             </div>
-                            <div class="tint-8 mirror-box">
-                                <div class="textbox main reverse">
-                                    <h3 class="text-center">{{ item.name }}</h3>
-                                    <p class="text-center">{{ item.description }}</p>
+                            <div class="tint mirror-box">
+                                <div class="text-container">
+                                    <div class="main">
+                                        <h3>{{ item.name }}</h3>
+                                        <p>{{ item.description }}</p>
+                                    </div>
                                 </div>
                             </div>
                         </a>

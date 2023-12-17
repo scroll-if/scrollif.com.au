@@ -1,6 +1,7 @@
 /* STANDARD STYLING */
 	:root {
-			--margin-h1: var(--margin-xl);
+			--margin-top-h1: var(--margin-top-xl);
+			--margin-bottom-h1: var(--margin-bottom-xl);
 		}
 	.main h1 {
 		font-family: var(--font-primary);
@@ -8,13 +9,15 @@
 		color: var(--color-primary);
 		font-size: var(--font-xl);
 		text-transform: uppercase;
-		margin: var(--margin-h1);
+		margin-top: var(--margin-top-h1);
+		margin-bottom: var(--margin-bottom-h1);
 	}
 	.main.reverse h1 {
 		color: var(--color-primary);
 	}
 	:root {
-			--margin-subtitle: var(--margin-l);
+			--margin-top-subtitle: var(--margin-top-l);
+			--margin-bottom-subtitle: var(--margin-bottom-l);
 		}
 	.main h1.subtitle {
 		font-family: var(--font-primary);
@@ -22,13 +25,15 @@
 		color: var(--color-black);
 		font-size: var(--font-l);
 		text-transform: uppercase;
-		margin: var(--margin-subtitle);
+		margin-top: var(--margin-top-subtitle);
+		margin-bottom: var(--margin-bottom-subtitle);
 	}
 	.main.reverse h1.subtitle {
 		color: var(--color-white);
 	}
 	:root {
-			--margin-h2: var(--margin-m);
+			--margin-top-h2: var(--margin-top-m);
+			--margin-bottom-h2: var(--margin-bottom-m);
 		}
 	.main h2 {
 		font-family: var(--font-secondary);
@@ -36,13 +41,15 @@
 		color: var(--color-black);
 		font-size: var(--font-m);
 		text-transform: uppercase;
-		margin: var(--margin-h2);
+		margin-top: var(--margin-top-h2);
+		margin-bottom: var(--margin-bottom-h2);
 	}
 	.main.reverse h2 {
 		color: var(--color-white);
 	}
 	:root {
-			--margin-h3: var(--margin-s);
+			--margin-top-h3: var(--margin-top-s);
+			--margin-bottom-h3: var(--margin-bottom-s);
 		}
 	.main h3 {
 		font-family: var(--font-secondary);
@@ -50,20 +57,23 @@
 		color: var(--color-black);
 		font-size: var(--font-s);
 		text-transform: uppercase;
-		margin: var(--margin-h3);
+		margin-top: var(--margin-top-h3);
+		margin-bottom: var(--margin-bottom-h3);
 	}
 	.main.reverse h3 {
 		color: var(--color-white);
 	}
 	:root {
-			--margin-p: var(--margin-xs);
+			--margin-top-p: var(--margin-top-xs);
+			--margin-bottom-p: var(--margin-bottom-xs);
 		}
 	.main p {
 		font-family: var(--font-tertiary);
 		font-weight: var(--font-tertiary-weight);
 		color: var(--color-black);
 		font-size: var(--font-xs);
-		margin: var(--margin-p);
+		margin-top: var(--margin-top-p);
+		margin-bottom: var(--margin-bottom-p);
 	}
 	.main.reverse p {
 		color: var(--color-white);

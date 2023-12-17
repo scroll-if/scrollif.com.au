@@ -137,6 +137,7 @@
             justify-content: space-around;
             align-items: flex-start;
             flex-wrap: wrap;
+            padding: var(--default-padding);
         }
         #about div.content-container {
             flex-basis: 50%;
@@ -349,6 +350,13 @@
             }
 /* SERVICES */
     #services div.bar-spacer  {
+        background-color: var(--color-white);
+    }
+    #services div.text-container {
+        padding: calc(var(--default-padding) * 2) var(--default-padding);
+        text-align: center;
+    }
+    #services div.bar-spacer  {
         padding-top: var(--default-padding);
         background: linear-gradient(var(--color-primary),var(--color-primary)) center bottom;
                     background-size: 60px 5px;
@@ -395,6 +403,10 @@
         -ms-transition: transform var(--transition-speed);
         transition: transform var(--transition-speed);
     }
+    #services div.services-box div.tint {
+        height: 100%;
+        background-color: rgba(1, 1, 1, 0.2);
+    }
     #services div.services-box div.mirror-box {
         position: absolute;
         top: 0;
@@ -412,6 +424,14 @@
         -ms-transition: background-color var(--transition-speed);
         transition: background-color var(--transition-speed);
     }
+    #services div.services-box div.text-container {
+        min-width: 200px;
+        width: 75%;
+        text-align: center;
+    }
+    #services div.services-box div.text-container h3 {
+        margin: calc(var(--font-s)/1.5) 0 calc(var(--font-s)/1.5);
+    }
     html:not(.can-touch) #services div.services-box a.overflow-box:hover,
     html:not(.can-touch) #services div.services-box a.overflow-box:focus {
         outline: none;
@@ -424,18 +444,11 @@
     html:not(.can-touch) #services div.services-box a.overflow-box:focus div.mirror-box {
         background-color: rgba(1, 1, 1, 0.7);
     }
-    #services div.services-box div.textbox {
-        min-width: 200px;
-        width: 75%;
-    }
-    #services div.services-box div.textbox h3 {
-        margin: calc(var(--font-s)/1.5) 0 calc(var(--font-s)/1.5);
-    }
-    html:not(.can-touch) #services div.services-box div.textbox p {
+    html:not(.can-touch) #services div.services-box div.text-container p {
         display: none;
     }
-    html:not(.can-touch) #services div.services-box a.overflow-box:hover div.textbox p,
-    html:not(.can-touch) #services div.services-box a.overflow-box:focus div.textbox p {
+    html:not(.can-touch) #services div.services-box a.overflow-box:hover div.text-container p,
+    html:not(.can-touch) #services div.services-box a.overflow-box:focus div.text-container p {
         display: inline;
     }
 
@@ -527,4 +540,3 @@
     #contact div.wrapper div.box form textarea:focus {
         outline: none;
     }
-    
