@@ -18,23 +18,25 @@ author-facebook:
 author-twitter:
 ---
 
-<div class="hero-image-full background-color-black background-no-repeat background-cover background-center" style="background-image: url('{{ site.url }}/assets/images/hero_image_{{ site.title | replace: ' ', '_' | downcase }}.jpg');">
-    <div class="tint-2 w-100 h-100 flex flex-col jc-center ai-center">
-        <div class="text-center default-padding">
-            <img class="image-icon" src="{{ site.url }}/assets/images/websites.png" alt="Websites"/>
-            <div class="inline-block">
-                <img class="image-icon" src="{{ site.url }}/assets/images/graphics.png" alt="Graphics"/>
-                <img class="image-icon" src="{{ site.url }}/assets/images/consulting.png" alt="Consulting"/>
-            </div>
-            <p class="subtitle">Websites.  Graphics.  Consulting.</p>
-            <code class="tagline">... digital possiblities<span class="cursor">|</span></code>
-        </div>
-        <a class="scroll-down-button" href="#about">
-            <div class="background">
-                <div class="arrow">
+<div class="hero-image" style="background-image: url('{{ site.url }}/assets/images/hero_image_{{ site.title | replace: ' ', '_' | downcase }}.jpg');">
+    <div class="tint">
+        <div class="flex-container">
+            <div class="content-container">
+                <img class="image-icon" src="{{ site.url }}/assets/images/websites.png" alt="Websites"/>
+                <div class="inline-block">
+                    <img class="image-icon" src="{{ site.url }}/assets/images/graphics.png" alt="Graphics"/>
+                    <img class="image-icon" src="{{ site.url }}/assets/images/consulting.png" alt="Consulting"/>
                 </div>
+                <p class="subtitle">Websites.  Graphics.  Consulting.</p>
+                <code class="tagline">... digital possiblities<span class="cursor">|</span></code>
             </div>
-        </a>
+            <a class="scroll-down-button" href="#about">
+                <div class="button-background">
+                    <div class="button-arrow">
+                    </div>
+                </div>
+            </a>
+        </div>
     </div>
 </div>
 
