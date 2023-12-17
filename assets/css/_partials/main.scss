@@ -2,56 +2,71 @@
 	.main {
 		text-align: justify;
 	}
+	:root {
+			--margin-h1: var(--margin-xl);
+		}
 	.main h1 {
 		font-family: var(--font-primary);
 		font-weight: var(--font-primary-weight);
 		color: var(--color-primary);
 		font-size: var(--font-xl);
 		text-transform: uppercase;
-		margin: calc(var(--font-xl)*1) 0 calc(var(--font-xl)/2);
+		margin: var(--margin-h1);
 	}
 	.main.reverse h1 {
 		color: var(--color-primary);
 	}
+	:root {
+			--margin-subtitle: var(--margin-l);
+		}
 	.main h1.subtitle {
 		font-family: var(--font-primary);
 		font-weight: var(--font-primary-weight);
 		color: var(--color-black);
 		font-size: var(--font-l);
 		text-transform: uppercase;
-		margin: calc(var(--font-l)*1) 0 calc(var(--font-xl)/2);
+		margin: var(--margin-subtitle);
 	}
 	.main.reverse h1.subtitle {
 		color: var(--color-white);
 	}
+	:root {
+			--margin-h2: var(--margin-m);
+		}
 	.main h2 {
 		font-family: var(--font-secondary);
 		font-weight: var(--font-secondary-weight);
 		color: var(--color-black);
 		font-size: var(--font-m);
 		text-transform: uppercase;
-		margin: calc(var(--font-m)*1.5) 0 calc(var(--font-m)/1.5);
+		margin: var(--margin-h2);
 	}
 	.main.reverse h2 {
 		color: var(--color-white);
 	}
+	:root {
+			--margin-h3: var(--margin-s);
+		}
 	.main h3 {
 		font-family: var(--font-secondary);
 		font-weight: var(--font-secondary-weight);
 		color: var(--color-black);
 		font-size: var(--font-s);
 		text-transform: uppercase;
-		margin: calc(var(--font-s)*1.5) 0 calc(var(--font-s)/1.5);
+		margin: var(--margin-h3);
 	}
 	.main.reverse h3 {
 		color: var(--color-white);
 	}
+	:root {
+			--margin-p: var(--margin-xs);
+		}
 	.main p {
 		font-family: var(--font-tertiary);
 		font-weight: var(--font-tertiary-weight);
 		color: var(--color-black);
 		font-size: var(--font-xs);
-		margin: calc(var(--font-xs)/2.5) 0 calc(var(--font-xs)/2.5);
+		margin: var(--margin-p);
 	}
 	.main.reverse p {
 		color: var(--color-white);
@@ -82,7 +97,7 @@
 	    margin-right: calc(var(--font-xs)/1.5);
 	}
 	.main li  {
-		margin: calc(var(--font-xs)/1.5) calc(var(--font-xs)*1.5);
+		margin: var(--margin-p);
 	}
 	.main li p {
 		display: inline;
