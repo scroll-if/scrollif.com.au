@@ -23,6 +23,9 @@
             padding: var(--default-padding);
             text-align: center;
         }
+        div.hero-image div.image-grouping-container {
+            display: inline-block;
+        }
         div.hero-image img.image-icon {
             height: auto;
             min-width: 100px;
