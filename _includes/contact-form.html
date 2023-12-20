@@ -2,29 +2,35 @@
     <div class="background" style="background-image: url('{{ site.url }}/assets/images/contact_us.jpg');">
         <div class="tint">
             <div class="max-width-container">
-                <div class="wrapper">
-                    <div class="box">
+                <div class="flex-container">
+                    <div class="content-container text-container">
                         <div class="main reverse">
                             <h2>Contact Us</h2>
                             <p>Have any questions?</p>
                             <p>Give us a call or send us a message.</p>
+                            <div class="spacer">
+                            </div>
                             <p>Check out our <a href="{{ site.url }}/about/faqs">FAQs</a> and read our <a href="{{ site.url }}/about/case-studies">Case Studies</a>.</p> 
                         </div>
                     </div>
-                    <div class="box">
-                        <form name="contact" netlify>
-                            <div class="inner">
-                                <input name="name" placeholder="Name" type="text" required="" pattern="[A-Za-z' -]+" oninvalid="setCustomValidity('Please enter a valid name using letters only.')" onchange="try{setCustomValidity('')}catch(e){}"/>
-                                <input name="phone" placeholder="Phone" type="tel" required="" pattern="[0-9 -]+" oninvalid="setCustomValidity('Please enter a valid phone number using numbers only.')" onchange="try{setCustomValidity('')}catch(e){}"/>
-                                <input name="email" placeholder="Email" type="email" required="" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+.[A-Za-z]{2,}$" oninvalid="setCustomValidity('Please enter a valid email making sure to include an @ sign and the domain suffix (.com .net etc.).')" onchange="try{setCustomValidity('')}catch(e){}"/>
-                            </div>
-                            <div class="inner">
-                                <textarea name="message" placeholder="Message" type="text" required=""></textarea>
-                            </div>
-                            <div class="inner">
-                                <input name="submit" value="Send Message" type="submit" >
-                            </div>
-                        </form>
+                    <div class="content-container form-container">
+                        <div class="main">
+                            <form name="contact" netlify>
+                                <div class="form-flex-container">
+                                    <div class="input-grouping-container">
+                                        <input class="input-field" name="name" placeholder="Name" type="text" required="" pattern="[A-Za-z' -]+" oninvalid="setCustomValidity('Please enter a valid name using letters only.')" onchange="try{setCustomValidity('')}catch(e){}"/>
+                                        <input class="input-field" name="phone" placeholder="Phone" type="tel" required="" pattern="[0-9 -]+" oninvalid="setCustomValidity('Please enter a valid phone number using numbers only.')" onchange="try{setCustomValidity('')}catch(e){}"/>
+                                        <input class="input-field" name="email" placeholder="Email" type="email" required="" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+.[A-Za-z]{2,}$" oninvalid="setCustomValidity('Please enter a valid email making sure to include an @ sign and the domain suffix (.com .net etc.).')" onchange="try{setCustomValidity('')}catch(e){}"/>
+                                    </div>
+                                    <div class="input-grouping-container">
+                                        <textarea class="message-area" name="message" placeholder="Message" type="text" required=""></textarea>
+                                    </div>
+                                    <div class="input-grouping-container">
+                                        <input class="button" name="submit" value="Send Message" type="submit" >
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
