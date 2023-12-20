@@ -1,14 +1,14 @@
-#contact div.background {
+#contact-form div.background {
     background-color: var(--color-black);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center 65%;
 }
-#contact div.tint {
+#contact-form div.tint {
     height: 100%;
     background-color: rgba(1, 1, 1, 0.6);
 }
-#contact div.flex-container {
+#contact-form div.flex-container {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -16,49 +16,49 @@
     flex-wrap: wrap;
     padding: calc(var(--default-padding) * 3) var(--default-padding) calc(var(--default-padding) * 8);
 }
-#contact div.content-container {
+#contact-form div.content-container {
     flex-basis: 50%;
     flex-grow: 1;
     min-width: 300px;
 }
 /* TEXT */
-    #contact div.text-container {
+    #contact-form div.text-container {
         padding: var(--default-padding);
         text-align: left;
     }
-    #contact div.text-container div.spacer {
+    #contact-form div.text-container div.spacer {
         padding: var(--default-padding);
     }
 /* FORM */
-    #contact div.form-container {
+    #contact-form div.form-container {
         padding: calc(var(--default-padding) - calc(var(--default-padding) / 3));
         margin-top: var(--h2-margin-top);
         margin-bottom: var(--h2-margin-bottom);
     }
-    #contact form div.form-flex-container  {
+    #contact-form form div.form-flex-container  {
         display: flex;
         flex-direction: row;
         align-items: flex-start;
         justify-content: space-around;
         flex-wrap: wrap;
     }
-    #contact form div.input-grouping-container {
+    #contact-form form div.input-grouping-container {
         flex-basis: 50%;
         flex-grow: 1;
         min-width: 200px;
         padding: calc(var(--default-padding) / 3);
     }
-    #contact form input {
+    #contact-form form input {
         border: none;
     }
-    #contact form .input-field,
-    #contact form .message-area {
+    #contact-form form .input-field,
+    #contact-form form .message-area {
         background-color: var(--color-white);
         width: 100%;
         padding: calc(calc(var(--default-padding) / 3) * 2);
         margin: calc(var(--default-padding) / 3) 0;
     }
-    #contact form .message-area {
+    #contact-form form .message-area {
         resize: none;
         height: 140px;
     }
