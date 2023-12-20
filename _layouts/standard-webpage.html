@@ -51,6 +51,10 @@
 
 		{{ content }} 
 
+		{% if page.hide-contact-form %}
+			{% include contact-form.html %}
+		{% endif %}
+
 		{% include footer.html %}  
 
 	<!-- POWERED-BY SCROLL IF -->
