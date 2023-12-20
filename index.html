@@ -114,3 +114,37 @@ author-twitter:
         </div>
     </div>
 </section>
+
+<section id="services">
+    <div class="background">
+        <div class="max-width-container">
+            <div class="text-container">
+                <div class="main">
+                    <h2>Our Mission</h2>
+                    <p>To digitally empower small businesses in a ever changing and evolving landscape.</p>
+                    <p>Our services aim to get your business looking its best, doing its best, and feeling its best!</p>    
+                    <div class="bar-spacer">
+                    </div>
+                </div>
+            </div>
+            <div class="services-container">
+                {% for item in site.data.services %}
+                    <div class="services-box">
+                        <a href="{{ site.url }}{{ item.url }}" class="overflow-box">
+                            <div class="background-image" style="background-image: url('{{ site.url }}{{ item.background-image }}')">
+                            </div>
+                            <div class="tint mirror-box">
+                                <div class="text-container">
+                                    <div class="main reverse">
+                                        <h3>{{ item.name }}</h3>
+                                        <p>{{ item.description }}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
