@@ -167,16 +167,16 @@
 		-ms-transition: border-color var(--transition-speed);
 		transition: border-color var(--transition-speed);
 	}
-	html:not(.can-touch) #terms a.back-to-top-button:hover a.back-to-top-button div.background,
-	html:not(.can-touch) #privacy a.back-to-top-button:hover a.back-to-top-button div.background, 
-	html:not(.can-touch) #terms a.back-to-top-button:focus a.back-to-top-button div.background,
-	html:not(.can-touch) #privacy a.back-to-top-button:focus a.back-to-top-button div.background {
+	html:not(.can-touch) #terms a.back-to-top-button:hover div.background,
+	html:not(.can-touch) #privacy a.back-to-top-button:hover div.background, 
+	html:not(.can-touch) #terms a.back-to-top-button:focus div.background,
+	html:not(.can-touch) #privacy a.back-to-top-button:focus div.background {
 		background-color: var(--color-primary);
 	}
-	html:not(.can-touch) #terms a.back-to-top-button:hover a.back-to-top-button div.arrow,
-	html:not(.can-touch) #privacy a.back-to-top-button:hover a.back-to-top-button div.arrow, 
-	html:not(.can-touch) #terms a.back-to-top-button:focus a.back-to-top-button div.arrow,
-	html:not(.can-touch) #privacy a.back-to-top-button:focus a.back-to-top-button div.arrow {
+	html:not(.can-touch) #terms a.back-to-top-button:hover div.arrow,
+	html:not(.can-touch) #privacy a.back-to-top-button:hover div.arrow, 
+	html:not(.can-touch) #terms a.back-to-top-button:focus div.arrow,
+	html:not(.can-touch) #privacy a.back-to-top-button:focus div.arrow {
 		border-left-color: var(--color-primary);
 	    border-right-color: var(--color-primary);
 	    border-bottom-color: var(--color-white);
