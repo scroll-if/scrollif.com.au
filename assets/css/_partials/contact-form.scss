@@ -59,9 +59,7 @@
         margin: calc(var(--default-padding) / 3) 0;
     }
     #contact-form form .signup-email {
-        display: hidden;
-        opacity: 0;
-        visibility: 0;
+        display: none;
     }
     #contact-form form .message-area {
         resize: none;
