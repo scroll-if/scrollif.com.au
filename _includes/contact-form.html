@@ -15,7 +15,7 @@
                     </div>
                     <div class="content-container form-container">
                         <div class="main">
-                            <form name="contact-us" method="POST" data-netlify="true" netlify-honeypot="signup-email" data-netlify-recaptcha="true">
+                            <form name="contact-us" method="POST" data-netlify="true" netlify-honeypot="signup-email">
                                 <div class="form-flex-container">
                                     <div class="input-grouping-container">
                                         <input class="input-field" name="name" placeholder="Name" type="text" required pattern="[A-Za-z' -]+" oninvalid="setCustomValidity('Please enter a valid name using letters only.')" onchange="try{setCustomValidity('')}catch(e){}"/>
@@ -26,9 +26,9 @@
                                     <div class="input-grouping-container">
                                         <textarea class="message-area" name="message" placeholder="Message" type="text" required></textarea>
                                     </div>
-                                    <div data-netlify-recaptcha="true" class="recaptcha"></div>
+                                    <!-- <div data-netlify-recaptcha="true" class="recaptcha"></div> -->
                                     <div class="input-grouping-container">
-                                        <input class="button" name="submit" value="Send Message" type="submit" >
+                                        <input id="recaptcha-required-form-submit-button" class="button" name="submit" value="Send Message" type="submit" disabled>
                                     </div>
                                 </div>
                             </form>
