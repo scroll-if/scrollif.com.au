@@ -58,6 +58,11 @@
         padding: calc(calc(var(--default-padding) / 3) * 2);
         margin: calc(var(--default-padding) / 3) 0;
     }
+    #contact-form form .signup-email {
+        display: hidden;
+        opacity: 0;
+        visibility: 0;
+    }
     #contact-form form .message-area {
         resize: none;
         height: 140px;
