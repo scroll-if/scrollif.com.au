@@ -18,10 +18,10 @@
                             <form name="contact-us" method="POST" data-netlify="true" netlify-honeypot="signup-email" data-netlify-recaptcha="true">
                                 <div class="form-flex-container">
                                     <div class="input-grouping-container">
-                                        <input class="input-field" name="name" placeholder="Name" type="text" required pattern="[A-Za-z' -]+" oninvalid="setCustomValidity('Please enter a valid name using letters only.')" onchange="try{setCustomValidity('')}catch(e){}"/>
-                                        <input class="input-field" name="phone" placeholder="Phone" type="tel" required pattern="[0-9 -]+" oninvalid="setCustomValidity('Please enter a valid phone number using numbers only.')" onchange="try{setCustomValidity('')}catch(e){}"/>
-                                        <input class="input-field" name="email" placeholder="Email" type="email" required pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+.[A-Za-z]{2,}$" oninvalid="setCustomValidity('Please enter a valid email making sure to include an @ sign and the domain suffix (.com .net etc.).')" onchange="try{setCustomValidity('')}catch(e){}"/>
-                                        <input class="input-field signup-email" name="signup-email" placeholder="Email" type="email"/>
+                                        <input class="input-field" name="name" placeholder="Name" type="text" autocomplete="given-name" required pattern="[A-Za-z' -]+" oninvalid="setCustomValidity('Please enter a valid name using letters only.')" onchange="try{setCustomValidity('')}catch(e){}"/>
+                                        <input class="input-field" name="phone" placeholder="Phone" type="tel" autocomplete="family-name" required pattern="[0-9 -]+" oninvalid="setCustomValidity('Please enter a valid phone number using numbers only.')" onchange="try{setCustomValidity('')}catch(e){}"/>
+                                        <input class="input-field" name="email" placeholder="Email" type="email" autocomplete="email" required pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+.[A-Za-z]{2,}$" oninvalid="setCustomValidity('Please enter a valid email making sure to include an @ sign and the domain suffix (.com .net etc.).')" onchange="try{setCustomValidity('')}catch(e){}"/>
+                                        <input class="input-field signup-email" name="signup-email" placeholder="Signup Email" type="email" autocomplete="off"/>
                                     </div>
                                     <div class="input-grouping-container">
                                         <textarea class="message-area" name="message" placeholder="Message" type="text" required></textarea>
