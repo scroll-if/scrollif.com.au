@@ -1,14 +1,8 @@
-
-  function unHideButton() {
-    const response = grecaptcha.getResponse()
-    if (grecaptcha.getResponse().length > 0) {
-      document.getElementById('recaptcha-required-form-submit-button').disabled = false
-    }
+window.onload = function() {
+  var recaptcha = document.forms["contact-us"]["g-recaptcha-response"];
+  recaptcha.required = true;
+  recaptcha.oninvalid = function(e) {
+    // do something
+    alert("Please check the box, \"I'm not a robot\" in the reCaptcha below.");
   }
-  document.addEventListener("DOMContentLoaded", () => {
-    if (typeof grecaptcha === "object") {
-      document.querySelector('.g-recaptcha').dataset.callback = "unHideButton"
-    } else {
-      console.log("Unable to add `data-callback` to grecaptcha as it doesn't exist.");
-    }
-  });
+}
