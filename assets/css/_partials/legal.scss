@@ -113,6 +113,10 @@
 	    padding-bottom: 1px;
 	}
 /* BACK TO TOP BUTTON */
+	#terms div.back-to-top-container,
+	#privacy div.back-to-top-container {
+		padding: 15px;
+	}
 	#terms a.back-to-top-trigger,
 	#privacy a.back-to-top-trigger {
 		display: block;
