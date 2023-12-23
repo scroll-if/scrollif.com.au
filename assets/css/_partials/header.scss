@@ -4,13 +4,13 @@ header  {
 	z-index: 9995;
 	background-color: var(--color-white);
 	box-shadow: var(--box-shadow);
+	padding: var(--default-padding);
 }
 header div.flex-container {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: flex-end;
-	padding: var(--default-padding);
 }
 /* LOGO */
 	header img.logo {
