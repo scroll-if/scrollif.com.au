@@ -121,12 +121,12 @@
         html:not(.can-touch) div.hero-image a.scroll-down-button:focus {
             outline: none;
         }
-        html:not(.can-touch) div.hero-image a.scroll-down-button:hover a.scroll-down-button div.background, 
-        html:not(.can-touch) div.hero-image a.scroll-down-button:focus a.scroll-down-button div.background {
+        html:not(.can-touch) div.hero-image a.scroll-down-button:hover div.background, 
+        html:not(.can-touch) div.hero-image a.scroll-down-button:focus div.background {
             background-color: var(--color-primary);
         }
-        html:not(.can-touch) div.hero-image a.scroll-down-button:hover a.scroll-down-button div.arrow, 
-        html:not(.can-touch) div.hero-image a.scroll-down-button:focus a.scroll-down-button div.arrow {
+        html:not(.can-touch) div.hero-image a.scroll-down-button:hover div.arrow, 
+        html:not(.can-touch) div.hero-image a.scroll-down-button:focus div.arrow {
             border-top-color: var(--color-white);
         }
 /* ABOUT */
