@@ -3,14 +3,14 @@ header  {
 	width: 100%;
 	z-index: 9995;
 	background-color: var(--color-white);
-	padding: 15px;
 	box-shadow: var(--box-shadow);
 }
-header div.max-width-container {
+header div.flex-container {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: flex-end;
+	padding: var(--default-padding);
 }
 /* LOGO */
 	header img.logo {

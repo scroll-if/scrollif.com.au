@@ -8,6 +8,7 @@
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: baseline;
+	padding: var(--default-padding);
 }
 #terms div.flex-container .anchor::before,
 #privacy div.flex-container .anchor::before {
@@ -43,7 +44,7 @@
 	}
 	#terms div.toc ul.toc,
 	#privacy div.toc ul.toc {
-		padding: 15px;
+		padding: var(--default-padding);
 	    font-size: var(--font-xxs);
 	    text-indent: calc(var(--font-xxs)*-1.5);
 	    margin: 0;
@@ -110,13 +111,13 @@
 	#terms div.back-to-top-container,
 	#privacy div.back-to-top-container {
 		position: sticky;
-		bottom: -75px;
+		bottom: calc(var(--default-padding) * -5);
 		-webkit-transition: bottom var(--transition-speed);
 		-moz-transition: bottom var(--transition-speed);
 		-o-transition: bottom var(--transition-speed);
 		-ms-transition: bottom var(--transition-speed);
 		transition: bottom var(--transition-speed);
-		padding: 15px;
+		padding: var(--default-padding);
 	}
 	#terms div.back-to-top-container.visible,
 	#privacy div.back-to-top-container.visible {
@@ -132,7 +133,7 @@
 	#privacy a.back-to-top-button {
 		display: block;
 		width: 45px;
-		margin: 15px auto;	
+		margin: var(--default-padding) auto;	
 	}
 
 	#terms a.back-to-top-button div.background,
@@ -194,6 +195,6 @@
 		}
 		#terms a.back-to-top-button,
 		#privacy a.back-to-top-button {
-			margin-right: 15px;
+			margin-right: var(--default-padding);
 		}
 	}

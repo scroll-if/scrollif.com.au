@@ -1,70 +1,72 @@
 <header>
 	<div class="max-width-container">
-		<a href="{{ site.url }}">
-			<img class="logo" src="{{ site.url }}/assets/images/logo_{{ site.title | replace: ' ', '_' | downcase }}.png" alt="{{ site.title }} Logo"/>
-			<!--<p class="logo-name">{{ site.title }}</p>-->
-		</a>
-		<nav class="navbar-static">
-			<ul class="menu">
-			{% for item in site.menus.navbar %}
-			  <li class="{% if item.url == page.url %}current-page{% endif %} {% if item.children %}submenu-trigger{% endif %}">
-			    <a href="{{ item.url }}"><p>{{ item.title }}</p></a>
-			    {% if item.children %}
-			    	<ul class="submenu">
-		    		{% for item in item.children %}
-		    			<li class="{% if item.url == page.url %}current-page{% endif %} {% if item.children %}subsubmenu-trigger{% endif %}">
-		    				<a href="{{ item.url }}"><p>{{ item.title }}</p></a>
-    					    {% if item.children %}
-    					    	<ul class="subsubmenu">
-    				    		{% for item in item.children %}
-    				    			<li class="{% if item.url == page.url %}current-page{% endif %}">
-    				    				<a href="{{ item.url }}"><p>{{ item.title }}</p></a>
-    				    			</li>
-    				    		{% endfor %}
-    				    		</ul>
-    				    	{% endif %}
-		    			</li>
-		    		{% endfor %}
-		    		</ul>
-		    	{% endif %}
-			  </li>
-			{% endfor %}
-			</ul>
-		</nav>			
-		<div class="menu-icon">
-			<span></span>
-			<span></span>
-			<span></span>
-			<span></span>
+		<div class="flex-container">
+			<a href="{{ site.url }}">
+				<img class="logo" src="{{ site.url }}/assets/images/logo_{{ site.title | replace: ' ', '_' | downcase }}.png" alt="{{ site.title }} Logo"/>
+				<!--<p class="logo-name">{{ site.title }}</p>-->
+			</a>
+			<nav class="navbar-static">
+				<ul class="menu">
+				{% for item in site.menus.navbar %}
+				  <li class="{% if item.url == page.url %}current-page{% endif %} {% if item.children %}submenu-trigger{% endif %}">
+				    <a href="{{ item.url }}"><p>{{ item.title }}</p></a>
+				    {% if item.children %}
+				    	<ul class="submenu">
+			    		{% for item in item.children %}
+			    			<li class="{% if item.url == page.url %}current-page{% endif %} {% if item.children %}subsubmenu-trigger{% endif %}">
+			    				<a href="{{ item.url }}"><p>{{ item.title }}</p></a>
+	    					    {% if item.children %}
+	    					    	<ul class="subsubmenu">
+	    				    		{% for item in item.children %}
+	    				    			<li class="{% if item.url == page.url %}current-page{% endif %}">
+	    				    				<a href="{{ item.url }}"><p>{{ item.title }}</p></a>
+	    				    			</li>
+	    				    		{% endfor %}
+	    				    		</ul>
+	    				    	{% endif %}
+			    			</li>
+			    		{% endfor %}
+			    		</ul>
+			    	{% endif %}
+				  </li>
+				{% endfor %}
+				</ul>
+			</nav>			
+			<div class="menu-icon">
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<div class="black-out">
+			</div>
+			<nav class="navbar-slider">
+				<ul class="menu">
+				{% for item in site.menus.navbar %}
+				  <li class="{% if item.url == page.url %}current-page{% endif %} {% if item.children %}submenu-trigger{% endif %}">
+				    <a href="{{ item.url }}"><p>{{ item.title }}</p></a>
+				    {% if item.children %}
+				    	<ul class="submenu">
+			    		{% for item in item.children %}
+			    			<li class="{% if item.url == page.url %}current-page{% endif %} {% if item.children %}subsubmenu-trigger{% endif %}">
+			    				<a href="{{ item.url }}"><p>{{ item.title }}</p></a>
+	    					    {% if item.children %}
+	    					    	<ul class="subsubmenu">
+	    				    		{% for item in item.children %}
+	    				    			<li class="{% if item.url == page.url %}current-page{% endif %}">
+	    				    				<a href="{{ item.url }}"><p>{{ item.title }}</p></a>
+	    				    			</li>
+	    				    		{% endfor %}
+	    				    		</ul>
+	    				    	{% endif %}
+			    			</li>
+			    		{% endfor %}
+			    		</ul>
+			    	{% endif %}
+				  </li>
+				{% endfor %}
+				</ul>
+			</nav>
 		</div>
-		<div class="black-out">
-		</div>
-		<nav class="navbar-slider">
-			<ul class="menu">
-			{% for item in site.menus.navbar %}
-			  <li class="{% if item.url == page.url %}current-page{% endif %} {% if item.children %}submenu-trigger{% endif %}">
-			    <a href="{{ item.url }}"><p>{{ item.title }}</p></a>
-			    {% if item.children %}
-			    	<ul class="submenu">
-		    		{% for item in item.children %}
-		    			<li class="{% if item.url == page.url %}current-page{% endif %} {% if item.children %}subsubmenu-trigger{% endif %}">
-		    				<a href="{{ item.url }}"><p>{{ item.title }}</p></a>
-    					    {% if item.children %}
-    					    	<ul class="subsubmenu">
-    				    		{% for item in item.children %}
-    				    			<li class="{% if item.url == page.url %}current-page{% endif %}">
-    				    				<a href="{{ item.url }}"><p>{{ item.title }}</p></a>
-    				    			</li>
-    				    		{% endfor %}
-    				    		</ul>
-    				    	{% endif %}
-		    			</li>
-		    		{% endfor %}
-		    		</ul>
-		    	{% endif %}
-			  </li>
-			{% endfor %}
-			</ul>
-		</nav>
 	</div>
 </header>
