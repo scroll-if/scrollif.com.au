@@ -1,5 +1,6 @@
 
   function unHideButton() {
+    const response = grecaptcha.getResponse()
     if (grecaptcha.getResponse().length > 0) {
       document.getElementById('recaptcha-required-form-submit-button').disabled = false
     }
