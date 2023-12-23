@@ -1,7 +1,7 @@
 footer {
 	width: 100%;
 	background-color: var(--color-white);
-	padding: 15px;
+	padding: var(--default-padding);
 	text-align: center;
 }
 footer div.flex-container {
@@ -15,20 +15,20 @@ footer div.inner-flex-container {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	padding: 15px;
+	padding: var(--default-padding);
 }
 /* LOGO */
 	footer div.logo-container {
 		display: flex;
 		flex-direction: column;
-		margin-right: 15px;
+		margin-right: var(--default-padding);
 	}
 	footer div.logo-container a {
 	  	margin: 0 25px 0 0;
 	}
 	footer div.logo-container img.logo {
 		width: auto;
-		height: 40px;
+		height: var(--header-image-height);
 		vertical-align: bottom;
 		line-height: 1;
 	}
@@ -51,7 +51,7 @@ footer div.inner-flex-container {
 	  	background: var(--color-primary);
 	  	font-size: var(--font-xxs);
   		padding: 2px 4px 2px 2px;
-  		margin-left: 15px;
+  		margin-left: var(--default-padding);
 	}
 	footer div.logo-container span.tagline code span {
 	    animation: text-cursor 1s;
@@ -71,7 +71,7 @@ footer div.inner-flex-container {
   		flex-wrap: nowrap;
 	}
 	footer div.contact-container a {
-	    margin: 10px 0 0px;
+	    margin: 10px 0 0;
 	    white-space: nowrap;
 	}
 
@@ -160,7 +160,7 @@ footer div.inner-flex-container {
 			footer nav.sitemap li {
 			  display: none;
 			  text-align: left;
-			  padding: 10px 0;
+			  padding: var(--default-padding) 0;
 			}
 			footer nav.sitemap li.submenu-trigger,
 			footer nav.sitemap li.submenu-trigger li,
@@ -171,8 +171,8 @@ footer div.inner-flex-container {
 			footer nav.sitemap a {
 				display: inline-block;
 				width: 100%;
-				padding-right: 15px;
-				padding-left: 15px;
+				padding-right: var(--default-padding);
+				padding-left: var(--default-padding);
 				white-space: nowrap;
 			}
 		/* MENU */
@@ -193,28 +193,19 @@ footer div.inner-flex-container {
 				padding: 0;
 			}
 			footer nav.sitemap ul.submenu li:nth-child(1) {
-				padding-top: 10px;
+				padding-top: calc((var(--default-padding) / 3) * 2);
 			}
 			footer nav.sitemap ul.submenu a {
-				padding-top: 5px;
-				padding-bottom: 5px;
+				padding-top: calc(var(--default-padding) / 3);
+				padding-bottom: calc(var(--default-padding) / 3);
 			}
 			footer nav.sitemap ul.submenu li:hover > a p,
 			footer nav.sitemap ul.submenu li:focus-within > a p {
 				color: var(--color-black);
 			}
 		/* SUBSUBMENU */
-			footer nav.sitemap ul.subsubmenu li:nth-child(1) {
-				padding-top: 0;
-			}
-			footer nav.sitemap ul.subsubmenu a {
-				padding-left: 20px; 
-			}
 			footer nav.sitemap ul.subsubmenu {
 				display: none; /*instead of flex */
-				flex-direction: column;
-				font-size: var(--font-xxs);
-				color: var(--color-dark-grey);
 			}
 /* SOCIAL ICONS */
 	footer div.external-links-flex-container {
@@ -223,28 +214,27 @@ footer div.inner-flex-container {
 		flex-wrap: wrap;
 	  	justify-content: space-evenly;
 		align-items: flex-start;
-		margin: 7.5px auto;
+		margin: calc(var(--default-padding) / 3) auto;
 	}
 	footer div.external-links-inner-flex-container {
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
-	  	justify-content: center;
+	  	justify-content: flex-start;
 		align-items: center;
 	}
 	footer div.socials-container {
 		display: flex;
 		flex-direction: row;
   		justify-content: start;
-   		padding: 0 10px;
-		margin: 7.5px 0;
+		margin: calc(var(--default-padding) / 3) var(--default-padding) 0 0;
 	}
 	footer div.socials-container img.icon {
 		width: auto;
 		height: 12vw;
     	max-height: 40px;
-		padding: 3px;
-  		margin: 0 2px;
+		padding: calc(var(--default-padding) / 6);
+  		margin: 0 calc(var(--default-padding) / 6);
 		-webkit-transition: padding var(--transition-speed);
 		-moz-transition: padding var(--transition-speed);
 		-o-transition: padding var(--transition-speed);
@@ -261,8 +251,8 @@ footer div.inner-flex-container {
 /* LEGAL LINKS */
 	footer div.legal-container {
 		text-align: left;
-   		padding: 0 15px;
-		margin: 7.5px 0;
+   		padding: 0 var(--default-padding);
+		margin: var(--default-padding) 0;
 	}
 	footer div.legal-container p {
 		color: var(--color-black);
