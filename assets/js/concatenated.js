@@ -17,5 +17,5 @@
 
 // INTERNAL JS //
 	{% include_relative _partials/mobile-navbar.js %}
-	{% include_relative _partials/incomplete-js.js %}
+	{% include_relative _partials/incomplete-recaptcha.js %}
 	{% include_relative _partials/back-to-top-button.js %}
