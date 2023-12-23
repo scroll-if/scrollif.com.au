@@ -1,14 +1,14 @@
-#contact-form div.background {
+section.contact-form div.background {
     background-color: var(--color-black);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center 65%;
 }
-#contact-form div.tint {
+section.contact-form div.tint {
     height: 100%;
     background-color: rgba(1, 1, 1, 0.6);
 }
-#contact-form div.flex-container {
+section.contact-form div.flex-container {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -16,63 +16,63 @@
     flex-wrap: wrap;
     padding: calc(var(--default-padding) * 3) var(--default-padding) calc(var(--default-padding) * 8);
 }
-#contact-form div.content-container {
+section.contact-form div.content-container {
     flex-basis: 50%;
     flex-grow: 1;
     min-width: 300px;
 }
 /* TEXT */
-    #contact-form div.text-container {
+    section.contact-form div.text-container {
         padding: var(--default-padding);
         text-align: left;
     }
-    #contact-form div.text-container div.spacer {
+    section.contact-form div.text-container div.spacer {
         padding: var(--default-padding);
     }
 /* FORM */
-    #contact-form div.form-container {
+    section.contact-form div.form-container {
         padding: calc(var(--default-padding) - calc(var(--default-padding) / 3));
         margin-top: var(--h2-margin-top);
         margin-bottom: var(--h2-margin-bottom);
     }
-    #contact-form form div.form-flex-container  {
+    section.contact-form form div.form-flex-container  {
         display: flex;
         flex-direction: row;
         align-items: flex-start;
         justify-content: space-around;
         flex-wrap: wrap;
     }
-    #contact-form form div.input-grouping-container {
+    section.contact-form form div.input-grouping-container {
         flex-basis: 50%;
         flex-grow: 1;
         min-width: 200px;
         padding: calc(var(--default-padding) / 3);
     }
-    #contact-form form input {
+    section.contact-form form input {
         border: none;
     }
-    html:not(.can-touch) #contact-form form input {
+    html:not(.can-touch) section.contact-form form input {
         outline: none;
     }
-    #contact-form form .input-field,
-    #contact-form form .message-area {
+    section.contact-form form .input-field,
+    section.contact-form form .message-area {
         background-color: var(--color-white);
         width: 100%;
         padding: calc(calc(var(--default-padding) / 3) * 2);
         margin: calc(var(--default-padding) / 3) 0;
     }
-    #contact-form form .signup-email {
+    section.contact-form form .signup-email {
         display: none;
     }
-    #contact-form form .message-area {
+    section.contact-form form .message-area {
         resize: none;
         height: 140px;
     }
-    #contact-form form .recaptcha {
+    section.contact-form form .recaptcha {
         width: 100%;
         padding: calc(var(--default-padding) / 3);
     }
-    #contact-form form .g-recaptcha {
+    section.contact-form form .g-recaptcha {
         transform: scale(0.89);
         transform-origin: 0 0;
     }

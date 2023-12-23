@@ -19,33 +19,35 @@ author-facebook:
 author-twitter:
 ---
 
-<div class="hero-image" style="background-image: url('{{ site.url }}/assets/images/hero_image_{{ site.title | replace: ' ', '_' | downcase }}.jpg');">
-    <div class="tint">
-        <div class="max-width-container">
-            <div class="flex-container">
-                <div class="content-container">
-                    <div class="image-grouping-container">
-                        <img class="image-icon" src="{{ site.url }}/assets/images/websites.png" alt="Websites"/>
-                    </div>
-                    <div class="image-grouping-container">
-                        <img class="image-icon" src="{{ site.url }}/assets/images/graphics.png" alt="Graphics"/>
-                        <img class="image-icon" src="{{ site.url }}/assets/images/consulting.png" alt="Consulting"/>
-                    </div>
-                    <p class="subtitle">Websites.  Graphics.  Consulting.</p>
-                    <code class="tagline">... digital possiblities<span class="cursor">|</span></code>
-                </div>
-                <a class="scroll-down-button" href="#about">
-                    <div class="background">
-                        <div class="arrow">
+<section class="home">
+    <div class="background" style="background-image: url('{{ site.url }}/assets/images/hero_image_{{ site.title | replace: ' ', '_' | downcase }}.jpg');">
+        <div class="tint">
+            <div class="max-width-container">
+                <div class="flex-container">
+                    <div class="content-container">
+                        <div class="image-grouping-container">
+                            <img class="image-icon" src="{{ site.url }}/assets/images/websites.png" alt="Websites"/>
                         </div>
+                        <div class="image-grouping-container">
+                            <img class="image-icon" src="{{ site.url }}/assets/images/graphics.png" alt="Graphics"/>
+                            <img class="image-icon" src="{{ site.url }}/assets/images/consulting.png" alt="Consulting"/>
+                        </div>
+                        <p class="subtitle">Websites.  Graphics.  Consulting.</p>
+                        <code class="tagline">... digital possiblities<span class="cursor">|</span></code>
                     </div>
-                </a>
+                    <a class="scroll-down-button" href="#about">
+                        <div class="background">
+                            <div class="arrow">
+                            </div>
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
-</div>
+</section>
 
-<section class="anchor" id="about">
+<section class="about anchor">
     <div class="background">
         <div class="max-width-container">
             <div class="flex-container">
@@ -116,7 +118,7 @@ author-twitter:
     </div>
 </section>
 
-<section id="services">
+<section class="services">
     <div class="background">
         <div class="max-width-container">
             <div class="text-container">

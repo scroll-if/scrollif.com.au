@@ -1,40 +1,33 @@
-#terms div.background,
-#privacy div.background {
+#legal div.background {
 	background-color: var(--color-black);
 }
-#terms div.flex-container,
-#privacy div.flex-container {
+#legal div.flex-container {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: baseline;
 	padding: var(--default-padding);
 }
-#terms div.flex-container .anchor::before,
-#privacy div.flex-container .anchor::before {
+#legal div.flex-container .anchor::before {
 	margin-top: calc((var(--header-height) + calc(var(--default-padding) * 2))*-1; 
 	height: calc(var(--header-height) + calc(var(--default-padding) * 2)); 
 }
 /* CONTENTS */
-	#terms div.contents,
-	#privacy div.contents {
+	#legal div.contents {
 		padding: var(--default-padding);
 	}
-	#terms div.contents p,
-	#privacy div.contents p {
+	#legal div.contents p {
 		text-align: justify;
 	}
 /* TABLE OF CONTENTS */
-	#terms div.toc,
-	#privacy div.toc {
+	#legal div.toc {
 		display: none;
 		padding: var(--default-padding) 0 var(--default-padding) var(--default-padding);
 		background-color: var(--color-white);
 		margin: var(--default-padding);
 		border-radius: 5px;
 	}
-	#terms div.toc p.title,
-	#privacy div.toc p.title {
+	#legal div.toc p.title {
 		font-family: var(--font-primary);
 		font-weight: var(--font-primary-weight);
 		font-size: var(--font-l);
@@ -42,25 +35,21 @@
 		text-transform: uppercase;
 		padding: 0 var(--default-padding);
 	}
-	#terms div.toc ul.toc,
-	#privacy div.toc ul.toc {
+	#legal div.toc ul.toc {
 		padding: var(--default-padding);
 	    font-size: var(--font-xxs);
 	    text-indent: calc(var(--font-xxs)*-1.5);
 	    margin: 0;
 	}
-	#terms div.toc ul.toc li:before,
-	#privacy div.toc ul.toc li:before {
+	#legal div.toc ul.toc li:before {
 		font-size: var(--font-xxs);
 	    margin-right: calc(var(--font-xxs)/1.5);
 	}
-	#terms div.toc ul.toc li,
-	#privacy div.toc ul.toc li {
+	#legal div.toc ul.toc li {
 		white-space:nowrap;
 		margin: calc(var(--font-xxs)/1.5) calc(var(--font-xxs)*1.5);
 	}
-	#terms div.toc ul.toc li a,
-	#privacy div.toc ul.toc li a {
+	#legal div.toc ul.toc li a {
 	    font-family: var(--font-primary);
 	    font-weight: var(--font-primary-weight);
 		color: var(--color-black);
@@ -75,41 +64,33 @@
 		-ms-transition: color var(--transition-speed), background var(--transition-speed);
 		transition: color var(--transition-speed), background var(--transition-speed);
 	}
-	#terms div.toc ul.toc:focus-within li a,
-	#privacy div.toc ul.toc:focus-within li a {
+	#legal div.toc ul.toc:focus-within li a {
 		outline: none;
 	}
-	html:not(.can-touch) #terms div.toc ul.toc li a:hover,
-	html:not(.can-touch) #privacy div.toc ul.toc li a:hover, 
-	html:not(.can-touch) #terms div.toc ul.toc li a:focus,
-	html:not(.can-touch) #privacy div.toc ul.toc li a:focus {
+	html:not(.can-touch) #legal div.toc ul.toc li a:hover, 
+	html:not(.can-touch) #legal div.toc ul.toc li a:focus {
 		background-size: 100% 2px;
 		color: var(--color-black);
 	}
-	#terms div.toc ul.toc li ul,
-	#privacy div.toc ul.toc li ul {
+	#legal div.toc ul.toc li ul {
 	    font-size: calc(var(--font-xxs)/1.2);
 	    text-indent: calc((var(--font-xxs)/1.2)*-1.5);
 	    margin-left: calc((var(--font-xxs)/1.2)*1.5);
 	    margin-bottom: var(--font-xxs);
 	}
-	#terms div.toc ul.toc li ul li:before,
-	#privacy div.toc ul.toc li ul li:before {
+	#legal div.toc ul.toc li ul li:before {
 		content:  "\25CF";
 	    margin-right: calc((var(--font-xxs)/1.2)/1.5);
 	}
-	#terms div.toc ul.toc li ul li,
-	#privacy div.toc ul.toc li ul li  {
+	#legal div.toc ul.toc li ul li  {
 		margin: calc((var(--font-xxs)/1.2)/5) calc((var(--font-xxs)/1.2)*1.5);
 	}
-	#terms div.toc ul.toc li ul li a,
-	#privacy div.toc ul.toc li ul li a {
+	#legal div.toc ul.toc li ul li a {
 	    color: var(--color-dark-grey);
 	    padding-bottom: 1px;
 	}
 /* BACK TO TOP BUTTON */
-	#terms div.back-to-top-container,
-	#privacy div.back-to-top-container {
+	#legal div.back-to-top-container {
 		position: sticky;
 		bottom: calc(var(--default-padding) * -5);
 		-webkit-transition: bottom var(--transition-speed);
@@ -119,25 +100,21 @@
 		transition: bottom var(--transition-speed);
 		padding: var(--default-padding);
 	}
-	#terms div.back-to-top-container.visible,
-	#privacy div.back-to-top-container.visible {
+	#legal div.back-to-top-container.visible {
 		bottom: 0;
 	}
-	body.no-js #terms div.back-to-top-container,
-	body.no-js #privacy div.back-to-top-container {
+	body.no-js #legal div.back-to-top-container {
 		opacity: 0;
 	}
 
 
-	#terms a.back-to-top-button,
-	#privacy a.back-to-top-button {
+	#legal a.back-to-top-button {
 		display: block;
 		width: 45px;
 		margin: var(--default-padding) auto;	
 	}
 
-	#terms a.back-to-top-button div.background,
-	#privacy a.back-to-top-button div.background {
+	#legal a.back-to-top-button div.background {
 		width: 45px;
 		height: 45px;
 		border-radius: 50%;
@@ -154,8 +131,7 @@
 		-ms-transition: background-color var(--transition-speed);
 		transition: background-color var(--transition-speed);
 	}
-	#terms a.back-to-top-button div.arrow,
-	#privacy a.back-to-top-button div.arrow {
+	#legal a.back-to-top-button div.arrow {
 	    width: 0;
 	    height: 0;
 	    border-left: 12px solid var(--color-white);
@@ -167,34 +143,26 @@
 		-ms-transition: border-color var(--transition-speed);
 		transition: border-color var(--transition-speed);
 	}
-	html:not(.can-touch) #terms a.back-to-top-button:hover div.background,
-	html:not(.can-touch) #privacy a.back-to-top-button:hover div.background, 
-	html:not(.can-touch) #terms a.back-to-top-button:focus div.background,
-	html:not(.can-touch) #privacy a.back-to-top-button:focus div.background {
+	html:not(.can-touch) #legal a.back-to-top-button:hover div.background, 
+	html:not(.can-touch) #legal a.back-to-top-button:focus div.background {
 		background-color: var(--color-primary);
 	}
-	html:not(.can-touch) #terms a.back-to-top-button:hover div.arrow,
-	html:not(.can-touch) #privacy a.back-to-top-button:hover div.arrow, 
-	html:not(.can-touch) #terms a.back-to-top-button:focus div.arrow,
-	html:not(.can-touch) #privacy a.back-to-top-button:focus div.arrow {
+	html:not(.can-touch) #legal a.back-to-top-button:hover div.arrow, 
+	html:not(.can-touch) #legal a.back-to-top-button:focus div.arrow {
 		border-left-color: var(--color-primary);
 	    border-right-color: var(--color-primary);
 	    border-bottom-color: var(--color-white);
 	}
-	html:not(.can-touch) #terms a.back-to-top-button:hover,
-	html:not(.can-touch) #privacy a.back-to-top-button:hover,
-	html:not(.can-touch) #terms a.back-to-top-button:focus,
-	html:not(.can-touch) #privacy a.back-to-top-button:focus {
+	html:not(.can-touch) #legal a.back-to-top-button:hover,
+	html:not(.can-touch) #legal a.back-to-top-button:focus {
 		outline: none;
 	}
 /* MEDIA QUERIES */
 	@media only screen and (min-width: $header-navbar-min-width + 0) {
-		#terms div.toc,
-		#privacy div.toc {
+		#legal div.toc {
 			display: block;
 		}
-		#terms a.back-to-top-button,
-		#privacy a.back-to-top-button {
+		#legal a.back-to-top-button {
 			margin-right: var(--default-padding);
 		}
 	}
