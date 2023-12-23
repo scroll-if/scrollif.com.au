@@ -9,7 +9,7 @@
 /* CSS VARIABLES */
 	{% remote_include https://scrollif-assets.netlify.app/websites/css/default-variables.scss %}
 	@import "variables";
-	$header-navbar-min-width: 1025px;
+	$header-navbar-min-width: 1025px; /* used for media queries */
 
 /* UTILITY CSS */
 	{% remote_include https://scrollif-assets.netlify.app/websites/css/utility-css.scss %}
