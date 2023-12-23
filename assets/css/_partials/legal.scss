@@ -17,7 +17,7 @@
 /* CONTENTS */
 	#terms div.contents,
 	#privacy div.contents {
-		padding: 15px;
+		padding: var(--default-padding);
 	}
 	#terms div.contents p,
 	#privacy div.contents p {
@@ -27,35 +27,29 @@
 	#terms div.toc,
 	#privacy div.toc {
 		display: none;
-		padding: 15px 0 15px 15px;
+		padding: var(--default-padding) 0 var(--default-padding) var(--default-padding);
 		background-color: var(--color-white);
-		margin: 15px;
+		margin: var(--default-padding);
 		border-radius: 5px;
 	}
 	#terms div.toc p.title,
 	#privacy div.toc p.title {
 		font-family: var(--font-primary);
-			font-weight: var(--font-primary-weight);
-			font-size: var(--font-l);
-			color: var(--color-black);
+		font-weight: var(--font-primary-weight);
+		font-size: var(--font-l);
+		color: var(--color-black);
 		text-transform: uppercase;
-		padding: 0 15px;
+		padding: 0 var(--default-padding);
 	}
 	#terms div.toc ul.toc,
 	#privacy div.toc ul.toc {
-		display:inline-block;
-		background-color: var(--color-white);
-		border-radius: 5px;
 		padding: 15px;
 	    font-size: var(--font-xxs);
-		text-transform: uppercase;
 	    text-indent: calc(var(--font-xxs)*-1.5);
 	    margin: 0;
 	}
 	#terms div.toc ul.toc li:before,
 	#privacy div.toc ul.toc li:before {
-		content:  "\25B6";
-	    color: var(--color-primary);
 		font-size: var(--font-xxs);
 	    margin-right: calc(var(--font-xxs)/1.5);
 	}
