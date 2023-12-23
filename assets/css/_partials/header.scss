@@ -303,7 +303,7 @@ header div.flex-container {
 				display: none; /*instead of flex */
 			}
 /* MEDIA QUERIES */
-	@media only screen and (min-width: $mobile-breakpoint + 0) {
+	@media only screen and (min-width: $header-navbar-min-width + 0) {
 		header div.menu-icon {
 			display: none;
 		}
