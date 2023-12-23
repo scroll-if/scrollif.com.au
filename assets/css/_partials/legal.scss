@@ -114,8 +114,8 @@
 	    padding-bottom: 1px;
 	}
 /* BACK TO TOP BUTTON */
-	#terms div.toc a.back-to-top-trigger,
-	#privacy div.toc a.back-to-top-trigger {
+	#terms a.back-to-top-trigger,
+	#privacy a.back-to-top-trigger {
 		display: block;
 		width: 45px;
 		margin: 15px auto;
@@ -128,16 +128,16 @@
 		transition: bottom var(--transition-speed);
 	}
 
-	#terms div.toc a.back-to-top-trigger.visible,
-	#privacy div.toc a.back-to-top-trigger.visible {
+	#terms a.back-to-top-trigger.visible,
+	#privacy a.back-to-top-trigger.visible {
 		bottom: 15px;
 	}
-	body.no-js #terms div.toc div.back-to-top-button,
-	body.no-js #privacy div.toc div.back-to-top-button {
+	body.no-js #terms div.back-to-top-button,
+	body.no-js #privacy div.back-to-top-button {
 		opacity: 0;
 	}
-	#terms div.toc div.back-to-top-button,
-	#privacy div.toc div.back-to-top-button {
+	#terms div.back-to-top-button,
+	#privacy div.back-to-top-button {
 		width: 45px;
 		height: 45px;
 		border-radius: 50%;
@@ -154,8 +154,8 @@
 		-ms-transition: background-color var(--transition-speed);
 		transition: background-color var(--transition-speed);
 	}
-	#terms div.toc div.back-to-top-arrow,
-	#privacy div.toc div.back-to-top-arrow {
+	#terms div.back-to-top-arrow,
+	#privacy div.back-to-top-arrow {
 	    width: 0;
 	    height: 0;
 	    border-left: 12px solid var(--color-white);
@@ -167,34 +167,34 @@
 		-ms-transition: border-color var(--transition-speed);
 		transition: border-color var(--transition-speed);
 	}
-	html:not(.can-touch) #terms div.toc a.back-to-top-trigger:hover div.back-to-top-button,
-	html:not(.can-touch) #privacy div.toc a.back-to-top-trigger:hover div.back-to-top-button, 
-	html:not(.can-touch) #terms div.toc a.back-to-top-trigger:focus div.back-to-top-button,
-	html:not(.can-touch) #privacy div.toc a.back-to-top-trigger:focus div.back-to-top-button {
+	html:not(.can-touch) #terms a.back-to-top-trigger:hover div.back-to-top-button,
+	html:not(.can-touch) #privacy a.back-to-top-trigger:hover div.back-to-top-button, 
+	html:not(.can-touch) #terms a.back-to-top-trigger:focus div.back-to-top-button,
+	html:not(.can-touch) #privacy a.back-to-top-trigger:focus div.back-to-top-button {
 		background-color: var(--color-primary);
 	}
-	html:not(.can-touch) #terms div.toc a.back-to-top-trigger:hover div.back-to-top-arrow,
-	html:not(.can-touch) #privacy div.toc a.back-to-top-trigger:hover div.back-to-top-arrow, 
-	html:not(.can-touch) #terms div.toc a.back-to-top-trigger:focus div.back-to-top-arrow,
-	html:not(.can-touch) #privacy div.toc a.back-to-top-trigger:focus div.back-to-top-arrow {
+	html:not(.can-touch) #terms a.back-to-top-trigger:hover div.back-to-top-arrow,
+	html:not(.can-touch) #privacy a.back-to-top-trigger:hover div.back-to-top-arrow, 
+	html:not(.can-touch) #terms a.back-to-top-trigger:focus div.back-to-top-arrow,
+	html:not(.can-touch) #privacy a.back-to-top-trigger:focus div.back-to-top-arrow {
 		border-left-color: var(--color-primary);
 	    border-right-color: var(--color-primary);
 	    border-bottom-color: var(--color-white);
 	}
-	html:not(.can-touch) #terms div.toc a.back-to-top-trigger:hover,
-	html:not(.can-touch) #privacy div.toc a.back-to-top-trigger:hover,
-	html:not(.can-touch) #terms div.toc a.back-to-top-trigger:focus,
-	html:not(.can-touch) #privacy div.toc a.back-to-top-trigger:focus {
+	html:not(.can-touch) #terms a.back-to-top-trigger:hover,
+	html:not(.can-touch) #privacy a.back-to-top-trigger:hover,
+	html:not(.can-touch) #terms a.back-to-top-trigger:focus,
+	html:not(.can-touch) #privacy a.back-to-top-trigger:focus {
 		outline: none;
 	}
 /* MEDIA QUERIES */
 	@media only screen and (min-width: 1025px) {
-		#terms div.toc,
-		#privacy div.toc {
+		#terms,
+		#privacy {
 			display: block;
 		}
-		#terms div.toc a.back-to-top-trigger,
-		#privacy div.toc a.back-to-top-trigger {
+		#terms a.back-to-top-trigger,
+		#privacy a.back-to-top-trigger {
 			margin-right: 15px;
 		}
 	}

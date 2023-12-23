@@ -277,9 +277,11 @@ author-twitter:
                     </div><    
                 </div>
                 <div class="toc">
-                    <p class="title">Contents</p>
+                    <div class="main">
+                        <p class="title">Contents</p>
 
-                    {% include toc.html html=page.content base_url=page.url class='toc' h_min=2 %}
+                        {% include toc.html html=page.content base_url=page.url class='toc' h_min=2 %}
+                    </div>
                 </div>
             </div>
             <a class="back-to-top-trigger" href="#top-of-page">
