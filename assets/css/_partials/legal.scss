@@ -1,38 +1,40 @@
-div.main.legal {
+#terms div.background,
+#privcay div.background {
 	background-color: var(--color-black);
-	padding: 15px;
 }
-div.main.legal ul {
-    text-indent: calc(var(--font-xs)*-1.5);
-}
-div.main.legal div.legal-container {
+#terms div.flex-container,
+#privcay div.flex-container {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: baseline;
-
+	padding: 15px;
 }
-div.main.legal .anchor::before {
-	margin-top: calc((var(--header-height) + 30px)*-1; 
-	height: calc(var(--header-height) + 30px); 
+#terms div.flex-container .anchor::before,
+#privcay div.flex-container .anchor::before {
+	margin-top: calc((var(--header-height) + calc(var(--default-padding) * 2))*-1; 
+	height: calc(var(--header-height) + calc(var(--default-padding) * 2)); 
 }
 /* CONTENTS */
-	div.main.legal div.legal-container div.contents {
-		min-width: 50%;
+	#terms div.contents-container,
+	#privcay div.contents-container {
 		padding: 15px;
 	}
-	div.main.legal div.legal-container div.contents p {
+	#terms div.contents-container p,
+	#privcay div.contents-container p {
 		text-align:  justify;
 	}
 /* TABLE OF CONTENTS */
-	div.main.legal div.toc {
+	#terms div.toc,
+	#privcay div.toc {
 		display: none;
 		padding: 15px 0 15px 15px;
 		background-color: var(--color-white);
 		margin: 15px;
 		border-radius: 5px;
 	}
-	div.main.legal div.legal-container div.toc p.title {
+	#terms div.toc p.title,
+	#privcay div.toc p.title {
 		font-family: var(--font-primary);
 			font-weight: var(--font-primary-weight);
 			font-size: var(--font-l);
@@ -40,7 +42,8 @@ div.main.legal .anchor::before {
 		text-transform: uppercase;
 		padding: 0 15px;
 	}
-	div.main.legal ul.toc {
+	#terms div.toc ul.toc,
+	#privcay div.toc ul.toc {
 		display:inline-block;
 		background-color: var(--color-white);
 		border-radius: 5px;
@@ -50,17 +53,20 @@ div.main.legal .anchor::before {
 	    text-indent: calc(var(--font-xxs)*-1.5);
 	    margin: 0;
 	}
-	div.main.legal ul.toc li:before {
+	#terms div.toc ul.toc li:before,
+	#privcay div.toc ul.toc li:before {
 		content:  "\25B6";
 	    color: var(--color-primary);
 		font-size: var(--font-xxs);
 	    margin-right: calc(var(--font-xxs)/1.5);
 	}
-	div.main.legal ul.toc li  {
+	#terms div.toc ul.toc li,
+	#privcay div.toc ul.toc li {
 		white-space:nowrap;
 		margin: calc(var(--font-xxs)/1.5) calc(var(--font-xxs)*1.5);
 	}
-	div.main.legal ul.toc li a {
+	#terms div.toc ul.toc li a,
+	#privcay div.toc ul.toc li a {
 	    font-family: var(--font-primary);
 	    font-weight: var(--font-primary-weight);
 		color: var(--color-black);
@@ -75,33 +81,41 @@ div.main.legal .anchor::before {
 		-ms-transition: color var(--transition-speed), background var(--transition-speed);
 		transition: color var(--transition-speed), background var(--transition-speed);
 	}
-	div.main.legal ul.toc:focus-within li a {
+	#terms div.toc ul.toc:focus-within li a,
+	#privcay div.toc ul.toc:focus-within li a {
 		outline: none;
 	}
-	html:not(.can-touch) div.main.legal ul.toc li a:hover, 
-	html:not(.can-touch) div.main.legal ul.toc li a:focus {
+	html:not(.can-touch) #terms div.toc ul.toc li a:hover,
+	html:not(.can-touch) #privcay div.toc ul.toc li a:hover, 
+	html:not(.can-touch) #terms div.toc ul.toc li a:focus,
+	html:not(.can-touch) #privcay div.toc ul.toc li a:focus {
 		background-size: 100% 2px;
 		color: var(--color-black);
 	}
-	div.main.legal ul.toc li ul {
+	#terms div.toc ul.toc li ul,
+	#privcay div.toc ul.toc li ul {
 	    font-size: calc(var(--font-xxs)/1.2);
 	    text-indent: calc((var(--font-xxs)/1.2)*-1.5);
 	    margin-left: calc((var(--font-xxs)/1.2)*1.5);
 	    margin-bottom: var(--font-xxs);
 	}
-	div.main.legal ul.toc li ul li:before {
+	#terms div.toc ul.toc li ul li:before,
+	#privcay div.toc ul.toc li ul li:before {
 		content:  "\25CF";
 	    margin-right: calc((var(--font-xxs)/1.2)/1.5);
 	}
-	div.main.legal ul.toc li ul li  {
+	#terms div.toc ul.toc li ul li,
+	#privcay div.toc ul.toc li ul li  {
 		margin: calc((var(--font-xxs)/1.2)/5) calc((var(--font-xxs)/1.2)*1.5);
 	}
-	div.main.legal ul.toc li ul li a {
+	#terms div.toc ul.toc li ul li a,
+	#privcay div.toc ul.toc li ul li a {
 	    color: var(--color-dark-grey);
 	    padding-bottom: 1px;
 	}
 /* BACK TO TOP BUTTON */
-	div.main.legal a.back-to-top-trigger {
+	#terms div.toc a.back-to-top-trigger,
+	#privcay div.toc a.back-to-top-trigger {
 		display: block;
 		width: 45px;
 		margin: 15px auto;
@@ -114,13 +128,16 @@ div.main.legal .anchor::before {
 		transition: bottom var(--transition-speed);
 	}
 
-	div.main.legal a.back-to-top-trigger.visible {
+	#terms div.toc a.back-to-top-trigger.visible,
+	#privcay div.toc a.back-to-top-trigger.visible {
 		bottom: 15px;
 	}
-	body.no-js div.main.legal div.back-to-top-button {
+	body.no-js #terms div.toc div.back-to-top-button,
+	body.no-js #privcay div.toc div.back-to-top-button {
 		opacity: 0;
 	}
-	div.main.legal div.back-to-top-button {
+	#terms div.toc div.back-to-top-button,
+	#privcay div.toc div.back-to-top-button {
 		width: 45px;
 		height: 45px;
 		border-radius: 50%;
@@ -137,7 +154,8 @@ div.main.legal .anchor::before {
 		-ms-transition: background-color var(--transition-speed);
 		transition: background-color var(--transition-speed);
 	}
-	div.main.legal div.back-to-top-arrow {
+	#terms div.toc div.back-to-top-arrow,
+	#privcay div.toc div.back-to-top-arrow {
 	    width: 0;
 	    height: 0;
 	    border-left: 12px solid var(--color-white);
@@ -149,26 +167,34 @@ div.main.legal .anchor::before {
 		-ms-transition: border-color var(--transition-speed);
 		transition: border-color var(--transition-speed);
 	}
-	html:not(.can-touch) div.main.legal a.back-to-top-trigger:hover div.back-to-top-button, 
-	html:not(.can-touch) div.main.legal a.back-to-top-trigger:focus div.back-to-top-button {
+	html:not(.can-touch) #terms div.toc a.back-to-top-trigger:hover div.back-to-top-button,
+	html:not(.can-touch) #privcay div.toc a.back-to-top-trigger:hover div.back-to-top-button, 
+	html:not(.can-touch) #terms div.toc a.back-to-top-trigger:focus div.back-to-top-button,
+	html:not(.can-touch) #privcay div.toc a.back-to-top-trigger:focus div.back-to-top-button {
 		background-color: var(--color-primary);
 	}
-	html:not(.can-touch) div.main.legal a.back-to-top-trigger:hover div.back-to-top-arrow, 
-	html:not(.can-touch) div.main.legal a.back-to-top-trigger:focus div.back-to-top-arrow {
+	html:not(.can-touch) #terms div.toc a.back-to-top-trigger:hover div.back-to-top-arrow,
+	html:not(.can-touch) #privcay div.toc a.back-to-top-trigger:hover div.back-to-top-arrow, 
+	html:not(.can-touch) #terms div.toc a.back-to-top-trigger:focus div.back-to-top-arrow,
+	html:not(.can-touch) #privcay div.toc a.back-to-top-trigger:focus div.back-to-top-arrow {
 		border-left-color: var(--color-primary);
 	    border-right-color: var(--color-primary);
 	    border-bottom-color: var(--color-white);
 	}
-	html:not(.can-touch) div.main.legal a.back-to-top-trigger:hover,
-	html:not(.can-touch) div.main.legal a.back-to-top-trigger:focus {
+	html:not(.can-touch) #terms div.toc a.back-to-top-trigger:hover,
+	html:not(.can-touch) #privcay div.toc a.back-to-top-trigger:hover,
+	html:not(.can-touch) #terms div.toc a.back-to-top-trigger:focus,
+	html:not(.can-touch) #privcay div.toc a.back-to-top-trigger:focus {
 		outline: none;
 	}
 /* MEDIA QUERIES */
 	@media only screen and (min-width: 1025px) {
-		div.main.legal div.toc {
+		#terms div.toc,
+		#privcay div.toc {
 			display: block;
 		}
-		div.main.legal a.back-to-top-trigger {
+		#terms div.toc a.back-to-top-trigger,
+		#privcay div.toc a.back-to-top-trigger {
 			margin-right: 15px;
 		}
 	}
