@@ -65,3 +65,11 @@
         resize: none;
         height: 140px;
     }
+    #contact-form form .recaptcha {
+        width: 100%;
+        padding: calc(var(--default-padding) / 3);
+    }
+    #contact-form form .g-recaptcha {
+        transform: scale(0.89);
+        transform-origin: 0 0;
+    }
