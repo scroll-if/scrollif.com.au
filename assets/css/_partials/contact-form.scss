@@ -51,6 +51,9 @@
     #contact-form form input {
         border: none;
     }
+    html:not(.can-touch) #contact-form form input {
+        outline: none;
+    }
     #contact-form form .input-field,
     #contact-form form .message-area {
         background-color: var(--color-white);
