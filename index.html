@@ -1,7 +1,6 @@
 ---
 layout: standard-webpage
 title: Digital Solutions Agency
-id: home
 url: /
 permalink: /
 menus:
@@ -19,136 +18,138 @@ author-facebook:
 author-twitter:
 ---
 
-<section class="home">
-    <div class="background" style="background-image: url('{{ site.url }}/assets/images/hero_image_{{ site.title | replace: ' ', '_' | downcase }}.jpg');">
-        <div class="tint">
-            <div class="max-width-container">
-                <div class="flex-container">
-                    <div class="content-container">
-                        <div class="image-grouping-container">
-                            <img class="image-icon" src="{{ site.url }}/assets/images/websites.png" alt="Websites"/>
-                        </div>
-                        <div class="image-grouping-container">
-                            <img class="image-icon" src="{{ site.url }}/assets/images/graphics.png" alt="Graphics"/>
-                            <img class="image-icon" src="{{ site.url }}/assets/images/consulting.png" alt="Consulting"/>
-                        </div>
-                        <p class="subtitle">Websites.  Graphics.  Consulting.</p>
-                        <code class="tagline">... digital possiblities<span class="cursor">|</span></code>
-                    </div>
-                    <a class="scroll-down-button" href="#about">
-                        <div class="background">
-                            <div class="arrow">
+<div id="home">
+    <section class="home">
+        <div class="background" style="background-image: url('{{ site.url }}/assets/images/hero_image_{{ site.title | replace: ' ', '_' | downcase }}.jpg');">
+            <div class="tint">
+                <div class="max-width-container">
+                    <div class="flex-container">
+                        <div class="content-container">
+                            <div class="image-grouping-container">
+                                <img class="image-icon" src="{{ site.url }}/assets/images/websites.png" alt="Websites"/>
                             </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="about anchor">
-    <div class="background">
-        <div class="max-width-container">
-            <div class="flex-container">
-                <div class="content-container text-container">
-                    <div class="main">
-                        <h2>Digital Solutions Agency</h2>
-                        <ul>
-                            <li><p>Complete website solutions spanning web design, coding & development, web hosting, and assisted site updates.</p></li>
-                            <li><p>Graphic design services including  business logos, social media banners, and business cards.</p></li>
-                            <li><p>Consulting for small businesses, sole traders, and startups covering branding, operations, and system setups.</p></li>
-                        </ul>
-                        <div class="quote-container">
-                            <div class="quote-box">
-                                <code>We simplify the complicated.</code>
+                            <div class="image-grouping-container">
+                                <img class="image-icon" src="{{ site.url }}/assets/images/graphics.png" alt="Graphics"/>
+                                <img class="image-icon" src="{{ site.url }}/assets/images/consulting.png" alt="Consulting"/>
                             </div>
-                            <div class="quote-box">
-                                <code>We derisk the unknown.</code>
-                            </div>
+                            <p class="subtitle">Websites.  Graphics.  Consulting.</p>
+                            <code class="tagline">... digital possiblities<span class="cursor">|</span></code>
                         </div>
-                        <a class="button" href="{{ site.url }}/about" >About Us</a>
-                    </div>
-                </div>
-                <div class="content-container image-container">
-                    <img class="impact-image" src="{{ site.url }}/assets/images/digital_solutions_agency.jpg" alt="Digital Solutions Agency" />
-                </div>
-            </div>
-            <div class="wordcloud">
-                <div id="worldcloud1">Landscapers</div>
-                <div id="worldcloud2">Machinery Hire</div>
-                <div id="worldcloud3">Personal Trainers</div>
-                <div id="worldcloud4">Photographers</div>
-                <div id="worldcloud5">SaaS</div>
-                <div id="worldcloud6">Freelancers</div>
-                <div id="worldcloud7">Handymen</div>
-                <div id="worldcloud8">Hair Salons</div>
-                <div id="worldcloud9">Electricians</div>
-                <div id="worldcloud10">Plumbers</div>
-                <div id="worldcloud11">Pet Breeders</div>
-                <div id="worldcloud12">Pest Control</div>
-            </div>
-        </div>
-    </div>
-    <div class="dictionary-background" style="background-image: url('{{ site.url }}/assets/images/background_image_websites.jpg');">
-        <div class="tint">
-            <div class="half-max-width-container">
-                <div class="dictionary-flex-container">
-                    <div class="opening-tag">
-                        <code class="element-tag"><</code>
-                    </div>
-                    <div class="inner-flex-container">
-                        <div class="dictionary-box first-word">
-                            <p class="word">Scroll</p>
-                            <p class="pronunciation">[skrəʊl] <span class="word-class">verb</span></p>
-                            <p class="meaning">to progress, move, or reveal digital information as if by the unrolling of a scroll</p>
-                        </div>
-                        <div class="dictionary-box second-word">
-                            <p class="word">if</p>
-                            <p class="pronunciation">[ɪf] <span class="word-class">noun</span></p>
-                            <p class="meaning">a condition or supposition, a possibility. used to say that something can or will happen.</p>
-                        </div>
-                    </div>
-                    <div class="closing-tag">
-                        <code class="element-tag">/></code>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="services">
-    <div class="background">
-        <div class="max-width-container">
-            <div class="text-container">
-                <div class="main">
-                    <h2>Our Mission</h2>
-                    <p>To digitally empower small businesses in a ever changing and evolving landscape.</p>
-                    <p>Our services aim to get your business looking its best, doing its best, and feeling its best!</p>    
-                    <div class="bar-spacer">
-                    </div>
-                </div>
-            </div>
-            <div class="services-container">
-                {% for item in site.data.services %}
-                    <div class="services-box">
-                        <a href="{{ site.url }}{{ item.url }}" class="overflow-box">
-                            <div class="background-image" style="background-image: url('{{ site.url }}{{ item.background-image }}')">
-                            </div>
-                            <div class="tint mirror-box">
-                                <div class="text-container">
-                                    <div class="main reverse">
-                                        <h3>{{ item.name }}</h3>
-                                        <p>{{ item.description }}</p>
-                                    </div>
+                        <a class="scroll-down-button" href="#about">
+                            <div class="background">
+                                <div class="arrow">
                                 </div>
                             </div>
                         </a>
                     </div>
-                {% endfor %}
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
+
+    <section class="about anchor">
+        <div class="background">
+            <div class="max-width-container">
+                <div class="flex-container">
+                    <div class="content-container text-container">
+                        <div class="main">
+                            <h2>Digital Solutions Agency</h2>
+                            <ul>
+                                <li><p>Complete website solutions spanning web design, coding & development, web hosting, and assisted site updates.</p></li>
+                                <li><p>Graphic design services including  business logos, social media banners, and business cards.</p></li>
+                                <li><p>Consulting for small businesses, sole traders, and startups covering branding, operations, and system setups.</p></li>
+                            </ul>
+                            <div class="quote-container">
+                                <div class="quote-box">
+                                    <code>We simplify the complicated.</code>
+                                </div>
+                                <div class="quote-box">
+                                    <code>We derisk the unknown.</code>
+                                </div>
+                            </div>
+                            <a class="button" href="{{ site.url }}/about" >About Us</a>
+                        </div>
+                    </div>
+                    <div class="content-container image-container">
+                        <img class="impact-image" src="{{ site.url }}/assets/images/digital_solutions_agency.jpg" alt="Digital Solutions Agency" />
+                    </div>
+                </div>
+                <div class="wordcloud">
+                    <div id="worldcloud1">Landscapers</div>
+                    <div id="worldcloud2">Machinery Hire</div>
+                    <div id="worldcloud3">Personal Trainers</div>
+                    <div id="worldcloud4">Photographers</div>
+                    <div id="worldcloud5">SaaS</div>
+                    <div id="worldcloud6">Freelancers</div>
+                    <div id="worldcloud7">Handymen</div>
+                    <div id="worldcloud8">Hair Salons</div>
+                    <div id="worldcloud9">Electricians</div>
+                    <div id="worldcloud10">Plumbers</div>
+                    <div id="worldcloud11">Pet Breeders</div>
+                    <div id="worldcloud12">Pest Control</div>
+                </div>
+            </div>
+        </div>
+        <div class="dictionary-background" style="background-image: url('{{ site.url }}/assets/images/background_image_websites.jpg');">
+            <div class="tint">
+                <div class="half-max-width-container">
+                    <div class="dictionary-flex-container">
+                        <div class="opening-tag">
+                            <code class="element-tag"><</code>
+                        </div>
+                        <div class="inner-flex-container">
+                            <div class="dictionary-box first-word">
+                                <p class="word">Scroll</p>
+                                <p class="pronunciation">[skrəʊl] <span class="word-class">verb</span></p>
+                                <p class="meaning">to progress, move, or reveal digital information as if by the unrolling of a scroll</p>
+                            </div>
+                            <div class="dictionary-box second-word">
+                                <p class="word">if</p>
+                                <p class="pronunciation">[ɪf] <span class="word-class">noun</span></p>
+                                <p class="meaning">a condition or supposition, a possibility. used to say that something can or will happen.</p>
+                            </div>
+                        </div>
+                        <div class="closing-tag">
+                            <code class="element-tag">/></code>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="background">
+            <div class="max-width-container">
+                <div class="text-container">
+                    <div class="main">
+                        <h2>Our Mission</h2>
+                        <p>To digitally empower small businesses in a ever changing and evolving landscape.</p>
+                        <p>Our services aim to get your business looking its best, doing its best, and feeling its best!</p>    
+                        <div class="bar-spacer">
+                        </div>
+                    </div>
+                </div>
+                <div class="services-container">
+                    {% for item in site.data.services %}
+                        <div class="services-box">
+                            <a href="{{ site.url }}{{ item.url }}" class="overflow-box">
+                                <div class="background-image" style="background-image: url('{{ site.url }}{{ item.background-image }}')">
+                                </div>
+                                <div class="tint mirror-box">
+                                    <div class="text-container">
+                                        <div class="main reverse">
+                                            <h3>{{ item.name }}</h3>
+                                            <p>{{ item.description }}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
  
