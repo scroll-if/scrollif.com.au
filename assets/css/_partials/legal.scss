@@ -16,13 +16,13 @@
 	height: calc(var(--header-height) + calc(var(--default-padding) * 2)); 
 }
 /* CONTENTS */
-	#terms div.contents-container,
-	#privacy div.contents-container {
+	#terms div.contents,
+	#privacy div.contents {
 		padding: 15px;
 	}
-	#terms div.contents-container p,
-	#privacy div.contents-container p {
-		text-align:  justify;
+	#terms div.contents p,
+	#privacy div.contents p {
+		text-align: justify;
 	}
 /* TABLE OF CONTENTS */
 	#terms div.toc,
