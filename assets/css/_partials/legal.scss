@@ -189,8 +189,8 @@
 	}
 /* MEDIA QUERIES */
 	@media only screen and (min-width: 1025px) {
-		#terms,
-		#privacy {
+		#terms div.toc,
+		#privacy div.toc {
 			display: block;
 		}
 		#terms a.back-to-top-trigger,
