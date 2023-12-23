@@ -4,14 +4,14 @@ footer {
 	padding: 15px;
 	text-align: center;
 }
-footer div.max-width-container {
+footer div.flex-container {
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
   	justify-content: space-evenly;
 	align-items: flex-start;
 }
-footer div.container {
+footer div.inner-flex-container {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -217,7 +217,7 @@ footer div.container {
 				color: var(--color-dark-grey);
 			}
 /* SOCIAL ICONS */
-	footer div.max-width-container:nth-child(2) {
+	footer div.external-links-flex-container {
   		justify-content:center;
   		align-items: center;
 		margin: 7.5px auto;
