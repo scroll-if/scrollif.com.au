@@ -188,7 +188,7 @@
 		outline: none;
 	}
 /* MEDIA QUERIES */
-	@media only screen and (min-width: 1025px) {
+	@media only screen and (min-width: var(--header-navbar-min-width)) {
 		#terms div.toc,
 		#privacy div.toc {
 			display: block;

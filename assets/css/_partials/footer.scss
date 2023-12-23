@@ -214,7 +214,6 @@ footer div.inner-flex-container {
 		flex-wrap: wrap;
 	  	justify-content: space-evenly;
 		align-items: flex-start;
-		margin: calc(var(--default-padding) / 3) auto;
 	}
 	footer div.external-links-inner-flex-container {
 		display: flex;
@@ -227,14 +226,14 @@ footer div.inner-flex-container {
 		display: flex;
 		flex-direction: row;
   		justify-content: start;
-		margin: calc(var(--default-padding) / 3) var(--default-padding) 0 0;
+		margin: var(--default-padding) calc((var(--default-padding) / 3) *2) 0;
 	}
 	footer div.socials-container img.icon {
 		width: auto;
 		height: 12vw;
     	max-height: 40px;
-		padding: calc(var(--default-padding) / 6);
-  		margin: 0 calc(var(--default-padding) / 6);
+		padding: calc((var(--default-padding) / 3) / 2);
+  		margin: 0 calc((var(--default-padding) / 3) / 2);
 		-webkit-transition: padding var(--transition-speed);
 		-moz-transition: padding var(--transition-speed);
 		-o-transition: padding var(--transition-speed);
@@ -252,7 +251,7 @@ footer div.inner-flex-container {
 	footer div.legal-container {
 		text-align: left;
    		padding: 0 var(--default-padding);
-		margin: var(--default-padding) 0;
+		margin: var(--default-padding) 0 0;
 	}
 	footer div.legal-container p {
 		color: var(--color-black);
