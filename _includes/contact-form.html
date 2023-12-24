@@ -18,8 +18,8 @@
                             <form name="contact-us" method="POST" data-netlify="true" netlify-honeypot="signup-email" data-netlify-recaptcha="true" action="/thankyou-for-your-message">
                                 <div class="form-flex-container">
                                     <div class="input-grouping-container">
-                                        <input class="input-field" name="name" placeholder="Name" type="text" autocomplete="name" required pattern="[A-Za-z]+\s+" oninvalid="setCustomValidity('Please enter a valid name using letters only.')" onchange="try{setCustomValidity('')}catch(e){}"/>
-                                        <input class="input-field" name="phone" placeholder="Phone" type="tel" autocomplete="tel" required pattern="[0-9]+" oninvalid="setCustomValidity('Please enter a valid phone number using numbers only.')" onchange="try{setCustomValidity('')}catch(e){}"/>
+                                        <input class="input-field" name="name" placeholder="Name" type="text" autocomplete="name" required pattern="[A-Za-z' -]+" oninvalid="setCustomValidity('Please enter a valid name using letters only.')" onchange="try{setCustomValidity('')}catch(e){}"/>
+                                        <input class="input-field" name="phone" placeholder="Phone" type="tel" autocomplete="tel" required pattern="[0-9 -]+" oninvalid="setCustomValidity('Please enter a valid phone number using numbers only.')" onchange="try{setCustomValidity('')}catch(e){}"/>
                                         <input class="input-field" name="email" placeholder="Email" type="email" autocomplete="email" required pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+.[A-Za-z]{2,}$" oninvalid="setCustomValidity('Please enter a valid email making sure to include an @ sign and the domain suffix (.com .net etc.).')" onchange="try{setCustomValidity('')}catch(e){}"/>
                                         <input class="input-field signup-email" name="signup-email" placeholder="Signup Email" type="email" autocomplete="off"/>
                                     </div>
