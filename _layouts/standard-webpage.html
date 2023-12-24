@@ -14,11 +14,11 @@
 			{{ meta-tags-html | liquify }}
 
 {% if page.index-follow == no %}
-	<meta name="robots" content="noindex, nofollow, noodp, noydir"/>
-	<meta name="googlebot" content="noindex, nofollow, noodp, noydir"/>
-	{% else %}
 	<meta name="robots" content="index, follow, noodp, noydir"/>
 	<meta name="googlebot" content="index, follow, noodp, noydir"/>
+	{% else %}
+	<meta name="robots" content="noindex, nofollow, noodp, noydir"/>
+	<meta name="googlebot" content="noindex, nofollow, noodp, noydir"/>
 	{% endif %}
 
 
