@@ -13,7 +13,7 @@
 
 			{{ meta-tags-html | liquify }}
 
-{% if page.index-follow == no %}
+{% if page.bots == noindex-nofollow %}
 	<meta name="robots" content="noindex, nofollow, noodp, noydir"/>
 	<meta name="googlebot" content="noindex, nofollow, noodp, noydir"/>
 	{% else %}
