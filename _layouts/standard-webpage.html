@@ -13,6 +13,15 @@
 
 			{{ meta-tags-html | liquify }}
 
+{% if page.index-follow == no %}
+	<meta name="robots" content="noindex, nofollow, noodp, noydir"/>
+	<meta name="googlebot" content="noindex, nofollow, noodp, noydir"/>
+	{% else %}
+	<meta name="robots" content="index, follow, noodp, noydir"/>
+	<meta name="googlebot" content="index, follow, noodp, noydir"/>
+	{% endif %}
+
+
 	<!-- ASSETS --> 
 
 		<!-- Local CSS files stored in _partials folder along with external CSS files from scrollif-assets are compiled into a single CSS file (concatenated.scss) before being processed, minimising HTTP requests -->
