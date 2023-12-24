@@ -1,0 +1,29 @@
+#thankyou section.thankyou-for-your-message div.background {
+    height: calc(100vh - var(--header-height)); 
+    width: 100%;
+    background-color: var(--color-black);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#thankyou section.thankyou-for-your-message div.tint {
+    height: 100%;
+    background-color: rgba(1, 1, 1, 0.2);
+}
+#thankyou section.thankyou-for-your-message div.flex-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#thankyou section.thankyou-for-your-message div.content-container {
+    padding: var(--default-padding);
+    text-align: center;
+}
+#thankyou section.thankyou-for-your-message div.textbox {
+    background-color: var(--color-white);
+    border-radius: 10px;
+    border: solid 3px var(--color-black);
+    padding: var(--default-padding);
+}
