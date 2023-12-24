@@ -28,10 +28,13 @@
     border-radius: 10px;
     border: solid 3px var(--color-black);
     box-shadow: var(--box-shadow-bottom-right);
-    padding: var(--default-padding) var(--default-padding) calc(var(--default-padding) * 2);
+    padding: calc(var(--default-padding) * 2) var(--default-padding);
     width: 100%;
 }
 #thankyou section.thankyou-for-your-message img.checkmark {
     height: auto;
     width: 75px;
+}
+#thankyou section.thankyou-for-your-message h2.title {
+    margin: calc((var(--default-padding) / 3) * 2) 0;
 }
