@@ -19,13 +19,7 @@ author-facebook:
 author-twitter: 
 ---
 
-<section style="background-image: url('{{ site.url }}/assets/images/{{ page.title | replace: ' ', '_' | downcase }}.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;">
-	<div style="text-align: center; font-family: var(--font-primary); font-weight: var(--font-weight-primary); color: var(--color-black);">
-		<div style="padding: 15vh 0; text-shadow:var(--dark-grey) 0.1vmin 0.1vmin 0.1vmin;">
-			<h1 style="font-size: 10vmin; letter-spacing: 2vw; padding-left: 2vw; margin: 2vh 0;">{{ page.title }}</h1>
-		</div>
-	</div>
-</section>
+{% include webpage-topper.html %} 
 
 <div style="height:100vh;">
 </div> 

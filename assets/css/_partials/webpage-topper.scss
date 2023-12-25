@@ -1,0 +1,22 @@
+section.webpage-topper div.background {
+	background-color: var(--color-black);
+	background-repeat: no-repeat; 
+	background-size: cover; 
+	background-position: center;
+}
+section.webpage-topper div.tint {
+	background-color: rbga(1, 1, 1, 0.8);
+}
+section.webpage-topper div.flex-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: var(--default-padding);
+}
+section.webpage-topper div.content-container {
+	padding: var(--default-padding);
+}
+section.webpage-topper h1.title {
+
+}
