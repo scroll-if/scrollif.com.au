@@ -5,7 +5,7 @@ section.webpage-topper div.background {
 	background-position: center;
 }
 section.webpage-topper div.tint {
-	background-color: rbga(1, 1, 1, 0.8);
+	background-color: rgba(1, 1, 1, 0.8);
 }
 section.webpage-topper div.flex-container {
 	display: flex;
@@ -14,8 +14,9 @@ section.webpage-topper div.flex-container {
 	align-items: center;
 	padding: var(--default-padding);
 }
-section.webpage-topper div.content-container {
+section.webpage-topper div.contents-container {
 	padding: var(--default-padding);
+	max-width: 400px;
 }
 section.webpage-topper h1.title {
 
