@@ -59,7 +59,7 @@ header div.flex-container {
 				transition: color var(--transition-speed), background var(--transition-speed);
 			}
 			header nav li.current-page > a p {
-				color: var(--color-primary);
+				color: var(--color-primary) !important;
 			}		
 			html:not(.can-touch) header nav a:hover p, 
 			html:not(.can-touch) header nav a:focus p {
