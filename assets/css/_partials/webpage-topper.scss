@@ -10,8 +10,9 @@ section.webpage-topper div.tint {
 section.webpage-topper div.flex-container {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-evenly;
+	justify-content: space-between;
 	align-items: flex-end;
+	flex-wrap: wrap;
 	padding: var(--default-padding);
 	padding-bottom: calc(var(--default-padding) * 2);
 }
@@ -20,6 +21,7 @@ section.webpage-topper div.contents-container {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
+	align-items: center;
 	flex-basis: 50%;
 	flex-grow: 1;
 	min-width: 300px;
