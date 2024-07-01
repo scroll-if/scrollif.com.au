@@ -11,35 +11,35 @@
 - name: "Business Logos"
   description: Help your business stand out amongst the crowd with a custom business logo.
   background-image: /assets/images/business_logos.jpg
-  icon-image: 
+  icon-image: /assets/images/business-logos_icon.png
   url: /graphics/business-logos
 - name: "Social Media Banners"
   description: Let your business look its best everywhere with matching social media banners.
   background-image: /assets/images/social_media_banners.jpg
-  icon-image: 
+  icon-image: /assets/images/social_media_banners_icon.png
   url: /graphics/social-media-banners
 - name: "Business Cards"
   description: Give your business that professional touch with a memorable business card.
   background-image: /assets/images/business_cards.jpg
-  icon-image: 
+  icon-image: /assets/images/business-cards_icon.png
   url: /graphics/business-cards
 - name: "HTML Emails"
   description: Make your business communications pop with emails that match your business's style.
   background-image: /assets/images/html_emails.jpg
-  icon-image: 
+  icon-image: /assets/images/html_emails_icon.png
   url: /graphics/html-emails
 - name: "Consulting: Systems"
   description: Need to implement a new system? Let us guide the installation and rollout.
   background-image: /assets/images/consulting_systems.jpg
-  icon-image: 
+  icon-image: /assets/images/consulting_systems_icon.png
   url: /consulting/systems
 - name: "Consulting: Operations"
   description: Even the best teams and tools need equally great processes to succeed.
   background-image: /assets/images/consulting_operations.jpg
-  icon-image: 
+  icon-image: /assets/images/consulting_operations_icon.png
   url: /consulting/operations
 - name: "Consulting: Branding"
   description: Like a makeup team and costume designer for your business.  Make a memorable first impression to your customers.
   background-image: /assets/images/consulting_branding.jpg
-  icon-image: 
+  icon-image: /assets/images/consulting_branding_icon.png
   url: /consulting/branding
