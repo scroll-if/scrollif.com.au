@@ -131,16 +131,16 @@ author-twitter:
                     </div>
                 </div>
                 <div class="services-container">
-                    {% for item in site.data.services %}
+                    {% for service in site.data.services %}
                         <div class="services-box">
-                            <a href="{{ site.url }}{{ item.url }}" class="overflow-box">
-                                <div class="background-image" style="background-image: url('{{ site.url }}{{ item.background-image }}')">
+                            <a href="{{ site.url }}{{ service.url }}" class="overflow-box">
+                                <div class="background-image" style="background-image: url('{{ site.url }}{{ service.background-image }}')">
                                 </div>
                                 <div class="tint mirror-box">
                                     <div class="text-container">
                                         <div class="main reverse">
-                                            <h3>{{ item.name }}</h3>
-                                            <p>{{ item.description }}</p>
+                                            <h3>{{ service.name }}</h3>
+                                            <p>{{ service.description }}</p>
                                         </div>
                                     </div>
                                 </div>
