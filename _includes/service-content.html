@@ -1,5 +1,5 @@
 {% assign service = site.data.services | where_exp: "service", "service.name == page.title" | first  %}
-<section class="webpage-topper">
+<section class="top-banner">
 	<div class="background" style="background-image: url('{{ site.url }}{{ service.background-image }}');">
 		<div class="tint">
 			<div class="max-width-container">
