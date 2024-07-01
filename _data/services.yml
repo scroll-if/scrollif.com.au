@@ -1,36 +1,10 @@
-- name: "Single Page Websites"
+Single Page Websites
+  name: "Single Page Websites"
   description: Get your business online quickly and easily with one of our single page websites.  Perfect for small businesses and sole traders.
   background-image: /assets/images/single_page_websites.jpg
   url: /websites/single-page-websites
-- name: "Multi Page Websites"
+Multi Page Websites
+  name: "Multi Page Websites"
   description: Make a mark on the web with one of our multi page websites.  Suited to larger businesses that need to display a lot of content.
   background-image: /assets/images/multi_page_websites.jpg
   url: /websites/multi-page-websites
-- name: "Business Logos"
-  description: Help your business stand out amongst the crowd with a custom business logo.
-  background-image: /assets/images/business_logos.jpg
-  url: /graphics/business-logos
-- name: "Social Media Banners"
-  description: Let your business look its best everywhere with matching social media banners.
-  background-image: /assets/images/social_media_banners.jpg
-  url: /graphics/social-media-banners
-- name: "Business Cards"
-  description: Give your business that professional touch with a memorable business card.
-  background-image: /assets/images/business_cards.jpg
-  url: /graphics/business-cards
-- name: "HTML Emails"
-  description: Make your business communications pop with emails that match your business's style.
-  background-image: /assets/images/html_emails.jpg
-  url: /graphics/html-emails
-- name: "Consulting: Systems"
-  description: Need to implement a new system? Let us guide the installation and rollout.
-  background-image: /assets/images/consulting_systems.jpg
-  url: /consulting/systems
-- name: "Consulting: Operations"
-  description: Even the best teams and tools need equally great processes to succeed.
-  background-image: /assets/images/consulting_operations.jpg
-  url: /consulting/operations
-- name: "Consulting: Branding"
-  description: Like a makeup team and costume designer for your business.  Make a memorable first impression to your customers.
-  background-image: /assets/images/consulting_branding.jpg
-  url: /consulting/branding
