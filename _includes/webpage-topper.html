@@ -6,7 +6,11 @@
 					<div class="contents-container">
 						<div class="main reverse">
 							<h1 class="title">{{ page.title }}</h1>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus id magna id turpis pharetra bibendum.</p>
+							<p>{% for item in site.data.services %}
+								    {% if page.title == item.name %}
+								        {% item.description %}
+								    {% endif %}
+								{% endfor %}</p>
 							<p>Sed quam dui, vehicula ut turpis ut, pretium convallis dui. Duis efficitur, mauris sit amet ultricies commodo, sem orci vestibulum libero, in tincidunt orci elit vitae tortor.</p>
 						</div>
 					</div>
