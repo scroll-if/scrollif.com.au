@@ -6,7 +6,7 @@
 - name: "Multi Page Websites"
   description: Make a mark on the web with one of our multi page websites.  Suited to larger businesses that need to display a lot of content.
   background-image: /assets/images/multi_page_websites.jpg
-  icon-image: 
+  icon-image: /assets/images/multi_page_websites_icon.png
   url: /websites/multi-page-websites
 - name: "Business Logos"
   description: Help your business stand out amongst the crowd with a custom business logo.
