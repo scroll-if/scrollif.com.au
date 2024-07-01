@@ -1,4 +1,4 @@
-{% assign service = site.data.services.{{page.title}} %}
+{% assign service = site.data.services[ page.title ] %}
 <section class="webpage-topper">
 	<div class="background" style="background-image: url('{{ site.url }}/assets/images/{{ page.title | replace: ' ', '_' | downcase }}.jpg');">
 		<div class="tint">
