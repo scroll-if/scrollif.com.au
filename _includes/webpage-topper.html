@@ -1,6 +1,6 @@
 {% assign service = site.data.services | where_exp: "service", "service.name == page.title" | first  %}
 <section class="webpage-topper">
-	<div class="background" style="background-image: url('{{ site.url }}/assets/images/{{ page.title | replace: ' ', '_' | downcase }}.jpg');">
+	<div class="background" style="background-image: url('{{ site.url }}{{ service.background-image }}');">
 		<div class="tint">
 			<div class="max-width-container">
 				<div class="flex-container">
@@ -8,7 +8,6 @@
 						<div class="main reverse">
 							<h1 class="title">{{ page.title }}</h1>
 							<p>{{ service.description }}</p>
-							<p>Sed quam dui, vehicula ut turpis ut, pretium convallis dui. Duis efficitur, mauris sit amet ultricies commodo, sem orci vestibulum libero, in tincidunt orci elit vitae tortor.</p>
 						</div>
 					</div>
 					<div class="contents-container">
