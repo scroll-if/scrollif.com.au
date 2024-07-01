@@ -5,6 +5,7 @@ section.top-banner div.background {
 	background-position: center;
 }
 section.top-banner div.tint {
+	height: 100%;
 	background-color: rgba(1, 1, 1, 0.8);
 }
 section.top-banner div.flex-container {
@@ -21,6 +22,7 @@ section.top-banner div.contents-container {
 	align-items: center;
 }
 section.top-banner div.text-contents-container {
+	min-height: 300px;
 	padding: calc(var(--default-padding) * 2);
 	flex-basis: 50%;
 	flex-grow: 1;
@@ -28,7 +30,7 @@ section.top-banner div.text-contents-container {
 	max-width: 520px;
 }
 section.top-banner img.image-icon {
-  	margin: var(--default-padding) calc(var(--default-padding) * 2) 0 var(--default-padding);
+  	margin: var(--default-padding) calc(var(--default-padding) * 2) -40% var(--default-padding);
 	height: auto;
   	max-width: 155px;
 }
