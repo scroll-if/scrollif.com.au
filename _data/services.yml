@@ -11,7 +11,7 @@
 - name: "Business Logos"
   description: Help your business stand out amongst the crowd with a custom business logo.
   background-image: /assets/images/business_logos.jpg
-  icon-image: /assets/images/business-logos_icon.png
+  icon-image: /assets/images/business_logos_icon.png
   url: /graphics/business-logos
 - name: "Social Media Banners"
   description: Let your business look its best everywhere with matching social media banners.
