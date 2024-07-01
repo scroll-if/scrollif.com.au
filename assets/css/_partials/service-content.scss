@@ -24,12 +24,11 @@ section.top-banner div.text-contents-container {
 	padding: calc(var(--default-padding) * 2);
 	flex-basis: 50%;
 	flex-grow: 1;
-	min-width: 300px;
-	max-width: 500px;
+	min-width: 320px;
+	max-width: 520px;
 }
 section.top-banner img.image-icon {
-	padding: var(--default-padding) var(--default-padding) 0;
+  	margin: var(--default-padding) calc(var(--default-padding) * 2) 0 var(--default-padding);
 	height: auto;
-	min-width: 100px;
-	max-width: 200px;
+  	max-width: 155px;
 }
