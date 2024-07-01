@@ -1,4 +1,4 @@
-{% assign service = site.data.services | where_exp: "album", service.name == page.title | first  %}
+{% assign service = site.data.services | where_exp: "album", "service.name == page.title" | first  %}
 <section class="webpage-topper">
 	<div class="background" style="background-image: url('{{ site.url }}/assets/images/{{ page.title | replace: ' ', '_' | downcase }}.jpg');">
 		<div class="tint">
