@@ -21,7 +21,7 @@
 - name: "Business Cards"
   description: Give your business that professional touch with a memorable business card.
   background-image: /assets/images/business_cards.jpg
-  icon-image: /assets/images/business-cards_icon.png
+  icon-image: /assets/images/business_cards_icon.png
   url: /graphics/business-cards
 - name: "HTML Emails"
   description: Make your business communications pop with emails that match your business's style.
