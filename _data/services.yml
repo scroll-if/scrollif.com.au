@@ -27,7 +27,7 @@
   description: Make your business communications pop with emails that match your business's style.
   background-image: /assets/images/html_emails.jpg
   icon-image: /assets/images/html_emails_icon.png
-  url: /graphics/html-emails
+  url: /graphics/html_emails
 - name: "Consulting: Systems"
   description: Need to implement a new system? Let us guide the installation and rollout.
   background-image: /assets/images/consulting_systems.jpg
