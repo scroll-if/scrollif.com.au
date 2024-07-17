@@ -10,9 +10,9 @@
 
 
 
-							{% assign test = service.name | split: ' ' | reverse | join: ' ' | replace_first: ' ', ' <br/>' %}
+							{% assign test = service.name | split: ' ' | reverse | join: ' ' | replace_first: ' ', ' linebreak' %}
 
-							{{ test | split: ' ' | reverse | join: ' ' }}			
+							{{ test | split: ' ' | reverse | join: ' ' | replace_first: 'linebreak', '<br/>' }}			
 
 							<br/>
 
