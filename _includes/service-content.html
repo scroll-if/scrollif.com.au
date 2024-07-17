@@ -10,13 +10,13 @@
 
 
 
-							{% assign test = service.name | split: '' | reverse | replace_first: ' ', '<br/>' %}
+							{% assign test = service.name | split: '' | reverse | join: '' | replace_first: ' ', '<br/>' %}
 
-							{{ test | join: '' }}			
+							{{ test | split: '' | reverse | join: '' }}			
 
 							<br/>
 
-							{{ service.name | split: '' | reverse }}					
+												
 
 							<br/>
 
