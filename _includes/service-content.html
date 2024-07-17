@@ -12,7 +12,19 @@
 
 							{% assign test = service.name | reverse | replace_first: ' ', '<br/>' %}
 
-							{{ test | reverse }}							
+							{{ test | reverse }}			
+
+							<br/>
+
+							{{ service.name | reverse }}					
+
+							<br/>
+
+							{{ service.name | reverse | replace_first: ' ', '<br/>' }}
+
+							<br/>
+
+							{{ service.name | reverse | replace_first: ' ', '<br/>' | reverse }}
 
 
 							</h1>
