@@ -110,11 +110,6 @@
 	.main li p {
 		display: inline;
 	}
-	form .input-field,
-    form .message-area {
-        
-        
-    }
 	.main code {
 		background-color: var(--color-primary);
 		font-size: var(--font-s);
@@ -135,6 +130,14 @@
 	.main form input[type=submit] {
 		width: initial;
 	}
+    section.contact-form form input, 
+    section.contact-form form textarea {
+        border: none;
+    }
+    html:not(.can-touch) section.contact-form form input,
+    html:not(.can-touch) section.contact-form form textarea {
+        outline: none;
+    }
 	.main a.button, 
 	.main input.button {
         display: inline-block;
@@ -147,11 +150,6 @@
         padding: var(--default-padding);
         margin: var(--default-padding) 0;
         box-shadow: var(--box-shadow-bottom-right);
-        -webkit-border-radius: 5px;
-        -moz-border-radius: 5px;
-        -o-border-radius: 5px;
-        -ms-border-radius: 5px;
-        border-radius: 5px;
         -webkit-transition: background-color var(--transition-speed), color var(--transition-speed);
         -moz-transition: background-color var(--transition-speed), color var(--transition-speed);
         -o-transition: background-color var(--transition-speed), color var(--transition-speed);
@@ -199,7 +197,7 @@
     .main.reverse a.button.highlight, 
 	.main.reverse input.button.highlight {
         background-color: var(--color-primary);
-        color: var(--color-white);
+        color: var(--color-black);
     }
     html:not(.can-touch) .main.reverse a.button.highlight:hover, 
     html:not(.can-touch) .main.reverse a.button.highlight:focus,
