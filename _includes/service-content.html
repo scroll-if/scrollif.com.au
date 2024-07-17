@@ -16,15 +16,15 @@
 
 							<br/>
 
-							{{ service.name | reverse }}					
+							{{ service.name | split: '' | reverse }}					
 
 							<br/>
 
-							{{ service.name | reverse | replace_first: ' ', '<br/>' }}
+							{{ service.name | split: '' | reverse | replace_first: ' ', '<br/>' }}
 
 							<br/>
 
-							{{ service.name | reverse | replace_first: ' ', '<br/>' | reverse }}
+							{{ service.name | split: '' | reverse | replace_first: ' ', '<br/>' | reverse }}
 
 
 							</h1>
