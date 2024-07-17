@@ -11,7 +11,7 @@
 
 							{% assign service_name_array = service.name | split: ' ' %}
 
-							{{ service_name_array | reverse | remove_first }}							
+							{{ service_name_array | reverse | replace_first: ' ', '<br/>' | reverse }}							
 
 							<br/>
 
