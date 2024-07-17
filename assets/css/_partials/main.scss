@@ -116,6 +116,10 @@
     	padding: 2px 5px 2px 5px;
     	display: inline;
 	}
+	::placeholder {
+	  color: var(--color-dark-grey);
+	  opacity: 0.7;
+	}
 	.main form input,
 	.main form textarea {
 		width: 100%;
