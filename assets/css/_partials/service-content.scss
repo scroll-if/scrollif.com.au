@@ -29,6 +29,9 @@ section.top-banner div.text-contents-container {
 	min-width: 320px;
 	max-width: 520px;
 }
+section.top-banner div.text-contents-container a.button {
+	margin-right: 5px;
+}
 section.top-banner img.image-icon {
   	margin: var(--default-padding) calc(var(--default-padding) * 2) -40% var(--default-padding);
 	height: auto;

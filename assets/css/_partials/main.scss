@@ -139,6 +139,11 @@
         padding: var(--default-padding);
         margin: var(--default-padding) 0;
         box-shadow: var(--box-shadow-bottom-right);
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -o-border-radius: 5px;
+        -ms-border-radius: 5px;
+        border-radius: 5px;
         -webkit-transition: background-color var(--transition-speed), color var(--transition-speed);
         -moz-transition: background-color var(--transition-speed), color var(--transition-speed);
         -o-transition: background-color var(--transition-speed), color var(--transition-speed);
@@ -154,30 +159,39 @@
         background-color: var(--color-primary);
         color: var(--color-white);
     }
+    .main a.button.highlight, 
+	.main input.button.highlight {
+        background-color: var(--color-primary);
+        color: var(--color-black);
+    }
+    html:not(.can-touch) .main a.button.highlight:hover, 
+    html:not(.can-touch) .main a.button.highlight:focus,
+    html:not(.can-touch) .main input.button.highlight:hover, 
+    html:not(.can-touch) .main input.button.highlight:focus {
+        background-color: var(--color-primary);
+        color: var(--color-white);
+    }
     .main.reverse a.button, 
-	.main input.button {
-        display: inline-block;
+	.main.reverse input.button {
         background-color: var(--color-white);
         color: var(--color-black);
-        font-family: var(--font-tertiary);
-        font-weight:  800;
-        font-size: var(--font-xs);
-        text-decoration: none;
-        padding: var(--default-padding);
-        margin: var(--default-padding) 0;
-        box-shadow: var(--box-shadow-bottom-right);
-        -webkit-transition: background-color var(--transition-speed), color var(--transition-speed);
-        -moz-transition: background-color var(--transition-speed), color var(--transition-speed);
-        -o-transition: background-color var(--transition-speed), color var(--transition-speed);
-        -ms-transition: background-color var(--transition-speed), color var(--transition-speed);
-        transition: background-color var(--transition-speed), color var(--transition-speed);
     }
     html:not(.can-touch) .main.reverse a.button:hover, 
     html:not(.can-touch) .main.reverse a.button:focus,
     html:not(.can-touch) .main.reverse input.button:hover, 
     html:not(.can-touch) .main.reverse input.button:focus {
-        outline: none;
-        cursor: pointer;
         background-color: var(--color-primary);
         color: var(--color-white);
+    }
+    .main.reverse a.button.highlight, 
+	.main.reverse input.button.highlight {
+        background-color: var(--color-primary);
+        color: var(--color-white);
+    }
+    html:not(.can-touch) .main.reverse a.button.highlight:hover, 
+    html:not(.can-touch) .main.reverse a.button.highlight:focus,
+    html:not(.can-touch) .main.reverse input.button.highlight:hover, 
+    html:not(.can-touch) .main.reverse input.button.highlight:focus {
+        background-color: var(--color-primary);
+        color: var(--color-black);
     }
