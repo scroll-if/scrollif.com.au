@@ -10,9 +10,9 @@
 
 
 
-							{% assign test = service.name | split: ' ' | reverse | replace_first: ' ', '<br/>' %}
+							{% assign test = service.name | split: ' ' | reverse %}
 
-							{{ test | reverse }}							
+							{{ test | replace_first: ' ', '<br/>' | reverse }}							
 
 
 							</h1>
