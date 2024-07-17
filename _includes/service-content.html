@@ -10,7 +10,7 @@
 
 
 
-							{{ service.name | reverse | replace_first: ' ', '<br/>' | reverse }}							
+							{{ service.name | split: '' | reverse | replace_first: ' ', '<br/>' | reverse | join: '' }}							
 
 
 							</h1>
