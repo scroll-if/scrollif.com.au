@@ -9,9 +9,9 @@
 							<h1 class="title">
 
 
-							{% assign service_name_array = service.name | replace: ' ', '\' | split: '\' %}
+							{% assign service_name_array = service.name | split: ' ' %}
 
-							{{ service_name_array | reverse | join: '\' }}							
+							{{ service_name_array | reverse | remove_first }}							
 
 							<br/>
 
