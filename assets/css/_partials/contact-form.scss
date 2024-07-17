@@ -48,10 +48,12 @@ section.contact-form div.content-container {
         min-width: 200px;
         padding: calc(var(--default-padding) / 3);
     }
-    section.contact-form form input {
+    section.contact-form form input, 
+    section.contact-form form textarea {
         border: none;
     }
-    html:not(.can-touch) section.contact-form form input {
+    html:not(.can-touch) section.contact-form form input,
+    html:not(.can-touch) section.contact-form form textarea {
         outline: none;
     }
     

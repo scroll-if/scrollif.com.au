@@ -121,8 +121,8 @@
     	padding: 2px 5px 2px 5px;
     	display: inline;
 	}
-	.main form > input,
-	.main form > textarea {
+	.main form input,
+	.main form textarea {
 		width: 100%;
 		background-color: var(--color-black);
 		color: var(--color-white);
@@ -131,6 +131,9 @@
 		font-size: var(--font-xs);
         padding: calc(calc(var(--default-padding) / 3) * 2);
         margin: calc(var(--default-padding) / 3) 0;
+	}
+	.main form input[type=submit] {
+		width: initial;
 	}
 	.main a.button, 
 	.main input.button {
@@ -176,8 +179,8 @@
         background-color: var(--color-primary);
         color: var(--color-white);
     }
-    .main.reverse form > input,
-	.main.reverse form > textarea {
+    .main.reverse form input,
+	.main.reverse form textarea {
 		background-color: var(--color-white);
 		color: var(--color-black);
 	}
