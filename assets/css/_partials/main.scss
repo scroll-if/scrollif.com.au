@@ -110,22 +110,27 @@
 	.main li p {
 		display: inline;
 	}
-	.main form input,
-	.main form textarea {
-		font-family: var(--font-tertiary);
-		font-weight: var(--font-tertiary-weight);
-		color: var(--color-black);
-		font-size: var(--font-xs);
-	}
-	.main.reverse form > input,
-	.main.reverse form > textarea {
-		color: var(--color-white);
-	}
+	form .input-field,
+    form .message-area {
+        
+        
+    }
 	.main code {
 		background-color: var(--color-primary);
 		font-size: var(--font-s);
     	padding: 2px 5px 2px 5px;
     	display: inline;
+	}
+	.main form > input,
+	.main form > textarea {
+		width: 100%;
+		background-color: var(--color-black);
+		color: var(--color-white);
+		font-family: var(--font-tertiary);
+		font-weight: var(--font-tertiary-weight);
+		font-size: var(--font-xs);
+        padding: calc(calc(var(--default-padding) / 3) * 2);
+        margin: calc(var(--default-padding) / 3) 0;
 	}
 	.main a.button, 
 	.main input.button {
@@ -171,6 +176,11 @@
         background-color: var(--color-primary);
         color: var(--color-white);
     }
+    .main.reverse form > input,
+	.main.reverse form > textarea {
+		background-color: var(--color-white);
+		color: var(--color-black);
+	}
     .main.reverse a.button, 
 	.main.reverse input.button {
         background-color: var(--color-white);

@@ -54,13 +54,7 @@ section.contact-form div.content-container {
     html:not(.can-touch) section.contact-form form input {
         outline: none;
     }
-    section.contact-form form .input-field,
-    section.contact-form form .message-area {
-        background-color: var(--color-white);
-        width: 100%;
-        padding: calc(calc(var(--default-padding) / 3) * 2);
-        margin: calc(var(--default-padding) / 3) 0;
-    }
+    
     section.contact-form form .signup-email {
         display: none;
     }
