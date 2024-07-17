@@ -9,17 +9,9 @@
 							<h1 class="title">
 
 
-							{% assign service_name_array = service.name | split: ' ' %}
 
-							{{ service_name_array | reverse | replace_first: ' ', '<br/>' | reverse }}							
+							{{ service.name | reverse | replace_first: ' ', '<br/>' | reverse }}							
 
-							<br/>
-
-							{{ service_name_array | slice: '-1', '1' }}
-
-							<br/>
-
-							{{ service_name_array | slice: '0', '2' }}
 
 							</h1>
 							<p>{{ service.description }}</p>
