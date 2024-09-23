@@ -1,22 +1,51 @@
 {% assign service = site.data.services | where_exp: "service", "service.name == page.title" | first  %}
-<section class="top-banner">
-	<div class="background" style="background-image: url('{{ site.url }}{{ service.background-image }}');">
-		<div class="tint">
-			<div class="max-width-container">
-				<div class="flex-container">
-					<div class="contents-container text-contents-container">
-						<div class="main reverse">
-							<h1 class="title">{% assign test = service.name | split: ' ' | reverse | join: ' ' | replace_first: ' ', ' brtaglinebreak ' %}{{ test | split: ' ' | reverse | join: ' ' | replace_first: 'brtaglinebreak', '<br/>' }}</h1>
-							<p>{{ service.description }}</p>
-							<a class="button highlight" href="{{ site.url }}/{{ page.title }}#pricing">See Pricing</a>
-							<a class="button" href="{{ site.url }}/{{ page.title }}#whats-included">Learn More</a>
+<div id="services">
+	<section class="top-banner">
+		<div class="background" style="background-image: url('{{ site.url }}{{ service.background-image }}');">
+			<div class="tint">
+				<div class="max-width-container">
+					<div class="flex-container">
+						<div class="contents-container text-contents-container">
+							<div class="main reverse">
+								<h1 class="title">{% assign test = service.name | split: ' ' | reverse | join: ' ' | replace_first: ' ', ' brtaglinebreak ' %}{{ test | split: ' ' | reverse | join: ' ' | replace_first: 'brtaglinebreak', '<br/>' }}</h1>
+								<p>{{ service.description }}</p>
+								<a class="button highlight" href="{{ site.url }}/{{ page.title }}#pricing">See Pricing</a>
+								<a class="button" href="{{ site.url }}/{{ page.title }}#whats-included">Learn More</a>
+							</div>
 						</div>
-					</div>
-					<div class="contents-container">
-						<img class="image-icon" src="{{ site.url }}{{ service.icon-image }}" alt="{{ service.name }}"/>
+						<div class="contents-container">
+							<img class="image-icon" src="{{ site.url }}{{ service.icon-image }}" alt="{{ service.name }}"/>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-</section>
+	</section>
+
+	<section class="benefits">
+		<div class="background">
+			<div class="max-width-container">
+				<div class="main">
+					<h2>{{ service.tease-line }}</h2>
+				</div>	
+			</div>
+		</div>
+	</section>
+	
+	<section class="case-studies">
+		<div class="background">
+			<div class="max-width-container">
+
+			</div>
+		</div>
+	</section>
+	
+	<section class="pricing">
+		<div class="background">
+			<div class="max-width-container">
+
+			</div>
+		</div>
+	</section>
+	
+</div>

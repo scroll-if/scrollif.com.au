@@ -1,38 +1,60 @@
-section.top-banner div.background {
-	background-color: var(--color-black);
-	background-repeat: no-repeat; 
-	background-size: cover; 
-	background-position: center;
-}
-section.top-banner div.tint {
-	height: 100%;
-	background-color: rgba(1, 1, 1, 0.8);
-}
-section.top-banner div.flex-container {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: flex-end;
-	flex-wrap: wrap;
-}
-section.top-banner div.contents-container {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-}
-section.top-banner div.text-contents-container {
-	padding: calc(var(--default-padding) * 2);
-	flex-basis: 50%;
-	flex-grow: 1;
-	min-width: 320px;
-	max-width: 520px;
-}
-section.top-banner div.text-contents-container a.button {
-	margin-right: 5px;
-}
-section.top-banner img.image-icon {
-  	margin: var(--default-padding) calc(var(--default-padding) * 2) -40% var(--default-padding);
-	height: auto;
-  	max-width: 155px;
-}
+/* TOP BANNER */
+	div.services section.top-banner div.background {
+		background-color: var(--color-black);
+		background-repeat: no-repeat; 
+		background-size: cover; 
+		background-position: center;
+	}
+	div.services section.top-banner div.tint {
+		height: 100%;
+		background-color: rgba(1, 1, 1, 0.8);
+	}
+	div.services section.top-banner div.flex-container {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: flex-end;
+		flex-wrap: wrap;
+	}
+	div.services section.top-banner div.contents-container {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+	}
+	div.services section.top-banner div.text-contents-container {
+		padding: calc(var(--default-padding) * 2);
+		flex-basis: 50%;
+		flex-grow: 1;
+		min-width: 320px;
+		max-width: 520px;
+	}
+	div.services section.top-banner div.text-contents-container a.button {
+		margin-right: 5px;
+	}
+	div.services section.top-banner img.image-icon {
+	  	margin: var(--default-padding) calc(var(--default-padding) * 2) -40% var(--default-padding);
+		height: auto;
+	  	max-width: 155px;
+	}
+
+	div.services section.top-banner div.background {
+		background-color: var(--color-black);
+		background-repeat: no-repeat; 
+		background-size: cover; 
+		background-position: center;
+	}
+/* BENEFITS */
+	div.services section.top-banner div.background {
+		background-color: var(--color-white);
+	}
+
+/* CASE STUDIES */
+	div.services section.top-banner div.background {
+		background-color: var(--color-white);
+	}
+
+/* PRICING */
+	div.services section.top-banner div.background {
+		background-color: var(--color-white);
+	}

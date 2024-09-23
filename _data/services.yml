@@ -1,45 +1,54 @@
 - name: "Single Page Websites"
   description: Get your business online quickly and easily with one of our single page websites.  Perfect for small businesses and sole traders.
+  tease-line: Simple websites, made beautiful.
   background-image: /assets/images/single_page_websites.jpg
   icon-image: /assets/images/single_page_websites_icon.png
   url: /websites/single-page-websites
 - name: "Multi Page Websites"
   description: Make a mark on the web with one of our multi page websites.  Suited to larger businesses that need to display a lot of content.
+  tease-line: 
   background-image: /assets/images/multi_page_websites.jpg
   icon-image: /assets/images/multi_page_websites_icon.png
   url: /websites/multi-page-websites
 - name: "Business Logos"
   description: Help your business stand out amongst the crowd with a custom business logo.
+  tease-line: 
   background-image: /assets/images/business_logos.jpg
   icon-image: /assets/images/business_logos_icon.png
   url: /graphics/business-logos
 - name: "Social Media Banners"
   description: Let your business look its best everywhere with matching social media banners.
+  tease-line: 
   background-image: /assets/images/social_media_banners.jpg
   icon-image: /assets/images/social_media_banners_icon.png
   url: /graphics/social-media-banners
 - name: "Business Cards"
   description: Give your business that professional touch with a memorable business card.
+  tease-line: 
   background-image: /assets/images/business_cards.jpg
   icon-image: /assets/images/business_cards_icon.png
   url: /graphics/business-cards
 - name: "HTML Emails"
   description: Make your business communications pop with emails that match your business's style.
+  tease-line: 
   background-image: /assets/images/html_emails.jpg
   icon-image: /assets/images/html_emails_icon.png
   url: /graphics/html_emails
 - name: "Consulting: Systems"
   description: Need to implement a new system? Let us guide the installation and rollout.
+  tease-line: 
   background-image: /assets/images/consulting_systems.jpg
   icon-image: /assets/images/consulting_systems_icon.png
   url: /consulting/systems
 - name: "Consulting: Operations"
   description: Even the best teams and tools need equally great processes to succeed.
+  tease-line: 
   background-image: /assets/images/consulting_operations.jpg
   icon-image: /assets/images/consulting_operations_icon.png
   url: /consulting/operations
 - name: "Consulting: Branding"
   description: Like a makeup team and costume designer for your business.  Make a memorable first impression to your customers.
+  tease-line: 
   background-image: /assets/images/consulting_branding.jpg
   icon-image: /assets/images/consulting_branding_icon.png
   url: /consulting/branding
