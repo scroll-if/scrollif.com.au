@@ -39,16 +39,19 @@
 	}
 
 /* BENEFITS */
-	#services section.top-banner div.background {
+	#services section.benefits div.background {
 		background-color: var(--color-white);
+	}
+	#services section.benefits div.background div.tease-line-container {
+		padding: calc(var(--default-padding) * 2);
 	}
 
 /* CASE STUDIES */
-	#services section.top-banner div.background {
+	#services section.case-studies div.background {
 		background-color: var(--color-white);
 	}
 
 /* PRICING */
-	#services section.top-banner div.background {
+	#services section.pricing div.background {
 		background-color: var(--color-white);
 	}
