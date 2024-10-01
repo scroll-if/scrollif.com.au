@@ -42,8 +42,22 @@
 	#services section.benefits div.background {
 		background-color: var(--color-white);
 	}
+	#services section.benefits div.background div.contents-container {
+		padding-top: calc(var(--default-padding) * 5);
+	}
 	#services section.benefits div.background div.tease-line-container {
-		padding: calc(var(--default-padding) * 2);
+		padding: calc(calc(var(--default-padding) * 4) - 5vw) calc(var(--default-padding) * 2);
+		min-width: 320px;
+		max-width: 70%;
+	}
+	#services section.benefits div.background div.tease-line-container div.line-break-container {
+  		display: inline-block;
+	}
+	#services section.benefits div.background div.tease-line-container div.line-break-container:first-child H2 {
+		margin-bottom: 0;
+	}
+	#services section.benefits div.background div.tease-line-container div.line-break-container:last-child H2 {
+		margin-top: 0;
 	}
 
 /* CASE STUDIES */
