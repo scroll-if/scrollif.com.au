@@ -7,7 +7,9 @@
 					<div class="flex-container">
 						<div class="contents-container text-contents-container">
 							<div class="main reverse">
-								<h1 class="title">{% assign test = service.name | split: ' ' | reverse | join: ' ' | replace_first: ' ', ' brtaglinebreak ' %}{{ test | split: ' ' | reverse | join: ' ' | replace_first: 'brtaglinebreak', '<br/>' }}</h1>
+								<h1 class="title">
+								{% assign breaklastword = service.name | split: ' ' | reverse | join: ' ' | replace_first: ' ', ' brtaglinebreak ' %}
+								{{ breaklastword | split: ' ' | reverse | join: ' ' | replace_first: 'brtaglinebreak', '<br/>' }}</h1>
 								<p>{{ service.description }}</p>
 								<a class="button highlight" href="{{ site.url }}/{{ page.title }}#pricing">See Pricing</a>
 								<a class="button" href="{{ site.url }}/{{ page.title }}#whats-included">Learn More</a>
@@ -27,15 +29,8 @@
 			<div class="max-width-container">
 				<div class="contents-container">
 					<div class="tease-line-container">
-						<div class="line-break-container">
-							<div class="main">
-								<h2>{{ service.tease-line-part-1 }}</h2>
-							</div>
-						</div>
-						<div class="line-break-container">
-							<div class="main">
-								<h2>{{ service.tease-line-part-2 }}</h2>
-							</div>
+						<div class="main">
+							<h2>{{ service.tease-line-part-1 }}</h2>
 						</div>
 					</div>
 				</div>	

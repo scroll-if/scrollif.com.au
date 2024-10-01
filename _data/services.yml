@@ -1,7 +1,6 @@
 - name: "Single Page Websites"
   description: Get your business online quickly and easily with one of our single page websites.  Perfect for small businesses and sole traders.
-  tease-line-part-1: Beautiful websites, 
-  tease-line-part-2: made simple.
+  tease-line: Beautiful websites, made simple.
   background-image: /assets/images/single_page_websites.jpg
   icon-image: /assets/images/single_page_websites_icon.png
   url: /websites/single-page-websites
