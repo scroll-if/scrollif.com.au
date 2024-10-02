@@ -31,7 +31,7 @@
 					<div class="tease-line-container">
 						<div class="main">
 							<h2>{{ service.tease-line-part-1 }}
-							{% assign breakaftercomma = service.name | replace_first: ', ', 'breakspace' %}
+							{% assign breakaftercomma = service.tease-line | replace_first: ', ', 'breakspace' %}
 							{{ breakaftercomma | replace: ' ', '&nspb;' | replace: 'breakspace', ', ' }}
 							</h2>
 						</div>
