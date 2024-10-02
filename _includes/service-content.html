@@ -7,7 +7,7 @@
 					<div class="flex-container">
 						<div class="contents-container text-contents-container">
 							<div class="main reverse">
-								<h1 class="title">
+								<h1>
 								{% assign breaklastword = service.name | split: ' ' | reverse | join: ' ' | replace_first: ' ', ' brtaglinebreak ' %}
 								{{ breaklastword | split: ' ' | reverse | join: ' ' | replace_first: 'brtaglinebreak', '<br/>' }}</h1>
 								<p>{{ service.description }}</p>
