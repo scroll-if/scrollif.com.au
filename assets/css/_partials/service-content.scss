@@ -61,13 +61,13 @@
 		padding: var(--default-padding) calc(var(--default-padding) * 2);
 		text-align: center;
 		min-width: calc(300px - var(--default-padding));
-		flex-basis: 25%;
+		flex-basis: 33%;
 		flex-grow: 1;
 		text-align: center;
 	}
 	#services section.benefits img.benefits-image {
 		height: auto;
-	  	max-width: 100px;
+	  	max-width: 75px;
 	}
 
 /* CASE STUDIES */
