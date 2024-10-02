@@ -46,7 +46,7 @@
 		padding-top: calc(var(--default-padding) * 5);
 	}
 	#services section.benefits div.background div.tease-line-container {
-		padding: calc(calc(var(--default-padding) * 4) - 5vw) calc(var(--default-padding) * 2);
+		padding: calc(calc(var(--default-padding) * 4) - 5vw) calc(var(--default-padding) * 2) calc(var(--default-padding) * 2);
 		min-width: 320px;
 		max-width: 70%;
 	}
@@ -54,19 +54,20 @@
 		display: flex;
 		flex-direction: row;
 		justify-content: center;
-		align-items: center;
+		align-items: flex-start;
 		flex-wrap: wrap;
 	}
 	#services section.benefits div.benefits-box {
-		padding: var(--default-padding);
-		min-width: calc(320px - var(--default-padding));
-		flex-basis: 33%;
+		padding: var(--default-padding) calc(var(--default-padding) * 2);
+		text-align: center;
+		min-width: calc(300px - var(--default-padding));
+		flex-basis: 25%;
 		flex-grow: 1;
-		min-width: 320px;
+		text-align: center;
 	}
 	#services section.benefits img.benefits-image {
 		height: auto;
-	  	max-width: 155px;
+	  	max-width: 100px;
 	}
 
 /* CASE STUDIES */
