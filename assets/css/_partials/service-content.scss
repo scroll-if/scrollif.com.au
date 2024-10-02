@@ -50,6 +50,24 @@
 		min-width: 320px;
 		max-width: 70%;
 	}
+	#services section.benefits div.flex-container {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+	#services section.benefits div.benefits-box {
+		padding: var(--default-padding);
+		min-width: calc(320px - var(--default-padding));
+		flex-basis: 33%;
+		flex-grow: 1;
+		min-width: 320px;
+	}
+	#services section.benefits img.benefits-image {
+		height: auto;
+	  	max-width: 155px;
+	}
 
 /* CASE STUDIES */
 	#services section.case-studies div.background {
