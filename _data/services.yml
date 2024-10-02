@@ -4,6 +4,13 @@
   background-image: /assets/images/single_page_websites.jpg
   icon-image: /assets/images/single_page_websites_icon.png
   url: /websites/single-page-websites
+  benefits:
+  - name: "Responsive Web Design"
+    description: Description of responsive web design goes here.
+    icon-image: /assets/images/single_page_websites_icon.png
+  - name: "Browser Compatability"
+    description: Description of browser compatability goes here.
+    icon-image: /assets/images/multi_page_websites.jpg
 - name: "Multi Page Websites"
   description: Make a mark on the web with one of our multi page websites.  Suited to larger businesses that need to display a lot of content.
   tease-line: Business websites, supercharged.
@@ -48,7 +55,7 @@
   url: /consulting/operations
 - name: "Consulting: Branding"
   description: Like a makeup team and costume designer for your business.  Make a memorable first impression to your customers.
-  tease-line: Your business, dressed to immpress.
+  tease-line: Your business, dressed to impress.
   background-image: /assets/images/consulting_branding.jpg
   icon-image: /assets/images/consulting_branding_icon.png
   url: /consulting/branding
