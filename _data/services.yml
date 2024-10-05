@@ -23,6 +23,9 @@
   - name: "Ongoing Support"
     description: Has something in your business changed that should be reflected on your website? Want to add something fresh to liven up your website? Scroll If takes care of the upkeep and changes to your site.
     icon-image: /assets/images/checkmark_temp.png
+  - name: ""
+    description: 
+    icon-image: 
 - name: "Multi Page Websites"
   description: Make a mark on the web with one of our multi page websites.  Suited to larger businesses that need to display a lot of content.
   tease-line: Business websites, supercharged.
