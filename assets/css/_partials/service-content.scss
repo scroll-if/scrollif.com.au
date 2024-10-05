@@ -75,7 +75,7 @@
 		text-align: justify;
 	}
 
-/* CASE STUDIES */
+/* QUOTE */
 	#services section.quote div.background {
 		background-color: var(--color-primary);
 	}
@@ -88,40 +88,53 @@
         padding: calc(var(--default-padding) * 3) var(--default-padding);
     }
     #services section.quote div.background div.inner-flex-container {
+		display: flex;
+		flex-direction: column;
         flex-grow: 1;
         padding: calc(var(--default-padding) * 2);
+    }
+	#services section.quote div.background div.inner-flex-container div.opening-inverted-commas {
+		align-self: flex-start;
+	}
+	#services section.quote div.background div.inner-flex-container div.closing-inverted-commas {
+		align-self: flex-end;
+	}
+	#services section.quote div.background div.inverted-commas p {
+        color: var(--color-primary);
+        font-family: var(--font-primary);
+        font-weight: var(--font-weight-primary);
+        font-size: var(--font-xl);
+        font-style: normal;
+        margin: 0;
     }
     #services section.quote div.background div.quote-box {
         
     }
     #services section.quote div.background div.quote-box.quote {
-        margin-right: auto; 
-        margin-bottom: calc(var(--default-padding) * 2);
+        text-align: center;
     }
     #services section.quote div.background div.quote-box.author {
-    	max-width: 50%;
+    	max-width: 65%;
         margin-top: calc(var(--default-padding) * 2);
         margin-left: auto;
+        text-align: right;
     }
-    #services section.quote div.background div.quote-box div.quote p.quote-text {
+    #services section.quote div.background div.quote-box.quote p.quote-text {
         color: var(--color-white);
-        font-family: var(--font-primary);
-        font-weight: var(--font-weight-primary);
-        font-size: var(--font-l);
+        font-family: var(--font-secondary);
+        font-weight: var(--font-weight-secondary);
+        font-size: var(--font-m);
+        font-style: italic;
         margin: 0;
     }
-    #services section.quote div.background div.quote-box div.author p.author-name {
+    #services section.quote div.background div.quote-box.author p.author-name {
         color: var(--color-white);
         font-family: var(--font-secondary);
         font-weight: var(--font-weight-secondary);
         font-size: var(--font-xs);
-        font-style: normal;
     }
-    #services section.quote div.background div.quote-box div.author p.author-name span.author-business {
-        font-family: Arial;
-        color: var(--color-white);
-        font-size: var(--font-xs);
-        font-style: italic;
+    #services section.quote div.background div.quote-box.author p.author-name span.author-business {
+        font-size: var(--font-xxs);
         margin: 0;
     }
 
