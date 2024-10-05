@@ -43,14 +43,17 @@
 		background-color: var(--color-white);
 	}
 	#services section.benefits div.background div.contents-container {
-		padding-top: calc(var(--default-padding) * 5);
+		padding-top: calc(var(--default-padding) * 6);
 	}
+	/*
 	#services section.benefits div.background div.tease-line-container {
 		padding: calc(calc(var(--default-padding) * 4) - 5vw) calc(var(--default-padding) * 2) calc(var(--default-padding) * 2);
 		min-width: 320px;
 		max-width: 70%;
 	}
+	*/
 	#services section.benefits div.flex-container {
+		padding: 0 var(--default-padding);
 		display: flex;
 		flex-direction: row;
 		justify-content: center;
@@ -58,16 +61,18 @@
 		flex-wrap: wrap;
 	}
 	#services section.benefits div.benefits-box {
-		padding: var(--default-padding) calc(var(--default-padding) * 2);
+		padding: calc(var(--default-padding) * 2) var(--default-padding);
 		text-align: center;
 		min-width: calc(300px - var(--default-padding));
 		flex-basis: 33%;
 		flex-grow: 1;
-		text-align: center;
 	}
 	#services section.benefits img.benefits-image {
 		height: auto;
 	  	max-width: 75px;
+	}
+	#services section.benefits div.benefits-box p {
+		text-align: justify;
 	}
 
 /* CASE STUDIES */
