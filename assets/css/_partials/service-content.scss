@@ -88,12 +88,13 @@
         color: var(--color-primary);
         font-family: var(--font-primary);
         font-weight: var(--font-weight-primary);
-        font-size: var(--font-xl);
-        font-style: normal;
+        /* font-size: var(--font-xl); */
+        font-size: calc(30px + 2vw);
         margin: 0;
     }
     #services section.tease-line h2.tease-line-text {
         text-align: center;
+        font-size: calc(20px + 1vw);
         font-style: italic;
         margin: 0;
     }
