@@ -28,16 +28,6 @@
 		<div class="background">
 			<div class="max-width-container">
 				<div class="contents-container">
-					<!--
-					<div class="tease-line-container">
-						<div class="main">
-							<h2>{{ service.tease-line-part-1 }}
-							{% assign breakaftercomma = service.tease-line | replace_first: ', ', 'breakspace' %}
-							{{ breakaftercomma | replace: ' ', '&nbsp;' | replace: 'breakspace', ', ' }}
-							</h2>
-						</div>
-					</div>
-					-->
 					<div class="flex-container">
 						{% for benefit in service.benefits %}
 	                        <div class="benefits-box">
@@ -54,25 +44,21 @@
 		</div>
 	</section>
 	
-	<section class="quote">
+	<section class="tease-line">
 		<div class="background">
 			<div class="half-max-width-container">
-                <div class="quote-flex-container">
-                    <div class="inner-flex-container">
-                        <div class="inverted-commas opening-inverted-commas">
-                        	<p>"</p>
-                        </div>
-                    	<div class="quote-box quote">
-                        	<div class="main reverse">
-								<h2>
-								{% assign breakaftercomma = service.tease-line | replace_first: ', ', 'breakspace' %}
-								{{ breakaftercomma | replace: ' ', '&nbsp;' | replace: 'breakspace', ', ' }}
-								</h2>
-							</div>
-                    	</div>
-                    	<div class="inverted-commas closing-inverted-commas">
-                        	<p>"</p>
-                        </div>
+                <div class="flex-container">
+                    <div class="opening-inverted-commas">
+                    	<p class="inverted-commas">"</p>
+                    </div>
+                	<div class="main reverse">
+						<h2 class="tease-line-text">
+						{% assign breakaftercomma = service.tease-line | replace_first: ', ', 'breakspace' %}
+						{{ breakaftercomma | replace: ' ', '&nbsp;' | replace: 'breakspace', ', ' }}
+						</h2>
+					</div>
+                	<div class="closing-inverted-commas">
+                    	<p class="inverted-commas">"</p>
                     </div>
                 </div>
             </div>

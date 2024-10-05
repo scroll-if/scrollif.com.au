@@ -43,15 +43,8 @@
 		background-color: var(--color-white);
 	}
 	#services section.benefits div.background div.contents-container {
-		padding-top: calc(var(--default-padding) * 9);
+		padding: calc(var(--default-padding) * 9) 0 calc(var(--default-padding) * 3);
 	}
-	/*
-	#services section.benefits div.background div.tease-line-container {
-		padding: calc(calc(var(--default-padding) * 4) - 5vw) calc(var(--default-padding) * 2) calc(var(--default-padding) * 2);
-		min-width: 320px;
-		max-width: 70%;
-	}
-	*/
 	#services section.benefits div.flex-container {
 		padding: 0 var(--default-padding);
 		display: flex;
@@ -75,32 +68,23 @@
 		text-align: justify;
 	}
 
-/* QUOTE */
-	#services section.quote div.background {
+/* TEASE-LINE */
+	#services section.tease-line div.background {
 		background-color: var(--color-black);
 	}
-    #services section.quote div.background div.quote-flex-container {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        padding: calc(var(--default-padding) * 3) var(--default-padding) var(--default-padding);
-    }
-    #services section.quote div.background div.inner-flex-container {
+    #services section.tease-line div.flex-container {
 		display: flex;
 		flex-direction: column;
-        flex-grow: 1;
-        padding: calc(var(--default-padding) * 2);
+        padding: calc(var(--default-padding) * 5) calc(var(--default-padding) * 3) calc(var(--default-padding) * 3);
     }
-	#services section.quote div.background div.inner-flex-container div.opening-inverted-commas {
+	#services section.tease-line div.opening-inverted-commas {
 		align-self: flex-start;
 	}
-	#services section.quote div.background div.inner-flex-container div.closing-inverted-commas {
+	#services section.tease-line div.closing-inverted-commas {
 		align-self: flex-end;
 		margin-top: 30px;
 	}
-	#services section.quote div.background div.inverted-commas p {
+	#services section.tease-line p.inverted-commas {
         color: var(--color-primary);
         font-family: var(--font-primary);
         font-weight: var(--font-weight-primary);
@@ -108,37 +92,12 @@
         font-style: normal;
         margin: 0;
     }
-    #services section.quote div.background div.quote-box {
-        
-    }
-    #services section.quote div.background div.quote-box.quote {
+    #services section.tease-line h2.tease-line-text {
         text-align: center;
-    }
-    #services section.quote div.background div.quote-box.quote p.quote-text {
-        color: var(--color-white);
-        font-family: var(--font-secondary);
-        font-weight: var(--font-weight-secondary);
-        font-size: var(--font-m);
-        font-style: italic;
-        margin: 0;
-    }
-
-    #services section.quote div.background div.quote-box.quote h2 {
         font-style: italic;
         margin: 0;
     }
     
-
-
-
-
-
-
-
-
-
-
-
 /* PRICING */
 	#services section.pricing div.background {
 		background-color: var(--color-white);
