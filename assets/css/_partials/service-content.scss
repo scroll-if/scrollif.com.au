@@ -87,79 +87,43 @@
         flex-wrap: wrap;
         padding: calc(var(--default-padding) * 3) var(--default-padding);
     }
-
-
-
-
-        /* ELEMENT TAG */
-            #services section.quote div.background div.opening-inverted-commas {
-                align-self: flex-start;
-                margin: var(--default-padding) auto 0 var(--default-padding);
-            }
-            #services section.quote div.background div.closing-inverted-commas {
-                align-self: flex-end;
-                margin: 0 var(--default-padding) var(--default-padding) auto;
-            }
-            #services section.quote div.background code.inverted-comnmas {
-                display: block;
-                width: 60px;
-                background-color: var(--color-dark-grey);
-                color: var(--color-white);
-                font-size: var(--font-xl);
-                letter-spacing: -5px;
-                text-align: center;
-                padding:0 5px 5px 0;
-            }
-        /* DICTIONARY TEXT */
-            #services section.quote div.background div.inner-flex-container {
-                flex-grow: 1;
-                padding: calc(var(--default-padding) * 2);
-            }
-            #services section.quote div.background div.dictionary-box {
-                max-width: 175px;
-            }
-            #services section.quote div.background div.dictionary-box.first-word {
-                margin-right: auto; 
-                margin-bottom: calc(var(--default-padding) * 2);
-            }
-            #services section.quote div.background div.dictionary-box.second-word {
-                margin-top: calc(var(--default-padding) * 2);
-                margin-left: auto;
-            }
-            #services section.quote div.background div.dictionary-box p.word {
-                font-family: var(--font-primary);
-                font-weight: var(--font-weight-primary);
-                font-size: var(--font-xl);
-                margin: 0;
-            }
-            #services section.quote div.background div.first-word p.word {
-                color: var(--color-white);
-            }
-            #services section.quote div.background div.second-word p.word {
-                color: var(--color-primary);
-            }
-            #services section.quote div.background div.dictionary-box p.pronunciation {
-                font-family: Arial;
-                color: var(--color-white);
-                font-size: var(--font-xs);
-                font-style: italic;
-                margin: 0;
-            }
-            #services section.quote div.background div.dictionary-box span.word-class {
-                font-family: var(--font-secondary);
-                font-weight: var(--font-weight-secondary);
-                font-size: var(--font-xs);
-                font-style: normal;
-            }
-            #services section.quote div.background div.dictionary-box p.meaning {
-                font-family: var(--font-tertiary);
-                font-weight: var(--font-weight-tertiary);
-                color: var(--color-white);
-                font-size: var(--font-xxs);
-                font-style: italic;
-                margin: 3px 0;
-                border-top: var(--color-dark-grey) solid 1px;
-            }
+    #services section.quote div.background div.inner-flex-container {
+        flex-grow: 1;
+        padding: calc(var(--default-padding) * 2);
+    }
+    #services section.quote div.background div.quote-box {
+        
+    }
+    #services section.quote div.background div.quote-box.quote {
+        margin-right: auto; 
+        margin-bottom: calc(var(--default-padding) * 2);
+    }
+    #services section.quote div.background div.quote-box.author {
+    	max-width: 50%;
+        margin-top: calc(var(--default-padding) * 2);
+        margin-left: auto;
+    }
+    #services section.quote div.background div.quote-box div.quote p.quote-text {
+        color: var(--color-white);
+        font-family: var(--font-primary);
+        font-weight: var(--font-weight-primary);
+        font-size: var(--font-l);
+        margin: 0;
+    }
+    #services section.quote div.background div.quote-box div.author p.author-name {
+        color: var(--color-white);
+        font-family: var(--font-secondary);
+        font-weight: var(--font-weight-secondary);
+        font-size: var(--font-xs);
+        font-style: normal;
+    }
+    #services section.quote div.background div.quote-box div.author p.author-name span.author-business {
+        font-family: Arial;
+        color: var(--color-white);
+        font-size: var(--font-xs);
+        font-style: italic;
+        margin: 0;
+    }
 
 
 
