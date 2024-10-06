@@ -24,14 +24,14 @@
     description: Has something in your business changed that should be reflected on your website? Want to add something fresh to liven up your website? Scroll If takes care of the upkeep and changes to your site.
     icon-image: /assets/images/checkmark_temp.png
   how-it-works:
-  - name: "Responsive Web Design"
-    description: From small mobile devices to tablets and larger desktop computers, Scroll If's websites are built and optimised to display all content in a responsive and predictable manner.
+  - name: "Design"
+    description: Choose the colours, look, and feel of your new website.  Scroll If will work with you to ensure each element of your website comes together to be both functional and beautiful!
     icon-image: /assets/images/checkmark_temp.png
-  - name: "Browser Compatability"
-    description: Implementation of cross browser testing and careful coding practices ensure your website will function as intended across the variety of popular browsers and operating systems.
+  - name: "Development"
+    description: Let Scroll If take the plans and designs of your new website and turn it into reality.  Careful coding practices will ensure your website is functional across multiple popular web browsers and device sizes.
     icon-image: /assets/images/checkmark_temp.png
-  - name: "Hosting Services"
-    description: Take advantage of Scroll If's included web hosting options to get your website live on the internet. Link a Domain Name you have purchased to your website or simply have it published under a generic URL at no extra cost.
+  - name: "Launch"
+    description: With Scroll If's included web hosting, getting your website live in the internet is simple.  Use your own custom Domain Name and let Scroll If connect it to your new website.
     icon-image: /assets/images/checkmark_temp.png
 - name: "Multi Page Websites"
   description: Make a mark on the web with one of our multi page websites.  Suited to larger businesses that need to display a lot of content.
