@@ -120,25 +120,25 @@
 		background-color: var(--color-white);
 	}
 	#services section.how-it-works div.flex-container {
-		padding: var(--default-padding);
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 	}
 	#services section.how-it-works div.contents-box {
-		min-width: calc(320px - var(--default-padding));
+		min-width: 320px;
 		width: 100%;
 		padding: var(--default-padding);
 		display: flex;
 		flex-direction: column;
 	}
 	#services section.how-it-works div.inner-box {
-		min-width: calc(320px - calc(var(--default-padding) * 2));
+		min-width: calc(320px - var(--default-padding));
 		width: 60%;
 		padding: var(--default-padding);
 	}
-	#services section.how-it-works div.contents-box:nth-child(even) {
+	#services section.how-it-works div.contents-box:nth-child(even) div.inner-box {
+		align-self: flex-end;
 		text-align: right;
 	}
 	#services section.how-it-works div.contents-box img {
