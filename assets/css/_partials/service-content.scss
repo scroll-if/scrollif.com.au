@@ -75,14 +75,13 @@
     #services section.tease-line div.flex-container {
 		display: flex;
 		flex-direction: column;
-        padding: calc(var(--default-padding) * 5) calc(var(--default-padding) * 3) calc(var(--default-padding) * 3);
+        padding: calc(var(--default-padding) * 3);
     }
 	#services section.tease-line div.opening-inverted-commas {
 		align-self: flex-start;
 	}
 	#services section.tease-line div.closing-inverted-commas {
 		align-self: flex-end;
-		margin-top: 30px;
 	}
 	#services section.tease-line p.inverted-commas {
         color: var(--color-primary);
@@ -92,6 +91,9 @@
         font-size: calc(30px + 2vw);
         margin: 0;
     }
+	#services section.tease-line div.closing-inverted-commas p.inverted-commas {
+		transform: rotate(180deg) scaleX(-1);
+	}
     #services section.tease-line h2.tease-line-text {
         text-align: center;
         font-size: calc(20px + 1vw);
