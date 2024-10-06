@@ -127,13 +127,15 @@
 		align-items: center;
 	}
 	#services section.how-it-works div.contents-box {
-		min-width: 320px;
-		width: 75%;
+		min-width: calc(320px - var(--default-padding));
+		width: 100%;
 		padding: var(--default-padding);
+		display: flex;
+		flex-direction: column;
 	}
-	#services section.how-it-works div.contents-box {
-		min-width: 320px;
-		width: 75%;
+	#services section.how-it-works div.inner-box {
+		min-width: calc(320px - calc(var(--default-padding) * 2));
+		width: 60%;
 		padding: var(--default-padding);
 	}
 	#services section.how-it-works div.contents-box:nth-child(even) {
