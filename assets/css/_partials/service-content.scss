@@ -72,10 +72,24 @@
 	#services section.tease-line div.background {
 		background-color: var(--color-black);
 	}
+	div.slanted-top {
+		display:block;
+		width:100%;
+		border-style: solid;
+		border-width: 0 100vw 5vw 0;
+		border-color: transparent transparent var(--color-black) transparent;
+	}
+	div.slanted-bottom {
+		display:block;
+		width:100%;
+		border-style: solid;
+		border-width: 0 100vw 5vw 0;
+		border-color: transparent var(--color-black) transparent transparent;
+	}
     #services section.tease-line div.flex-container {
 		display: flex;
 		flex-direction: column;
-        padding: calc(var(--default-padding) * 3);
+        padding: 0 calc(var(--default-padding) * 3);
     }
 	#services section.tease-line div.opening-inverted-commas {
 		align-self: flex-start;
@@ -101,6 +115,22 @@
         margin: 0;
     }
     
+/* HOW-IT-WORKS */
+	#services section.how-it-works div.background {
+		background-color: var(--color-white);
+	}
+	#services section.how-it-works div.flex-container {
+		padding: var(--default-padding);
+	}
+	#services section.how-it-works div.contents-box {
+		min-width: 320px;
+		width: 70%;
+		padding: var(--default-padding);
+	}
+	#services section.how-it-works div.contents-box:nth-child(even) {
+		text-align: right;
+	}
+
 /* PRICING */
 	#services section.pricing div.background {
 		background-color: var(--color-white);
