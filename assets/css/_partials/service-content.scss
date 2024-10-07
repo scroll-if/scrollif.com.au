@@ -149,7 +149,10 @@
 		right: 40%;
 		width: 100%;
 		padding: var(--default-padding);
-		background-color: var(--color-dark-grey);
+		background-color: var(--color-light-grey);
+	}
+	#services section.how-it-works div.contents-box:nth-child(even) div.bottom-bar {
+		right: -40%;
 	}
 
 /* PRICING */
