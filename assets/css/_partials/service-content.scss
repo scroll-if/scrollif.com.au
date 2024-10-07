@@ -144,6 +144,13 @@
 	#services section.how-it-works div.contents-box img {
 		width: 100px;
 	}
+	#services section.how-it-works div.bottom-bar {
+		position: relative;
+		right: 40%;
+		width: 100%;
+		padding: var(--default-padding);
+		background-color: var(--color-dark-grey);
+	}
 
 /* PRICING */
 	#services section.pricing div.background {
