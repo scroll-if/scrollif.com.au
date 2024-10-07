@@ -27,12 +27,49 @@
 	<section class="info">
 		<div class="background">
 			<div class="max-width-container">
-				<div class="flex-container">
-					<div clas="main">
-						<h2>
+				<div class="tease-line-container">
+					<div class="main">
+						<h2 class="tease-line">
 						{% assign breakaftercomma = service.tease-line | replace_first: ', ', 'breakspace' %}
 						{{ breakaftercomma | replace: ' ', '&nbsp;' | replace: 'breakspace', ', ' }}
 						</h2>
+					</div>
+				</div>
+				<div class="flex-container">
+					<div class="inner-flex-container">
+						<div class="info-box">
+							<img class="info-icon" src="{{ site.url }}{{ benefit.icon-image }}" alt="{{ benefit.name }}"/>
+							<div class="info-text">
+								<div class="main">
+									<h3>Custom Design</h3>
+									<p>We will work with you to turn your vision into a reality.</p>
+									<p>Start from scratch, improve an existing design, or create a freash masterpiece!</p>
+								</div>
+							</div>
+						</div>
+						<div class="info-box">
+							<img class="info-icon" src="{{ site.url }}{{ benefit.icon-image }}" alt="{{ benefit.name }}"/>
+							<div class="info-text">
+								<div class="main">
+									<h3>Custom Design</h3>
+									<p>We will work with you to turn your vision into a reality.</p>
+									<p>Start from scratch, improve an existing design, or create a freash masterpiece!</p>
+								</div>
+							</div>
+						</div>
+						<div class="info-box">
+							<img class="info-icon" src="{{ site.url }}{{ benefit.icon-image }}" alt="{{ benefit.name }}"/>
+							<div class="info-text">
+								<div class="main">
+									<h3>Custom Design</h3>
+									<p>We will work with you to turn your vision into a reality.</p>
+									<p>Start from scratch, improve an existing design, or create a freash masterpiece!</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="inner-flex-container">
+						
 					</div>
 				</div>
 			</div>

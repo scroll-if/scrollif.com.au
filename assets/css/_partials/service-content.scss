@@ -38,6 +38,45 @@
 	  	max-width: 155px;
 	}
 
+/* INFO */
+	#services section.info div.tease-line-container {
+		padding: calc(var(--default-padding) * 2 );
+		margin-top: calc(100px - 2vw);
+	}
+	#services section.info div.flex-container {
+		display: flex;
+		flex-direction: row;
+	}
+	#services section.info div.inner-flex-container {
+		display: flex;
+		flex-direction: column;
+		flex-grow: 1;
+		flex-wrap: wrap;
+		flex-basis: 50%;
+		min-width: 320px;
+	}
+	#services section.info div.info-box {
+		display: flex;
+		flex-direction: row;
+		flex-grow: 1;
+		flex-basis: 50%;
+	}
+	#services section.info div.info-text {
+		display: flex;
+		flex-direction: column;
+		flex-grow: 1;
+	}
+	#services section.info img.info-icon {
+		height: auto;
+		width: 50px;
+	}
+	#services section.info {
+
+	}
+	#services section.info {
+		
+	}
+
 /* BENEFITS */
 	#services section.benefits div.background {
 		background-color: var(--color-white);
