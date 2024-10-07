@@ -28,11 +28,12 @@
 		<div class="background">
 			<div class="max-width-container">
 				<div class="flex-container">
-					<h2>
-					{% assign breakaftercomma = service.tease-line | replace_first: ', ', 'breakspace' %}
-					{{ breakaftercomma | replace: ' ', '&nbsp;' | replace: 'breakspace', ', ' }}
-					</h2>
-					
+					<div clas="main">
+						<h2>
+						{% assign breakaftercomma = service.tease-line | replace_first: ', ', 'breakspace' %}
+						{{ breakaftercomma | replace: ' ', '&nbsp;' | replace: 'breakspace', ', ' }}
+						</h2>
+					</div>
 				</div>
 			</div>
 		</div>
