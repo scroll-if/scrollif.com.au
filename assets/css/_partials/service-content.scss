@@ -77,13 +77,13 @@
 		background-repeat: no-repeat; 
 		background-size: cover; 
 		background-position: center;
-		padding: var(--default-padding);
 		flex-grow: 1;
 		text-align: center;
 	}
 	#services section.what div.inner-flex-container div.background-image div.tint {
 		height: 100%;
 		background-color: rgba(1, 1, 1, 0.8);
+		padding: var(--default-padding);
 	}
 	#services section.what {
 		
