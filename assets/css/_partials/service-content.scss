@@ -52,14 +52,14 @@
 	#services section.what div.flex-container {
 		display: flex;
 		flex-direction: column;
-		justify-content: ;
-		align-items: ;
+		justify-content: top;
+		align-items: center;
 	}
 	#services section.what div.inner-flex-container {
 		display: flex;
 		flex-direction: row;
-		justify-content: ;
-		align-items: ;
+		justify-content: flex-start;
+		align-items: center;
 		padding: var(--default-padding);
 	}
 
