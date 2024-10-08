@@ -51,27 +51,22 @@
 	}
 	#services section.what div.flex-container {
 		display: flex;
-		flex-direction: column;
-		justify-content: flex-start;
+		flex-direction: row;
+		justify-content: center;
 		align-items: center;
+		padding: calc(var(--default-padding) / 2);
 	}
 	#services section.what div.inner-flex-container {
 		display: flex;
 		flex-direction: row;
 		justify-content: flex-start;
 		align-items: center;
-		width: 100%;
-		padding: 0 var(--default-padding) var(--default-padding);
+		min-width: calc(320px - calc(var(--default-padding)* 2));
+		flex-basis: 25%;
+		flex-grow: 1;
+		padding: calc(var(--default-padding) / 2);
 		flex-wrap: wrap;
 	}
-
-	#services section.what div.inner-flex-container div.background {
-		background-color: var(--color-black);
-		padding: var(--default-padding);
-		flex-grow: 1;
-		min-width: calc(320px - var(--default-padding));
-		text-align: center;
-	}	
 	#services section.what div.inner-flex-container div.background-image {
 		background-color: var(--color-black);
 		background-repeat: no-repeat; 
