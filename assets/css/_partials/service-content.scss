@@ -38,28 +38,44 @@
 	  	max-width: 155px;
 	}
 
-/* INFO */
-	#services section.info div.tease-line-container {
+/* WHAT */
+	#services section.what div.tease-line-container {
 		padding: calc(var(--default-padding) * 2 );
 		margin-top: calc(100px - 2vw);
 	}
+	#services section.what div.tease-line-container h2 {
+	 	font-size: calc(20px + 1vw);
+	}
+
+/* INFO */
+	
 	#services section.info div.flex-container {
 		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
+		flex-direction: column;
+		padding: 0 var(--default-padding) calc(var(--default-padding) * 6);
 	}
 	#services section.info div.inner-flex-container {
 		display: flex;
 		flex-direction: column;
 		flex-grow: 1;
-		flex-basis: 50%;
-		min-width: 320px;
 	}
 	#services section.info div.info-box {
 		display: flex;
 		flex-direction: row;
 		justify-content: flex-start;
 		align-items: center;
+  		width: 100%;
+  		max-width: calc(600px - calc(var(--default-padding)*2));
+  		background: linear-gradient(var(--color-primary),var(--color-primary)) top left;
+			background-size: 5px 100%;
+			background-repeat:no-repeat;
+		margin: var(--default-padding) 0;
+	}
+	#services section.info div.info-box:nth-child(2) {
+		align-self: center;
+	}
+	#services section.info div.info-box:nth-child(3) {
+		align-self: flex-end;
 	}
 	#services section.info div.info-text {
 
@@ -71,7 +87,7 @@
 	}
 	#services section.info img.impact-image {
 		width: 100%;
-		height: auto;
+  height: 50px;
 	}
 	#services section.info {
 		
@@ -82,7 +98,7 @@
 		background-color: var(--color-white);
 	}
 	#services section.benefits div.background div.contents-container {
-		padding: calc(var(--default-padding) * 9) 0 calc(var(--default-padding) * 3);
+		padding: calc(var(--default-padding) * 3) 0;
 	}
 	#services section.benefits div.flex-container {
 		padding: 0 var(--default-padding);
