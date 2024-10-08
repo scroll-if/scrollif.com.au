@@ -44,7 +44,7 @@
 	}
 	#services section.what div.tease-line-container {
 		padding: calc(var(--default-padding) * 2 );
-		margin-top: calc(75 + 2vw);
+		margin-top: calc(75px + 2vw);
 	}
 	#services section.what div.tease-line-container h2 {
 	 	font-size: calc(20px + 1vw);
@@ -57,7 +57,7 @@
 		padding: calc(var(--default-padding) / 2);
 		flex-wrap: wrap;
 	}
-	#services section.what div.flex-container {
+	#services section.what div.inside-flex-container {
 		display: flex;
 		flex-direction: row;
 		justify-content: center;
@@ -71,7 +71,7 @@
 		flex-direction: row;
 		justify-content: flex-start;
 		align-items: center;
-		min-width: calc(320px - calc(var(--default-padding)* 2));
+		min-width: calc(250px - calc(var(--default-padding)* 2));
 		flex-basis: 25%;
 		flex-grow: 1;
 		padding: calc(var(--default-padding) / 2) calc(var(--default-padding) / 2) calc(var(--default-padding)* 2);
