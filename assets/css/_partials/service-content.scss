@@ -39,6 +39,9 @@
 	}
 
 /* WHAT */
+	#services section.info div.background {
+		background-color: var(--color-white);
+	}
 	#services section.what div.tease-line-container {
 		padding: calc(var(--default-padding) * 2 );
 		margin-top: calc(100px - 2vw);
@@ -46,9 +49,43 @@
 	#services section.what div.tease-line-container h2 {
 	 	font-size: calc(20px + 1vw);
 	}
+	#services section.what div.flex-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: ;
+		align-items: ;
+	}
+	#services section.what div.inner-flex-container {
+		display: flex;
+		flex-direction: row;
+		justify-content: ;
+		align-items: ;
+		padding: var(--default-padding);
+	}
+
+	#services section.what div.inner-flex-container div.background {
+		background-color: var(--color-dark-grey);
+	}	
+
+	#services section.what {
+		
+	}
+
+	#services section.what {
+		
+	}
+
+	#services section.what {
+		
+	}
+
+
+
 
 /* INFO */
-	
+	#services section.info div.background {
+		background-color: var(--color-white);
+	}
 	#services section.info div.flex-container {
 		display: flex;
 		flex-direction: column;
