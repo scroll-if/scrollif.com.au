@@ -61,7 +61,7 @@
 	}
 	#services section.what div.flxcontainer div.text-box {
 		padding: var(--default-padding);
-		min-width: calc(320px - padding: var(--default-padding));
+		min-width: calc(320px - var(--default-padding));
 		flex-grow: 1;
     	flex-basis: 50%;
 	}
