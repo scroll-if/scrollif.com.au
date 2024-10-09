@@ -51,7 +51,7 @@
 	}
 
 
-	#services section.info div.flxcontainer {
+	#services section.what div.flxcontainer {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -59,13 +59,13 @@
 		padding: var(--default-padding);
 		flex-wrap: wrap;
 	}
-	#services section.info div.flxcontainer div.text-box {
+	#services section.what div.flxcontainer div.text-box {
 		padding: var(--default-padding);
 	}
-	#services section.info div.flxcontainer div.image-box {
+	#services section.what div.flxcontainer div.image-box {
 		padding: var(--default-padding);
 	}
-	#services section.info div.flxcontainer div.image-box img {
+	#services section.what div.flxcontainer div.image-box img {
 		height: auto;
 		width: 100%;
 	}
