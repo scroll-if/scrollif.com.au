@@ -56,21 +56,24 @@
 		flex-direction: row;
 		justify-content: center;
 		align-items: flex-start;
-		padding: var(--default-padding);
 		flex-wrap: wrap;
 	}
 	#services section.what div.flxcontainer div.text-box {
 		padding: var(--default-padding);
-		margin: var(--default-padding) 0;
-		min-width: calc(320px - var(--default-padding));
+		min-width: 320px;
 		flex-grow: 1;
     	flex-basis: 50%;
 	}
 	#services section.what div.flxcontainer div.explanation {
-		padding: var(--default-padding);
-		background: linear-gradient(var(--color-primary),var(--color-primary)) top left;
+		padding: 0 var(--default-padding);
+		margin-top: calc(var(--default-padding)* 2);
+		background: linear-gradient(var(--color-black),var(--color-black)) top left;
 			background-size: 5px 100%;
 			background-repeat:no-repeat;
+	}
+
+	#services section.what div.flxcontainer p.power {
+		font-size: var(--font-s);
 	}
 	#services section.what div.flxcontainer div.image-box {
 		flex-grow: 1;
