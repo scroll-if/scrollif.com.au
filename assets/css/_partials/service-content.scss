@@ -43,8 +43,8 @@
 		background-color: var(--color-white);
 	}
 	#services section.what div.tease-line-container {
-		padding: calc(var(--default-padding) * 2 );
-		margin-top: calc(75px + 2vw);
+		padding: 0 calc(var(--default-padding) * 2 );
+		margin: calc(135px + 2vw) 0 2vw;
 	}
 	#services section.what div.tease-line-container h2.tease-line {
 	 	font-size: calc(20px + 1vw);
@@ -57,10 +57,11 @@
 		justify-content: center;
 		align-items: flex-start;
 		flex-wrap: wrap;
+		padding: var(--default-padding);
 	}
 	#services section.what div.flxcontainer div.text-box {
 		padding: var(--default-padding);
-		min-width: 320px;
+		min-width: calc(320px - padding: var(--default-padding));
 		flex-grow: 1;
     	flex-basis: 50%;
 	}
@@ -78,6 +79,7 @@
 	#services section.what div.flxcontainer div.image-box {
 		flex-grow: 1;
     	flex-basis: 50%;
+		padding: var(--default-padding);
 	}
 	#services section.what div.flxcontainer div.image-box img {
 		height: auto;
