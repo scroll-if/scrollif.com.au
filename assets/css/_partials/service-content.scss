@@ -46,14 +46,14 @@
 		padding: calc(var(--default-padding) * 2 );
 		margin-top: calc(75px + 2vw);
 	}
-	#services section.what div.tease-line-container h2 {
+	#services section.what div.tease-line-container p.tease-line {
 	 	font-size: calc(20px + 1vw);
 	}
 
 
 	#services section.what div.flxcontainer {
 		display: flex;
-		flex-direction: column;
+		flex-direction: row;
 		justify-content: center;
 		align-items: flex-start;
 		padding: var(--default-padding);
@@ -61,9 +61,19 @@
 	}
 	#services section.what div.flxcontainer div.text-box {
 		padding: var(--default-padding);
+		margin: var(--default-padding) 0;
+		min-width: calc(320px - var(--default-padding));
+		flex-grow: 1;
+    	flex-basis: 50%;
+	}
+	#services section.what div.flxcontainer div.explanation {
+		background: linear-gradient(var(--color-primary),var(--color-primary)) top left;
+			background-size: 5px 100%;
+			background-repeat:no-repeat;
 	}
 	#services section.what div.flxcontainer div.image-box {
-		padding: var(--default-padding);
+		flex-grow: 1;
+    	flex-basis: 50%;
 	}
 	#services section.what div.flxcontainer div.image-box img {
 		height: auto;
@@ -115,8 +125,9 @@
 		background-color: rgba(1, 1, 1, 0.8);
 		padding: var(--default-padding);
 	}
-	#services section.what h3 {
-		margin: var(--h3-margin-bottom);
+	#services section.what p.step-callout {
+		margin: var(--default-padding);
+		font-size: var(--font-s);
 	}
 
 	#services section.what {

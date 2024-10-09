@@ -29,16 +29,26 @@
 			<div class="max-width-container">
 				<div class="tease-line-container">
 					<div class="main">
-						<h2 class="tease-line">
+						<p class="tease-line">
 						{% assign breakaftercomma = service.tease-line | replace_first: ', ', 'breakspace' %}
 						{{ breakaftercomma | replace: ' ', '&nbsp;' | replace: 'breakspace', ', ' }}
-						</h2>
+						</p>
 					</div>
 				</div>
 				<div class="flxcontainer">
 					<div class="text-box">
-						<div class="main">
-							<p>test</p>
+						<div class="shoutout-box">
+							<div class="main">
+								<p>Empower your business to reach a broader audience.</p>
+								<p>Establish credibility with a strong online presence.</p>
+							</div>
+						</div>
+						<div class="explanation">
+							<div class="main">
+								<p>Single page websites are perfect for smaller businesses that need to make a large statement.</p>
+								<p>Avoid visitors to your website getting lost in multiple layers of navigation or stuck in an endless search for what they need.</p>
+								<p>Single page websites naturally guide visitors to browse through the content in a predetermined order, which gives you more control over what information is provided to the user before they move on to the next section of your website.</p>
+							</div>
 						</div>
 					</div>
 					<div class="image-box">
@@ -51,7 +61,7 @@
 							<div class="background-image" style="background-image: url('{{ site.url }}{{ service.background-image }}');">
 								<div class="tint">
 									<div class="main reverse">
-										<h3>Inspire</h3>
+										<p class="step-callout">Inspire</p>
 									</div>
 								</div>
 							</div>
@@ -63,7 +73,7 @@
 							<div class="background-image" style="background-image: url('{{ site.url }}{{ service.background-image }}');">
 								<div class="tint">
 									<div class="main reverse">
-										<h3>Create</h3>
+										<p class="step-callout">Create</p>
 									</div>
 								</div>
 							</div>
@@ -77,7 +87,7 @@
 							<div class="background-image" style="background-image: url('{{ site.url }}{{ service.background-image }}');">
 								<div class="tint">
 									<div class="main reverse">
-										<h3>Align</h3>
+										<p class="step-callout">Align</p>
 									</div>
 								</div>
 							</div>
@@ -89,7 +99,7 @@
 							<div class="background-image" style="background-image: url('{{ site.url }}{{ service.background-image }}');">
 								<div class="tint">
 									<div class="main reverse">
-										<h3>Launch</h3>
+										<p class="step-callout">Launch</p>
 									</div>
 								</div>
 							</div>
