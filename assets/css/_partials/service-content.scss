@@ -46,7 +46,7 @@
 		padding: calc(var(--default-padding) * 2 );
 		margin-top: calc(75px + 2vw);
 	}
-	#services section.what div.tease-line-container p.tease-line {
+	#services section.what div.tease-line-container h2.tease-line {
 	 	font-size: calc(20px + 1vw);
 	}
 
@@ -67,6 +67,7 @@
     	flex-basis: 50%;
 	}
 	#services section.what div.flxcontainer div.explanation {
+		padding: var(--default-padding);
 		background: linear-gradient(var(--color-primary),var(--color-primary)) top left;
 			background-size: 5px 100%;
 			background-repeat:no-repeat;
@@ -125,7 +126,7 @@
 		background-color: rgba(1, 1, 1, 0.8);
 		padding: var(--default-padding);
 	}
-	#services section.what p.step-callout {
+	#services section.what h3.step-callout {
 		margin: var(--default-padding);
 		font-size: var(--font-s);
 	}
