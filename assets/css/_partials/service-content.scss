@@ -49,6 +49,32 @@
 	#services section.what div.tease-line-container h2 {
 	 	font-size: calc(20px + 1vw);
 	}
+
+
+	#services section.info div.flxcontainer {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+		padding: var(--default-padding);
+		flex-wrap: wrap;
+	}
+	#services section.info div.text-box {
+		padding: var(--default-padding);
+	}
+	#services section.info div.image-box {
+		padding: var(--default-padding);
+	}
+	#services section.info div.image-box img {
+		height: auto;
+		width: 100%;
+	}
+
+
+
+
+
+
 	#services section.what div.flex-container {
 		display: flex;
 		flex-direction: row;
