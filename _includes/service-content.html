@@ -50,14 +50,27 @@
 								<p>Single page websites are perfect for small businesses that want to make a large statement!</p>
 								<p>Avoid visitors to your website getting lost in multiple layers of navigation or stuck in an endless search for what they need.</p>
 								<p>Single page websites naturally guide visitors through your content smoothly, and gives you control over the story you tell as they browse your site.</p>
-								<a class="button" href="{{ site.url }}/{{ page.title }}#contact">Get a Quote</a>
 							</div>
+						</div>
+						<div class="main">
+							<a class="button" href="{{ site.url }}/{{ page.title }}#contact">Get a Quote</a>
+							<a class="button highlight" href="{{ site.url }}/{{ page.title }}#contact">Get a Quote</a>
 						</div>
 					</div>
 					<div class="image-box">
 						<img class="impact-image" src="{{ site.url }}/assets/images/beautiful_websites_made_simple.jpg" alt="Beautiful Websites, Made Simple" />
 					</div>
 				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+
+	<section class="what">
+		<div class="background">
+			<div class="max-width-container">
 				<div class="flex-container">
 					<div class="inside-flex-container">
 						<div class="inner-flex-container">
@@ -115,7 +128,35 @@
 			</div>
 		</div>
 	</section>
-	
+
+
+
+	<section class="tease-line">
+		<div class="slanted-top">
+		</div>
+		<div class="background">
+			<div class="half-max-width-container">
+                <div class="flex-container">
+                    <div class="opening-inverted-commas">
+                    	<p class="inverted-commas">"</p>
+                    </div>
+                	<div class="main reverse">
+						<h2 class="tease-line-text">
+						{% assign breakaftercomma = service.tease-line | replace_first: ', ', 'breakspace' %}
+						{{ breakaftercomma | replace: ' ', '&nbsp;' | replace: 'breakspace', ', ' }}
+						</h2>
+					</div>
+                	<div class="closing-inverted-commas">
+                    	<p class="inverted-commas">"</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slanted-bottom">
+		</div>
+	</section>
+
+
 	<section class="benefits">
 		<div class="background">
 			<div class="max-width-container">
@@ -180,30 +221,7 @@
 		</div>
 	</section>
 	
-	<section class="tease-line">
-		<div class="slanted-top">
-		</div>
-		<div class="background">
-			<div class="half-max-width-container">
-                <div class="flex-container">
-                    <div class="opening-inverted-commas">
-                    	<p class="inverted-commas">"</p>
-                    </div>
-                	<div class="main reverse">
-						<h2 class="tease-line-text">
-						{% assign breakaftercomma = service.tease-line | replace_first: ', ', 'breakspace' %}
-						{{ breakaftercomma | replace: ' ', '&nbsp;' | replace: 'breakspace', ', ' }}
-						</h2>
-					</div>
-                	<div class="closing-inverted-commas">
-                    	<p class="inverted-commas">"</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="slanted-bottom">
-		</div>
-	</section>
+	
 
 
 	<section class="how-it-works">

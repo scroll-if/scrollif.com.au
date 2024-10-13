@@ -57,7 +57,7 @@
 		justify-content: center;
 		align-items: flex-start;
 		flex-wrap: wrap;
-		padding: var(--default-padding);
+		padding: var(--default-padding) var(--default-padding) calc(var(--default-padding)* 4);
 	}
 	#services section.what div.flxcontainer div.text-box {
 		padding: var(--default-padding);
@@ -84,7 +84,9 @@
 		height: auto;
 		width: 100%;
 	}
-
+	#services section.what div.flxcontainer  a.button {
+	    margin-right: 7.5px;
+	}
 
 
 
