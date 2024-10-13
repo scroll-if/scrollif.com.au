@@ -172,7 +172,7 @@
     .main a.button.highlight, 
 	.main input.button.highlight {
         background-color: var(--color-primary);
-        color: var(--color-black);
+        color: rgb(1,1,1);
     }
     html:not(.can-touch) .main a.button.highlight:hover, 
     html:not(.can-touch) .main a.button.highlight:focus,
@@ -184,12 +184,12 @@
     .main.reverse form input,
 	.main.reverse form textarea {
 		background-color: var(--color-white);
-		color: var(--color-black);
+		color: rgb(1,1,1);
 	}
     .main.reverse a.button, 
 	.main.reverse input.button {
         background-color: var(--color-white);
-        color: var(--color-black);
+        color: rgb(1,1,1);
     }
     html:not(.can-touch) .main.reverse a.button:hover, 
     html:not(.can-touch) .main.reverse a.button:focus,
@@ -201,7 +201,7 @@
     .main.reverse a.button.highlight, 
 	.main.reverse input.button.highlight {
         background-color: var(--color-primary);
-        color: var(--color-black);
+        color: rgb(1,1,1);
     }
     html:not(.can-touch) .main.reverse a.button.highlight:hover, 
     html:not(.can-touch) .main.reverse a.button.highlight:focus,
