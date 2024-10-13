@@ -79,6 +79,7 @@
 	#services section.what div.flxcontainer div.image-box {
 		flex-grow: 1;
     	flex-basis: 50%;
+    	padding: var(--default-padding) 0;
 	}
 	#services section.what div.flxcontainer div.image-box img {
 		height: auto;
@@ -116,7 +117,7 @@
 		min-width: calc(250px - calc(var(--default-padding)* 2));
 		flex-basis: 25%;
 		flex-grow: 1;
-		padding: calc(var(--default-padding) / 2) calc(var(--default-padding) / 2) calc(var(--default-padding)* 2);
+		padding: calc(var(--default-padding) / 2);
 		flex-wrap: wrap;
 	}
 	#services section.what div.inner-flex-container div.background-image {
