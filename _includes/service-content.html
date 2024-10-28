@@ -11,8 +11,8 @@
 								{% assign breaklastword = service.name | split: ' ' | reverse | join: ' ' | replace_first: ' ', ' brtaglinebreak ' %}
 								{{ breaklastword | split: ' ' | reverse | join: ' ' | replace_first: 'brtaglinebreak', '<br/>' }}</h1>
 								<p>{{ service.description }}</p>
-								<a class="button highlight" href="{{ site.url }}/{{ page.title }}#pricing">See Pricing</a>
-								<a class="button" href="{{ site.url }}/{{ page.title }}#benefits">Learn More</a>
+								<a class="button highlight" href="{{ site.url }}/{{ page.url }}#pricing">See Pricing</a>
+								<a class="button" href="{{ site.url }}/{{ page.url }}#benefits">Learn More</a>
 							</div>
 						</div>
 						<div class="contents-container">
@@ -53,8 +53,8 @@
 							</div>
 						</div>
 						<div class="main">
-							<a class="button" href="{{ site.url }}/{{ page.title }}#contact">Get a Quote</a>
-							<a class="button highlight" href="{{ site.url }}/{{ page.title }}#contact">Get a Quote</a>
+							<a class="button" href="{{ site.url }}/{{ page.url }}#contact">Get a Quote</a>
+							<a class="button highlight" href="{{ site.url }}/{{ page.url }}#contact">Benefits</a>
 						</div>
 					</div>
 					<div class="image-box">
