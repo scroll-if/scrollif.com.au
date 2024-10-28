@@ -38,20 +38,18 @@
 	  	max-width: 155px;
 	}
 
-/* WHAT */
-	#services section.info div.background {
+/* INTRO */
+	#services section.intro div.background {
 		background-color: var(--color-white);
 	}
-	#services section.what div.tease-line-container {
+	#services section.intro div.tease-line-container {
 		padding: 0 calc(var(--default-padding) * 2 );
 		margin: calc(135px + 2vw) 0 2vw;
 	}
-	#services section.what div.tease-line-container h2.tease-line {
+	#services section.intro div.tease-line-container h2.tease-line {
 	 	font-size: calc(20px + 1vw);
 	}
-
-
-	#services section.what div.flxcontainer {
+	#services section.intro div.flexcontainer {
 		display: flex;
 		flex-direction: row;
 		justify-content: center;
@@ -59,13 +57,19 @@
 		flex-wrap: wrap;
 		padding: var(--default-padding) var(--default-padding) calc(var(--default-padding)* 4);
 	}
-	#services section.what div.flxcontainer div.text-box {
+	#services section.intro div.flexcontainer div.text-box {
 		padding: var(--default-padding);
 		min-width: calc(320px - var(--default-padding));
 		flex-grow: 1;
     	flex-basis: 50%;
 	}
-	#services section.what div.flxcontainer div.explanation {
+	#services section.intro div.flexcontainer div.shoutout-box {
+
+	}
+	#services section.intro div.flexcontainer p.shoutout {
+		font-size: var(--font-s);
+	}
+	#services section.intro div.flexcontainer div.explanation-box {
 		padding: 0 var(--default-padding);
 		margin-top: calc(var(--default-padding)* 2);
 		background: linear-gradient(var(--color-black),var(--color-black)) top left;
@@ -73,22 +77,20 @@
 			background-repeat:no-repeat;
 	}
 
-	#services section.what div.flxcontainer p.power {
-		font-size: var(--font-s);
+
+	#services section.intro div.flexcontainer a.button {
+	    margin-right: 7.5px;
 	}
-	#services section.what div.flxcontainer div.image-box {
+
+	#services section.intro div.flexcontainer div.image-box {
 		flex-grow: 1;
     	flex-basis: 50%;
     	padding: var(--default-padding) 0;
 	}
-	#services section.what div.flxcontainer div.image-box img {
+	#services section.intro div.flexcontainer div.image-box img.impact-image {
 		height: auto;
 		width: 100%;
 	}
-	#services section.what div.flxcontainer  a.button {
-	    margin-right: 7.5px;
-	}
-
 
 
 
@@ -137,11 +139,9 @@
 		margin: var(--default-padding);
 		font-size: var(--font-s);
 	}
-
 	#services section.what {
-		
-	}
 
+	}
 	#services section.what {
 		
 	}
@@ -150,6 +150,7 @@
 
 
 /* INFO */
+
 	#services section.info div.background {
 		background-color: var(--color-white);
 	}
