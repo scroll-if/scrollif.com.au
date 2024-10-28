@@ -92,36 +92,36 @@
 		width: 100%;
 	}
 
-/* TEASE-LINE */
-	#services section.tease-line div.background {
+/* QUOTE */
+	#services section.quote div.background {
 		background-color: var(--color-black);
 	}
-	#services section.tease-line div.slanted-top {
+	#services section.quote div.slanted-top {
 		display:block;
 		width:100%;
 		border-style: solid;
 		border-width: 0 100vw 5vw 0;
 		border-color: transparent transparent var(--color-black) transparent;
 	}
-	#services section.tease-line div.slanted-bottom {
+	#services section.quote div.slanted-bottom {
 		display:block;
 		width:100%;
 		border-style: solid;
 		border-width: 0 100vw 5vw 0;
 		border-color: transparent var(--color-black) transparent transparent;
 	}
-    #services section.tease-line div.flex-container {
+    #services section.quote div.flex-container {
 		display: flex;
 		flex-direction: column;
         padding: 0 calc(var(--default-padding) * 3);
     }
-	#services section.tease-line div.opening-inverted-commas {
+	#services section.quote div.opening-inverted-commas {
 		align-self: flex-start;
 	}
-	#services section.tease-line div.closing-inverted-commas {
+	#services section.quote div.closing-inverted-commas {
 		align-self: flex-end;
 	}
-	#services section.tease-line p.inverted-commas {
+	#services section.quote p.inverted-commas {
         color: var(--color-primary);
         font-family: var(--font-primary);
         font-weight: var(--font-weight-primary);
@@ -129,10 +129,10 @@
         font-size: calc(30px + 2vw);
         margin: 0;
     }
-	#services section.tease-line div.closing-inverted-commas p.inverted-commas {
+	#services section.quote div.closing-inverted-commas p.inverted-commas {
 		transform: rotate(180deg) scaleX(-1);
 	}
-    #services section.tease-line h2.tease-line-text {
+    #services section.quote h2.quote-text {
         text-align: center;
         font-size: calc(20px + 1vw);
         font-style: italic;

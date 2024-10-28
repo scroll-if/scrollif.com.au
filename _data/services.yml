@@ -1,36 +1,43 @@
 - name: "Single Page Websites"
-  description: Get your business online quickly and easily with one of our single page websites.  Perfect for small businesses and sole traders.
-  tease-line: Beautiful websites, made simple.
-  background-image: /assets/images/single_page_websites.jpg
-  icon-image: /assets/images/single_page_websites_icon.png
   url: /websites/single-page-websites
+  background-image: /assets/images/single_page_websites.jpg
+  description: Get your business online quickly and easily with one of our single page websites.  Perfect for small businesses and sole traders.
+  icon-image: /assets/images/single_page_websites_icon.png
+  tease-line: Beautiful websites, made simple.
+  shoutouts:
+  - name: Empower your business to reach a broader audience.
+  - name: Establish credibility with a strong online presence.
+  explanations:
+  - name: Single page websites are perfect for small businesses that want to make a large statement!
+  - name: Avoid visitors to your website getting lost in multiple layers of navigation or stuck in an endless search for what they need.
+  - name: Single page websites naturally guide visitors through your content smoothly, and gives you control over the story you tell as they browse your site.
   benefits:
-  - name: "Responsive Web Design"
+  - name: Responsive Web Design
     description: From small mobile devices to tablets and larger desktop computers, Scroll If's websites are built and optimised to display all content in a responsive and predictable manner.
     icon-image: /assets/images/checkmark_temp.png
-  - name: "Browser Compatability"
+  - name: Browser Compatability
     description: Implementation of cross browser testing and careful coding practices ensure your website will function as intended across the variety of popular browsers and operating systems.
     icon-image: /assets/images/checkmark_temp.png
-  - name: "Hosting Services"
+  - name: Hosting Services
     description: Take advantage of Scroll If's included web hosting options to get your website live on the internet. Link a Domain Name you have purchased to your website or simply have it published under a generic URL at no extra cost.
     icon-image: /assets/images/checkmark_temp.png
-  - name: "Unique Look & Feel"
+  - name: Unique Look & Feel
     description: Scroll If can encorporate your ideas into the design process of your website to give you the website of your dreams, or start completely from scratch and build it from the ground up.
     icon-image: /assets/images/checkmark_temp.png
-  - name: "SEO & Analytics"
+  - name: SEO & Analytics
     description: Get monthly reports derived using Google Analytics to understand more about the visitors to your website. Scroll If's coding utilises organic SEO to help increase your website's online presence.
     icon-image: /assets/images/checkmark_temp.png
-  - name: "Ongoing Support"
+  - name: Ongoing Support
     description: Has something in your business changed that should be reflected on your website? Want to add something fresh to liven up your website? Scroll If takes care of the upkeep and changes to your site.
     icon-image: /assets/images/checkmark_temp.png
   how-it-works:
-  - name: "Design"
+  - name: Design
     description: Choose the colours, look, and feel of your new website.  Scroll If will work with you to ensure each element of your website comes together to be both functional and beautiful!
     icon-image: /assets/images/checkmark_temp.png
-  - name: "Development"
+  - name: Development
     description: Let Scroll If take the plans and designs of your new website and turn it into reality.  Careful coding practices will ensure your website is functional across multiple popular web browsers and device sizes.
     icon-image: /assets/images/checkmark_temp.png
-  - name: "Launch"
+  - name: Launch
     description: With Scroll If's included web hosting, getting your website live in the internet is simple.  Use your own custom Domain Name and let Scroll If connect it to your new website.
     icon-image: /assets/images/checkmark_temp.png
 - name: "Multi Page Websites"

@@ -40,16 +40,16 @@
 						<div class="shoutout-box">
 							<div class="main">
 								<ul>
-									<li><p class="shoutout">Empower your business to reach a broader audience.</p></li>
-									<li><p class="shoutout">Establish credibility with a strong online presence.</p></li>
+									{% for shoutout in service.shoutouts %}
+									<li><p class="shoutout">{{ shoutout.name }}</p></li>
+									{% endfor %}
 								</ul>
 							</div>
 						</div>
 						<div class="explanation-box">
 							<div class="main">
-								<p>Single page websites are perfect for small businesses that want to make a large statement!</p>
-								<p>Avoid visitors to your website getting lost in multiple layers of navigation or stuck in an endless search for what they need.</p>
-								<p>Single page websites naturally guide visitors through your content smoothly, and gives you control over the story you tell as they browse your site.</p>
+								{% for explanation in service.explanations %}
+								<p>{{ explanation.name }}</p>
 							</div>
 						</div>
 						<div class="main">
@@ -65,7 +65,7 @@
 		</div>
 	</section>
 
-	<section class="tease-line">
+	<section class="quote">
 		<div class="slanted-top">
 		</div>
 		<div class="background">
@@ -75,7 +75,7 @@
                     	<p class="inverted-commas">"</p>
                     </div>
                 	<div class="main reverse">
-						<h2 class="tease-line-text">
+						<h2 class="quote-text">
 						{% assign breakaftercomma = service.tease-line | replace_first: ', ', 'breakspace' %}
 						{{ breakaftercomma | replace: ' ', '&nbsp;' | replace: 'breakspace', ', ' }}
 						</h2>
@@ -91,7 +91,7 @@
 	</section>
 
 
-	<section class="benefits">
+	<section id="benefits" class="benefits">
 		<div class="background">
 			<div class="max-width-container">
 				<div class="contents-container">
