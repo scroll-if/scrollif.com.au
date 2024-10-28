@@ -92,9 +92,89 @@
 		width: 100%;
 	}
 
+/* TEASE-LINE */
+	#services section.tease-line div.background {
+		background-color: var(--color-black);
+	}
+	#services section.tease-line div.slanted-top {
+		display:block;
+		width:100%;
+		border-style: solid;
+		border-width: 0 100vw 5vw 0;
+		border-color: transparent transparent var(--color-black) transparent;
+	}
+	#services section.tease-line div.slanted-bottom {
+		display:block;
+		width:100%;
+		border-style: solid;
+		border-width: 0 100vw 5vw 0;
+		border-color: transparent var(--color-black) transparent transparent;
+	}
+    #services section.tease-line div.flex-container {
+		display: flex;
+		flex-direction: column;
+        padding: 0 calc(var(--default-padding) * 3);
+    }
+	#services section.tease-line div.opening-inverted-commas {
+		align-self: flex-start;
+	}
+	#services section.tease-line div.closing-inverted-commas {
+		align-self: flex-end;
+	}
+	#services section.tease-line p.inverted-commas {
+        color: var(--color-primary);
+        font-family: var(--font-primary);
+        font-weight: var(--font-weight-primary);
+        /* font-size: var(--font-xl); */
+        font-size: calc(30px + 2vw);
+        margin: 0;
+    }
+	#services section.tease-line div.closing-inverted-commas p.inverted-commas {
+		transform: rotate(180deg) scaleX(-1);
+	}
+    #services section.tease-line h2.tease-line-text {
+        text-align: center;
+        font-size: calc(20px + 1vw);
+        font-style: italic;
+        margin: 0;
+    }
+
+/* BENEFITS */
+	#services section.benefits div.background {
+		background-color: var(--color-white);
+	}
+	#services section.benefits div.background div.contents-container {
+		padding: calc(var(--default-padding) * 3) 0;
+	}
+	#services section.benefits div.flex-container {
+		padding: 0 var(--default-padding);
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: flex-start;
+		flex-wrap: wrap;
+	}
+	#services section.benefits div.benefits-box {
+		padding: calc(var(--default-padding) * 2) var(--default-padding);
+		text-align: center;
+		min-width: calc(300px - var(--default-padding));
+		flex-basis: 33%;
+		flex-grow: 1;
+	}
+	#services section.benefits img.benefits-image {
+		height: auto;
+	  	max-width: 75px;
+	}
+	#services section.benefits div.benefits-box p {
+		text-align: justify;
+	}
 
 
 
+
+
+
+/* WHAT */
 	#services section.what div.flex-container {
 		display: flex;
 		flex-direction: row;
@@ -198,82 +278,7 @@
 		
 	}
 
-/* BENEFITS */
-	#services section.benefits div.background {
-		background-color: var(--color-white);
-	}
-	#services section.benefits div.background div.contents-container {
-		padding: calc(var(--default-padding) * 3) 0;
-	}
-	#services section.benefits div.flex-container {
-		padding: 0 var(--default-padding);
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-		align-items: flex-start;
-		flex-wrap: wrap;
-	}
-	#services section.benefits div.benefits-box {
-		padding: calc(var(--default-padding) * 2) var(--default-padding);
-		text-align: center;
-		min-width: calc(300px - var(--default-padding));
-		flex-basis: 33%;
-		flex-grow: 1;
-	}
-	#services section.benefits img.benefits-image {
-		height: auto;
-	  	max-width: 75px;
-	}
-	#services section.benefits div.benefits-box p {
-		text-align: justify;
-	}
 
-/* TEASE-LINE */
-	#services section.tease-line div.background {
-		background-color: var(--color-black);
-	}
-	#services section.tease-line div.slanted-top {
-		display:block;
-		width:100%;
-		border-style: solid;
-		border-width: 0 100vw 5vw 0;
-		border-color: transparent transparent var(--color-black) transparent;
-	}
-	#services section.tease-line div.slanted-bottom {
-		display:block;
-		width:100%;
-		border-style: solid;
-		border-width: 0 100vw 5vw 0;
-		border-color: transparent var(--color-black) transparent transparent;
-	}
-    #services section.tease-line div.flex-container {
-		display: flex;
-		flex-direction: column;
-        padding: 0 calc(var(--default-padding) * 3);
-    }
-	#services section.tease-line div.opening-inverted-commas {
-		align-self: flex-start;
-	}
-	#services section.tease-line div.closing-inverted-commas {
-		align-self: flex-end;
-	}
-	#services section.tease-line p.inverted-commas {
-        color: var(--color-primary);
-        font-family: var(--font-primary);
-        font-weight: var(--font-weight-primary);
-        /* font-size: var(--font-xl); */
-        font-size: calc(30px + 2vw);
-        margin: 0;
-    }
-	#services section.tease-line div.closing-inverted-commas p.inverted-commas {
-		transform: rotate(180deg) scaleX(-1);
-	}
-    #services section.tease-line h2.tease-line-text {
-        text-align: center;
-        font-size: calc(20px + 1vw);
-        font-style: italic;
-        margin: 0;
-    }
 
 
 
