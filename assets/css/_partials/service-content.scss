@@ -71,7 +71,7 @@
 	}
 	#services section.intro div.flexcontainer div.explanation-box {
 		padding: 0 var(--default-padding);
-		margin-top: calc(var(--default-padding)* 2);
+		margin-top: calc(var(--default-padding)* 2) 0 var(--default-padding);
 		background: linear-gradient(var(--color-black),var(--color-black)) top left;
 			background-size: 5px 100%;
 			background-repeat:no-repeat;

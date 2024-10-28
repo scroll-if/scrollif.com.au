@@ -55,11 +55,11 @@
 						</div>
 						<div class="main">
 							<a class="button" href="{{ site.url }}/{{ page.url }}#contact">Get a Quote</a>
-							<a class="button highlight" href="{{ site.url }}/{{ page.url }}#contact">Benefits</a>
+							<a class="button highlight" href="{{ site.url }}/{{ page.url }}#benefits">Benefits</a>
 						</div>
 					</div>
 					<div class="image-box">
-						<img class="impact-image" src="{{ site.url }}/assets/images/beautiful_websites_made_simple.jpg" alt="Beautiful Websites, Made Simple" />
+						<img class="impact-image" src="{{ site.url }}{{ service.impact-image }}" alt="Beautiful Websites, Made Simple" />
 					</div>
 				</div>
 			</div>
@@ -77,7 +77,7 @@
                     </div>
                 	<div class="main reverse">
 						<h2 class="quote-text">
-						{% assign breakaftercomma = service.tease-line | replace_first: ', ', 'breakspace' %}
+						{% assign breakaftercomma = service.quote | replace_first: ', ', 'breakspace' %}
 						{{ breakaftercomma | replace: ' ', '&nbsp;' | replace: 'breakspace', ', ' }}
 						</h2>
 					</div>
@@ -92,7 +92,7 @@
 	</section>
 
 
-	<section id="benefits" class="benefits">
+	<section id="benefits" class="benefits anchor">
 		<div class="background">
 			<div class="max-width-container">
 				<div class="contents-container">
@@ -250,7 +250,7 @@
 		</div>
 	</section>
 
-	<section class="pricing">
+	<section id="pricing" class="pricing anchor">
 		<div class="background">
 			<div class="max-width-container">
 
