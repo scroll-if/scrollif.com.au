@@ -77,8 +77,7 @@
                     </div>
                 	<div class="main reverse">
 						<h2 class="quote-text">
-						{% assign breakaftercomma = service.quote | replace_first: ', ', 'breakspace' %}
-						{{ breakaftercomma | replace: ' ', '&nbsp;' | replace: 'breakspace', ', ' }}
+						{{ service.quote }}
 						</h2>
 					</div>
                 	<div class="closing-inverted-commas">
