@@ -116,6 +116,11 @@
 		<div class="background">
 			<div class="max-width-container">
 				<div class="flex-container">
+					<div class="inside-flex-container">
+						<img class="image-icon" src="{{ site.url }}{{ service.icon-image }}" alt="{{ service.name }}"/>
+					</div>
+				</div>
+				<div class="flex-container">
 					{% for how-it-works in service.how-it-works %}
 						<div class="inside-flex-container">
 							<div class="inner-flex-container">
