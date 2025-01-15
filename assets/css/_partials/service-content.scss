@@ -175,6 +175,13 @@
 
 
 /* HOW IT WORKS */
+	#services section.how-it-works div.flex-container-wrap {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: flex-start;
+		flex-wrap: wrap;
+	}
 	#services section.how-it-works div.flex-container {
 		display: flex;
 		flex-direction: row;
