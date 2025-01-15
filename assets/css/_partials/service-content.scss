@@ -186,7 +186,7 @@
 		justify-content: space-evenly;
 		align-items: flex-start;
 		flex-wrap: wrap;
-		padding: var(--default-padding);
+		padding: calc(var(--default-padding) * 4)  var(--default-padding);
 	}
 	#services section.pricing div.inner-flex-container {
 		background-color: var(--color-white);
