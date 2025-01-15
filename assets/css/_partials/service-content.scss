@@ -174,8 +174,8 @@
 
 
 
-/* WHAT */
-	#services section.what div.flex-container {
+/* HOW IT WORKS */
+	#services section.how-it-works div.flex-container {
 		display: flex;
 		flex-direction: row;
 		justify-content: center;
@@ -183,7 +183,7 @@
 		padding: calc(var(--default-padding) / 2);
 		flex-wrap: wrap;
 	}
-	#services section.what div.inside-flex-container {
+	#services section.how-it-works div.inside-flex-container {
 		display: flex;
 		flex-direction: row;
 		justify-content: center;
@@ -191,7 +191,7 @@
 		flex-grow: 1;
 		flex-wrap: wrap;
 	}
-	#services section.what div.inner-flex-container {
+	#services section.how-it-works div.inner-flex-container {
 		display: flex;
 		flex-direction: row;
 		justify-content: flex-start;
@@ -202,7 +202,7 @@
 		padding: calc(var(--default-padding) / 2);
 		flex-wrap: wrap;
 	}
-	#services section.what div.inner-flex-container div.background-image {
+	#services section.how-it-works div.inner-flex-container div.background-image {
 		background-color: var(--color-black);
 		background-repeat: no-repeat; 
 		background-size: cover; 
@@ -210,19 +210,19 @@
 		flex-grow: 1;
 		text-align: center;
 	}
-	#services section.what div.inner-flex-container div.background-image div.tint {
+	#services section.how-it-works div.inner-flex-container div.background-image div.tint {
 		height: 100%;
 		background-color: rgba(1, 1, 1, 0.8);
 		padding: var(--default-padding);
 	}
-	#services section.what h3.step-callout {
+	#services section.how-it-works h3.step-callout {
 		margin: var(--default-padding);
 		font-size: var(--font-s);
 	}
-	#services section.what {
+	#services section.how-it-works {
 
 	}
-	#services section.what {
+	#services section.how-it-works {
 		
 	}
 
@@ -285,42 +285,42 @@
 
 
     
-/* HOW-IT-WORKS */
-	#services section.how-it-works div.background {
+/* HOW-IT-WORKS-OLD */
+	#services section.how-it-works-old div.background {
 		background-color: var(--color-white);
 	}
-	#services section.how-it-works div.flex-container {
+	#services section.how-it-works-old div.flex-container {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 	}
-	#services section.how-it-works div.contents-box {
+	#services section.how-it-works-old div.contents-box {
 		min-width: 320px;
 		width: 100%;
 		padding: calc(var(--default-padding) * 2);
 		display: flex;
 		flex-direction: column;
 	}
-	#services section.how-it-works div.inner-box {
+	#services section.how-it-works-old div.inner-box {
 		min-width: calc(320px - calc(var(--default-padding) * 2);
 		width: 60%;
 		padding: 0 0 var(--default-padding);
 	}
-	#services section.how-it-works div.contents-box:nth-child(even) div.inner-box {
+	#services section.how-it-works-old div.contents-box:nth-child(even) div.inner-box {
 		align-self: flex-end;
 		text-align: right;
 	}
-	#services section.how-it-works div.contents-box img {
+	#services section.how-it-works-old div.contents-box img {
 		width: 100px;
 	}
-	#services section.how-it-works div.bottom-bar {
+	#services section.how-it-works-old div.bottom-bar {
 		position: relative;
 		width: 60%;
 		height: 15px;
 		background-color: var(--color-light-grey);
 	}
-	#services section.how-it-works div.contents-box:nth-child(even) div.bottom-bar {
+	#services section.how-it-works-old div.contents-box:nth-child(even) div.bottom-bar {
 		right: -40%;
 	}
 
