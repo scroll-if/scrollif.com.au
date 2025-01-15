@@ -191,10 +191,14 @@
 	#services section.pricing div.inner-flex-container {
 		background-color: var(--color-white);
 		flex-basis: 25%;
-		min-width: calc(250px - calc(var(--default-padding)* 2));
+		min-width: calc(290px - calc(var(--default-padding)* 2));
 		padding: calc(var(--default-padding) * 2);
 		margin: var(--default-padding);
 		text-align: center;
+		border-radius: var(--default-padding);
+	}
+	#services section.pricing h3 {
+
 	}
 	#services section.pricing p.price {
 
@@ -220,7 +224,7 @@
 		width: 20px;
 		margin-right: 5px;
 	}
-	#services section.pricing div.included h3 {
+	#services section.pricing div.included p {
 		display: inline;
 	}
 
