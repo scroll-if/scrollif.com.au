@@ -191,6 +191,7 @@
 	#services section.pricing div.inner-flex-container {
 		background-color: var(--color-white);
 		flex-basis: 25%;
+		flex-grow: 1;
 		min-width: calc(290px - calc(var(--default-padding)* 2));
 		max-width: 320px;
 		padding: calc(var(--default-padding) * 2);
@@ -200,7 +201,8 @@
 		border-bottom-left-radius: var(--default-padding);
 	}
 	#services section.pricing h3 {
-		margin: 15px 0 30px;
+		font-size: var(--font-m);
+		margin: var(--default-padding) 0 calc(var(--default-padding) * 3);
 	}
 	#services section.pricing p.price {
 		font-size: var(--font-s);
@@ -215,7 +217,7 @@
 		color: var(--color_dark-grey);
 		font-size: var(--font-xxs);
 		font-style: italic;
-		margin-bottom: calc(var(--default-padding) * 2);
+		margin-bottom: calc(var(--default-padding) * 4);
 	}
 	#services section.pricing div.included-box {
 		display: inline-block;
@@ -245,6 +247,12 @@
 	#services section.how-it-works div.text-container {
 		padding: calc(var(--default-padding) * 3) calc(var(--default-padding) * 2) var(--default-padding);
 	}
+	#services section.how-it-works div.bar-spacer  {
+            padding-top: var(--default-padding);
+            background: linear-gradient(var(--color-primary),var(--color-primary)) left bottom;
+                        background-size: 60px 5px;
+                        background-repeat:no-repeat;
+        }
 	#services section.how-it-works div.flex-container-wrap {
 		display: flex;
 		flex-direction: row-reverse;
