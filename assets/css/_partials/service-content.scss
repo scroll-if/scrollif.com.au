@@ -245,11 +245,12 @@
 
 /* HOW IT WORKS */
 	#services section.how-it-works div.text-container {
-		padding: calc(var(--default-padding) * 3) calc(var(--default-padding) * 2) var(--default-padding);
+		padding: calc(var(--default-padding) * 3) calc(var(--default-padding) * 2) calc(var(--default-padding) * 2);
+		text-align: center;
 	}
 	#services section.how-it-works div.bar-spacer  {
             padding-top: var(--default-padding);
-            background: linear-gradient(var(--color-primary),var(--color-primary)) left top;
+            background: linear-gradient(var(--color-primary),var(--color-primary)) center top;
                         background-size: 60px 5px;
                         background-repeat:no-repeat;
         }
