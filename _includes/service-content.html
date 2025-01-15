@@ -12,7 +12,7 @@
 								{{ breaklastword | split: ' ' | reverse | join: ' ' | replace_first: 'brtaglinebreak', '<br/>' }}</h1>
 								<p>{{ service.description }}</p>
 								<a class="button highlight" href="{{ site.url }}/{{ page.url }}#pricing">See Pricing</a>
-								<a class="button" href="{{ site.url }}/{{ page.url }}#benefits">Learn More</a>
+								<a class="button" href="{{ site.url }}/{{ page.url }}#intro">Learn More</a>
 							</div>
 						</div>
 						<div class="contents-container">
@@ -24,7 +24,7 @@
 		</div>
 	</section>
 
-	<section class="intro">
+	<section id="intro" class="intro anchor">
 		<div class="background">
 			<div class="max-width-container">
 				<div class="tease-line-container">
@@ -112,12 +112,47 @@
 	</section>
 
 
-	<section class="pricing">
+	<section id="pricing" class="pricing anchor">
 		<div class="background" style="background-image: url('{{ site.url }}/assets/images/pricing.jpg');">
 			<div class="tint">
 				<div class="max-width-container">
 					<div class="flex-container">
-						<div style="height:100vh;"></div> 
+						<div class="inner-flex-container">
+							<div class="main">
+								<h3>Single Page Website<br/> & Web Hosting</h3>
+								<p class="price"><span>$45</span> / month *</p>
+								<p class="fine-print">* No Sign-Up or Exit Fees.</p>
+								<div class="included">
+									<img class="benefits-image" src="{{ site.url }}/assets/images/checkmark_temp.png" alt="{{ benefit.name }}"/>
+	                            	<h3>Website Design</h3>
+									<img class="benefits-image" src="{{ site.url }}/assets/images/checkmark_temp.png" alt="{{ benefit.name }}"/>
+	                            	<h3>Coding & Development</h3>
+									<img class="benefits-image" src="{{ site.url }}/assets/images/checkmark_temp.png" alt="{{ benefit.name }}"/>
+	                            	<h3>Included Hosting</h3>
+									<img class="benefits-image" src="{{ site.url }}/assets/images/checkmark_temp.png" alt="{{ benefit.name }}"/>
+	                            	<h3>Link a Domain Name</h3>
+									<img class="benefits-image" src="{{ site.url }}/assets/images/checkmark_temp.png" alt="{{ benefit.name }}"/>
+	                            	<h3>Assisted Site Changes</h3>
+									<img class="benefits-image" src="{{ site.url }}/assets/images/checkmark_temp.png" alt="{{ benefit.name }}"/>
+	                            	<h3>Monthly Analytics</h3>
+	                            </div>
+	                            <a class="button" href="{{ site.url }}/{{ page.url }}#contact">Get Started Today</a>
+							</div>
+						</div>
+						<div class="inner-flex-container">
+							<div class="main">
+								<h3>Stand Along Hosting<br/> & Web Hosting</h3>
+								<p class="price"><span>$10</span> / month *</p>
+								<p class="fine-print">* No Sign-Up or Exit Fees.</p>
+								<div class="included">
+									<img class="benefits-image" src="{{ site.url }}/assets/images/checkmark_temp.png" alt="{{ benefit.name }}"/>
+	                            	<h3>Link a Domain Name</h3>
+									<img class="benefits-image" src="{{ site.url }}/assets/images/checkmark_temp.png" alt="{{ benefit.name }}"/>
+	                            	<h3>Assisted File Changes</h3>
+								</div>
+	                            <a class="button" href="{{ site.url }}/{{ page.url }}#contact">Get Started Today</a>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -130,7 +165,7 @@
 			<div class="max-width-container">
 				<div class="text-container">
 					<div class="main">
-						<h3>How it works</h3>
+						<h2>How it works</h2>
 					</div>
 				</div>
 				<div class="flex-container-wrap">

@@ -189,8 +189,8 @@
 	}
 
 /* HOW IT WORKS */
-	#services section.how-it-works div.flex-container-wrap {
-		padding: calc(var(--default-padding) * 2);
+	#services section.how-it-works div.text-container {
+		padding: calc(var(--default-padding) * 3) calc(var(--default-padding) * 2) var(--default-padding;
 	}
 	#services section.how-it-works div.flex-container-wrap {
 		display: flex;
@@ -198,7 +198,7 @@
 		justify-content: center;
 		align-items: flex-start;
 		flex-wrap: wrap;
-		padding: calc(var(--default-padding) * 3) 0;
+		padding: 0 0 calc(var(--default-padding) * 3);
 	}
 	#services section.how-it-works div.flex-container {
 		display: flex;
