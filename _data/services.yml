@@ -16,229 +16,362 @@
   benefits:
   - name: Responsive Web Design
     description: From small mobile devices to tablets and larger desktop computers, Scroll If's websites are built and optimised to display all content in a responsive and predictable manner.
-    icon-image: /assets/images/checkmark_temp.png
   - name: Browser Compatability
     description: Implementation of cross browser testing and careful coding practices ensure your website will function as intended across the variety of popular browsers and operating systems.
-    icon-image: /assets/images/checkmark_temp.png
   - name: Hosting Services
     description: Take advantage of Scroll If's included web hosting options to get your website live on the internet. Link a Domain Name you have purchased to your website or simply have it published under a generic URL at no extra cost.
-    icon-image: /assets/images/checkmark_temp.png
   - name: Unique Look & Feel
     description: Scroll If can encorporate your ideas into the design process of your website to give you the website of your dreams, or start completely from scratch and build it from the ground up.
-    icon-image: /assets/images/checkmark_temp.png
   - name: SEO & Analytics
     description: Get monthly reports derived using Google Analytics to understand more about the visitors to your website. Scroll If's coding utilises organic SEO to help increase your website's online presence.
-    icon-image: /assets/images/checkmark_temp.png
   - name: Ongoing Support
     description: Has something in your business changed that should be reflected on your website? Want to add something fresh to liven up your website? Scroll If takes care of the upkeep and changes to your site.
-    icon-image: /assets/images/checkmark_temp.png
   how-it-works:
-  - name: Design
-    description: Choose the colours, look, and feel of your new website.  Scroll If will work with you to ensure each element of your website comes together to be both functional and beautiful!
-    icon-image: /assets/images/checkmark_temp.png
-  - name: Development
-    description: Let Scroll If take the plans and designs of your new website and turn it into reality.  Careful coding practices will ensure your website is functional across multiple popular web browsers and device sizes.
-    icon-image: /assets/images/checkmark_temp.png
-  - name: Launch
-    description: With Scroll If's included web hosting, getting your website live in the internet is simple.  Use your own custom Domain Name and let Scroll If connect it to your new website.
-    icon-image: /assets/images/checkmark_temp.png
+  - name: "1. Inspire"
+    description: Start from scratch, improve an existing design, or have us create you a freash masterpiece.
+    background-image: /assets/images/single_page_websites.jpg
+  - name: "2. Create"
+    description: Let us turn your vision into a reality. Our development process puts pen to paper, and paper to screen.
+    background-image: /assets/images/single_page_websites.jpg
+  - name: "3. Aligh"
+    description: A chance to make any last minute adjustments or additions to our creation and add the finishing touches.
+    background-image: /assets/images/single_page_websites.jpg
+  - name: "4. Launch"
+    description: The most exciting part of the process, go live time!
+    background-image: /assets/images/single_page_websites.jpg
+
 - name: "Multi Page Websites"
-  description: Make a mark on the web with one of our multi page websites.  Suited to larger businesses that need to display a lot of content.
-  tease-line: Business websites, supercharged.
-  background-image: /assets/images/multi_page_websites.jpg
-  icon-image: /assets/images/multi_page_websites_icon.png
   url: /websites/multi-page-websites
+  background-image: /assets/images/multi_page_websites.jpg
+  description: Make a mark on the web with one of our multi page websites.  Suited to larger businesses that need to display a lot of content.
+  icon-image: /assets/images/multi_page_websites_icon.png
+  tease-line: Business websites, supercharged.
+  shoutouts:
+  - name: ""
+  - name: ""
+  explanations:
+  - name: ""
+  - name: ""
+  - name: ""
+  impact-image: /assets/images/digital_solutions_agency.jpg
+  quote: ""
   benefits:
   - name: ""
     description: 
-    icon-image: 
   - name: ""
     description: 
-    icon-image: 
   - name: ""
     description: 
-    icon-image: 
   - name: ""
     description: 
-    icon-image: 
   - name: ""
     description: 
-    icon-image: 
   - name: ""
     description: 
-    icon-image: 
+  how-it-works:
+  - name: "1. Inspire"
+    description: Start from scratch, improve an existing design, or have us create you a freash masterpiece.
+    background-image: /assets/images/single_page_websites.jpg
+  - name: "2. Create"
+    description: Let us turn your vision into a reality. Our development process puts pen to paper, and paper to screen.
+    background-image: /assets/images/single_page_websites.jpg
+  - name: "3. Aligh"
+    description: A chance to make any last minute adjustments or additions to our creation and add the finishing touches.
+    background-image: /assets/images/single_page_websites.jpg
+  - name: "4. Launch"
+    description: The most exciting part of the process, go live time!
+    background-image: /assets/images/single_page_websites.jpg
+
 - name: "Business Logos"
-  description: Help your business stand out amongst the crowd with a custom business logo.
-  tease-line: Stand out, be remembered.
-  background-image: /assets/images/business_logos.jpg
-  icon-image: /assets/images/business_logos_icon.png
   url: /graphics/business-logos
+  background-image: /assets/images/business_logos.jpg
+  description: Help your business stand out amongst the crowd with a custom business logo.
+  icon-image: /assets/images/business_logos_icon.png
+  tease-line: Stand out, be remembered.
+  shoutouts:
+  - name: ""
+  - name: ""
+  explanations:
+  - name: ""
+  - name: ""
+  - name: ""
+  impact-image: /assets/images/digital_solutions_agency.jpg
+  quote: ""
   benefits:
   - name: ""
     description: 
-    icon-image: 
   - name: ""
     description: 
-    icon-image: 
   - name: ""
     description: 
-    icon-image: 
   - name: ""
     description: 
-    icon-image: 
   - name: ""
     description: 
-    icon-image: 
   - name: ""
     description: 
-    icon-image: 
+  how-it-works:
+  - name: "1. Inspire"
+    description: Start from scratch, improve an existing design, or have us create you a freash masterpiece.
+    background-image: /assets/images/single_page_websites.jpg
+  - name: "2. Create"
+    description: Let us turn your vision into a reality. Our development process puts pen to paper, and paper to screen.
+    background-image: /assets/images/single_page_websites.jpg
+  - name: "3. Aligh"
+    description: A chance to make any last minute adjustments or additions to our creation and add the finishing touches.
+    background-image: /assets/images/single_page_websites.jpg
+  - name: "4. Launch"
+    description: The most exciting part of the process, go live time!
+    background-image: /assets/images/single_page_websites.jpg
+
 - name: "Social Media Banners"
-  description: Let your business look its best everywhere with matching social media banners.
-  tease-line: Look your best, be your best.
-  background-image: /assets/images/social_media_banners.jpg
-  icon-image: /assets/images/social_media_banners_icon.png
   url: /graphics/social-media-banners
+  background-image: /assets/images/social_media_banners.jpg
+  description: Let your business look its best everywhere with matching social media banners.
+  icon-image: /assets/images/social_media_banners_icon.png
+  tease-line: Look your best, be your best.
+  shoutouts:
+  - name: ""
+  - name: ""
+  explanations:
+  - name: ""
+  - name: ""
+  - name: ""
+  impact-image: /assets/images/digital_solutions_agency.jpg
+  quote: ""
   benefits:
   - name: ""
     description: 
-    icon-image: 
   - name: ""
     description: 
-    icon-image: 
   - name: ""
     description: 
-    icon-image: 
   - name: ""
     description: 
-    icon-image: 
   - name: ""
     description: 
-    icon-image: 
   - name: ""
     description: 
-    icon-image: 
+  how-it-works:
+  - name: "1. Inspire"
+    description: Start from scratch, improve an existing design, or have us create you a freash masterpiece.
+    background-image: /assets/images/single_page_websites.jpg
+  - name: "2. Create"
+    description: Let us turn your vision into a reality. Our development process puts pen to paper, and paper to screen.
+    background-image: /assets/images/single_page_websites.jpg
+  - name: "3. Aligh"
+    description: A chance to make any last minute adjustments or additions to our creation and add the finishing touches.
+    background-image: /assets/images/single_page_websites.jpg
+  - name: "4. Launch"
+    description: The most exciting part of the process, go live time!
+    background-image: /assets/images/single_page_websites.jpg
+
 - name: "Business Cards"
-  description: Give your business that professional touch with a memorable business card.
-  tease-line: Your business, in a pocket.
-  background-image: /assets/images/business_cards.jpg
-  icon-image: /assets/images/business_cards_icon.png
   url: /graphics/business-cards
+  background-image: /assets/images/business_cards.jpg
+  description: Give your business that professional touch with a memorable business card.
+  icon-image: /assets/images/business_cards_icon.png
+  tease-line: Your business, in a pocket.
+  shoutouts:
+  - name: ""
+  - name: ""
+  explanations:
+  - name: ""
+  - name: ""
+  - name: ""
+  impact-image: /assets/images/digital_solutions_agency.jpg
+  quote: ""
   benefits:
   - name: ""
     description: 
-    icon-image: 
   - name: ""
     description: 
-    icon-image: 
   - name: ""
     description: 
-    icon-image: 
   - name: ""
     description: 
-    icon-image: 
   - name: ""
     description: 
-    icon-image: 
   - name: ""
     description: 
-    icon-image: 
+  how-it-works:
+  - name: "1. Inspire"
+    description: Start from scratch, improve an existing design, or have us create you a freash masterpiece.
+    background-image: /assets/images/single_page_websites.jpg
+  - name: "2. Create"
+    description: Let us turn your vision into a reality. Our development process puts pen to paper, and paper to screen.
+    background-image: /assets/images/single_page_websites.jpg
+  - name: "3. Aligh"
+    description: A chance to make any last minute adjustments or additions to our creation and add the finishing touches.
+    background-image: /assets/images/single_page_websites.jpg
+  - name: "4. Launch"
+    description: The most exciting part of the process, go live time!
+    background-image: /assets/images/single_page_websites.jpg
+
 - name: "HTML Emails"
-  description: Make your business communications pop with emails that match your business's style.
-  tease-line: Business emails, made exciting.
-  background-image: /assets/images/html_emails.jpg
-  icon-image: /assets/images/html_emails_icon.png
   url: /graphics/html_emails
+  background-image: /assets/images/html_emails.jpg
+  description: Make your business communications pop with emails that match your business's style.
+  icon-image: /assets/images/html_emails_icon.png
+  tease-line: Business emails, made exciting.
+  shoutouts:
+  - name: ""
+  - name: ""
+  explanations:
+  - name: ""
+  - name: ""
+  - name: ""
+  impact-image: /assets/images/digital_solutions_agency.jpg
+  quote: ""
   benefits:
   - name: ""
     description: 
-    icon-image: 
   - name: ""
     description: 
-    icon-image: 
   - name: ""
     description: 
-    icon-image: 
   - name: ""
     description: 
-    icon-image: 
   - name: ""
     description: 
-    icon-image: 
   - name: ""
     description: 
-    icon-image: 
+  how-it-works:
+  - name: "1. Inspire"
+    description: Start from scratch, improve an existing design, or have us create you a freash masterpiece.
+    background-image: /assets/images/single_page_websites.jpg
+  - name: "2. Create"
+    description: Let us turn your vision into a reality. Our development process puts pen to paper, and paper to screen.
+    background-image: /assets/images/single_page_websites.jpg
+  - name: "3. Aligh"
+    description: A chance to make any last minute adjustments or additions to our creation and add the finishing touches.
+    background-image: /assets/images/single_page_websites.jpg
+  - name: "4. Launch"
+    description: The most exciting part of the process, go live time!
+    background-image: /assets/images/single_page_websites.jpg
+
 - name: "Consulting: Systems"
-  description: Need to implement a new system? Let us guide the installation and rollout.
-  tease-line: Business tools, established. 
-  background-image: /assets/images/consulting_systems.jpg
-  icon-image: /assets/images/consulting_systems_icon.png
   url: /consulting/systems
+  background-image: /assets/images/consulting_systems.jpg
+  description: Need to implement a new system? Let us guide the installation and rollout.
+  icon-image: /assets/images/consulting_systems_icon.png
+  tease-line: Business tools, established. 
+  shoutouts:
+  - name: ""
+  - name: ""
+  explanations:
+  - name: ""
+  - name: ""
+  - name: ""
+  impact-image: /assets/images/digital_solutions_agency.jpg
+  quote: ""
   benefits:
   - name: ""
     description: 
-    icon-image: 
   - name: ""
     description: 
-    icon-image: 
   - name: ""
     description: 
-    icon-image: 
   - name: ""
     description: 
-    icon-image: 
   - name: ""
     description: 
-    icon-image: 
   - name: ""
     description: 
-    icon-image: 
+  how-it-works:
+  - name: "1. Inspire"
+    description: Start from scratch, improve an existing design, or have us create you a freash masterpiece.
+    background-image: /assets/images/single_page_websites.jpg
+  - name: "2. Create"
+    description: Let us turn your vision into a reality. Our development process puts pen to paper, and paper to screen.
+    background-image: /assets/images/single_page_websites.jpg
+  - name: "3. Aligh"
+    description: A chance to make any last minute adjustments or additions to our creation and add the finishing touches.
+    background-image: /assets/images/single_page_websites.jpg
+  - name: "4. Launch"
+    description: The most exciting part of the process, go live time!
+    background-image: /assets/images/single_page_websites.jpg
+
 - name: "Consulting: Operations"
-  description: Even the best teams and tools need equally great processes to succeed.
-  tease-line: Business processes, solved.
-  background-image: /assets/images/consulting_operations.jpg
-  icon-image: /assets/images/consulting_operations_icon.png
   url: /consulting/operations
+  background-image: /assets/images/consulting_operations.jpg
+  description: Even the best teams and tools need equally great processes to succeed.
+  icon-image: /assets/images/consulting_operations_icon.png
+  tease-line: Business processes, solved.
+  shoutouts:
+  - name: ""
+  - name: ""
+  explanations:
+  - name: ""
+  - name: ""
+  - name: ""
+  impact-image: /assets/images/digital_solutions_agency.jpg
+  quote: ""
   benefits:
   - name: ""
     description: 
-    icon-image: 
   - name: ""
     description: 
-    icon-image: 
   - name: ""
     description: 
-    icon-image: 
   - name: ""
     description: 
-    icon-image: 
   - name: ""
     description: 
-    icon-image: 
   - name: ""
     description: 
-    icon-image: 
+  how-it-works:
+  - name: "1. Inspire"
+    description: Start from scratch, improve an existing design, or have us create you a freash masterpiece.
+    background-image: /assets/images/single_page_websites.jpg
+  - name: "2. Create"
+    description: Let us turn your vision into a reality. Our development process puts pen to paper, and paper to screen.
+    background-image: /assets/images/single_page_websites.jpg
+  - name: "3. Aligh"
+    description: A chance to make any last minute adjustments or additions to our creation and add the finishing touches.
+    background-image: /assets/images/single_page_websites.jpg
+  - name: "4. Launch"
+    description: The most exciting part of the process, go live time!
+    background-image: /assets/images/single_page_websites.jpg
+
 - name: "Consulting: Branding"
-  description: Like a makeup team and costume designer for your business.  Make a memorable first impression to your customers.
-  tease-line: Your business, dressed to impress.
-  background-image: /assets/images/consulting_branding.jpg
-  icon-image: /assets/images/consulting_branding_icon.png
   url: /consulting/branding
+  background-image: /assets/images/consulting_branding.jpg
+  description: Like a makeup team and costume designer for your business.  Make a memorable first impression to your customers.
+  icon-image: /assets/images/consulting_branding_icon.png
+  tease-line: Your business, dressed to impress.
+  shoutouts:
+  - name: ""
+  - name: ""
+  explanations:
+  - name: ""
+  - name: ""
+  - name: ""
+  impact-image: /assets/images/digital_solutions_agency.jpg
+  quote: ""
   benefits:
   - name: ""
     description: 
-    icon-image: 
   - name: ""
     description: 
-    icon-image: 
   - name: ""
     description: 
-    icon-image: 
   - name: ""
     description: 
-    icon-image: 
   - name: ""
     description: 
-    icon-image: 
   - name: ""
     description: 
-    icon-image: 
+  how-it-works:
+  - name: "1. Inspire"
+    description: Start from scratch, improve an existing design, or have us create you a freash masterpiece.
+    background-image: /assets/images/single_page_websites.jpg
+  - name: "2. Create"
+    description: Let us turn your vision into a reality. Our development process puts pen to paper, and paper to screen.
+    background-image: /assets/images/single_page_websites.jpg
+  - name: "3. Aligh"
+    description: A chance to make any last minute adjustments or additions to our creation and add the finishing touches.
+    background-image: /assets/images/single_page_websites.jpg
+  - name: "4. Launch"
+    description: The most exciting part of the process, go live time!
+    background-image: /assets/images/single_page_websites.jpg

@@ -99,7 +99,7 @@
 						{% for benefit in service.benefits %}
 	                        <div class="benefits-box">
                             	<div class="main">
-                            		<img class="benefits-image" src="{{ site.url }}{{ benefit.icon-image }}" alt="{{ benefit.name }}"/>
+                            		<img class="benefits-image" src="{{ site.url }}/assets/images/checkmark_temp.png" alt="{{ benefit.name }}"/>
 	                                <h3>{{ benefit.name }}</h3>
     	                            <p>{{ benefit.description }}</p>
     	                        </div>
@@ -112,161 +112,45 @@
 	</section>
 
 
-
-
-
-
-
-
-
-
 	<section class="how-it-works">
 		<div class="background">
 			<div class="max-width-container">
 				<div class="flex-container">
-					<div class="inside-flex-container">
-						<div class="inner-flex-container">
-							<div class="background-image" style="background-image: url('{{ site.url }}{{ service.background-image }}');">
-								<div class="tint">
-									<div class="main reverse">
-										<h3 class="step-callout">1. Inspire</h3>
+					{% for how-it-works in service.how-it-works %}
+						<div class="inside-flex-container">
+							<div class="inner-flex-container">
+								<div class="background-image" style="background-image: url('{{ site.url }}{{ how-it-works.background-image }}');">
+									<div class="tint">
+										<div class="main reverse">
+											<h3 class="step-callout">{{ how-it-works.name }}</h3>
+										</div>
 									</div>
 								</div>
 							</div>
-						</div>
-						<div class="inner-flex-container text-content">
-							<div class="main">
-								<p>Start from scratch, improve an existing design, or have us create you a freash masterpiece.</p>
-							</div>
-						</div>
-					</div>
-					<div class="inside-flex-container">
-						<div class="inner-flex-container">
-							<div class="background-image" style="background-image: url('{{ site.url }}{{ service.background-image }}');">
-								<div class="tint">
-									<div class="main reverse">
-										<h3 class="step-callout">2. Create</h3>
-									</div>
+							<div class="inner-flex-container text-content">
+								<div class="main">
+									<p>{{ how-it-works.description }}</p>
 								</div>
 							</div>
 						</div>
-						<div class="inner-flex-container text-content">
-							<div class="main">
-								<p>Let us turn your vision into a reality.  Our development process puts pen to paper, and paper to screen.</p>
-							</div>
-						</div>
-					</div>
-					<div class="inside-flex-container">
-						<div class="inner-flex-container">
-							<div class="background-image" style="background-image: url('{{ site.url }}{{ service.background-image }}');">
-								<div class="tint">
-									<div class="main reverse">
-										<h3 class="step-callout">3. Align</h3>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="inner-flex-container text-content">
-							<div class="main">
-								<p>A chance to make any last minute adjustments or additions to our creation and add the finishing touches.</p>
-							</div>
-						</div>
-					</div>
-					<div class="inside-flex-container">
-						<div class="inner-flex-container">
-							<div class="background-image" style="background-image: url('{{ site.url }}{{ service.background-image }}');">
-								<div class="tint">
-									<div class="main reverse">
-										<h3 class="step-callout">4. Launch</h3>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="inner-flex-container text-content">
-							<div class="main">
-								<p>The most exciting part of the process, go live time!</p>
-							</div>
-						</div>
-					</div>
+					{% endfor %}
 				</div>
 			</div>
 		</div>
 	</section>
 
 
-	<section class="info">
-		<div class="background">
-			<div class="max-width-container">
-				<div class="flex-container">
-					<div class="inner-flex-container">
-						<div class="info-box">
-							<img class="info-icon" src="{{ site.url }}{{ service.icon-image }}" alt="{{ service.name }}"/>
-							<div class="info-text">
-								<div class="main">
-									<h3>Custom Design</h3>
-									<p>We will work with you to turn your vision into a reality.</p>
-									<p>Start from scratch, improve an existing design, or create a freash masterpiece!</p>
-								</div>
-							</div>
-						</div>
-						<div class="info-box">
-							<img class="info-icon" src="{{ site.url }}{{ service.icon-image }}" alt="{{ service.name }}"/>
-							<div class="info-text">
-								<div class="main">
-									<h3>Custom Design</h3>
-									<p>We will work with you to turn your vision into a reality.</p>
-									<p>Start from scratch, improve an existing design, or create a freash masterpiece!</p>
-								</div>
-							</div>
-						</div>
-						<div class="info-box">
-							<img class="info-icon" src="{{ site.url }}{{ service.icon-image }}" alt="{{ service.name }}"/>
-							<div class="info-text">
-								<div class="main">
-									<h3>Custom Design</h3>
-									<p>We will work with you to turn your vision into a reality.</p>
-									<p>Start from scratch, improve an existing design, or create a freash masterpiece!</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="inner-flex-container">
-						<img class="impact-image" src="{{ site.url }}/assets/images/digital_solutions_agency.jpg" alt="Digital Solutions Agency" />
+	<section class="pricing">
+		<div class="background" style="background-image: url('{{ site.url }}{{ service.background-image }}');">
+			<div class="tint">
+				<div class="max-width-container">
+					<div class="flex-container">
+					
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
 	
-
-	<section class="how-it-works-old">
-		<div class="background">
-			<div class="max-width-container">
-				<div class="flex-container">
-					{% for step in service.how-it-works %}
-	                    <div class="contents-box">
-	                    	<div class="inner-box">
-		                    	<div class="main">
-		                    		<img class="step-image" src="{{ site.url }}{{ step.icon-image }}" alt="{{ step.name }}"/>
-		                            <h3>{{ step.name }}</h3>
-		                            <p>{{ step.description }}</p>
-		                        </div>
-	                        </div>
-	                        <div class="bottom-bar">
-	                        </div>
-	                    </div>
-	            	{% endfor %}
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section id="pricing" class="pricing anchor">
-		<div class="background">
-			<div class="max-width-container">
-
-			</div>
-		</div>
-	</section>
 	
 </div>
