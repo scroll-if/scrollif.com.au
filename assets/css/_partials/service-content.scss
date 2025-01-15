@@ -189,7 +189,7 @@
 		align-items: flex-start;
 		padding: calc(var(--default-padding) / 2);
 		flex-wrap: wrap;
-		flex-basis: 50%;
+		flex-basis: 55%;
 		flex-grow: 1;
 	}
 	#services section.how-it-works div.flex-container.icon-header {
@@ -202,7 +202,7 @@
 		align-items: center;
 		flex-grow: 1;
 		flex-wrap: wrap;
-		padding: calc(60px - 10vw) var(--default-padding);
+		padding: calc(60px - 10%) var(--default-padding)
 	}
 	#services section.how-it-works div.inner-flex-container {
 		display: flex;
