@@ -180,7 +180,7 @@
 		flex-direction: row;
 		justify-content: center;
 		align-items: flex-start;
-		padding: calc(var(--default-padding) / 2);
+		padding: calc(var(--default-padding) * 2);
 		flex-wrap: wrap;
 	}
 	#services section.how-it-works div.inside-flex-container {
@@ -190,6 +190,7 @@
 		align-items: flex-start;
 		flex-grow: 1;
 		flex-wrap: wrap;
+		padding: calc(60px - 10vw) 0;
 	}
 	#services section.how-it-works div.inner-flex-container {
 		display: flex;
@@ -202,6 +203,8 @@
 		padding: calc(var(--default-padding) / 2);
 		flex-wrap: wrap;
 	}
+	#services section.how-it-works div.inner-flex-container.text-content {
+		flex-basis: 50%;
 	#services section.how-it-works div.inner-flex-container div.background-image {
 		background-color: var(--color-black);
 		background-repeat: no-repeat; 
