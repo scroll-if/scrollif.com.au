@@ -29,6 +29,12 @@
   prices:
   - name: Stand Alone Single Page Website
     description: Purchase one of our custom built website outright and manage the hosting and upkeep yourself.
+    cost: fg
+    fine-print: fg
+    included:
+    - name: Website Design
+    - name: Coding & Development
+  
   how-it-works:
   - name: "1. Inspire"
     description: Start from scratch, improve an existing design, or have us create you a fresh masterpiece.
