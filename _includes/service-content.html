@@ -119,11 +119,12 @@
 					<div class="flex-container">
 						{% for price in service.prices %}
 							<div class="inner-flex-container">
-							<div class="eye-catch-box">
-								<div class="main reverse">
-									<p>{{ price.eye-catch-line }}</p>
-								</div>	
-							</div>
+							
+								<div class="eye-catch-box {% if price.eye-catch-line %}recommended{% endif %}">
+									<div class="main reverse">
+										<p>{{ price.eye-catch-line }}</p>
+									</div>	
+								</div>
 							<div class="padding-box">
 								<div class="main">
 									<h3>{{ price.name }}</h3>
