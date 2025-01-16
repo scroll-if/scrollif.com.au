@@ -202,12 +202,12 @@
 	}
 	#services section.pricing h3 {
 		font-size: var(--font-m);
-		margin: var(--default-padding) 0 calc(var(--default-padding) * 3);
+		margin: var(--default-padding) 0;
 	}
 	#services section.pricing p.price {
 		font-size: var(--font-s);
 		font-weight: 800;
-
+		margin-top: calc(var(--default-padding) * 3);
 	}
 	#services section.pricing p.price span {
 		color: var(--color-primary);
@@ -239,10 +239,6 @@
 		vertical-align: 5px;
 	}
 
-
-
-
-
 /* HOW IT WORKS */
 	#services section.how-it-works div.text-container {
 		padding: calc(var(--default-padding) * 3) calc(var(--default-padding) * 2) calc(var(--default-padding) * 2);
@@ -250,7 +246,7 @@
 	}
 	#services section.how-it-works div.bar-spacer  {
             padding-top: var(--default-padding);
-            background: linear-gradient(var(--color-primary),var(--color-primary)) center top;
+            background: linear-gradient(var(--color-primary),var(--color-primary)) center bottom;
                         background-size: 60px 5px;
                         background-repeat:no-repeat;
         }
@@ -314,5 +310,4 @@
 	#services section.how-it-works h3.step-callout {
 		margin: var(--default-padding);
 		font-size: var(--font-s);
-		text-align: left;
 	}
