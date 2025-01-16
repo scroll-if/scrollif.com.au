@@ -119,6 +119,12 @@
 					<div class="flex-container">
 						{% for price in service.prices %}
 							<div class="inner-flex-container">
+							<div class="eye-catch-box">
+								<div class="main reverse">
+									<p>{{ eye-catch-line }}</p>
+								</div>	
+							</div>
+							<div class="padding-box">
 								<div class="main">
 									<h3>{{ price.name }}</h3>
 									<p>{{ price.description }}</p>
@@ -138,6 +144,8 @@
 			                        </div>
 		                            <a class="button" href="{{ site.url }}/{{ page.url }}#contact">Get Started Today</a>
 								</div>
+							</div>
+
 							</div>
 						{% endfor %}
 					</div>

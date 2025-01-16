@@ -194,11 +194,17 @@
 		flex-grow: 1;
 		min-width: calc(290px - calc(var(--default-padding)* 2));
 		max-width: 320px;
-		padding: calc(var(--default-padding) * 2);
 		margin: var(--default-padding);
 		text-align: center;
 		border-top-right-radius: var(--default-padding);
 		border-bottom-left-radius: var(--default-padding);
+	}
+	#services section.pricing div.eye-catch-box {
+		background-color: var(--color-primary);
+		padding: var(--default-padding) calc(var(--default-padding) * 2);
+	}
+	#services section.pricing div.padding-box {
+		padding: calc(var(--default-padding) * 2);
 	}
 	#services section.pricing h3 {
 		font-size: var(--font-m);

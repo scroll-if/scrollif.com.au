@@ -29,6 +29,7 @@
   prices:
   - name: Stand Alone Single Page Website
     description: Purchase one of our custom built website outright and manage the hosting and upkeep yourself.
+    eye-catch-line: Buy me!
     cost-prepend: from
     cost: 945
     cost-append: 
@@ -38,6 +39,7 @@
     - name: Coding & Development
   - name: Single Page Website with Hosting
     description: Get all the perks of a custom built website along with web hosting and assisted site updates for one monthly fee.
+    eye-catch-line: Rent me!
     cost-prepend: 
     cost: 45
     cost-append: / month
@@ -50,6 +52,7 @@
     - name: Assisted Site Changes
   - name: Stand Alone Hosting
     description: Host your own existing website or content online with our hosting service that includes assisted file changes.
+    eye-catch-line: Rent me!
     cost-prepend: 
     cost: 10
     cost-append: / month
