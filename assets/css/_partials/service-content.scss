@@ -204,10 +204,22 @@
 		font-size: var(--font-m);
 		margin: var(--default-padding) 0;
 	}
+	#services section.pricing div.bar-spacer {
+		padding-top: var(--default-padding);
+	    background: linear-gradient(var(--color-black), var(--color-black)) center bottom;
+	    background-repeat: no-repeat;
+	}
+	#services section.pricing div.bar-spacer.top.bar-spacer {
+		background-size: 70% 3px;
+	    margin-top: calc(var(--default-padding)* 2);
+	}
+	#services section.pricing div.bar-spacer.bottom-bar-spacer {
+		background-size: 90% 3px;
+		margin-bottom: calc(var(--default-padding) * 3);
+	}
 	#services section.pricing p.price {
 		font-size: var(--font-s);
 		font-weight: 800;
-		margin-top: calc(var(--default-padding) * 3);
 	}
 	#services section.pricing p.price span {
 		color: var(--color-primary);
@@ -217,7 +229,6 @@
 		color: var(--color_dark-grey);
 		font-size: var(--font-xxs);
 		font-style: italic;
-		margin-bottom: calc(var(--default-padding) * 4);
 	}
 	#services section.pricing div.included-box {
 		display: inline-block;
