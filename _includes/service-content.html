@@ -117,87 +117,29 @@
 			<div class="tint">
 				<div class="max-width-container">
 					<div class="flex-container">
-						<div class="inner-flex-container">
-							<div class="main">
-								<h3>Stand Alone </br>Single Page Website</h3>
-								<p>Purchase one of our custom built website outright and manage the hosting and upkeep yourself.</p>
-								<div class="bar-spacer top-bar-spacer">
-                        		</div>
-								<p class="price">from <span>$945</span></p>
-								<p class="fine-print">* Final price can vary</p>
-								<div class="bar-spacer bottom-bar-spacer">
-                        		</div>
-								<div class="included-box">
-									<div class="included">
-										<img class="benefits-image" src="{{ site.url }}/assets/images/checkmark_temp.png" alt="{{ benefit.name }}"/>
-	                            		<p>Website Design</p>
-	                            	</div>
-		                            <div class="included">
-										<img class="benefits-image" src="{{ site.url }}/assets/images/checkmark_temp.png" alt="{{ benefit.name }}"/>
-		                            	<p>Coding & Development</p>
-		                            </div>
-		                        </div>
-	                            <a class="button" href="{{ site.url }}/{{ page.url }}#contact">Get Started Today</a>
-							</div>
-						</div>
-						<div class="inner-flex-container">
-							<div class="main">
-								<h3>Single Page Website <br/>with Hosting</h3>
-								<p>Get all the perks of a custom built website along with web hosting and assisted site updates for one monthly fee.</p>
-								<div class="bar-spacer top-bar-spacer">
-                        		</div>
-                        		<p class="price"><span>$45</span> / month</p>
-								<p class="fine-print">* No Sign-Up or Exit Fees.</p>
-								<div class="bar-spacer bottom-bar-spacer">
-                        		</div>
-								<div class="included-box">
-									<div class="included">
-										<img class="benefits-image" src="{{ site.url }}/assets/images/checkmark_temp.png" alt="{{ benefit.name }}"/>
-	                            		<p>Website Design</p>
-	                            	</div>
-		                            <div class="included">
-										<img class="benefits-image" src="{{ site.url }}/assets/images/checkmark_temp.png" alt="{{ benefit.name }}"/>
-		                            	<p>Coding & Development</p>
-		                            </div>
-		                            <div class="included">
-										<img class="benefits-image" src="{{ site.url }}/assets/images/checkmark_temp.png" alt="{{ benefit.name }}"/>
-		                            	<p>Included Hosting</p>
-		                            </div>
-		                            <div class="included">
-										<img class="benefits-image" src="{{ site.url }}/assets/images/checkmark_temp.png" alt="{{ benefit.name }}"/>
-		                            	<p>Link a Domain Name</p>
-		                            </div>
-		                            <div class="included">
-										<img class="benefits-image" src="{{ site.url }}/assets/images/checkmark_temp.png" alt="{{ benefit.name }}"/>
-		                            	<p>Assisted Site Changes</p>
-		                            </div>
-		                        </div>
-	                            <a class="button" href="{{ site.url }}/{{ page.url }}#contact">Get Started Today</a>
-							</div>
-						</div>
-						<div class="inner-flex-container">
-							<div class="main">
-								<h3>Stand Alone <br/>Hosting</h3>
-								<p>Host your own existing website or content online with our hosting service that includes assisted file changes.</p>
-								<div class="bar-spacer top-bar-spacer">
-                        		</div>
-                        		<p class="price"><span>$10</span> / month</p>
-								<p class="fine-print">* No Sign-Up or Exit Fees.</p>
-								<div class="bar-spacer bottom-bar-spacer">
-                        		</div>
-								<div class="included-box">
-									<div class="included">
-										<img class="benefits-image" src="{{ site.url }}/assets/images/checkmark_temp.png" alt="{{ benefit.name }}"/>
-		                            	<p>Link a Domain Name</p>
-		                            </div>
-		                            <div class="included">
-										<img class="benefits-image" src="{{ site.url }}/assets/images/checkmark_temp.png" alt="{{ benefit.name }}"/>
-		                            	<p>Assisted File Changes</p>
-									</div>
+						{% for price in service.prices %}
+							<div class="inner-flex-container">
+								<div class="main">
+									<h3>{{ price.name }}</h3>
+									<p>{{ price.description }}</p>
+									<div class="bar-spacer top-bar-spacer">
+	                        		</div>
+									<p class="price">from <span>$945</span></p>
+									<p class="fine-print">{{ price.fine-print }}</p>
+									<div class="bar-spacer bottom-bar-spacer">
+	                        		</div>
+									<div class="included-box">
+										{% for include in price.included %}
+											<div class="included">
+												<img class="benefits-image" src="{{ site.url }}/assets/images/checkmark_temp.png" alt="{{ include.name }}"/>
+		                            			<p>{{ include.name }}</p>
+		                            		</div>
+		                            	{% endfor %}
+			                        </div>
+		                            <a class="button" href="{{ site.url }}/{{ page.url }}#contact">Get Started Today</a>
 								</div>
-	                            <a class="button" href="{{ site.url }}/{{ page.url }}#contact">Get Started Today</a>
 							</div>
-						</div>
+						{% endfor %}
 					</div>
 				</div>
 			</div>
@@ -211,7 +153,7 @@
 				<div class="text-container">
 					<div class="main">
 						<h2>How It Works</h2>
-						<p>Our careful and planned process balances your ideas with our experience, <br/>producing consistently functional and customised results each and every time.</p>
+						<p>Our careful and planned process balances your ideas with our experience, <br/>producing consistently functional and effective results each and every time.</p>
 						<div class="bar-spacer">
                         </div>
 					</div>

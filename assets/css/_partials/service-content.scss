@@ -209,12 +209,12 @@
 	    background: linear-gradient(var(--color-black), var(--color-black)) center bottom;
 	    background-repeat: no-repeat;
 	}
-	#services section.pricing div.bar-spacer.top.bar-spacer {
-		background-size: 70% 3px;
+	#services section.pricing div.bar-spacer.top-bar-spacer {
+		background-size: 50% 5px;
 	    margin-top: calc(var(--default-padding)* 2);
 	}
 	#services section.pricing div.bar-spacer.bottom-bar-spacer {
-		background-size: 90% 3px;
+		background-size: 70% 5px;
 		margin-bottom: calc(var(--default-padding) * 3);
 	}
 	#services section.pricing p.price {
