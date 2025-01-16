@@ -30,14 +30,14 @@
   - name: Stand Alone Single Page Website
     description: Purchase one of our custom built website outright and manage the hosting and upkeep yourself.
     cost: 'from $945'
-    fine-print: * Final price may vary.
+    fine-print: '* Final price may vary.'
     included:
     - name: Website Design
     - name: Coding & Development
   - name: Single Page Website with Hosting
     description: Get all the perks of a custom built website along with web hosting and assisted site updates for one monthly fee.
     cost: '45 / month'
-    fine-print: * No Sign-Up or Exit Fees.
+    fine-print: '* No Sign-Up or Exit Fees.'
     included:
     - name: Website Design
     - name: Coding & Development
@@ -47,7 +47,7 @@
   - name: Stand Alone Hosting
     description: Host your own existing website or content online with our hosting service that includes assisted file changes.
     cost: '$10 / month'
-    fine-print: * No Sign-Up or Exit Fees.
+    fine-print: '* No Sign-Up or Exit Fees.'
     included:
     - name: Link a Domain Name
     - name: Assisted File Changes
