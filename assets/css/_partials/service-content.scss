@@ -214,7 +214,9 @@
 		border-bottom-left-radius: var(--default-padding);
 	}
 	#services section.pricing div.eye-catch-box.recommended + div.padding-box {
-		border: solid 3px var(--color-primary);
+		border-right: solid 3px var(--color-primary);
+    	border-bottom: solid 3px var(--color-primary);
+    	border-left: solid 3px var(--color-primary);
 	}
 	#services section.pricing h3 {
 		font-size: var(--font-m);
