@@ -270,7 +270,6 @@
 	}
 	#services section.how-it-works div.flex-container.icon-header {
 		flex-basis: 25%;
-		border: none;
 	}
 	#services section.how-it-works div.inside-flex-container {
 		display: flex;
@@ -281,6 +280,9 @@
 		flex-wrap: wrap;
 		margin: var(--default-padding);
 		border: 3px solid var(--color-black);
+	}
+	#services section.how-it-works div.flex-container.icon-header div.inside-flex-container {
+		border: none;
 	}
 	#services section.how-it-works div.inner-flex-container {
 		display: flex;
