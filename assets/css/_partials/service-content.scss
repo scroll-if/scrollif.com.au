@@ -206,13 +206,14 @@
 	}
 	#services section.pricing div.eye-catch-box p {
 		margin: 0;
+		font-weight: 800;
 	}
 	#services section.pricing div.padding-box {
 		background-color: var(--color-white);
 		padding: calc(var(--default-padding) * 2);
 		border-bottom-left-radius: var(--default-padding);
 	}
-	#services section.pricing div.eye-catch-box.recommended div.padding-box {
+	#services section.pricing div.eye-catch-box.recommended + div.padding-box {
 		border: solid 3px var(--color-primary);
 	}
 	#services section.pricing h3 {
@@ -314,7 +315,7 @@
 		display: flex;
 		flex-direction: row;
 		justify-content: flex-start;
-		align-items: strech;
+		align-items: stretch;
 		min-width: calc(250px - calc(var(--default-padding)* 2));
 		flex-basis: 25%;
 		flex-grow: 1;
